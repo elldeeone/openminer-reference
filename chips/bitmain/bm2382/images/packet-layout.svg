@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="900" viewBox="0 0 1000 900" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 work and result packets</title><desc id="desc">Numbered byte layouts. Work has 54 bytes. Result has 14 bytes. CRC coverage and result flag bits are shown separately.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="900" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 work and result packets</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Byte offsets increase from left to right. Multi-byte UART integers are big-endian.</text>
+<text x="40" y="102" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">WORK · 54 bytes</text>
+<text x="80.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="136.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="192.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="248.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="304.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="360.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="416.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="472.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="528.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="584.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="640.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<text x="696.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">11</text>
+<text x="752.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">12</text>
+<text x="808.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">13</text>
+<text x="864.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">14</text>
+<text x="920.0" y="121" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">15</text>
+<rect x="52.0" y="130" width="56.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="80.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">55</text>
+<rect x="108.0" y="130" width="56.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="136.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">aa</text>
+<rect x="164.0" y="130" width="56.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="192.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">30</text>
+<rect x="220.0" y="130" width="56.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="248.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">ID</text>
+<rect x="276.0" y="130" width="448.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M332.0 130 L332.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M388.0 130 L388.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M444.0 130 L444.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 130 L500.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M556.0 130 L556.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 130 L612.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M668.0 130 L668.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Timestamp</text>
+<rect x="724.0" y="130" width="224.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M780.0 130 L780.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 130 L836.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M892.0 130 L892.0 137" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="836.0" y="155" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 0</text>
+<text x="80.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">16</text>
+<text x="136.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">17</text>
+<text x="192.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">18</text>
+<text x="248.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">19</text>
+<text x="304.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">20</text>
+<text x="360.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">21</text>
+<text x="416.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">22</text>
+<text x="472.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">23</text>
+<text x="528.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">24</text>
+<text x="584.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">25</text>
+<text x="640.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">26</text>
+<text x="696.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">27</text>
+<text x="752.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">28</text>
+<text x="808.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">29</text>
+<text x="864.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">30</text>
+<text x="920.0" y="221" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">31</text>
+<rect x="52.0" y="230" width="224.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M108.0 230 L108.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M164.0 230 L164.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M220.0 230 L220.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="164.0" y="255" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 0 (cont.)</text>
+<rect x="276.0" y="230" width="448.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M332.0 230 L332.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M388.0 230 L388.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M444.0 230 L444.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 230 L500.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M556.0 230 L556.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 230 L612.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M668.0 230 L668.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="255" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 1</text>
+<rect x="724.0" y="230" width="224.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M780.0 230 L780.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 230 L836.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M892.0 230 L892.0 237" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="836.0" y="255" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 2</text>
+<text x="80.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">32</text>
+<text x="136.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">33</text>
+<text x="192.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">34</text>
+<text x="248.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">35</text>
+<text x="304.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">36</text>
+<text x="360.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">37</text>
+<text x="416.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">38</text>
+<text x="472.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">39</text>
+<text x="528.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">40</text>
+<text x="584.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">41</text>
+<text x="640.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">42</text>
+<text x="696.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">43</text>
+<text x="752.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">44</text>
+<text x="808.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">45</text>
+<text x="864.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">46</text>
+<text x="920.0" y="321" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">47</text>
+<rect x="52.0" y="330" width="224.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M108.0 330 L108.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M164.0 330 L164.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M220.0 330 L220.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="164.0" y="355" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 2 (cont.)</text>
+<rect x="276.0" y="330" width="448.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M332.0 330 L332.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M388.0 330 L388.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M444.0 330 L444.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 330 L500.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M556.0 330 L556.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 330 L612.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M668.0 330 L668.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="355" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Word 3</text>
+<rect x="724.0" y="330" width="112.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<path d="M780.0 330 L780.0 337" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="780.0" y="355" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Prefix</text>
+<rect x="836.0" y="330" width="56.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="864.0" y="355" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Seed</text>
+<rect x="892.0" y="330" width="56.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="920.0" y="355" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Gen.</text>
+<text x="80.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">48</text>
+<text x="136.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">49</text>
+<text x="192.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">50</text>
+<text x="248.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">51</text>
+<text x="304.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">52</text>
+<text x="360.0" y="421" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">53</text>
+<rect x="52.0" y="430" width="224.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<path d="M108.0 430 L108.0 437" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M164.0 430 L164.0 437" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M220.0 430 L220.0 437" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="164.0" y="455" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Generation (cont.)</text>
+<rect x="276.0" y="430" width="112.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M332.0 430 L332.0 437" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="332.0" y="455" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">CRC16</text>
+<text x="52" y="513" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">CRC16: bytes 2–51. Stored at bytes 52–53, high byte first.</text>
+<text x="52" y="538" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Search tail: prefix[2] | seed[1] | generation[5]. ID range: 0–127.</text>
+<text x="40" y="582" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">RESULT · 14 bytes</text>
+<text x="84.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="148.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="212.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="276.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="340.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="404.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="468.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="532.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="596.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="660.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="724.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<text x="788.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">11</text>
+<text x="852.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">12</text>
+<text x="916.0" y="603" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">13</text>
+<rect x="52.0" y="612" width="64.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="84.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">aa</text>
+<rect x="116.0" y="612" width="64.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="148.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">55</text>
+<rect x="180.0" y="612" width="64.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="212.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0c</text>
+<rect x="244.0" y="612" width="512.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M308.0 612 L308.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M372.0 612 L372.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M436.0 612 L436.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 612 L500.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M564.0 612 L564.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M628.0 612 L628.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M692.0 612 L692.0 619" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Nonce</text>
+<rect x="756.0" y="612" width="64.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="788.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Qualifier</text>
+<rect x="820.0" y="612" width="64.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="852.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">ID</text>
+<rect x="884.0" y="612" width="64.0" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="916.0" y="637" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Flags /</text>
+<text x="916.0" y="654" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="696" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">CRC5: 91 bits from byte 2. The high three bits of byte 13 are covered.</text>
+<text x="40" y="739" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">BYTE 13 · flags and CRC</text>
+<text x="892.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="780.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="668.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="556.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="444.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="332.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="220.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="108.0" y="761" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<rect x="52.0" y="770" width="112.0" height="45" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="108.0" y="798" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Valid</text>
+<rect x="164.0" y="770" width="224.0" height="45" fill="url(#unknown)" stroke="#536275" stroke-width="1"/>
+<path d="M276.0 770 L276.0 777" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="276.0" y="798" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Unknown</text>
+<rect x="388.0" y="770" width="560.0" height="45" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M500.0 770 L500.0 777" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 770 L612.0 777" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M724.0 770 L724.0 777" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 770 L836.0 777" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="668.0" y="798" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="849" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Bit 7 must be set. Nonce coordinate views overlap the nonce; they do not identify a unique owner.</text>
+</svg>

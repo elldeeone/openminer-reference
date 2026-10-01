@@ -1,0 +1,27 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 CORE 0x01 \u00b7 Core configuration",
+  "description": "BM2382 CORE 0x01 \u00b7 Core configuration. Low 16 bits retained writes in the tested 24-bit access. Upper 8 bits did not retain. The physical enable mask, lane count and rate remain unknown.",
+  "unit": "bit",
+  "width": 24,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 16,
+      "label": "Retained writes",
+      "status": "tested"
+    },
+    {
+      "offset": 16,
+      "width": 8,
+      "label": "Did not retain",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "Low 16 bits retained writes in the tested 24-bit access. Upper 8 bits did not retain.",
+    "The physical enable mask, lane count and rate remain unknown."
+  ]
+}

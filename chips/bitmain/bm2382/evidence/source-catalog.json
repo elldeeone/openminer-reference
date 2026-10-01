@@ -1,0 +1,826 @@
+{
+  "format": "bm2382-source-catalog-v1",
+  "date": "2026-10-01",
+  "date_definition": "source_version_date is the Git author timestamp of the last source change at the recorded snapshot. It is not necessarily the physical experiment date. Null means no Git source version date is available.",
+  "availability": "Original source is private. Public assets are selected derivatives. Records with deleted raw samples retain the evidence types stated below.",
+  "sources": [
+    {
+      "id": "cold-start-uart-sequence",
+      "name": "Cold-start UART sequence",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "151d99375f49c854e52805dc9ec38cd30e58d5c6a991a22e9ee1ab0f74e4656d",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": null,
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "address-response-fixture",
+      "name": "Address response fixture",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "105de48d0f3fa839dde6e5e08ba8df608334f6f444fd3f4161d8dd0932595dbf",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": null,
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "fresh-job-run-b-submitted-shares",
+      "name": "Fresh-job run B submitted shares",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "aba6d3af69a065ba26168a14f7629a5be524cc64afc0e9d918fc8dec3d934aae",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:46:55Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "fresh-job-run-b-original-wire-join",
+      "name": "Fresh-job run B original wire join",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "44abf6e004ca461549764088084aecb18e8e7c9ba6285bef35bad38b2135e8ea",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:46:55Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "fresh-job-run-b-captured-work",
+      "name": "Fresh-job run B captured work",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "435d53b867d95e0371072170fbd26c7f174f77c18ad48ebb3df0bd0c256fd5c8",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:46:55Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "scoped-register-inventory",
+      "name": "Scoped register inventory",
+      "evidence_type": "structured evidence",
+      "source_record_sha256": "9da01d41545c6ba9ec87595ebec2c50721211d4f7adeb06220c9b84ed0767b64",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-23T09:59:04Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "register-census",
+      "name": "Register census",
+      "evidence_type": "source record",
+      "source_record_sha256": "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T03:17:46Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "typed-behaviour-model",
+      "name": "Typed behaviour model",
+      "evidence_type": "source record",
+      "source_record_sha256": "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T05:52:59Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "observed-register-state-matrix",
+      "name": "Observed register state matrix",
+      "evidence_type": "source record",
+      "source_record_sha256": "b66472e948690f40811cf9d4a94e5a411f0b524f29ed72fb8654cdd9b6563617",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-20T11:24:52Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asic-identity-and-core01-contrasts",
+      "name": "ASIC identity and core01 contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "05ea085dcd4ed03200675e6a73d883db6cbdbdf6d75310842de5590c067586c3",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-23T05:35:16Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "early-d0-and-warm-readback",
+      "name": "Early d0 and warm readback",
+      "evidence_type": "source record",
+      "source_record_sha256": "d11a34d52d126af6a4d5cd81e8f3d37cfa617250bebbd4ba709f4c3311c4f35a",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T09:11:38Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "historical-frequency-and-bias-fields",
+      "name": "Historical frequency and bias fields",
+      "evidence_type": "source record",
+      "source_record_sha256": "65f343c0a44270998f962ec385d8598ed99c646a5385aaf3257068347012683f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-04-24T15:03:17+10:00",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asic30-directed-bit13-contrast",
+      "name": "ASIC30 directed bit13 contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "1eb9cb520dc424ed18711918ec7a538d4c2ab31afb068d3e1d9952545ef92008",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T08:16:21Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asic08-directed-bit-contrasts",
+      "name": "ASIC08 directed bit contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "e4136666156f459cb8ebd8fdd2f02c2834bf2eb398d56a0f7c8cfa33e4b7a837",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T08:02:35Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asic0c-nine-bit-contrasts",
+      "name": "ASIC0c nine-bit contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "e724af36e832d45a7cecdc2d6dd317a768582da82277274363d3fd4c206d855d",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T12:54:12Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "held-out-operating-word-contrast",
+      "name": "Held-out operating-word contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "9d80c017207feeac194ccce5de7daabae0a2c1043fdd4541fd8fb29163b19666",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T12:41:43Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "operating-word-output-controls",
+      "name": "Operating-word output controls",
+      "evidence_type": "source record",
+      "source_record_sha256": "3968bf24825ce190a161522621f419f964e3727adfbbbd428eaeb3ae3dafd457",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-12T13:27:45Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "register-pair-contrasts",
+      "name": "Register pair contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "91569f51b0cb4cfdb4ce8f58392a895049b755f27ecaef7ee98b3f7b14ee44e3",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-12T14:28:48Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "directed-register-survey",
+      "name": "Directed register survey",
+      "evidence_type": "source record",
+      "source_record_sha256": "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-13T01:36:37Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "core-reset-contrasts",
+      "name": "Core reset contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "c8580f5b9cc8d1f05c9292749cc3e97214210050efe85d3e2d1fcd7ebd8289c7",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T03:59:47Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "sensor-and-core-controls",
+      "name": "Sensor and core controls",
+      "evidence_type": "source record",
+      "source_record_sha256": "c6aea4307b1bc12e7023fc98160ef27cf1dc508fed78182e84ee7ed7d4962d88",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T03:59:47Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "function-recovery-synthesis",
+      "name": "Function recovery synthesis",
+      "evidence_type": "source record",
+      "source_record_sha256": "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T05:52:59Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "work-state-register-contrasts",
+      "name": "Work-state register contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "ebc73dceb91a5952b9fe09e06a524dd1bd91129ffffbdb98e01e996a23996bb9",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T13:48:26Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "counter-and-core-reset-controls",
+      "name": "Counter and core reset controls",
+      "evidence_type": "source record",
+      "source_record_sha256": "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-13T03:04:24Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "counter-marker-reset-controls",
+      "name": "Counter marker reset controls",
+      "evidence_type": "source record",
+      "source_record_sha256": "d852d2a8e9c8ca385689e56003ff6fbce3a10c42fbe95c5cad49b70a733c4b57",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-13T04:40:46Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "active-asic44-contrast",
+      "name": "Active ASIC44 contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "240cc34c76b62057e0bdd2681f671baf868822a6e11af0965981b885ce476b5b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-08T03:54:15Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-length-replacement-board-recheck",
+      "name": "Result length replacement-board recheck",
+      "evidence_type": "source record",
+      "source_record_sha256": "8e6528a66fe8f3a914cecfa290b296896d3abc667dfc8f7a42d4ea296c60b306",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-14T14:02:57Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "payload-and-result-masks",
+      "name": "Payload and result masks",
+      "evidence_type": "source record",
+      "source_record_sha256": "61f6619429e4e9fb112008b0f9996548af518812c664b452d466961e6e23e71f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T07:42:45Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "work-input-length-contrast",
+      "name": "Work input-length contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "f71d792ee69783f53d4a5840280e80174978444f4eecc91887af6edd2e7eb16c",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-20T07:49:39Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "work-input-length-restoration",
+      "name": "Work input-length restoration",
+      "evidence_type": "source record",
+      "source_record_sha256": "443c2f5fdf96e072d292bfb84680f602b05ac0b19634352b968b85edc63d38a6",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-20T09:22:49Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "input-length-held-out-contrast",
+      "name": "Input-length held-out contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-23T07:25:49Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-length3-contrast",
+      "name": "Result length3 contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "87408370711558b9b42db8dc92a69230b66e789b378740d83b2e9ba8740c9a65",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-08T06:36:59Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-lengths0-and1",
+      "name": "Result lengths0 and1",
+      "evidence_type": "source record",
+      "source_record_sha256": "9f8afc79bc8a355a1abc31d3a88bc3cd95c23f454196b4ac894d2f3b39fee141",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-13T04:40:46Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-lengths2-and4",
+      "name": "Result lengths2 and4",
+      "evidence_type": "source record",
+      "source_record_sha256": "3dffa7b8a80a1f69350c835f0d573b974af22d383c175b09a65252bc628181df",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-13T04:40:46Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "uart-mode-reset-contrast",
+      "name": "UART mode reset contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "bb27df44f0e984f24c14a1cbf4f5c9292d3f2052fc8c387ec4fe054d242b0314",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-23T10:04:44Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "core-and-sensor-contrast",
+      "name": "Core and sensor contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "5b7e414decb24eb3cccb0f094f306a106a48ed5f2b3f60627a125fdab34dfc49",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-07T09:57:09Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "sensor-state-restoration",
+      "name": "Sensor state restoration",
+      "evidence_type": "source record",
+      "source_record_sha256": "ad687c239a62dd2c51a2915a27e4bd501879ebab95c3fed043e24a2f8a2053a3",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-15T03:49:48Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asicc4-contrasts",
+      "name": "ASICc4 contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "92d74c7c6a5e16c8e415a5f1e23c40eb15c6dcc4655e499b3efe59b26153eb1c",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T07:11:28Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asicd0-contrasts",
+      "name": "ASICd0 contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "dc2b2e8ddeac7e092d1af16502b1b6a0ad58c7cb5bddd91fb851248b07556078",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T10:38:04Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "asicc8-contrasts",
+      "name": "ASICc8 contrasts",
+      "evidence_type": "source record",
+      "source_record_sha256": "37b505419099fa177bbe7fbb636f6938931f2252fbfc445ebc6840c632b1db79",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-25T14:12:26Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-board-driver-contract",
+      "name": "Stock-board driver contract",
+      "evidence_type": "source record",
+      "source_record_sha256": "d2413e811d80096b45fce96eb5cd65ef1eb574913f4320142528e3dc057f0367",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:54:39Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "sustained-operation-and-recovery-synthesis",
+      "name": "Sustained operation and recovery synthesis",
+      "evidence_type": "source record",
+      "source_record_sha256": "c62f9b51ac7eeb9bcf00f845f998bdbc3580d96c3cba056aad8c7b336f1b3950",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:54:39Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "bounded-operating-envelope",
+      "name": "Bounded operating envelope",
+      "evidence_type": "source record",
+      "source_record_sha256": "fc43c494b05ddb9a6acade45e16fd97369542ac027397c0f878fd77b297dad78",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:46:55Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "fixed-job-prediction-closure",
+      "name": "Fixed-job prediction closure",
+      "evidence_type": "source record",
+      "source_record_sha256": "93f5af9e8eeeea740b23a4feafadcec53022b5c3c76a917c49e60d1ce93bba1f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-06T23:54:14Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "directed-read-policy-synthesis",
+      "name": "Directed-read policy synthesis",
+      "evidence_type": "source record",
+      "source_record_sha256": "711350967960e231a2f4f0ddc72a5822738f4d69adb8f4c14fe90a12cae78287",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-30T11:09:56Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "fresh-job-run-a",
+      "name": "Fresh-job run A",
+      "evidence_type": "source record",
+      "source_record_sha256": "0eb54b46e213e8bcd1fdc82dc1dc24278d4663a9212b93e6d5aa76a760a21ab2",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:04:04Z",
+      "conditions": "Two 92-position chains. Fixed capture on chain 2. EOF closeout failed before a second owner started.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "experiment_date": "2026-10-01"
+    },
+    {
+      "id": "fresh-job-run-b",
+      "name": "Fresh-job run B",
+      "evidence_type": "source record",
+      "source_record_sha256": "24cb733eebac2cdf69fa1e7ed4f150c850d4df29b066fe5b90430791b71b897c",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:46:55Z",
+      "conditions": "Two 92-position chains. Packet capture and sustained ASIC temperature extrema cover chain 2. EOF, fresh owner and Stop passed. Final stock park failed.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "experiment_date": "2026-10-01"
+    },
+    {
+      "id": "separate-final-stock-park",
+      "name": "Separate final stock park",
+      "evidence_type": "source record",
+      "source_record_sha256": "df665e088d8355f7bb938eda2fdf9d79acc6162bf72aa1f2163b432ae401cf2f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T08:54:39Z",
+      "conditions": "Separate restore-only closeout repaired the fan admission check and completed stock park and final relay OFF. No new native mining qualification.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "experiment_date": "2026-10-01"
+    },
+    {
+      "id": "counter-seventeen-bit-boundary",
+      "name": "Counter seventeen-bit boundary",
+      "aliases": [
+        "counter-seventeen-bit-boundary",
+        "counter-boundary-20260930"
+      ],
+      "evidence_type": "source record",
+      "source_record_sha256": "45013b1e2fdcf55f75d3ade6dd8887e4dc2f0cf0813628c499030beb8e2f0c87",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-30T08:41:10Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "experiment_date": "2026-09-30"
+    },
+    {
+      "id": "directed-read-policy-experiment",
+      "name": "Directed-read policy experiment",
+      "evidence_type": "source record",
+      "source_record_sha256": "dff7f0ac76c09875dbf1b242c5497490c63af22b6d4135d28b610790fd347c96",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-30T11:09:56Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "aliases": [
+        "directed-read-policy-20260930"
+      ],
+      "experiment_date": "2026-09-30"
+    },
+    {
+      "id": "output-filter-progression",
+      "name": "Output filter progression",
+      "evidence_type": "source record",
+      "source_record_sha256": "908f2b079323c8f037ff2fabfd81c67172c09e5c95a8e307ed97a0e001dee93c",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T01:22:06Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "aliases": [
+        "filter-progression-20261001"
+      ],
+      "experiment_date": "2026-10-01"
+    },
+    {
+      "id": "electrical-measurement-requirements",
+      "name": "Electrical measurement requirements",
+      "evidence_type": "source record",
+      "source_record_sha256": "a4935a8e42fafff67ac7f2f13e2a08dd9f7f950917b5d73615f4892cf8aedbc0",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T05:42:01Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-initializer-implementation",
+      "name": "Stock initializer implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "c9d8b123c7aab2c007c96ca45bdf7a8cb24db230f6ea3290999022fc97091a7b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-26T10:14:14Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "startup-response-gate-implementation",
+      "name": "Startup response-gate implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "998726c81edc8e4b14ff10723336aa05f072bfd5f5761d339bef6e7fc045fe7e",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-26T10:14:14Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "candidate-accounting-implementation",
+      "name": "Candidate accounting implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "a51d30f28ecf7a5d1aa8e758620dac70c1a1ea654bb789930d70a7174071ff5b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T05:22:27Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "uart-packet-implementation",
+      "name": "UART packet implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "58a8b33bd87d15b311a7cece1a5ed3524fdb41f465ed5457a7ffb77bd490dd39",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T00:30:11Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "pow-implementation",
+      "name": "PoW implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "18083970ff489c76b76b9e7641fbc7aa41474202b954254ef80a4305156cdbb6",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T03:41:02Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "pool-transport-implementation",
+      "name": "Pool transport implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "c6b8edaa1849aa81180326f56ad5bd5e764a1e2b68dc3c4a2a939beb859e9f12",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T02:00:30Z",
+      "conditions": "Use the selected test conditions stated in the linked handbook claim and original record. No universal electrical or operating qualification is implied.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "causal-chip-ownership",
+      "name": "Causal chip ownership",
+      "evidence_type": "source record",
+      "source_record_sha256": "34ac709b4a2f41d327668d615c51d5ec1ebda9deb6d7d891b2cb0fad547843f8",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-24T03:42:43Z",
+      "conditions": "300 MHz fixed job. Seven chip masks cover 160 timed qualified opportunities across 92 positions. Four other frames failed the original complete nonce gate.",
+      "availability": "Decoded packets/bytes, native records and reductions retained. Raw samples deleted."
+    },
+    {
+      "id": "held-out-allocation",
+      "name": "Held out allocation",
+      "evidence_type": "source record",
+      "source_record_sha256": "73f0de8e5601349273d8b6cbb624297c584127767e16498d3924adb8ae8a56d0",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-24T06:59:11Z",
+      "conditions": "300 MHz; three work images; 23 windows; 4746 qualified frames; bounded physical acceptance.",
+      "availability": "Decoded evidence and reduction retained; raw samples deleted under RAW_RETENTION_CLOSEOUT.md."
+    },
+    {
+      "id": "selected-contention-and-active-state",
+      "name": "Selected contention and active state",
+      "evidence_type": "source record",
+      "source_record_sha256": "a6e4d083b8f712f6bcec0a7f83f0544d016b3fd7a20826769884e89655ff2ace",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-27T06:41:38Z",
+      "conditions": "Two selected source pairs; fast/slow UART; 28 matching counter intervals; core0a 16→0→16 on two targets. Original epoch gate failed; separate physical recheck passed; two owner-timing outliers remain.",
+      "availability": "Lossless local raw archives and decoded archives retained;expanded copies removed.",
+      "aliases": [
+        "active-core-state-20260927"
+      ],
+      "experiment_date": "2026-09-27"
+    },
+    {
+      "id": "active-state-and-read-contrast",
+      "name": "Active state and read contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "e5b576ac98fb137781ed80d85b2a365de649b1039a0bdf1f7a16e72098f406ff",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-28T05:32:17Z",
+      "conditions": "300 MHz fixed work; 4549 qualified frames; two active core0a 16→0→16 branches; broadcast 3 c/1 c/no-read counter contrasts; one model timing outlier.",
+      "availability": "Lossless local raw archives and decoded archives retained;expanded copies removed.",
+      "aliases": [
+        "active-core-state-20260928"
+      ],
+      "experiment_date": "2026-09-28"
+    },
+    {
+      "id": "duplicate-causal-attribution",
+      "name": "Duplicate causal attribution",
+      "evidence_type": "source record",
+      "source_record_sha256": "42536eb022235a3935a40062f766f8911567051bb401d9dbf15435e913986405",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-24T02:33:19Z",
+      "conditions": "Selected identical frame causally assigned to two distinct chips/core 105 at different times; selected isolation/sibling/restore controls.",
+      "availability": "Synthesis binds original physical reductions;related failed full-run boundary disclosed."
+    },
+    {
+      "id": "historical-stock-observations",
+      "name": "Historical stock observations",
+      "evidence_type": "source record",
+      "source_record_sha256": "2dbebafd0f4388567466038f9bdb223b30942b1ace2e6bd8929f8d57abfdc3b2",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-28T07:29:41Z",
+      "conditions": "March–June 2026 stock cold/start, steady changing work, warm recovery, adaptive bias, two-chain and connector 0/2 observations; historical 88/92 fault.",
+      "availability": "Source manifest binds exact historical paths and hashes;map is a derived historical index,not raw capture."
+    },
+    {
+      "id": "held-out-register-state-and-directed-access",
+      "name": "Held-out register state and directed access",
+      "evidence_type": "source record",
+      "source_record_sha256": "378ddfa98362443f9b2860a920a579c53562547bdb8f8cd29e36b94d108b5198",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-22T02:15:55Z",
+      "conditions": "Selected two-chip state matrix and directed controls. Two full-run gap conditions failed; selected findings retain their own scope.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "core-state-directed-clear",
+      "name": "Core state directed clear",
+      "evidence_type": "source record",
+      "source_record_sha256": "e2594c198d99ccc0ca459e4f329a86b8f686eaea11ae74123e4cec742ed4e32b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-21T08:37:56Z",
+      "conditions": "Two selected chips, directed positive-to-zero state contrast, sibling controls and reset restoration.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog.",
+      "aliases": [
+        "core-state-clear-20260921"
+      ],
+      "experiment_date": "2026-09-21"
+    },
+    {
+      "id": "work-input-admission-contrast",
+      "name": "Work input admission contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "32e909c8fc82f3d6657cfa19783c1bdacbbee45d1a493e30b1c42d65d964588b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-20T09:22:49Z",
+      "conditions": "Tested 47-byte input rejection and 48-byte input acceptance, with prior-job and restoration controls.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-length5-contrast",
+      "name": "Result length5 contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "2116149a31ba494c92a249b3edd138242fbf2ed245f6d21e294c2c221700b225",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-08T05:57:00Z",
+      "conditions": "Selected fixed-job shortened result; does not establish a complete nonce submission.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-supply-implementation",
+      "name": "Stock supply implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "37da4b591d95181bb4684bd4d11941499890cbc4c03f81e86025093aa3e0514f",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-26T10:14:14Z",
+      "conditions": "APW 17 command framing, discharge, firmware gates, output enable and bounded supervision.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-reset-implementation",
+      "name": "Stock reset implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "64095097f682d900a99e7c1b4aa6d71e6995b05329940cde81333867f7359044",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-26T10:14:14Z",
+      "conditions": "Presence gate and tested two-chain controller GPIO sequence. Not chip package timing.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-fan-implementation",
+      "name": "Stock fan implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "c602fbb8b23eedc034f48e232956700cd714a76a449349fdda3fcdc07e744081",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-27T01:32:38Z",
+      "conditions": "Stock PWM and tach interfaces and adapter admission thresholds.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-thermal-policy-implementation",
+      "name": "Stock thermal policy implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "fff7a6a85e7bd8bd9b0a3df4abf96cb4a2b440fc9aa96f89294aa2d3f6725c46",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-27T01:32:38Z",
+      "conditions": "Stock-derived conversion and fan policy; sustained ASIC collection is chain 2.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-cable-evidence",
+      "name": "Stock cable evidence",
+      "evidence_type": "source record",
+      "source_record_sha256": "ab25551dfafc42a8e4bd65d1d4c76ba4370705f6e435e8b298b268056fb835a0",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-29T04:38:10Z",
+      "conditions": "Observed cable signals and third-party connector diagram; fixed tap socket remains unverified.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "mining-scheduler-implementation",
+      "name": "Mining scheduler implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "5ce78e0cdc7d29653ac9e27c8843c8c7f179b1e40ebdb5af07d78a10524c6f6e",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-10-01T05:22:27Z",
+      "conditions": "Two-chain order, job replacement, bounded search and terminal policy.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "result-length6-contrast",
+      "name": "Result length6 contrast",
+      "evidence_type": "source record",
+      "source_record_sha256": "729d60f036c5352abe5c224d37b16614ba5be50661982b43b6dace72aea448bd",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-09-08T05:24:02Z",
+      "conditions": "All46 changed bursts were13-byte frames. The original no-TX observation boundary failed. The selected physical length result retains that exception.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-pwm-platform-implementation",
+      "name": "Stock PWM platform implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "1fcf83e5542e0f836343a9141274df63e633a1195dc1f182827d10856dc17d9b",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-26T23:37:23Z",
+      "conditions": "Controller pinmux, module and PWM interface admission; bounded retries. Not chip pin specifications.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-pcb-sensor-implementation",
+      "name": "Stock PCB sensor implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "e4c7a623509c2a652c3374119707abf47a54c80400df9b6271349760854dd4bb",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-27T01:32:38Z",
+      "conditions": "Four stock PCB sensors. Parser limits are not operating ratings.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "stock-hardware-adapter-implementation",
+      "name": "Stock hardware adapter implementation",
+      "evidence_type": "implementation",
+      "source_record_sha256": "6f5be86f48e29b4d3f979684371bf4ac4a9777db146041245cdfa29d25550d20",
+      "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+      "source_version_date": "2026-08-27T01:32:38Z",
+      "conditions": "Startup admission order, terminal actions and cooling/supply supervision.",
+      "availability": "Private source record. Raw-sample retention is not asserted by this catalog."
+    },
+    {
+      "id": "seed-qualified-evidence-reducer",
+      "name": "Seed-qualified evidence reducer",
+      "evidence_type": "implementation",
+      "source_record_sha256": "4b3fda6df2a7455059faea39a0a50508dc1dcaee53a5a292421539117844875b",
+      "source_snapshot": "7982b804043264464e5c23af3d4fb64767818e01",
+      "source_version_date": "2026-10-01T11:03:48Z",
+      "conditions": "Offline replay of retained pool logs and decoded chain-2 UART rows. Checks seed as well as CRC qualification, prefix, ID and age. Includes some retired jobs. No new physical result.",
+      "availability": "Private source implementation. Public correction includes exact input and derivative identities."
+    }
+  ]
+}

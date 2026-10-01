@@ -1,0 +1,21 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 CORE 0x44 \u00b7 Core configuration",
+  "description": "BM2382 CORE 0x44 \u00b7 Core configuration. Value 000002 retained a positive core-02 marker in the matched controls. A complete internal reset meaning is not established.",
+  "unit": "bit",
+  "width": 24,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 24,
+      "label": "Recipe value 000002; internal function unknown",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "Value 000002 retained a positive core-02 marker in the matched controls.",
+    "A complete internal reset meaning is not established."
+  ]
+}

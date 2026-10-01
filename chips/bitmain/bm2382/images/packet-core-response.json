@@ -1,0 +1,62 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 core response",
+  "unit": "byte",
+  "width": 10,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "aa 55",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "08",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "Core|selector",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 3,
+      "label": "Value \u00b7 24 bits",
+      "status": "known"
+    },
+    {
+      "offset": 7,
+      "width": 1,
+      "label": "ASIC|selector",
+      "status": "known"
+    },
+    {
+      "offset": 8,
+      "width": 1,
+      "label": "Core|register",
+      "status": "known"
+    },
+    {
+      "offset": 9,
+      "width": 1,
+      "label": "Type 0x40 /|CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Final byte: type bits are 0x40 under mask 0xe0. The low five bits contain CRC5.",
+    "CRC5 covers 59 bits from byte 2. Parse this separately from a 32-bit ASIC response."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 59
+  },
+  "description": "BM2382 core response. Final byte: type bits are 0x40 under mask 0xe0. The low five bits contain CRC5. CRC5 covers 59 bits from byte 2. Parse this separately from a 32-bit ASIC response."
+}

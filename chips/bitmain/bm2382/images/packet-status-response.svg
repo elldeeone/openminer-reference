@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="298" viewBox="0 0 1000 298" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 status response</title><desc id="desc">BM2382 status response. CRC5 covers 59 bits from byte 2. Value, selector and register must match the requested observation. For c4: value bit 31 is observed validity; the ADC code occupies the low 16 bits.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="298" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 status response</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Byte offsets are decimal. Multi-byte UART integers are big-endian.</text>
+<text x="96.8" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="186.39999999999998" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="276.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="365.59999999999997" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="455.2" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="544.8" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="634.4" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="724.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="813.5999999999999" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="903.1999999999999" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<rect x="52.0" y="102" width="179.2" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M141.6 102 L141.6 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="141.6" y="127" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">aa 55</text>
+<rect x="231.2" y="102" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="276.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">08</text>
+<rect x="320.79999999999995" y="102" width="358.4" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M410.4 102 L410.4 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 102 L500.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M589.5999999999999 102 L589.5999999999999 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Value · 32 bits</text>
+<rect x="679.1999999999999" y="102" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="724.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Selector</text>
+<rect x="768.8" y="102" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="813.5999999999999" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Register</text>
+<rect x="858.4" y="102" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="903.1999999999999" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Flags /</text>
+<text x="903.1999999999999" y="144" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="216" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers 59 bits from byte 2. Value, selector and register must match the requested observation.</text>
+<text x="52" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">For c4: value bit 31 is observed validity; the ADC code occupies the low 16 bits.</text>
+</svg>

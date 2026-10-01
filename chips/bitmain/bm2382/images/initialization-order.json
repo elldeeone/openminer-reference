@@ -1,0 +1,652 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "drawing",
+  "description": "Editable SVG drawing for initialization-order.svg",
+  "svg": {
+    "tag": "svg",
+    "attributes": {
+      "width": "1000",
+      "height": "1030",
+      "viewBox": "0 0 1000 1030",
+      "role": "img",
+      "aria-labelledby": "title desc"
+    },
+    "text": "",
+    "children": [
+      {
+        "tag": "title",
+        "attributes": {
+          "id": "title"
+        },
+        "text": "BM2382 cold initialization sequence",
+        "children": []
+      },
+      {
+        "tag": "desc",
+        "attributes": {
+          "id": "desc"
+        },
+        "text": "Ordered two-chain sequence with explicit waits and response gates. Vertical spacing does not represent elapsed time.",
+        "children": []
+      },
+      {
+        "tag": "defs",
+        "attributes": {},
+        "text": "",
+        "children": [
+          {
+            "tag": "marker",
+            "attributes": {
+              "id": "arrow",
+              "markerWidth": "8",
+              "markerHeight": "8",
+              "refX": "7",
+              "refY": "4",
+              "orient": "auto-start-reverse"
+            },
+            "text": "",
+            "children": [
+              {
+                "tag": "path",
+                "attributes": {
+                  "d": "M0 0 L8 4 L0 8 Z",
+                  "fill": "#253449"
+                },
+                "text": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "pattern",
+            "attributes": {
+              "id": "unknown",
+              "width": "8",
+              "height": "8",
+              "patternUnits": "userSpaceOnUse"
+            },
+            "text": "",
+            "children": [
+              {
+                "tag": "rect",
+                "attributes": {
+                  "width": "8",
+                  "height": "8",
+                  "fill": "#f3f4f6"
+                },
+                "text": "",
+                "children": []
+              },
+              {
+                "tag": "path",
+                "attributes": {
+                  "d": "M0 8 L8 0",
+                  "stroke": "#dce0e6",
+                  "stroke-width": "1"
+                },
+                "text": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "width": "1000",
+          "height": "1030",
+          "fill": "white"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "40",
+          "y": "35",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "22",
+          "font-weight": "600",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "BM2382 cold initialization sequence",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "40",
+          "y": "66",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "KS5 Pro: two mining hashboards due to site power limit. Sequence is not to time scale.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "20",
+          "y": "90",
+          "width": "200",
+          "height": "44",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "120",
+          "y": "118",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "600",
+          "text-anchor": "middle",
+          "fill": "#172533"
+        },
+        "text": "Controller",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M120 135 L120 930",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "stroke-dasharray": "5 4"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "445",
+          "y": "90",
+          "width": "200",
+          "height": "44",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "545",
+          "y": "118",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "600",
+          "text-anchor": "middle",
+          "fill": "#172533"
+        },
+        "text": "Chain 0 \u00b7 92 positions",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M545 135 L545 930",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "stroke-dasharray": "5 4"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "780",
+          "y": "90",
+          "width": "200",
+          "height": "44",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "880",
+          "y": "118",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "600",
+          "text-anchor": "middle",
+          "fill": "#172533"
+        },
+        "text": "Chain 2 \u00b7 92 positions",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M880 135 L880 930",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "stroke-dasharray": "5 4"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "40",
+          "y": "166",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "PRECONDITION: qualified stock supply/reset; open both UARTs at 115,200 baud.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "153",
+          "y": "195",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "1. Wait 4.7 s; flush; send rows 1\u2013105",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M120 207 L545 207",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "marker-end": "url(#arrow)"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M545 238 L120 238",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "marker-end": "url(#arrow)"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "153",
+          "y": "259",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "12",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Gate: 276 exact identity frames",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "153",
+          "y": "295",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "2. Wait 4.7 s; flush; send rows 1\u2013105",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M120 307 L880 307",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "marker-end": "url(#arrow)"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "path",
+        "attributes": {
+          "d": "M880 338 L120 338",
+          "fill": "none",
+          "stroke": "#253449",
+          "stroke-width": "1.5",
+          "marker-end": "url(#arrow)"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "153",
+          "y": "359",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "12",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Gate: 276 exact identity frames",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "386",
+          "width": "786",
+          "height": "75",
+          "fill": "#ffffff",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "411",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "3. Rows 106\u2013197: complete chain 0, then chain 2.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "441",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "4. Rows 198\u2013199: complete chain 0, then chain 2.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "487",
+          "width": "786",
+          "height": "73",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "512",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "5. For each row 200\u2013291: wait once \u2192 write chain 0 \u2192 write chain 2.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "541",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Preserve the complete frequency ramp and row waits.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "586",
+          "width": "786",
+          "height": "110",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "611",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "6. Repeat 16 temperature cycles from rows 292\u2013339.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "640",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Flush both inputs; wait once per row; write to both chains.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "669",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Gate: 92 valid temperature frames from each chain, in selector order.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "722",
+          "width": "786",
+          "height": "48",
+          "fill": "#fff1cf",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "535",
+          "y": "752",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "middle",
+          "fill": "#172533"
+        },
+        "text": "7. Hold 54,179,800 \u00b5s after temperature cycles.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "796",
+          "width": "786",
+          "height": "70",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "822",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "14",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "8. Row 340: write each chain at low speed; change its host UART.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "850",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Read back 1,500,000 baud settings. Decoded fast wire: 1,562,500 baud.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "142",
+          "y": "893",
+          "width": "786",
+          "height": "62",
+          "fill": "#e5eef9",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "918",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "9. Mining setup: core 02=25 \u2192 wait 1,127 \u00b5s \u2192 ASIC 1c=c0d21f10.",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "157",
+          "y": "943",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "start",
+          "fill": "#172533"
+        },
+        "text": "Wait 82 ms before first work. Start the bounded work feed.",
+        "children": []
+      },
+      {
+        "tag": "rect",
+        "attributes": {
+          "x": "40",
+          "y": "979",
+          "width": "920",
+          "height": "34",
+          "fill": "#fff1cf",
+          "stroke": "#536275",
+          "stroke-width": "1"
+        },
+        "text": "",
+        "children": []
+      },
+      {
+        "tag": "text",
+        "attributes": {
+          "x": "500",
+          "y": "1001",
+          "font-family": "Arial, Helvetica, sans-serif",
+          "font-size": "13",
+          "font-weight": "400",
+          "text-anchor": "middle",
+          "fill": "#172533"
+        },
+        "text": "Any failed gate \u2192 qualified Stop and restore. Do not continue with a partial inventory.",
+        "children": []
+      }
+    ]
+  }
+}

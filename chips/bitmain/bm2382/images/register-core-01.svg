@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="225" viewBox="0 0 1000 225" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 CORE 0x01 · Core configuration</title><desc id="desc">BM2382 CORE 0x01 · Core configuration. Low 16 bits retained writes in the tested 24-bit access. Upper 8 bits did not retain. The physical enable mask, lane count and rate remain unknown.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="225" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 CORE 0x01 · Core configuration</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Observed access view. Hatched fields have no supported internal definition.</text>
+<text x="929.3333333333334" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="892.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="854.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="817.3333333333334" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="780.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="742.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="705.3333333333334" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="668.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="630.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="593.3333333333334" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="556.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<text x="518.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">11</text>
+<text x="481.33333333333337" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">12</text>
+<text x="444.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">13</text>
+<text x="406.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">14</text>
+<text x="369.33333333333337" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">15</text>
+<text x="332.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">16</text>
+<text x="294.6666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">17</text>
+<text x="257.33333333333337" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">18</text>
+<text x="220.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">19</text>
+<text x="182.66666666666669" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">20</text>
+<text x="145.33333333333334" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">21</text>
+<text x="108.0" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">22</text>
+<text x="70.66666666666667" y="92" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">23</text>
+<rect x="350.6666666666667" y="101" width="597.3333333333334" height="45" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<path d="M388.0 101 L388.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M425.33333333333337 101 L425.33333333333337 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M462.6666666666667 101 L462.6666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 101 L500.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M537.3333333333334 101 L537.3333333333334 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M574.6666666666667 101 L574.6666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 101 L612.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M649.3333333333334 101 L649.3333333333334 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M686.6666666666667 101 L686.6666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M724.0 101 L724.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M761.3333333333334 101 L761.3333333333334 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M798.6666666666667 101 L798.6666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 101 L836.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M873.3333333333335 101 L873.3333333333335 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M910.6666666666667 101 L910.6666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="649.3333333333334" y="129" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Retained writes</text>
+<rect x="52.0" y="101" width="298.6666666666667" height="45" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<path d="M89.33333333333334 101 L89.33333333333334 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M126.66666666666667 101 L126.66666666666667 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M164.0 101 L164.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M201.33333333333334 101 L201.33333333333334 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M238.66666666666669 101 L238.66666666666669 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M276.0 101 L276.0 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M313.33333333333337 101 L313.33333333333337 108" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="201.33333333333334" y="129" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Did not retain</text>
+<text x="52" y="177" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Low 16 bits retained writes in the tested 24-bit access. Upper 8 bits did not retain.</text>
+<text x="52" y="201" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">The physical enable mask, lane count and rate remain unknown.</text>
+</svg>

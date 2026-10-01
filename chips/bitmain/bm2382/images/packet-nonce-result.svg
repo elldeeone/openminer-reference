@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="298" viewBox="0 0 1000 298" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 nonce result</title><desc id="desc">BM2382 nonce result. CRC5 covers 91 bits from byte 2. Bit 7 of the final byte must be set. Bind chain, work ID, current job, age, prefix and seed before host PoW. Coordinates are not unique owners.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="298" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 nonce result</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Byte offsets are decimal. Multi-byte UART integers are big-endian.</text>
+<text x="84.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="148.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="212.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="276.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="340.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="404.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="468.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="532.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="596.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="660.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="724.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<text x="788.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">11</text>
+<text x="852.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">12</text>
+<text x="916.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">13</text>
+<rect x="52.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M116.0 102 L116.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="116.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">aa 55</text>
+<rect x="180.0" y="102" width="64.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="212.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0c</text>
+<rect x="244.0" y="102" width="512.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M308.0 102 L308.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M372.0 102 L372.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M436.0 102 L436.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 102 L500.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M564.0 102 L564.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M628.0 102 L628.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M692.0 102 L692.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Nonce</text>
+<rect x="756.0" y="102" width="64.0" height="58" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="788.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Qualifier</text>
+<rect x="820.0" y="102" width="64.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="852.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Work ID</text>
+<rect x="884.0" y="102" width="64.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="916.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Flags /</text>
+<text x="916.0" y="144" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="216" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers 91 bits from byte 2. Bit 7 of the final byte must be set.</text>
+<text x="52" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Bind chain, work ID, current job, age, prefix and seed before host PoW. Coordinates are not unique owners.</text>
+</svg>

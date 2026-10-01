@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0xc4 \u00b7 Temperature result",
+  "description": "BM2382 ASIC 0xc4 \u00b7 Temperature result. V: observed validity bit. Use the stock temperature conversion. External calibration, update latency bound and other field meanings remain unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 16,
+      "label": "ADC code",
+      "status": "known"
+    },
+    {
+      "offset": 16,
+      "width": 15,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 31,
+      "width": 1,
+      "label": "V",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "V: observed validity bit. Use the stock temperature conversion.",
+    "External calibration, update latency bound and other field meanings remain unknown."
+  ]
+}

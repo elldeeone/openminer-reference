@@ -1,0 +1,21 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x60 \u00b7 UART configuration",
+  "description": "BM2382 ASIC 0x60 \u00b7 UART configuration. Tested values include 00000100 and 00001a00. Preserve the qualified transition sequence. Configured fast host baud is 1500000; captured fast wire decodes at 1562500 baud.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 32,
+      "label": "UART recipe; divisor fields unknown",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "Tested values include 00000100 and 00001a00. Preserve the qualified transition sequence.",
+    "Configured fast host baud is 1500000; captured fast wire decodes at 1562500 baud."
+  ]
+}

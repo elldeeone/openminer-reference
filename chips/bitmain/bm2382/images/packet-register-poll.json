@@ -1,0 +1,56 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 register poll",
+  "description": "BM2382 register poll. CRC5 covers bytes 2\u20135. The supported identity and temperature polls use selector 00. Expected response: 10-byte status frames. Interpret selector scope through the qualified recipe.",
+  "unit": "byte",
+  "width": 7,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "52",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "05",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "Selector",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "Register",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "CRC5 covers bytes 2\u20135. The supported identity and temperature polls use selector 00.",
+    "Expected response: 10-byte status frames. Interpret selector scope through the qualified recipe."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 32
+  }
+}

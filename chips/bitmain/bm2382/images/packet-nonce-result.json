@@ -1,0 +1,56 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 nonce result",
+  "description": "BM2382 nonce result. CRC5 covers 91 bits from byte 2. Bit 7 of the final byte must be set. Bind chain, work ID, current job, age, prefix and seed before host PoW. Coordinates are not unique owners.",
+  "unit": "byte",
+  "width": 14,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "aa 55",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "0c",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 8,
+      "label": "Nonce",
+      "status": "known"
+    },
+    {
+      "offset": 11,
+      "width": 1,
+      "label": "Qualifier",
+      "status": "tested"
+    },
+    {
+      "offset": 12,
+      "width": 1,
+      "label": "Work ID",
+      "status": "known"
+    },
+    {
+      "offset": 13,
+      "width": 1,
+      "label": "Flags /|CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "CRC5 covers 91 bits from byte 2. Bit 7 of the final byte must be set.",
+    "Bind chain, work ID, current job, age, prefix and seed before host PoW. Coordinates are not unique owners."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 91
+  }
+}

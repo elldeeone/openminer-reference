@@ -1,0 +1,39 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0xd0 \u00b7 Configuration word",
+  "description": "BM2382 ASIC 0xd0 \u00b7 Configuration word. R: bit 0 retained directed changes. N: bit 30 was absent from rapid readback after set and clear writes. Readback alone does not distinguish masking, ignored writes and automatic clearing.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "label": "R",
+      "status": "tested"
+    },
+    {
+      "offset": 1,
+      "width": 29,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 30,
+      "width": 1,
+      "label": "N",
+      "status": "tested"
+    },
+    {
+      "offset": 31,
+      "width": 1,
+      "label": "?",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "R: bit 0 retained directed changes. N: bit 30 was absent from rapid readback after set and clear writes.",
+    "Readback alone does not distinguish masking, ignored writes and automatic clearing."
+  ]
+}

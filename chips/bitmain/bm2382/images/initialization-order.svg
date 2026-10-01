@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1030" viewBox="0 0 1000 1030" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 cold initialization sequence</title><desc id="desc">Ordered two-chain sequence with explicit waits and response gates. Vertical spacing does not represent elapsed time.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="1030" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 cold initialization sequence</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">KS5 Pro: two mining hashboards due to site power limit. Sequence is not to time scale.</text>
+<rect x="20" y="90" width="200" height="44" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="120" y="118" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#172533">Controller</text>
+<path d="M120 135 L120 930" fill="none" stroke="#253449" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="445" y="90" width="200" height="44" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="545" y="118" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#172533">Chain 0 · 92 positions</text>
+<path d="M545 135 L545 930" fill="none" stroke="#253449" stroke-width="1.5" stroke-dasharray="5 4"/>
+<rect x="780" y="90" width="200" height="44" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="880" y="118" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" text-anchor="middle" fill="#172533">Chain 2 · 92 positions</text>
+<path d="M880 135 L880 930" fill="none" stroke="#253449" stroke-width="1.5" stroke-dasharray="5 4"/>
+<text x="40" y="166" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">PRECONDITION: qualified stock supply/reset; open both UARTs at 115,200 baud.</text>
+<text x="153" y="195" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">1. Wait 4.7 s; flush; send rows 1–105</text>
+<path d="M120 207 L545 207" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M545 238 L120 238" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="153" y="259" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#172533">Gate: 276 exact identity frames</text>
+<text x="153" y="295" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">2. Wait 4.7 s; flush; send rows 1–105</text>
+<path d="M120 307 L880 307" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M880 338 L120 338" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="153" y="359" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="start" fill="#172533">Gate: 276 exact identity frames</text>
+<rect x="142" y="386" width="786" height="75" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="157" y="411" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">3. Rows 106–197: complete chain 0, then chain 2.</text>
+<text x="157" y="441" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">4. Rows 198–199: complete chain 0, then chain 2.</text>
+<rect x="142" y="487" width="786" height="73" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="157" y="512" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">5. For each row 200–291: wait once → write chain 0 → write chain 2.</text>
+<text x="157" y="541" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Preserve the complete frequency ramp and row waits.</text>
+<rect x="142" y="586" width="786" height="110" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="157" y="611" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">6. Repeat 16 temperature cycles from rows 292–339.</text>
+<text x="157" y="640" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Flush both inputs; wait once per row; write to both chains.</text>
+<text x="157" y="669" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Gate: 92 valid temperature frames from each chain, in selector order.</text>
+<rect x="142" y="722" width="786" height="48" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="535" y="752" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="middle" fill="#172533">7. Hold 54,179,800 µs after temperature cycles.</text>
+<rect x="142" y="796" width="786" height="70" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="157" y="822" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">8. Row 340: write each chain at low speed; change its host UART.</text>
+<text x="157" y="850" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Read back 1,500,000 baud settings. Decoded fast wire: 1,562,500 baud.</text>
+<rect x="142" y="893" width="786" height="62" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="157" y="918" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">9. Mining setup: core 02=25 → wait 1,127 µs → ASIC 1c=c0d21f10.</text>
+<text x="157" y="943" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Wait 82 ms before first work. Start the bounded work feed.</text>
+<rect x="40" y="979" width="920" height="34" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="500" y="1001" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Any failed gate → qualified Stop and restore. Do not continue with a partial inventory.</text>
+</svg>

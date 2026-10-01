@@ -1,0 +1,56 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 directed asic read",
+  "unit": "byte",
+  "width": 7,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "42",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "05",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "ASIC|selector",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "Register",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Directed ASIC read. Use the tested ASIC selector and register.",
+    "CRC5 covers bytes 2\u20135. Validate the returned selector, register and CRC."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 32
+  },
+  "description": "BM2382 directed asic read. Directed ASIC read. Use the tested ASIC selector and register. CRC5 covers bytes 2\u20135. Validate the returned selector, register and CRC."
+}

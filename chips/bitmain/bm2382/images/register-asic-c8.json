@@ -1,0 +1,52 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0xc8 \u00b7 Configuration word",
+  "description": "BM2382 ASIC 0xc8 \u00b7 Configuration word. T: bits 2, 5 and 6 were tested individually and together. Internal timing units are unknown. Exact c8 restore and tested mode-1 recovery did not restore the selected core-02 reply. Board reset plus full initialization restored it. Other recovery sequences remain unqualified.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 3,
+      "width": 2,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 7,
+      "width": 25,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: bits 2, 5 and 6 were tested individually and together. Internal timing units are unknown.",
+    "Exact c8 restore and tested mode-1 recovery did not restore the selected core-02 reply.",
+    "Board reset plus full initialization restored it. Other recovery sequences remain unqualified."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "format": "bm2382-binding-correction-v1",
+  "date": "2026-10-01",
+  "kind": "Offline correction of retained evidence. No hardware run.",
+  "source_snapshot": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+  "reducer_sha256": "4b3fda6df2a7455059faea39a0a50508dc1dcaee53a5a292421539117844875b",
+  "binding": "CRC-qualified frame, work ID, prefix, age at most2s and matching seed. Includes some retired jobs. Not a production candidate inventory.",
+  "accepted_share_effect": "None. All151 accepted submissions still pass recorded PoW and target replay.",
+  "runs": [
+    {
+      "name": "fresh-job-run-a",
+      "source_id": "fresh-job-run-a",
+      "captured_chain": 2,
+      "source_input_sha256": {
+        "pool_log": "215117a1b34671b76e842bbf7e08e2b2800d6d261cce066e0285b750c6216c1c",
+        "decoded_uart_csv": "9cd4501e2f81f66a7cfed00ed2d39666cf488c8e0ca931a1559f93e14c18d164",
+        "production_pow_verifier": "590a003298859b52738f44e757b15f8f1b702c2b627198b804b94ce76cb53302"
+      },
+      "original_reduction_sha256": {
+        "INPUTS.json": "de4f3412e651cc76f181a4692ad57171fcf52811e6b837856a3938e5e217d5e2",
+        "SUBMITTED_SHARES.json": "347e560a6a280b951615383ac10212c889fac8317c157fee57da7cd75d41bff3",
+        "SUMMARY.json": "6c720bdbcfe8e46ec5e2c0c003fe42bd7a61d8d18d163ecf55ae51f82477dbaa",
+        "WIRE_NONCES.json": "98c5343c245ece639be4b01603950780b5e8e1da11bdf0023278ff66a8e16385",
+        "WIRE_WORK.json": "3605121f8c34547f3167a2d17fd6327c31903874925c4b8eed12752de98cfb8e"
+      },
+      "corrected_reduction_sha256": {
+        "INPUTS.json": "f23a5f62d51903c75d68fdc6de724a500b18ed02eba3947d6bcfd02d048b3c04",
+        "SUBMITTED_SHARES.json": "347e560a6a280b951615383ac10212c889fac8317c157fee57da7cd75d41bff3",
+        "SUMMARY.json": "acb74aa1d3409a207a5d3568a28c209c962e8f42fc04c82e76b5ad55f3550d8d",
+        "WIRE_NONCES.json": "98c5343c245ece639be4b01603950780b5e8e1da11bdf0023278ff66a8e16385",
+        "WIRE_WORK.json": "3605121f8c34547f3167a2d17fd6327c31903874925c4b8eed12752de98cfb8e"
+      },
+      "prefix_id_age_joined_results": 32060,
+      "seed_mismatch_results": 0,
+      "prefix_id_age_seed_joined_results": 32060,
+      "below_0x25_seed_qualified_results": 47,
+      "wire_retired_job_results": 38
+    },
+    {
+      "name": "fresh-job-run-b",
+      "source_id": "fresh-job-run-b",
+      "captured_chain": 2,
+      "source_input_sha256": {
+        "pool_log": "bbb530c9b74f44b309c534e2a933d246e682cd1808b1bc128f8542d41be9d71e",
+        "decoded_uart_csv": "74acd0414eaed613cad5fbf433df0f9786afe8ad4f47e2c4632870bad5306093",
+        "production_pow_verifier": "590a003298859b52738f44e757b15f8f1b702c2b627198b804b94ce76cb53302"
+      },
+      "original_reduction_sha256": {
+        "INPUTS.json": "4225b918154c885c5d27fb1f1c8987eb4adefbb2cf6dd96558944dd062fd9791",
+        "SUBMITTED_SHARES.json": "aba6d3af69a065ba26168a14f7629a5be524cc64afc0e9d918fc8dec3d934aae",
+        "SUMMARY.json": "eb0ca8ca6865fbdde49abd682eab9868b249e27aaf7ddc79c7b3ef274884524b",
+        "WIRE_NONCES.json": "44abf6e004ca461549764088084aecb18e8e7c9ba6285bef35bad38b2135e8ea",
+        "WIRE_WORK.json": "435d53b867d95e0371072170fbd26c7f174f77c18ad48ebb3df0bd0c256fd5c8"
+      },
+      "corrected_reduction_sha256": {
+        "INPUTS.json": "beeefe76987d59cca2a6df7ca5156f37ff2c24842a878d038795753b70a64ecb",
+        "SUBMITTED_SHARES.json": "aba6d3af69a065ba26168a14f7629a5be524cc64afc0e9d918fc8dec3d934aae",
+        "SUMMARY.json": "1d10be5142a8e50997e21c243a221c6b6eacc9373b832de0019b4e194394f173",
+        "WIRE_NONCES.json": "c4653549cf5f8a1f950fadfc892e0c9146cc43e957e7e994c93952608d7011cd",
+        "WIRE_WORK.json": "435d53b867d95e0371072170fbd26c7f174f77c18ad48ebb3df0bd0c256fd5c8"
+      },
+      "prefix_id_age_joined_results": 38433,
+      "seed_mismatch_results": 3,
+      "prefix_id_age_seed_joined_results": 38430,
+      "below_0x25_seed_qualified_results": 66,
+      "wire_retired_job_results": 38
+    }
+  ],
+  "seed_mismatch_frames": [
+    {
+      "run": "fresh-job-run-b",
+      "wire_time_s": 523.4219256,
+      "frame_hex": "aa550c07906c4a8d75eb5925759f",
+      "returned_id_hex": "75",
+      "returned_seed_hex": "6c",
+      "expected_seed_hex": "ec"
+    },
+    {
+      "run": "fresh-job-run-b",
+      "wire_time_s": 944.4636694,
+      "frame_hex": "aa550c0790a40484b16f23251190",
+      "returned_id_hex": "11",
+      "returned_seed_hex": "a4",
+      "expected_seed_hex": "24"
+    },
+    {
+      "run": "fresh-job-run-b",
+      "wire_time_s": 981.9426435,
+      "frame_hex": "aa550c0790e004093a8a23272f80",
+      "returned_id_hex": "2f",
+      "returned_seed_hex": "e0",
+      "expected_seed_hex": "60"
+    }
+  ],
+  "correction_source_commit": "7982b804043264464e5c23af3d4fb64767818e01",
+  "reducer_source_id": "seed-qualified-evidence-reducer"
+}

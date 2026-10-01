@@ -1,0 +1,343 @@
+{
+  "format": "bm2382-reference-evidence-v1",
+  "date": "2026-10-01",
+  "source_commit": "7bf903ca7ba8f75c7b31fbeaf1888d236ddf892c",
+  "assets": [
+    {
+      "file": "address-responses.hex",
+      "sha256": "c36bad9f6e3a4810114a89e8c945213a95160d97a0976d49b1dff4f34cc243d1"
+    },
+    {
+      "file": "binding-correction.json",
+      "sha256": "f8ccfafee5f8332a7c915da58225cec0466997a10f10b6c5d09ad790752794cf"
+    },
+    {
+      "file": "initialization.tsv",
+      "sha256": "cc013034a76730140cfa88d5e35693ec87381fd46a5dfc5e89c166e21b5f8596"
+    },
+    {
+      "file": "mining-example.json",
+      "sha256": "60a15bf5273ec8eb044cbbd3dcba8afe33a5d39bab8ffc58808b427af1d02628"
+    },
+    {
+      "file": "register-observations.json",
+      "sha256": "3ab1f00015cec44f984890c9e2ceaaa17a0f3660695ad815d5cc0fa49d747749"
+    },
+    {
+      "file": "source-catalog.json",
+      "sha256": "9162f584c75cbb0fffce49bf232087fc4f867151679a16741b3ba52072a0b924"
+    },
+    {
+      "file": "validation-summary.json",
+      "sha256": "512f385b464e3d00175a8aad3e1c3e5f681c5203382a2d5c57f3b82a42481597"
+    }
+  ],
+  "original_selected_source_hashes": {
+    "initialization_tsv": "151d99375f49c854e52805dc9ec38cd30e58d5c6a991a22e9ee1ab0f74e4656d",
+    "address_response_bytes": "105de48d0f3fa839dde6e5e08ba8df608334f6f444fd3f4161d8dd0932595dbf",
+    "submitted_shares": "aba6d3af69a065ba26168a14f7629a5be524cc64afc0e9d918fc8dec3d934aae",
+    "register_inventory": "9da01d41545c6ba9ec87595ebec2c50721211d4f7adeb06220c9b84ed0767b64"
+  },
+  "limitations": [
+    "Original source is private. Retained evidence includes decoded captures and selected raw archives. Some raw samples were deleted under the retention policy. Hashes identify saved records; they do not publish them.",
+    "Public assets are selected and redacted derivatives. They do not reproduce every physical experiment."
+  ],
+  "historical_reference_commit": "3a875b6212c6d6617b33582590d9caf66c0d7e0a",
+  "diagrams": [
+    {
+      "file": "images/control-status-layout.json",
+      "sha256": "ecb833b90429a93b315c0fe580d8eabf0f022efc062713e1ad15184f48efb048"
+    },
+    {
+      "file": "images/control-status-layout.svg",
+      "sha256": "6b12134791ebd0b912ffe9421790718a9ea56a3e50d9086a7cc5ccd8098280e4"
+    },
+    {
+      "file": "images/initialization-order.json",
+      "sha256": "a76dc0f5c70b8fe94ef1573691fe4ce984201c70fc65a32a8dd8018a4606a055"
+    },
+    {
+      "file": "images/initialization-order.svg",
+      "sha256": "f0d2b6b0086d4398c79fa20f34ce429a99a0e14264070838bacf531dea3eeb6b"
+    },
+    {
+      "file": "images/integration-boundary.json",
+      "sha256": "fe23fc9fc835cfb6a172a76c6fca6ccf6a988b7212b1ecfe9c6b7f29982e97cb"
+    },
+    {
+      "file": "images/integration-boundary.svg",
+      "sha256": "fee4451dd5a91431be1cb9cf5f8b41b50dd2de6c870054e3d57c135d3fa3d123"
+    },
+    {
+      "file": "images/observed-fields.json",
+      "sha256": "058d8215f740991fae84fa3d8729ad11ed862c97172f687ce35f43cb8ec9b264"
+    },
+    {
+      "file": "images/observed-fields.svg",
+      "sha256": "848ad040b893d24cb09c70c9401a22b24ae73ca00ff4d72fdc7485c91e337846"
+    },
+    {
+      "file": "images/packet-address-assignment.json",
+      "sha256": "4dec7fd052ccac5330fc1bb38b1ea86532b1fc5982ef4bddf864148ac6bd4bbc"
+    },
+    {
+      "file": "images/packet-address-assignment.svg",
+      "sha256": "6bdcb3b392ee4215e2fabba9f515a00f1b4c99f0c098211f55930e3ee8bb982c"
+    },
+    {
+      "file": "images/packet-asic-write.json",
+      "sha256": "a85538c96c686b5c5876869d4849304f2fc971442d0aef804900a6144d99887c"
+    },
+    {
+      "file": "images/packet-asic-write.svg",
+      "sha256": "832930c311e161f3582d451cafc06fefdcb4279b4c2fdb47167d98009972c40d"
+    },
+    {
+      "file": "images/packet-core-response.json",
+      "sha256": "abe2d37ac5006bc6211881054753e3870c4354a8066fe932890fd2363a15dfbe"
+    },
+    {
+      "file": "images/packet-core-response.svg",
+      "sha256": "707eec15ffb68786e75eb894ed8868c103fbced078806d4f8cfa04ff907db406"
+    },
+    {
+      "file": "images/packet-core-write.json",
+      "sha256": "bc55955660946ac41c5cbac1864a30eef6014ac81eab87f2f8f126f46e940109"
+    },
+    {
+      "file": "images/packet-core-write.svg",
+      "sha256": "8abf5e09ee16d342de37f47f4e7c4ae234890236c7162a54a656358ccf51bf84"
+    },
+    {
+      "file": "images/packet-directed-asic-read.json",
+      "sha256": "7bbab39b9139a1d8a4f45c445fc68807ffe44c705832dc880aa85b8397f8dd8b"
+    },
+    {
+      "file": "images/packet-directed-asic-read.svg",
+      "sha256": "4bcf15606881ea4f4d08851918a659eabd05fb9d2166b0a9219dfedbb834f8d2"
+    },
+    {
+      "file": "images/packet-directed-core-read.json",
+      "sha256": "d406da7c33d9ca523714e6787c1bc5c7a63fb98be1e192e43c4599d31c789fb6"
+    },
+    {
+      "file": "images/packet-directed-core-read.svg",
+      "sha256": "9328939888ebe1796cb28ef0b8d8d50f59b3355a3e4781d65d5e2a1346009d4d"
+    },
+    {
+      "file": "images/packet-directed-core-write.json",
+      "sha256": "32102b7027f593da8f4f4168d3b92de68862398987dcefb1d9b8a2c0b6d9f322"
+    },
+    {
+      "file": "images/packet-directed-core-write.svg",
+      "sha256": "3b02ad8c4cb790027988cd7b076346a9cae285f7d7e4a90e24fa63e50cdcb200"
+    },
+    {
+      "file": "images/packet-identity-response.json",
+      "sha256": "78581ac461f6c8b1e8f4f51972c9b09c0634cac76b4ec1db4e35e854ec89ad0c"
+    },
+    {
+      "file": "images/packet-identity-response.svg",
+      "sha256": "2a83afc005f025fbb5443040ecdf6873a372f4cb6084773bde1ee1dc9dc108b5"
+    },
+    {
+      "file": "images/packet-inactive-setup.json",
+      "sha256": "bd704d64226bd0f5656db15737bccfd37121532f5ddca06875d583fd0a18df1b"
+    },
+    {
+      "file": "images/packet-inactive-setup.svg",
+      "sha256": "b9bf15e6b4413f1bd375e9cc2ea36ed6b8d07454097898041a1d7a65df76d5ec"
+    },
+    {
+      "file": "images/packet-layout.json",
+      "sha256": "f898e75646f76cfdbf4c94960bb75ea7648390e783ecaa0cd59d3573ca7bd652"
+    },
+    {
+      "file": "images/packet-layout.svg",
+      "sha256": "a963340905b5eec080472bfaf796b91dca48df6973ec9fe0c1ada9281d82f7a3"
+    },
+    {
+      "file": "images/packet-nonce-result.json",
+      "sha256": "aeab7b343899feec4063a38db675806d53e9249fa811c8874096376c9259db62"
+    },
+    {
+      "file": "images/packet-nonce-result.svg",
+      "sha256": "9313d4ee95caf017041d101bfa9586994568dab64b0314d4f08eacd15aa4258d"
+    },
+    {
+      "file": "images/packet-register-poll.json",
+      "sha256": "22cd8acaf26ca561277693f0c5e804e3a409da743d9bd29c1eec09e91f1c7363"
+    },
+    {
+      "file": "images/packet-register-poll.svg",
+      "sha256": "e59c2f6fc00f30f0e0d0208925eac62d7ed3e82f60e5d26f525d0dc82e7d8760"
+    },
+    {
+      "file": "images/packet-status-response.json",
+      "sha256": "1beaf5f628eed53c24a126039bd84be73d6070a07979876acdf83ec88d11f211"
+    },
+    {
+      "file": "images/packet-status-response.svg",
+      "sha256": "1cca60cd9d2633855a656078db2b959419e947f30aac4f9db41f052d8de30c03"
+    },
+    {
+      "file": "images/packet-work-packet.json",
+      "sha256": "1a3cd52a0a44324613dc80888408ad8c44a9f46d172de8e3af372e5cf75093b8"
+    },
+    {
+      "file": "images/packet-work-packet.svg",
+      "sha256": "535ae5aead4b3aaf21a0d05d74b99c0666fa1a6f7ffc6adff90d5dedc9c162ab"
+    },
+    {
+      "file": "images/register-asic-00.json",
+      "sha256": "1a42cf05a2ded69ce9e1e41a58462c79e8adb4137cea376f893ff367fe944d60"
+    },
+    {
+      "file": "images/register-asic-00.svg",
+      "sha256": "f55754aa797f8ceb6f0b1e689bec6bf4ca777da60898440898fad3d2ac3917fa"
+    },
+    {
+      "file": "images/register-asic-08.json",
+      "sha256": "2a140ed285a09b42db4f8474aef75f951ec6dd72cc07d1003641f51be999c983"
+    },
+    {
+      "file": "images/register-asic-08.svg",
+      "sha256": "65d70b4352badb8783d4e1479a9991fefdb42e148a10efcff6e4518ba4012a4b"
+    },
+    {
+      "file": "images/register-asic-0c.json",
+      "sha256": "870d95c0623a80ccfa6621690dbcaa8f56b64a7ba2c6b13636968e27547dec24"
+    },
+    {
+      "file": "images/register-asic-0c.svg",
+      "sha256": "418e6dcb964294c3850cd32eda55b5d59fb358bf64fb2e63da99f8330a956cef"
+    },
+    {
+      "file": "images/register-asic-1c.json",
+      "sha256": "ed87c08db09e81ac0186394c8c826a23595c1662e51428a43b119e15daefcb03"
+    },
+    {
+      "file": "images/register-asic-1c.svg",
+      "sha256": "78740cccf0cb3c7d230544c409c63738d250fa48bb288f29882c99581f1a1e97"
+    },
+    {
+      "file": "images/register-asic-30.json",
+      "sha256": "f9a2eacd07b80bc10870a03d403448cdc890a96021c1bb6e99f8c5567cfd3ceb"
+    },
+    {
+      "file": "images/register-asic-30.svg",
+      "sha256": "f406e1a52c0b1013423a8db3f722e2d69dbb6a128d98fd1ad2dba554d80655bf"
+    },
+    {
+      "file": "images/register-asic-3c.json",
+      "sha256": "ded917be3e0d062961e1adf59a13254811b8575cbd6652e0eb56a87b3979add9"
+    },
+    {
+      "file": "images/register-asic-3c.svg",
+      "sha256": "d644a426f242175f6a3cd88db1e1f51185dfac0ddcc66f0bc094ad420f2896e5"
+    },
+    {
+      "file": "images/register-asic-44.json",
+      "sha256": "84410a679a065bdfe7669b7b245fb3e55fc4d7033f5fe37a21553061fd43c7a0"
+    },
+    {
+      "file": "images/register-asic-44.svg",
+      "sha256": "84d013d5a3bd5b8308192abe3e9ef2b97096d0b2a7b5b1617d7c04fc49d2f63b"
+    },
+    {
+      "file": "images/register-asic-50.json",
+      "sha256": "a7a24043314a78a528a4ae0815fd7a6f10b6800a801d6232d000a93fd6402c83"
+    },
+    {
+      "file": "images/register-asic-50.svg",
+      "sha256": "88e930cd217d310e4f81dbb70ea3db6a586f22d44358e7da96ed0b4478471df1"
+    },
+    {
+      "file": "images/register-asic-54.json",
+      "sha256": "8f7d0c5644c412ecc48328ef9e78088e13ce56d5f1cc52002fe8ec23457b5c52"
+    },
+    {
+      "file": "images/register-asic-54.svg",
+      "sha256": "9bd2ddf16300b44cb50bf1a170d585ec309328f1793499cf8d231221efc0494c"
+    },
+    {
+      "file": "images/register-asic-60.json",
+      "sha256": "ceb73ac2eff2461c2a7f1f1da35c2b5b4b4ba9b153dbf32bff9a397a53725d1a"
+    },
+    {
+      "file": "images/register-asic-60.svg",
+      "sha256": "0b9ff4d6ec8c636956af694148d2139537b14dd9193de883ebff7f1ebfda8112"
+    },
+    {
+      "file": "images/register-asic-c0.json",
+      "sha256": "62e80d3ab82cd5efde2ecddd11721cb36a743e7e0957adcf1382194ae4d0af5b"
+    },
+    {
+      "file": "images/register-asic-c0.svg",
+      "sha256": "78a6631e981e873ea7be2910572cec31e63740bba2ba896ecb06441d1e14c1ea"
+    },
+    {
+      "file": "images/register-asic-c4.json",
+      "sha256": "c74648a80b385e2a5ed5dd8dec3bc1814222bf494fbf3dfb7e9d0fad6394ee2e"
+    },
+    {
+      "file": "images/register-asic-c4.svg",
+      "sha256": "5396a49119d94fe676a82879a5a07dc8c00e8cdb3469d7da54e8735011575c53"
+    },
+    {
+      "file": "images/register-asic-c8.json",
+      "sha256": "b5603f210817b7b1c15c7643a572700a186cebb981b66b7643fa08d97c857146"
+    },
+    {
+      "file": "images/register-asic-c8.svg",
+      "sha256": "7f0bde1d14a588ee17b654bdd10c31641daacf207fae929a46b2d7c494ec298a"
+    },
+    {
+      "file": "images/register-asic-d0.json",
+      "sha256": "86fc8c1338c19d832bc6b9a5e04b21e5233cfa13f98af8f2bd5a16a82ea5643c"
+    },
+    {
+      "file": "images/register-asic-d0.svg",
+      "sha256": "8d826dd9174ef05c468c6678fedee347995b82fb218ae946171a733005e90ff0"
+    },
+    {
+      "file": "images/register-core-01.json",
+      "sha256": "3e3e865970155f127145e406872e0040cb481ad4d7478c977c468339d57fe850"
+    },
+    {
+      "file": "images/register-core-01.svg",
+      "sha256": "0a950e26fb772e5a4e35a65208f60ee0cadf7c2aa353b1b9a42b2cdd1d26c49d"
+    },
+    {
+      "file": "images/register-core-02.json",
+      "sha256": "2bcd695d87cce28f85adef61dc11e87010c80342f0289e7204f590d66d2a43eb"
+    },
+    {
+      "file": "images/register-core-02.svg",
+      "sha256": "8479cb92e1c3bb59550588b8f3db8caf1c159cd310d1308b7d96b875bf53c51b"
+    },
+    {
+      "file": "images/register-core-0a.json",
+      "sha256": "3a6dc50f492fa5e3183d70af4a7faf72a3e2da8f598a810537aaa201e18ff1cb"
+    },
+    {
+      "file": "images/register-core-0a.svg",
+      "sha256": "9a1a13b78eee9517d4bed731ee7dc21d9b2122ae830f49ccbb1105dc8323db2b"
+    },
+    {
+      "file": "images/register-core-44.json",
+      "sha256": "102e7d35b534e09563dba9b8190193142d27cee75770d306791429155fe13c0b"
+    },
+    {
+      "file": "images/register-core-44.svg",
+      "sha256": "bc0b8f54b5d4e9f687b1e6a175817210f1681e492f8bfca5814424df1cacdbd2"
+    },
+    {
+      "file": "images/schema/openminer-diagram-v1.schema.json",
+      "sha256": "316d8489a7ddaab5fa996da7e4693fd50fcb765fb941f2a3fd2cc6207e2ba9a4"
+    }
+  ],
+  "source_catalog": "source-catalog.json",
+  "binding_correction": "binding-correction.json",
+  "correction_source_commit": "7982b804043264464e5c23af3d4fb64767818e01"
+}

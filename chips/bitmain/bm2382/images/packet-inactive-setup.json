@@ -1,0 +1,50 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 inactive setup",
+  "description": "BM2382 inactive setup. Captured pre-address setup: 55aa5305000003. CRC5 covers bytes 2\u20135. Preserve this startup recipe. General internal inactive-state semantics remain unknown.",
+  "unit": "byte",
+  "width": 7,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "53",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "05",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 2,
+      "label": "00 00 observed",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Captured pre-address setup: 55aa5305000003. CRC5 covers bytes 2\u20135.",
+    "Preserve this startup recipe. General internal inactive-state semantics remain unknown."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 32
+  }
+}

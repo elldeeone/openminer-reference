@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x30 \u00b7 Configuration word",
+  "description": "BM2382 ASIC 0x30 \u00b7 Configuration word. T: bit 13 retained an isolated directed change. Other selectors retained their values. Electrical drive strength remains unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 13,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 13,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 14,
+      "width": 18,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: bit 13 retained an isolated directed change. Other selectors retained their values.",
+    "Electrical drive strength remains unknown."
+  ]
+}

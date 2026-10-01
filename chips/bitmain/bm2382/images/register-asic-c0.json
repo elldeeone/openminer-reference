@@ -1,0 +1,57 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0xc0 \u00b7 Temperature access setup",
+  "description": "BM2382 ASIC 0xc0 \u00b7 Temperature access setup. T: bits 17, 24 and 28 retained changes. Valid c4 responses required bits 28 and 17 in selected controls. Bit 24 did not change the tested zero/nonzero outcome. Internal sensor functions remain unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 17,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 17,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 18,
+      "width": 6,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 24,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 25,
+      "width": 3,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 28,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 29,
+      "width": 3,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: bits 17, 24 and 28 retained changes. Valid c4 responses required bits 28 and 17 in selected controls.",
+    "Bit 24 did not change the tested zero/nonzero outcome. Internal sensor functions remain unknown."
+  ]
+}

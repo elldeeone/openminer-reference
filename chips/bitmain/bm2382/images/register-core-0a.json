@@ -1,0 +1,40 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 CORE 0x0a \u00b7 Observed core state",
+  "description": "BM2382 CORE 0x0a \u00b7 Observed core state. T: bit 0 had a 1\u21920 contrast after software reset. Bit 4 had an active 1\u21920\u21921 contrast. Selected fixed-job frames continued while bit-4 reads were zero. The full writable mask and internal function remain unknown.",
+  "unit": "bit",
+  "width": 24,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 1,
+      "width": 3,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 5,
+      "width": 19,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: bit 0 had a 1\u21920 contrast after software reset. Bit 4 had an active 1\u21920\u21921 contrast.",
+    "Selected fixed-job frames continued while bit-4 reads were zero.",
+    "The full writable mask and internal function remain unknown."
+  ]
+}

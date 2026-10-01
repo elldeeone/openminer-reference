@@ -1,0 +1,62 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 directed core read",
+  "unit": "byte",
+  "width": 8,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "45",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "06",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "ASIC|selector",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "Core|register",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "Core|selector",
+      "status": "known"
+    },
+    {
+      "offset": 7,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Directed core read. Match both selectors and the register in the typed core response.",
+    "CRC5 covers bytes 2\u20136. Preserve the qualified diagnostic access policy."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 40
+  },
+  "description": "BM2382 directed core read. Directed core read. Match both selectors and the register in the typed core response. CRC5 covers bytes 2\u20136. Preserve the qualified diagnostic access policy."
+}

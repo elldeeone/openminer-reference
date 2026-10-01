@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="800" viewBox="0 0 1000 800" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 control and status packets</title><desc id="desc">Byte diagrams for ASIC writes, core writes and status. Separate final-byte flags and CRC layout.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="800" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 control and status packets</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Byte offsets are decimal. Multi-byte values are transmitted most significant byte first.</text>
+<text x="40" y="100" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">ASIC REGISTER WRITE · 11 bytes</text>
+<text x="92.72727272727272" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="174.1818181818182" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="255.63636363636363" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="337.09090909090907" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="418.54545454545456" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="500.0" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="581.4545454545455" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="662.9090909090909" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="744.3636363636364" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="825.8181818181818" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="907.2727272727273" y="123" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<rect x="52.0" y="132" width="162.9090909090909" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M133.45454545454544 132 L133.45454545454544 139" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="133.45454545454544" y="157" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">55 aa</text>
+<rect x="214.9090909090909" y="132" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="255.63636363636363" y="157" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">41 / 51</text>
+<rect x="296.3636363636364" y="132" width="81.45454545454545" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="337.09090909090907" y="157" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">09</text>
+<rect x="377.8181818181818" y="132" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="418.54545454545456" y="157" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">ASIC</text>
+<text x="418.54545454545456" y="174" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">selector</text>
+<rect x="459.27272727272725" y="132" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="500.0" y="157" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Register</text>
+<rect x="540.7272727272727" y="132" width="325.8181818181818" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M622.1818181818181 132 L622.1818181818181 139" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M703.6363636363636 132 L703.6363636363636 139" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M785.0909090909091 132 L785.0909090909091 139" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="703.6363636363636" y="157" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Value · 32 bits</text>
+<rect x="866.5454545454545" y="132" width="81.45454545454545" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="907.2727272727273" y="157" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="220" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers bytes 2–9. Preserve the tested selector and flag recipe.</text>
+<text x="40" y="255" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">CORE REGISTER WRITE · 11 bytes</text>
+<text x="92.72727272727272" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="174.1818181818182" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="255.63636363636363" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="337.09090909090907" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="418.54545454545456" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="500.0" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="581.4545454545455" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="662.9090909090909" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="744.3636363636364" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="825.8181818181818" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<text x="907.2727272727273" y="278" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">10</text>
+<rect x="52.0" y="287" width="162.9090909090909" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M133.45454545454544 287 L133.45454545454544 294" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="133.45454545454544" y="312" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">55 aa</text>
+<rect x="214.9090909090909" y="287" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="255.63636363636363" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">54</text>
+<rect x="296.3636363636364" y="287" width="81.45454545454545" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="337.09090909090907" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">09</text>
+<rect x="377.8181818181818" y="287" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="418.54545454545456" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">ASIC</text>
+<text x="418.54545454545456" y="329" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">selector</text>
+<rect x="459.27272727272725" y="287" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="500.0" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Core</text>
+<text x="500.0" y="329" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">register</text>
+<rect x="540.7272727272727" y="287" width="81.45454545454545" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="581.4545454545455" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Core</text>
+<text x="581.4545454545455" y="329" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">selector</text>
+<rect x="622.1818181818181" y="287" width="244.36363636363637" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M703.6363636363636 287 L703.6363636363636 294" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M785.0909090909091 287 L785.0909090909091 294" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="744.3636363636364" y="312" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Value · 24 bits</text>
+<rect x="866.5454545454545" y="287" width="81.45454545454545" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="907.2727272727273" y="312" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="375" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers bytes 2–9. Preserve the tested selector and flag recipe.</text>
+<text x="40" y="410" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">ASIC REGISTER STATUS · 10 bytes</text>
+<text x="96.8" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="186.39999999999998" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="276.0" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="365.59999999999997" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="455.2" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="544.8" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="634.4" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="724.0" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<text x="813.5999999999999" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">8</text>
+<text x="903.1999999999999" y="431" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">9</text>
+<rect x="52.0" y="440" width="179.2" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M141.6 440 L141.6 447" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="141.6" y="465" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">aa 55</text>
+<rect x="231.2" y="440" width="89.6" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="276.0" y="465" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">08</text>
+<rect x="320.79999999999995" y="440" width="358.4" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M410.4 440 L410.4 447" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M500.0 440 L500.0 447" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M589.5999999999999 440 L589.5999999999999 447" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="500.0" y="465" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">Value · 32 bits</text>
+<rect x="679.1999999999999" y="440" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="724.0" y="465" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">ASIC</text>
+<text x="724.0" y="482" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">selector</text>
+<rect x="768.8" y="440" width="89.6" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="813.5999999999999" y="465" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Register</text>
+<rect x="858.4" y="440" width="89.6" height="58" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<text x="903.1999999999999" y="465" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Flags /</text>
+<text x="903.1999999999999" y="482" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="529" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers 59 bits from byte 2, including the final-byte high three bits.</text>
+<text x="40" y="572" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">FINAL STATUS BYTE · bit positions</text>
+<text x="892.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="780.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="668.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="556.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="444.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="332.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="220.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="108.0" y="595" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<rect x="52.0" y="604" width="336.0" height="45" fill="url(#unknown)" stroke="#536275" stroke-width="1"/>
+<path d="M164.0 604 L164.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M276.0 604 L276.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="220.0" y="632" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Status bits · meaning unknown</text>
+<rect x="388.0" y="604" width="560.0" height="45" fill="#ffffff" stroke="#536275" stroke-width="1"/>
+<path d="M500.0 604 L500.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M612.0 604 L612.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M724.0 604 L724.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 604 L836.0 611" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="668.0" y="632" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="40" y="698" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" text-anchor="start" fill="#172533">CONTROL HEADER · bit positions</text>
+<text x="892.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="780.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="668.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="556.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="444.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="332.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="220.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<text x="108.0" y="721" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">7</text>
+<rect x="52.0" y="730" width="336.0" height="45" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M164.0 730 L164.0 737" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M276.0 730 L276.0 737" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="220.0" y="758" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Class = 2</text>
+<rect x="388.0" y="730" width="112.0" height="45" fill="#fff1cf" stroke="#536275" stroke-width="1"/>
+<text x="444.0" y="758" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Flag</text>
+<rect x="500.0" y="730" width="448.0" height="45" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M612.0 730 L612.0 737" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M724.0 730 L724.0 737" fill="none" stroke="#253449" stroke-width="1.5"/>
+<path d="M836.0 730 L836.0 737" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="724.0" y="758" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">Operation</text>
+</svg>

@@ -1,0 +1,511 @@
+[
+  {
+    "space": "asic",
+    "address": "0x00",
+    "name": "Identity and selector echo",
+    "recipe_or_observed_value": "238200ss",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Upper 24 bits did not change after individual write attempts. An ordinary register write did not move selector 4a to 4b.",
+    "unknown": "Manufacturing encoding and behaviour before initialization.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "b66472e948690f40811cf9d4a94e5a411f0b524f29ed72fb8654cdd9b6563617",
+      "05ea085dcd4ed03200675e6a73d883db6cbdbdf6d75310842de5590c067586c3"
+    ],
+    "source_ids": [
+      "register-census",
+      "typed-behaviour-model",
+      "observed-register-state-matrix",
+      "asic-identity-and-core01-contrasts"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x08",
+    "name": "Frequency recipe",
+    "recipe_or_observed_value": "d0c80211",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Bits 17–20 retained isolated changes on two selected ASICs. Each candidate was restored before software-reset mode 1. Mode 1 retained the restored word d0d80222; changed-candidate retention through reset was not tested.",
+    "unknown": "Other bit groups, absolute clock and complete frequency law.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "d11a34d52d126af6a4d5cd81e8f3d37cfa617250bebbd4ba709f4c3311c4f35a",
+      "65f343c0a44270998f962ec385d8598ed99c646a5385aaf3257068347012683f",
+      "1eb9cb520dc424ed18711918ec7a538d4c2ab31afb068d3e1d9952545ef92008",
+      "e4136666156f459cb8ebd8fdd2f02c2834bf2eb398d56a0f7c8cfa33e4b7a837"
+    ],
+    "contrast_baseline": "d0d80222; isolated trials used comparison word d0c60222",
+    "source_ids": [
+      "register-census",
+      "early-d0-and-warm-readback",
+      "historical-frequency-and-bias-fields",
+      "asic30-directed-bit13-contrast",
+      "asic08-directed-bit-contrasts"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x0c",
+    "name": "Independent configuration word",
+    "recipe_or_observed_value": "20540165",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Each of the nine set bits at positions 0, 2, 5, 6, 8, 18, 20, 22 and 29 could be cleared, read and restored on two ASICs. Mode 1 retained the tested bit 0 clear marker 20540164. Reset retention of the other changed candidates was not tested. Changes to ASIC 08 did not change this word.",
+    "unknown": "Zero-bit mask and clock or performance meaning.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "e4136666156f459cb8ebd8fdd2f02c2834bf2eb398d56a0f7c8cfa33e4b7a837",
+      "e724af36e832d45a7cecdc2d6dd317a768582da82277274363d3fd4c206d855d"
+    ],
+    "source_ids": [
+      "register-census",
+      "typed-behaviour-model",
+      "asic08-directed-bit-contrasts",
+      "asic0c-nine-bit-contrasts"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x1c",
+    "name": "Operating word",
+    "recipe_or_observed_value": "c0c21f10 / c0d21f10",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Clearing bit 20 suppressed the selected fixed-job output. Restoration resumed output. Clearing bit 23 retained positive core-02 behaviour in the selected tests.",
+    "unknown": "Other fields and the internal cause of the output change.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "9d80c017207feeac194ccce5de7daabae0a2c1043fdd4541fd8fb29163b19666",
+      "3968bf24825ce190a161522621f419f964e3727adfbbbd428eaeb3ae3dafd457",
+      "91569f51b0cb4cfdb4ce8f58392a895049b755f27ecaef7ee98b3f7b14ee44e3",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "b66472e948690f40811cf9d4a94e5a411f0b524f29ed72fb8654cdd9b6563617",
+      "c8580f5b9cc8d1f05c9292749cc3e97214210050efe85d3e2d1fcd7ebd8289c7",
+      "c6aea4307b1bc12e7023fc98160ef27cf1dc508fed78182e84ee7ed7d4962d88"
+    ],
+    "source_ids": [
+      "register-census",
+      "held-out-operating-word-contrast",
+      "operating-word-output-controls",
+      "register-pair-contrasts",
+      "directed-register-survey",
+      "observed-register-state-matrix",
+      "core-reset-contrasts",
+      "sensor-and-core-controls"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x30",
+    "name": "Configuration word",
+    "recipe_or_observed_value": "00010111 / 00012111",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "The directed bit 13 clear changed 00012111 to 00010111 while the other selector stayed unchanged. Each candidate was restored before mode 1. Mode 1 retained restored 00012111. Retention of the changed word through reset was not tested.",
+    "unknown": "Electrical drive strength. The firmware label does not establish this.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "1eb9cb520dc424ed18711918ec7a538d4c2ab31afb068d3e1d9952545ef92008"
+    ],
+    "source_ids": [
+      "register-census",
+      "function-recovery-synthesis",
+      "asic30-directed-bit13-contrast"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x3c",
+    "name": "Diagnostic counter",
+    "recipe_or_observed_value": "variable",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Directed zero cleared only the selected counter. Observed 65535→65536→65537 establishes at least 17 count bits. Nearby broadcast register reads can disturb the output/count relationship. The overall counter-boundary run failed. A separate physical wire-order synthesis proves the boundary observation.",
+    "unknown": "Full width, counted event and lossless polling schedule.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "ebc73dceb91a5952b9fe09e06a524dd1bd91129ffffbdb98e01e996a23996bb9",
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "d852d2a8e9c8ca385689e56003ff6fbce3a10c42fbe95c5cad49b70a733c4b57",
+      "45013b1e2fdcf55f75d3ade6dd8887e4dc2f0cf0813628c499030beb8e2f0c87",
+      "dff7f0ac76c09875dbf1b242c5497490c63af22b6d4135d28b610790fd347c96"
+    ],
+    "source_ids": [
+      "register-census",
+      "work-state-register-contrasts",
+      "function-recovery-synthesis",
+      "directed-register-survey",
+      "counter-and-core-reset-controls",
+      "counter-marker-reset-controls",
+      "counter-seventeen-bit-boundary",
+      "directed-read-policy-experiment"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x44",
+    "name": "Software-reset recipe",
+    "recipe_or_observed_value": "Writes 00000001 and 00000003; sampled read 00000003",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Tested ASIC 44 writes changed selected core 02 markers to 000013 and core 0a to 000001 while retaining selected ASIC words. ASIC 44 sampled readback stayed 00000003. Mode 1 interrupted selected active fixed-job output.",
+    "unknown": "Independent meaning of each bit and complete state-erasure behaviour.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "240cc34c76b62057e0bdd2681f671baf868822a6e11af0965981b885ce476b5b",
+      "d11a34d52d126af6a4d5cd81e8f3d37cfa617250bebbd4ba709f4c3311c4f35a",
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "8e6528a66fe8f3a914cecfa290b296896d3abc667dfc8f7a42d4ea296c60b306"
+    ],
+    "source_ids": [
+      "register-census",
+      "active-asic44-contrast",
+      "early-d0-and-warm-readback",
+      "function-recovery-synthesis",
+      "counter-and-core-reset-controls",
+      "result-length-replacement-board-recheck"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x50",
+    "name": "Work-length configuration",
+    "recipe_or_observed_value": "0000002f",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Single-bit tests gave retaining mask 000001ff around 2f. Bit 9 did not retain. At 50=2f, the tested 48-byte image was accepted. At 50=2e, the tested 47-byte image was rejected and prior work continued. Restoring 2f admitted the next 48-byte image. Wire lengths were 54 and 53 bytes.",
+    "unknown": "General length law and arbitrary upper-bit combinations.",
+    "source_record_sha256": [
+      "61f6619429e4e9fb112008b0f9996548af518812c664b452d466961e6e23e71f",
+      "9d80c017207feeac194ccce5de7daabae0a2c1043fdd4541fd8fb29163b19666",
+      "f71d792ee69783f53d4a5840280e80174978444f4eecc91887af6edd2e7eb16c",
+      "443c2f5fdf96e072d292bfb84680f602b05ac0b19634352b968b85edc63d38a6",
+      "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915",
+      "32e909c8fc82f3d6657cfa19783c1bdacbbee45d1a493e30b1c42d65d964588b"
+    ],
+    "source_ids": [
+      "payload-and-result-masks",
+      "held-out-operating-word-contrast",
+      "work-input-length-contrast",
+      "work-input-length-restoration",
+      "input-length-held-out-contrast",
+      "work-input-admission-contrast"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x54",
+    "name": "Result-length configuration",
+    "recipe_or_observed_value": "00000007",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Values 0–7 produced frames of 7–14 bytes in fixed-job tests. Values 0, 1 and 2 could split one original result into multiple frames. One value 0 burst had three frames. The retaining mask was 00000007 around 07. Bit 3 did not retain. Short fragments are not full validated nonce submissions.",
+    "unknown": "General encoding outside the tested values and states.",
+    "source_record_sha256": [
+      "61f6619429e4e9fb112008b0f9996548af518812c664b452d466961e6e23e71f",
+      "87408370711558b9b42db8dc92a69230b66e789b378740d83b2e9ba8740c9a65",
+      "9f8afc79bc8a355a1abc31d3a88bc3cd95c23f454196b4ac894d2f3b39fee141",
+      "3dffa7b8a80a1f69350c835f0d573b974af22d383c175b09a65252bc628181df",
+      "8e6528a66fe8f3a914cecfa290b296896d3abc667dfc8f7a42d4ea296c60b306",
+      "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915",
+      "2116149a31ba494c92a249b3edd138242fbf2ed245f6d21e294c2c221700b225",
+      "729d60f036c5352abe5c224d37b16614ba5be50661982b43b6dace72aea448bd"
+    ],
+    "observed_frame_lengths": [
+      {
+        "value": 0,
+        "frame_bytes": 7
+      },
+      {
+        "value": 1,
+        "frame_bytes": 8
+      },
+      {
+        "value": 2,
+        "frame_bytes": 9
+      },
+      {
+        "value": 3,
+        "frame_bytes": 10
+      },
+      {
+        "value": 4,
+        "frame_bytes": 11
+      },
+      {
+        "value": 5,
+        "frame_bytes": 12
+      },
+      {
+        "value": 6,
+        "frame_bytes": 13
+      },
+      {
+        "value": 7,
+        "frame_bytes": 14
+      }
+    ],
+    "source_ids": [
+      "payload-and-result-masks",
+      "result-length3-contrast",
+      "result-lengths0-and1",
+      "result-lengths2-and4",
+      "result-length-replacement-board-recheck",
+      "input-length-held-out-contrast",
+      "result-length5-contrast",
+      "result-length6-contrast"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0x60",
+    "name": "UART configuration",
+    "recipe_or_observed_value": "00000100 / 00001a00",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Physical low/fast transitions and readback were tested. Mode 1 retained 00001a00; restoration to 00000100 gave valid identity responses.",
+    "unknown": "Clock/divisor formula and untested baud settings.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915",
+      "bb27df44f0e984f24c14a1cbf4f5c9292d3f2052fc8c387ec4fe054d242b0314"
+    ],
+    "source_ids": [
+      "register-census",
+      "function-recovery-synthesis",
+      "input-length-held-out-contrast",
+      "uart-mode-reset-contrast"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0xc0",
+    "name": "Temperature access setup",
+    "recipe_or_observed_value": "11000000 then 11020000",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Bits 24, 28 and 17 retained changes. Valid c4 responses required bits 28 and 17 in the selected controls. Bit 24 did not change the zero/nonzero outcome.",
+    "unknown": "Internal sensor conversion and other fields.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "5b7e414decb24eb3cccb0f094f306a106a48ed5f2b3f60627a125fdab34dfc49",
+      "91569f51b0cb4cfdb4ce8f58392a895049b755f27ecaef7ee98b3f7b14ee44e3",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "ad687c239a62dd2c51a2915a27e4bd501879ebab95c3fed043e24a2f8a2053a3"
+    ],
+    "source_ids": [
+      "register-census",
+      "core-and-sensor-contrast",
+      "register-pair-contrasts",
+      "directed-register-survey",
+      "sensor-state-restoration"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0xc4",
+    "name": "Temperature result",
+    "recipe_or_observed_value": "bit31 plus low16 ADC",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Directed disable returned zero for the target while another selector stayed valid. Rearming gave an initial zero response, then a fresh valid response.",
+    "unknown": "External calibration, update latency bound and upper-field meanings.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "5b7e414decb24eb3cccb0f094f306a106a48ed5f2b3f60627a125fdab34dfc49",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "d852d2a8e9c8ca385689e56003ff6fbce3a10c42fbe95c5cad49b70a733c4b57",
+      "c6aea4307b1bc12e7023fc98160ef27cf1dc508fed78182e84ee7ed7d4962d88",
+      "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915"
+    ],
+    "source_ids": [
+      "register-census",
+      "core-and-sensor-contrast",
+      "typed-behaviour-model",
+      "directed-register-survey",
+      "counter-and-core-reset-controls",
+      "counter-marker-reset-controls",
+      "sensor-and-core-controls",
+      "input-length-held-out-contrast"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0xc8",
+    "name": "Configuration word",
+    "recipe_or_observed_value": "80000064",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Clearing bits 2, 5 and 6 together produced 80000000 and silenced the selected core 02 reply. Exact c8 restoration and the tested mode 1 recovery did not restore it. Board reset followed by full initialization restored the reply. Individual and pair-clear states retained selected replies. Pair-clear words 80000040, 80000020 and 80000004 retained qualified output in matched controls. Other recovery sequences were not qualified.",
+    "unknown": "Individual timing units and internal cause of the combined change.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "d11a34d52d126af6a4d5cd81e8f3d37cfa617250bebbd4ba709f4c3311c4f35a",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "92d74c7c6a5e16c8e415a5f1e23c40eb15c6dcc4655e499b3efe59b26153eb1c",
+      "e4136666156f459cb8ebd8fdd2f02c2834bf2eb398d56a0f7c8cfa33e4b7a837",
+      "dc2b2e8ddeac7e092d1af16502b1b6a0ad58c7cb5bddd91fb851248b07556078",
+      "e724af36e832d45a7cecdc2d6dd317a768582da82277274363d3fd4c206d855d",
+      "37b505419099fa177bbe7fbb636f6938931f2252fbfc445ebc6840c632b1db79",
+      "05ea085dcd4ed03200675e6a73d883db6cbdbdf6d75310842de5590c067586c3"
+    ],
+    "source_ids": [
+      "register-census",
+      "early-d0-and-warm-readback",
+      "typed-behaviour-model",
+      "asicc4-contrasts",
+      "asic08-directed-bit-contrasts",
+      "asicd0-contrasts",
+      "asic0c-nine-bit-contrasts",
+      "asicc8-contrasts",
+      "asic-identity-and-core01-contrasts"
+    ]
+  },
+  {
+    "space": "asic",
+    "address": "0xd0",
+    "name": "Configuration word",
+    "recipe_or_observed_value": "write c0000bb8; read 80000bb8",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Bit 30 was absent from rapid readback after both set and clear writes. Bit 0 retained directed changes. Selected output continued.",
+    "unknown": "Masked, ignored or auto-cleared interpretation of bit 30; timing units.",
+    "source_record_sha256": [
+      "5c5bbd1a04e1f0d31907b5c2f7fa2e41de2e768a35bc8b98cc126adaed6236ee",
+      "d11a34d52d126af6a4d5cd81e8f3d37cfa617250bebbd4ba709f4c3311c4f35a",
+      "b66472e948690f40811cf9d4a94e5a411f0b524f29ed72fb8654cdd9b6563617",
+      "92d74c7c6a5e16c8e415a5f1e23c40eb15c6dcc4655e499b3efe59b26153eb1c",
+      "05ea085dcd4ed03200675e6a73d883db6cbdbdf6d75310842de5590c067586c3",
+      "044ad8af3ac22fbe3ef4ba05212321bdb4dfa8730d8f3ffa389e9515f17b4915"
+    ],
+    "source_ids": [
+      "register-census",
+      "early-d0-and-warm-readback",
+      "observed-register-state-matrix",
+      "asicc4-contrasts",
+      "asic-identity-and-core01-contrasts",
+      "input-length-held-out-contrast"
+    ]
+  },
+  {
+    "space": "core",
+    "address": "0x01",
+    "name": "Core configuration",
+    "recipe_or_observed_value": "Startup write 005a5a; sampled post-work read 000000",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Low 16 bits retained writes; the upper 8 bits did not retain in the tested 24-bit access. Values 5a5a, ffff and ffffff retained output. ASIC software reset mode 1 cleared a positive marker.",
+    "unknown": "Physical enable mask, lane count and rate.",
+    "source_record_sha256": [
+      "ebc73dceb91a5952b9fe09e06a524dd1bd91129ffffbdb98e01e996a23996bb9",
+      "5b7e414decb24eb3cccb0f094f306a106a48ed5f2b3f60627a125fdab34dfc49",
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "dc2b2e8ddeac7e092d1af16502b1b6a0ad58c7cb5bddd91fb851248b07556078",
+      "e724af36e832d45a7cecdc2d6dd317a768582da82277274363d3fd4c206d855d",
+      "37b505419099fa177bbe7fbb636f6938931f2252fbfc445ebc6840c632b1db79",
+      "05ea085dcd4ed03200675e6a73d883db6cbdbdf6d75310842de5590c067586c3"
+    ],
+    "source_ids": [
+      "work-state-register-contrasts",
+      "core-and-sensor-contrast",
+      "function-recovery-synthesis",
+      "counter-and-core-reset-controls",
+      "asicd0-contrasts",
+      "asic0c-nine-bit-contrasts",
+      "asicc8-contrasts",
+      "asic-identity-and-core01-contrasts"
+    ]
+  },
+  {
+    "space": "core",
+    "address": "0x02",
+    "name": "Core configuration and output filter",
+    "recipe_or_observed_value": "Startup write 00007f; mining 000025; sampled ASIC-reset read 000013",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Bits 0–6 retained isolated changes. ASIC reset modes 1 and 3 changed selected markers to 000013, not zero. Core 44 value 2 retained the 02 marker. The 25→27→25 test excluded score 38 opportunities while higher-score output continued.",
+    "unknown": "Universal score law and internal filter/queue order.",
+    "source_record_sha256": [
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "d852d2a8e9c8ca385689e56003ff6fbce3a10c42fbe95c5cad49b70a733c4b57",
+      "ad687c239a62dd2c51a2915a27e4bd501879ebab95c3fed043e24a2f8a2053a3",
+      "908f2b079323c8f037ff2fabfd81c67172c09e5c95a8e307ed97a0e001dee93c"
+    ],
+    "source_ids": [
+      "function-recovery-synthesis",
+      "typed-behaviour-model",
+      "directed-register-survey",
+      "counter-and-core-reset-controls",
+      "counter-marker-reset-controls",
+      "sensor-state-restoration",
+      "output-filter-progression"
+    ]
+  },
+  {
+    "space": "core",
+    "address": "0x0a",
+    "name": "Writable core state",
+    "recipe_or_observed_value": "000000; ASIC-reset 000001; active fixed-job 000010",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "After ASIC software reset, directed 000001→000000 gave three equal readbacks on each target. Sibling and other-chip state remained unchanged. Matched reset 1 restored 000001. Later active bit 4 tests read 000010→000000→000010. Selected target frames continued while bracketing reads were zero. Sibling and other-chip controls retained 000010. Core 02 retained 000025. Reassertion followed the original work phase rather than clear age.",
+    "unknown": "Full writable mask, bit 4 trigger, overflow and saturation law. The firmware label is not proof.",
+    "source_record_sha256": [
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "77959ebc6bcc69e223af90406d88cec00c3aefd7dc29165e5505952378ce44f0",
+      "b5525f7c7dc44017ab5a73f9bc8d9640592d93068b43a083adea22810c4fcb67",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "b66472e948690f40811cf9d4a94e5a411f0b524f29ed72fb8654cdd9b6563617",
+      "e2594c198d99ccc0ca459e4f329a86b8f686eaea11ae74123e4cec742ed4e32b",
+      "a6e4d083b8f712f6bcec0a7f83f0544d016b3fd7a20826769884e89655ff2ace",
+      "e5b576ac98fb137781ed80d85b2a365de649b1039a0bdf1f7a16e72098f406ff"
+    ],
+    "source_ids": [
+      "function-recovery-synthesis",
+      "typed-behaviour-model",
+      "directed-register-survey",
+      "counter-and-core-reset-controls",
+      "observed-register-state-matrix",
+      "core-state-directed-clear",
+      "selected-contention-and-active-state",
+      "active-state-and-read-contrast"
+    ]
+  },
+  {
+    "space": "core",
+    "address": "0x44",
+    "name": "Core configuration",
+    "recipe_or_observed_value": "Tested write 000002; sampled work/ASIC-reset read 000000",
+    "status": "proven",
+    "scope": "Physical contrasts used the tapped chain 2 at the 300 MHz reference recipe. Stock startup values describe a separate recipe. Each claim is limited to its stated selectors and test windows.",
+    "observation": "Value 2 retained a positive core-02 marker in the isolated matched controls.",
+    "unknown": "Complete internal reset meaning.",
+    "source_record_sha256": [
+      "714a33a2eaaa7ea6fcb2aeb5271c6474a7a63485bf2022fb2273e2f894ffac3f",
+      "414b29e1f6a7d2655a9e5e41395b308310f2c6b73d4c03c78012e30db4e491be",
+      "d852d2a8e9c8ca385689e56003ff6fbce3a10c42fbe95c5cad49b70a733c4b57",
+      "c8580f5b9cc8d1f05c9292749cc3e97214210050efe85d3e2d1fcd7ebd8289c7"
+    ],
+    "source_ids": [
+      "function-recovery-synthesis",
+      "counter-and-core-reset-controls",
+      "counter-marker-reset-controls",
+      "core-reset-contrasts"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x08 \u00b7 Frequency recipe",
+  "description": "BM2382 ASIC 0x08 \u00b7 Frequency recipe. T: bits 17\u201320 retained isolated changes on two selected ASICs. The firmware frequency model is described separately. The complete physical frequency law is unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 17,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 17,
+      "width": 4,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 21,
+      "width": 11,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: bits 17\u201320 retained isolated changes on two selected ASICs.",
+    "The firmware frequency model is described separately. The complete physical frequency law is unknown."
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 identity response",
+  "description": "BM2382 identity response. Expected family marker: 2382. The selector is repeated in bytes 6 and 7. CRC5 covers 59 bits from byte 2, including the final-byte high three bits.",
+  "unit": "byte",
+  "width": 10,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "aa 55",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "08",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 2,
+      "label": "23 82",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "00",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "Selector",
+      "status": "known"
+    },
+    {
+      "offset": 7,
+      "width": 1,
+      "label": "Selector",
+      "status": "known"
+    },
+    {
+      "offset": 8,
+      "width": 1,
+      "label": "00",
+      "status": "known"
+    },
+    {
+      "offset": 9,
+      "width": 1,
+      "label": "Flags /|CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Expected family marker: 2382. The selector is repeated in bytes 6 and 7.",
+    "CRC5 covers 59 bits from byte 2, including the final-byte high three bits."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 59
+  }
+}

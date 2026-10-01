@@ -1,0 +1,68 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 core write",
+  "description": "BM2382 core write. CRC5 covers bytes 2\u20139. The core register and core selector are separate fields. The transport width does not establish a complete internal register definition.",
+  "unit": "byte",
+  "width": 11,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "54",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "09",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "ASIC|selector",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "Core|register",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "Core|selector",
+      "status": "known"
+    },
+    {
+      "offset": 7,
+      "width": 3,
+      "label": "Value \u00b7 24 bits",
+      "status": "known"
+    },
+    {
+      "offset": 10,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "CRC5 covers bytes 2\u20139. The core register and core selector are separate fields.",
+    "The transport width does not establish a complete internal register definition."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 64
+  }
+}

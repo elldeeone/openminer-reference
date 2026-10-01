@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="298" viewBox="0 0 1000 298" role="img" aria-labelledby="title desc">
+<title id="title">BM2382 address assignment</title><desc id="desc">BM2382 address assignment. Assign selectors 00,02,…,b6 in the supported startup order. CRC5 covers bytes 2–5. Validate the subsequent identity inventories.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="#253449"/></marker><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="298" fill="white"/>
+<text x="40" y="35" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="start" fill="#172533">BM2382 address assignment</text>
+<text x="40" y="66" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" text-anchor="start" fill="#172533">Byte offsets are decimal. Multi-byte UART integers are big-endian.</text>
+<text x="116.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">0</text>
+<text x="244.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">1</text>
+<text x="372.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">2</text>
+<text x="500.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">3</text>
+<text x="628.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">4</text>
+<text x="756.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">5</text>
+<text x="884.0" y="93" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" text-anchor="middle" fill="#172533">6</text>
+<rect x="52.0" y="102" width="256.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<path d="M180.0 102 L180.0 109" fill="none" stroke="#253449" stroke-width="1.5"/>
+<text x="180.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="middle" fill="#172533">55 aa</text>
+<rect x="308.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="372.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">40</text>
+<rect x="436.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="500.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">05</text>
+<rect x="564.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="628.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">Selector</text>
+<rect x="692.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="756.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">00</text>
+<rect x="820.0" y="102" width="128.0" height="58" fill="#e5eef9" stroke="#536275" stroke-width="1"/>
+<text x="884.0" y="127" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="400" text-anchor="middle" fill="#172533">CRC5</text>
+<text x="52" y="216" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">Assign selectors 00,02,…,b6 in the supported startup order.</text>
+<text x="52" y="240" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" text-anchor="start" fill="#172533">CRC5 covers bytes 2–5. Validate the subsequent identity inventories.</text>
+</svg>

@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-01",
+  "scope": "Tested KS5 Pro stock controller and two 92-position chains. The miner has three installed hashboards; the site power limit prevented mining with all three. Summary extracts, not complete public raw capture archives.",
+  "fresh_job_runs": [
+    {
+      "name": "fresh-job-run-a",
+      "jobs": 1508,
+      "physical_job_replacements": 1507,
+      "accepted_shares": 79,
+      "rejected_shares": 0,
+      "accepted_jobs": 67,
+      "accepted_results_directly_on_tap": 40,
+      "maximum_replacement_gap_ms": 112.003,
+      "continuous_wire_work_s": 610.246,
+      "limitation": "EOF closeout failed before a second owner could start.",
+      "captured_chain": 2,
+      "captured_work_packets": 7535,
+      "prefix_id_age_joined_results": 32060,
+      "seed_mismatch_results": 0,
+      "prefix_id_age_seed_joined_results": 32060,
+      "wire_retired_job_results": 38,
+      "below_0x25_seed_qualified_results": 47,
+      "result_join_scope": "CRC-qualified chain-2 offline join. Includes wire-retired jobs. Not a runtime candidate inventory.",
+      "source_ids": [
+        "fresh-job-run-a"
+      ],
+      "corrected_summary_sha256": "acb74aa1d3409a207a5d3568a28c209c962e8f42fc04c82e76b5ad55f3550d8d"
+    },
+    {
+      "name": "fresh-job-run-b",
+      "jobs": 1801,
+      "physical_job_replacements": 1800,
+      "accepted_shares": 72,
+      "rejected_shares": 0,
+      "accepted_jobs": 72,
+      "accepted_results_directly_on_tap": 39,
+      "maximum_replacement_gap_ms": 159.9677,
+      "first_owner_mining_s": 613.913,
+      "second_owner_mining_s": 120.94,
+      "first_owner_shares": 62,
+      "second_owner_shares": 10,
+      "first_owner_hottest_c": [
+        64,
+        88
+      ],
+      "second_owner_hottest_c": [
+        65,
+        72
+      ],
+      "whole_session_max_wall_w": 2493,
+      "limitation": "Final stock park failed its apparatus fan check; a separate corrected closeout completed park.",
+      "captured_chain": 2,
+      "captured_work_packets": 9070,
+      "prefix_id_age_joined_results": 38433,
+      "seed_mismatch_results": 3,
+      "prefix_id_age_seed_joined_results": 38430,
+      "wire_retired_job_results": 38,
+      "below_0x25_seed_qualified_results": 66,
+      "result_join_scope": "CRC-qualified chain-2 offline join. Includes wire-retired jobs. Not a runtime candidate inventory.",
+      "temperature_chain": 2,
+      "source_ids": [
+        "fresh-job-run-b"
+      ],
+      "corrected_summary_sha256": "1d10be5142a8e50997e21c243a221c6b6eacc9373b832de0019b4e194394f173"
+    }
+  ],
+  "recovery": {
+    "name": "EOF, fresh owner and separate stock park",
+    "EOF_fault_terminal_safe": true,
+    "terminal_gpio_values": {
+      "412": 0,
+      "427": 0,
+      "431": 0
+    },
+    "fresh_owner_started": true,
+    "normal_stop_terminal_safe": true,
+    "uart_and_role_restore": true,
+    "stock_restored": true,
+    "separate_final_park_passed": true,
+    "final_power_off_utc": "2026-10-01T08:51:27Z",
+    "final_park_fan_pwm_percent": 40,
+    "limitation": "Two runs establish recovery and final park. They are not one uninterrupted successful run.",
+    "source_ids": [
+      "fresh-job-run-b",
+      "separate-final-stock-park"
+    ],
+    "terminal_gpio_limit": "Readback confirms controller output states. It does not measure chip rail voltage or instantaneous discharge."
+  },
+  "fixed_job_reference": {
+    "frequency_class_mhz": 300,
+    "windows": 8,
+    "window_duration_s": 40,
+    "predicted_and_observed_candidates": 6358,
+    "unexplained_output_bytes": 0,
+    "limitation": "Fixed workload and initialized state. Does not establish a unique silicon lane layout.",
+    "source_ids": [
+      "fixed-job-prediction-closure"
+    ]
+  },
+  "register_coverage": {
+    "asic_targets": 14,
+    "core_targets": 4,
+    "scoped_questions_completed": 36,
+    "fully_characterized_targets": 0,
+    "source_ids": [
+      "scoped-register-inventory"
+    ]
+  },
+  "test_configuration": {
+    "miner_model": "Antminer KS5 Pro",
+    "installed_hashboards": 3,
+    "mining_hashboards": 2,
+    "active_controller_chains": [
+      0,
+      2
+    ],
+    "reason": "Site power limit",
+    "third_hashboard": "Connected to shared supply; not used for mining",
+    "model_operating_scope": "Operating settings and measurements are from the KS5 Pro. Differences between miner models were not compared."
+  },
+  "binding_correction": "binding-correction.json"
+}

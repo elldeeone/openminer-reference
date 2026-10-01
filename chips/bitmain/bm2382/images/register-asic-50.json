@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x50 \u00b7 Work-length configuration",
+  "description": "BM2382 ASIC 0x50 \u00b7 Work-length configuration. Bits 8\u20130 form the retaining mask around stock value 0000002f. N: bit 9 did not retain. This is a bounded readback observation, not a complete work-length equation.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 9,
+      "label": "Retaining mask",
+      "status": "tested"
+    },
+    {
+      "offset": 9,
+      "width": 1,
+      "label": "N",
+      "status": "tested"
+    },
+    {
+      "offset": 10,
+      "width": 22,
+      "label": "Other functions unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "Bits 8\u20130 form the retaining mask around stock value 0000002f. N: bit 9 did not retain.",
+    "This is a bounded readback observation, not a complete work-length equation."
+  ]
+}

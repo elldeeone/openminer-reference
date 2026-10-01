@@ -1,0 +1,21 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x3c \u00b7 Diagnostic counter",
+  "description": "BM2382 ASIC 0x3c \u00b7 Diagnostic counter. The observed count reached 65537. This establishes at least 17 count bits, not the full width. Reads can disturb the output/count relationship. Do not use this counter for share credit.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 32,
+      "label": "Sampled counter; full width unknown",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "The observed count reached 65537. This establishes at least 17 count bits, not the full width.",
+    "Reads can disturb the output/count relationship. Do not use this counter for share credit."
+  ]
+}

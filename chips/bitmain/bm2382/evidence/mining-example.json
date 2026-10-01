@@ -1,0 +1,33 @@
+{
+  "description": "Captured stock-board result, independently replayed with the production Rust PoW verifier; pool accepted the submission.",
+  "job": {
+    "session": 1,
+    "token": "0000cad0",
+    "words": [
+      16516141403228796435,
+      12114336236160325867,
+      2570057930746959683,
+      15743891516750604533
+    ],
+    "timestamp": 1790842394602,
+    "difficulty": 32768
+  },
+  "work_packet_hex": "55aa3027000001a0f68657eae5351f199792f613a81ec49f4dfa98eb23aaae123e591743da7d89eb7634a8f507905000000000009e0f",
+  "result_packet_hex": "aa550c07905024b2fce6462f279e",
+  "work_id": 39,
+  "wire_result_after_work_s": 0.0379579,
+  "nonce_decimal": 545023673463793222,
+  "nonce_hex": "07905024b2fce646",
+  "pow_digest_hex": "af7e033aeca889ee4533c6ab9fb9b21d8ca8817cc02c6c7150be010000000000",
+  "pow_digest_integer_order": "little-endian",
+  "target_hex": "000000000001fffe000000000000000000000000000000000000000000000000",
+  "target_integer_order": "big-endian",
+  "target_comparison": "digest_integer <= target_integer",
+  "score": 47,
+  "pool_request_id": 4,
+  "pool_accepted": true,
+  "worker": "example.worker",
+  "redactions": [
+    "Worker is replaced. Bench addresses and absolute collection times are omitted. Job, work, result, nonce and digest values are unchanged."
+  ]
+}

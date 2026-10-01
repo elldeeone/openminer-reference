@@ -1,0 +1,21 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x44 \u00b7 Software-reset recipe",
+  "description": "BM2382 ASIC 0x44 \u00b7 Software-reset recipe. Observed recipes: 00000001 and 00000003. Selected core markers cleared; some ASIC words retained. This software-reset recipe is separate from board reset.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 32,
+      "label": "Reset recipe; individual bit meanings unknown",
+      "status": "tested"
+    }
+  ],
+  "notes": [
+    "Observed recipes: 00000001 and 00000003. Selected core markers cleared; some ASIC words retained.",
+    "This software-reset recipe is separate from board reset."
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x0c \u00b7 Independent configuration word",
+  "description": "BM2382 ASIC 0x0c \u00b7 Independent configuration word. T: each of the nine set bits in 20540165 was separately cleared, read and restored. Other bits and the internal function remain unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 3,
+      "width": 2,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 6,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 7,
+      "width": 1,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 8,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 9,
+      "width": 9,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 18,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 19,
+      "width": 1,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 20,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 21,
+      "width": 1,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 22,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 23,
+      "width": 6,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 29,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 30,
+      "width": 2,
+      "label": "?",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "T: each of the nine set bits in 20540165 was separately cleared, read and restored.",
+    "Other bits and the internal function remain unknown."
+  ]
+}

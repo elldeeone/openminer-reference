@@ -1,0 +1,45 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x1c \u00b7 Operating word",
+  "description": "BM2382 ASIC 0x1c \u00b7 Operating word. Bit 20 clear suppressed selected fixed-job output; restoration resumed it. Bit 23 clear retained positive core-02 behaviour in the selected tests. Other functions remain unknown.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 20,
+      "label": "Unknown",
+      "status": "unknown"
+    },
+    {
+      "offset": 20,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 21,
+      "width": 2,
+      "label": "?",
+      "status": "unknown"
+    },
+    {
+      "offset": 23,
+      "width": 1,
+      "label": "T",
+      "status": "tested"
+    },
+    {
+      "offset": 24,
+      "width": 8,
+      "label": "Unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "Bit 20 clear suppressed selected fixed-job output; restoration resumed it.",
+    "Bit 23 clear retained positive core-02 behaviour in the selected tests. Other functions remain unknown."
+  ]
+}

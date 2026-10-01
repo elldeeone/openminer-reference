@@ -1,0 +1,62 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "packet",
+  "title": "BM2382 asic write",
+  "description": "BM2382 asic write. CRC5 covers bytes 2\u20139. Preserve the tested selector and flag recipe. A write does not provide readback confirmation. Use a separate qualified poll when required.",
+  "unit": "byte",
+  "width": 11,
+  "numbering": "zero-based wire offset",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 2,
+      "label": "55 aa",
+      "status": "known"
+    },
+    {
+      "offset": 2,
+      "width": 1,
+      "label": "41 / 51",
+      "status": "known"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "09",
+      "status": "known"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "label": "ASIC|selector",
+      "status": "known"
+    },
+    {
+      "offset": 5,
+      "width": 1,
+      "label": "Register",
+      "status": "known"
+    },
+    {
+      "offset": 6,
+      "width": 4,
+      "label": "Value \u00b7 32 bits",
+      "status": "known"
+    },
+    {
+      "offset": 10,
+      "width": 1,
+      "label": "CRC5",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "CRC5 covers bytes 2\u20139. Preserve the tested selector and flag recipe.",
+    "A write does not provide readback confirmation. Use a separate qualified poll when required."
+  ],
+  "checksum": {
+    "kind": "CRC5",
+    "start_byte": 2,
+    "bit_count": 64
+  }
+}

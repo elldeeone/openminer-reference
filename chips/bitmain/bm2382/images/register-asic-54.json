@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x54 \u00b7 Result-length configuration",
+  "description": "BM2382 ASIC 0x54 \u00b7 Result-length configuration. Bits 2\u20130 form the retaining mask around stock value 00000007. N: bit 3 did not retain. Values 0\u20137 gave tested result-length changes. Other values and states remain unqualified.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 3,
+      "label": "Retain",
+      "status": "tested"
+    },
+    {
+      "offset": 3,
+      "width": 1,
+      "label": "N",
+      "status": "tested"
+    },
+    {
+      "offset": 4,
+      "width": 28,
+      "label": "Other functions unknown",
+      "status": "unknown"
+    }
+  ],
+  "notes": [
+    "Bits 2\u20130 form the retaining mask around stock value 00000007. N: bit 3 did not retain.",
+    "Values 0\u20137 gave tested result-length changes. Other values and states remain unqualified."
+  ]
+}

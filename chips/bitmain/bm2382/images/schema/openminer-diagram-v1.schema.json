@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Miner supplementary diagram metadata",
+  "description": "Custom metadata for editable plain SVG diagrams. This schema does not check complete field coverage or correspondence with an SVG.",
+  "type": "object",
+  "required": [
+    "schema",
+    "kind"
+  ],
+  "properties": {
+    "schema": {
+      "const": "openminer-diagram-v1"
+    },
+    "kind": {
+      "enum": [
+        "packet",
+        "register",
+        "drawing"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "unit": {
+      "enum": [
+        "bit",
+        "byte"
+      ]
+    },
+    "width": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "numbering": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/field"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checksum": {
+      "type": "object",
+      "required": [
+        "kind",
+        "start_byte"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "CRC5",
+            "CRC16-CCITT/FALSE"
+          ]
+        },
+        "start_byte": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "bit_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "byte_count": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "svg": {
+      "$ref": "#/$defs/node"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "enum": [
+              "packet",
+              "register"
+            ]
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "title",
+          "description",
+          "unit",
+          "width",
+          "numbering",
+          "fields",
+          "notes"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "drawing"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "svg"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "register"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "unit": {
+            "const": "bit"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "kind": {
+            "const": "packet"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "checksum"
+        ],
+        "properties": {
+          "unit": {
+            "const": "byte"
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "field": {
+      "type": "object",
+      "required": [
+        "offset",
+        "width",
+        "label",
+        "status"
+      ],
+      "properties": {
+        "offset": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "label": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "known",
+            "tested",
+            "unknown"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "tag",
+        "attributes",
+        "text",
+        "children"
+      ],
+      "properties": {
+        "tag": {
+          "type": "string"
+        },
+        "attributes": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "text": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

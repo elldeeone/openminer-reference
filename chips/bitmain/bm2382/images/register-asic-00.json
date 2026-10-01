@@ -1,0 +1,33 @@
+{
+  "schema": "openminer-diagram-v1",
+  "kind": "register",
+  "title": "BM2382 ASIC 0x00 \u00b7 Identity and selector echo",
+  "description": "BM2382 ASIC 0x00 \u00b7 Identity and selector echo. Observed initialized identity word: 238200ss. Ordinary register writes did not change the tested word. This is a response layout, not a manufacturing-field specification.",
+  "unit": "bit",
+  "width": 32,
+  "numbering": "least-significant bit is 0",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 8,
+      "label": "Selector echo",
+      "status": "known"
+    },
+    {
+      "offset": 8,
+      "width": 8,
+      "label": "00 observed",
+      "status": "known"
+    },
+    {
+      "offset": 16,
+      "width": 16,
+      "label": "Family 2382",
+      "status": "known"
+    }
+  ],
+  "notes": [
+    "Observed initialized identity word: 238200ss. Ordinary register writes did not change the tested word.",
+    "This is a response layout, not a manufacturing-field specification."
+  ]
+}
