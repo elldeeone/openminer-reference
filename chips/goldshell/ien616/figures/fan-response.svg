@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="505" viewBox="0 0 1000 505" role="img">
+<title>F27 · KA Box automatic fan response</title><desc>Run 89. Median tachometer readings by stage. Horizontal spacing is not elapsed time.</desc>
+<defs><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#253449"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172533}</style>
+<rect width="1000" height="505" fill="white"/>
+<text x="40" y="34" font-size="22" text-anchor="start" font-weight="600">F27 · KA Box automatic fan response</text>
+<text x="40" y="64" font-size="14" text-anchor="start">Run 89. Median tachometer readings by stage. Horizontal spacing is not elapsed time.</text>
+<path d="M100 360.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="364.0" font-size="12" text-anchor="end">0</text>
+<path d="M100 314.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="318.0" font-size="12" text-anchor="end">1000</text>
+<path d="M100 268.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="272.0" font-size="12" text-anchor="end">2000</text>
+<path d="M100 222.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="226.0" font-size="12" text-anchor="end">3000</text>
+<path d="M100 176.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="180.0" font-size="12" text-anchor="end">4000</text>
+<path d="M100 130.0 H940" stroke="#e0e5eb"/>
+<text x="83" y="134.0" font-size="12" text-anchor="end">5000</text>
+<text x="40" y="104" font-size="14" text-anchor="start" font-weight="600">RPM</text>
+<rect x="175" y="141.96" width="55" height="218.04" fill="#e6eef9" stroke="#748398"/>
+<text x="202.5" y="132.96" font-size="13" text-anchor="middle">4740</text>
+<rect x="245" y="144.72" width="55" height="215.28" fill="#fff1cf" stroke="#748398"/>
+<text x="272.5" y="135.72" font-size="13" text-anchor="middle">4680</text>
+<text x="240" y="389" font-size="16" text-anchor="middle" font-weight="600">Baseline</text>
+<text x="240" y="413" font-size="13" text-anchor="middle">Levels 100 / 100</text>
+<text x="240" y="437" font-size="13" text-anchor="middle">Stable baseline</text>
+<rect x="450" y="175.08" width="55" height="184.92" fill="#e6eef9" stroke="#748398"/>
+<text x="477.5" y="166.08" font-size="13" text-anchor="middle">4020</text>
+<rect x="520" y="177.84" width="55" height="182.16" fill="#fff1cf" stroke="#748398"/>
+<text x="547.5" y="168.84" font-size="13" text-anchor="middle">3960</text>
+<text x="515" y="389" font-size="16" text-anchor="middle" font-weight="600">Reduced</text>
+<text x="515" y="413" font-size="13" text-anchor="middle">Levels 80 / 80</text>
+<text x="515" y="437" font-size="13" text-anchor="middle">Step at 37.25 °C</text>
+<rect x="725" y="140.58" width="55" height="219.42" fill="#e6eef9" stroke="#748398"/>
+<text x="752.5" y="131.58" font-size="13" text-anchor="middle">4770</text>
+<rect x="795" y="144.72" width="55" height="215.28" fill="#fff1cf" stroke="#748398"/>
+<text x="822.5" y="135.72" font-size="13" text-anchor="middle">4680</text>
+<text x="790" y="389" font-size="16" text-anchor="middle" font-weight="600">Restored</text>
+<text x="790" y="413" font-size="13" text-anchor="middle">Levels 100 / 100</text>
+<text x="790" y="437" font-size="13" text-anchor="middle">Step at 40.0 °C</text>
+<text x="40" y="468" font-size="13" text-anchor="start">Blue: fan 0. Amber: fan 1. Both fans changed speed. Separate fan actuation is unproved.</text>
+<text x="40" y="496" font-size="11" text-anchor="start">Sources: R089, R089-NATIVE</text>
+</svg>

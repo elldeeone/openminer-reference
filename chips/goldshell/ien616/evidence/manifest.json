@@ -1,0 +1,648 @@
+{
+  "format": "openminer-reference-assets-v1",
+  "assets": [
+    {
+      "file": "evidence/board-assembly.jpg",
+      "sha256": "2c40a9605265ff06351a8afe12e16bd7875c2ae815d7a7d69f85d6ff327d074c",
+      "source_id": "PHOTO-ASSEMBLY COLD PHOTO-AUDIT",
+      "derivation": "Unchanged source photograph. No image edit.",
+      "redaction": "None. Board labels and stickers are visible. Owner review is necessary before public release."
+    },
+    {
+      "file": "evidence/board-assembly-cropped.png",
+      "sha256": "835ff8ba4a35f8e7f1d5f688708255057a4b336c6cd29bb5c7e5daa000de7856",
+      "source_id": "PHOTO-ASSEMBLY COLD PHOTO-AUDIT",
+      "derivation": "Removed 288 pixels (10%) from the left of board-assembly.jpg. The saved PNG contains the same pixel values as that rectangle of the source photograph.",
+      "source_file": "evidence/board-assembly.jpg",
+      "source_sha256": "2c40a9605265ff06351a8afe12e16bd7875c2ae815d7a7d69f85d6ff327d074c",
+      "source_size_pixels": [
+        2880,
+        3840
+      ],
+      "crop_box_pixels": [
+        288,
+        0,
+        2880,
+        3840
+      ],
+      "crop_coordinates": "Top-left origin. Right and bottom coordinates are exclusive.",
+      "output_size_pixels": [
+        2592,
+        3840
+      ],
+      "redaction": "Only the specified margin is removed. Board labels and stickers remain visible. Owner review is necessary before public release."
+    },
+    {
+      "file": "evidence/board-controller.jpg",
+      "sha256": "ca72da612f6add9044deb3f2e20b8cf8ab42c9a7b9aaf5b36c2c3e4f541e4a65",
+      "source_id": "PHOTO-CONTROLLER COLD PHOTO-AUDIT",
+      "derivation": "Unchanged source photograph. No image edit.",
+      "redaction": "None. Board labels and stickers are visible. Owner review is necessary before public release."
+    },
+    {
+      "file": "evidence/board-reverse.jpg",
+      "sha256": "38b8faee288ff9ac4ae624719054a79e774a2b726f8422ed16b8ffd79bcf8d3b",
+      "source_id": "PHOTO-REVERSE COLD PHOTO-AUDIT",
+      "derivation": "Unchanged source photograph. No image edit.",
+      "redaction": "None. Board labels and stickers are visible. Owner review is necessary before public release."
+    },
+    {
+      "file": "evidence/board-reverse-cropped.png",
+      "sha256": "854be65841fa282d5aa47e24298e2cde412c730fbac9f488cd76ec0563f6022f",
+      "source_id": "PHOTO-REVERSE COLD PHOTO-AUDIT",
+      "derivation": "Removed 144 pixels (15%) from the top of board-reverse.jpg. The saved PNG contains the same pixel values as that rectangle of the source photograph.",
+      "source_file": "evidence/board-reverse.jpg",
+      "source_sha256": "38b8faee288ff9ac4ae624719054a79e774a2b726f8422ed16b8ffd79bcf8d3b",
+      "source_size_pixels": [
+        1280,
+        960
+      ],
+      "crop_box_pixels": [
+        0,
+        144,
+        1280,
+        960
+      ],
+      "crop_coordinates": "Top-left origin. Right and bottom coordinates are exclusive.",
+      "output_size_pixels": [
+        1280,
+        816
+      ],
+      "redaction": "Only the specified margin is removed. Board labels and stickers remain visible. Owner review is necessary before public release."
+    },
+    {
+      "file": "evidence/command-examples.json",
+      "sha256": "d5fb4f6d5976620e71c6e282147edde2bfaed7a31641c6d1c35a15290baf1bdc",
+      "source_id": "R089-NATIVE LAYOUT CODEC",
+      "derivation": "Packet bodies and receive offsets from selected run-89 transfers. Transfer bytes are unchanged in the full native extract.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/command-templates.json",
+      "sha256": "ea90fead34aa33bf03b50a091158686cc2695ffa3cf8df854fc37ad1daf33b47",
+      "source_id": "LAYOUT",
+      "derivation": "Selected command grammar data from the research report. No instruction bytes or decompiler output are included.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/connector-annotation.json",
+      "sha256": "f79c55a095e062ec842ea45dbf39c421217c6878c79dde48b1de962fe46a0a1c",
+      "source_id": "CONTACT-RECEIPT",
+      "derivation": "Unchanged annotation record. Original photograph identity, crop and coordinates are unchanged.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/connector-contacts.png",
+      "sha256": "38949853b46042659cc0c60a504336a64377beea9fd02f6c9541a3c9e3754396",
+      "source_id": "CONTACT-PHOTO",
+      "derivation": "Unchanged annotated photograph from the research record. No image change.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/core-map.json",
+      "sha256": "b480d2d1789800ae9b79b3098577fed99c12b51ce22cbd882864830130cbd3f4",
+      "source_id": "CORE-MAP-RECEIPT",
+      "derivation": "Selected rule, exceptions and result objects. Values are unchanged.",
+      "redaction": "Local source and capture paths are omitted."
+    },
+    {
+      "file": "evidence/firmware-coverage.json",
+      "sha256": "2d8abd7a878f376e0e2a0d4311812a60e93597dbc0a44467ed991c2643ab8be9",
+      "source_id": "FIRMWARE-COVERAGE",
+      "derivation": "Firmware audit rows copied as recorded. No binary or decompiler output is included.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/initialization-capture.json",
+      "sha256": "a8c94bfe7ddfb73f06332d4ddb07dff3c56a2a81f41a7aa8bac031955541c450",
+      "source_id": "INIT-CAPTURE",
+      "derivation": "Unchanged source file. The bytes are unchanged.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/initialization.tsv",
+      "sha256": "fbf5b169899bd1694fdbb0f1c37af89d20e53080028e0f75363c12e48bec125e",
+      "source_id": "RECIPE-DATA STARTUP-OWNER R089-NATIVE",
+      "derivation": "All 162 source recipe rows. Each prefix plus zero padding equals its run-89 native transfer. The delay applies after that transfer.",
+      "redaction": "Source paths and historical command packages are omitted."
+    },
+    {
+      "file": "evidence/packet-examples.json",
+      "sha256": "df82fb7612802c49dda2bae7f6ce070076a35015a4cce5890459a05404a0edd6",
+      "source_id": "PACKETS",
+      "derivation": "Unchanged source file. The bytes are unchanged.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/research-coverage.json",
+      "sha256": "11e6acf089dc984e2c4a5ce0a5f67dba8c29b9a65d3212675aba9a55c2bd1ea3",
+      "source_id": "COVERAGE",
+      "derivation": "Question rows copied as recorded. Navigation and operating instructions are omitted.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/run-records.json",
+      "sha256": "9f0e595cfff53e26f996ebdf5d627becabb736816a043df104cffb54fc4f33cb",
+      "source_id": "R002 R003 R028 R029 R030 R031 R032 R037 R038 R039 R040 R042 R043 R044 R045 R046 R047 R048 R049 R051 R052 R053 R054 R055 R056 R057 R058 R059 R060 R061 R062 R063 R064 R065 R066 R067 R068 R069 R070 R071 R072 R073 R074 R075 R076 R077 R078 R079 R080 R081 R082 R083 R084 R085 R086 R087 R088 R089 R090",
+      "derivation": "Selected technical paragraphs with source line numbers. Source titles and quoted records keep their source English.",
+      "redaction": "Access details and command packages are omitted."
+    },
+    {
+      "file": "evidence/run75-capture-retention.json",
+      "sha256": "41b7fd3e8c80176217159040749be47ec3cd2ca16f3d8ccfa92217fe82c95d9b",
+      "source_id": "R075-ARCHIVE",
+      "derivation": "Selected size and hash fields from the lossless archive record.",
+      "redaction": "Local storage paths and restore commands are omitted."
+    },
+    {
+      "file": "evidence/run89-capture-retention.json",
+      "sha256": "942d0ac2db37d927a7002ae017a8bd4a96e64f4f15a688b6d8e015906caafcc2",
+      "source_id": "R089-ARCHIVE",
+      "derivation": "Selected size and hash fields from the lossless archive record.",
+      "redaction": "Local storage paths and restore commands are omitted."
+    },
+    {
+      "file": "evidence/run89-control.json",
+      "sha256": "6aaacf524e19ba51eb5a10b0142edca3045ac918f21f9608ac045f00898066e1",
+      "source_id": "R089-NATIVE",
+      "derivation": "Selected health, control and accounting objects. Values and field names are unchanged.",
+      "redaction": "Process identities and full native transcripts are omitted."
+    },
+    {
+      "file": "evidence/run89-initialization.json",
+      "sha256": "fe1e6fb1f33c84ac31f2ccd26e299cd0816e4f998d4dc94de78534c60f2d7848",
+      "source_id": "R089-NATIVE",
+      "derivation": "All 213 recorded native initialization and known-work transfers. TX and RX bytes are unchanged.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/run89-physical-join.json",
+      "sha256": "000e12ddbce9929f05c46a57d404cc9de3458f2b1d75f3754c63562b95f4b15d",
+      "source_id": "R089-JOIN",
+      "derivation": "Unchanged research report. It contains transfer indexes, share identifiers, digests and source hashes. Private replies are identified by hash only.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/run89-pow-input.tsv",
+      "sha256": "2e22135c31382f85b8a8307c060bf94bd9b40a37d26ff29201effc0a75f50764",
+      "source_id": "R089-POW-INPUT",
+      "derivation": "Unchanged source file. The bytes are unchanged.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/run89-pow-output.tsv",
+      "sha256": "aef16a18f4c9e7e390da4232bc06385bbb7f1a422775f751dc36a3020383ebf6",
+      "source_id": "R089-POW-OUTPUT",
+      "derivation": "Unchanged source file. The bytes are unchanged.",
+      "redaction": "None. The file contains technical data only."
+    },
+    {
+      "file": "evidence/run89-share-packets.json",
+      "sha256": "44fb7e97cde38b6ffa6389ae5f8bc3a2c6208a7249aa3c5e05b125271c4333c0",
+      "source_id": "R089-STDOUT R089-DECODE R089-JOIN",
+      "derivation": "Unchanged work and result packet bytes selected by the recorded accepted-share indexes. All native TX/RX transfers were compared again with the decoded physical capture.",
+      "redaction": "The extract omits console text, pool credentials and private reply content."
+    },
+    {
+      "file": "evidence/run90-capture-retention.json",
+      "sha256": "3bb93866c00a237ebce71aefa1f10916abd3582197b2937e2a5ee964ebc388fd",
+      "source_id": "R090-ARCHIVE",
+      "derivation": "Selected size and hash fields from the lossless archive record.",
+      "redaction": "Local storage paths and restore commands are omitted."
+    },
+    {
+      "file": "evidence/segment-vectors.json",
+      "sha256": "f93004857c8618aa9d8c4e518acf518c5d2919976169881cdc8370d3144ecfe5",
+      "source_id": "SEGMENT-VECTORS",
+      "derivation": "Unchanged parsed prediction data. Formatting alone changes.",
+      "redaction": "No redaction. Scan before publication."
+    },
+    {
+      "file": "evidence/segmented-results.json",
+      "sha256": "baeceaeb76c62dad8d004b339c53a109282593be9900428cd7f5d69f7b39bb71",
+      "source_id": "R075-JOIN",
+      "derivation": "Selected comparison objects. Candidate identities and classification values are unchanged.",
+      "redaction": "Local source and capture paths are omitted."
+    },
+    {
+      "file": "evidence/source-catalog.json",
+      "sha256": "41ed375b06e420eb98e4aa1c90f2b9e7cb40ee3ea1c9119749675259c7b218bc",
+      "source_id": "CLOSURE",
+      "derivation": "SHA-256 and byte count of each available source at the recorded research commit. Full source paths are relative to the private research repository.",
+      "redaction": "No private values occur in the selected data."
+    },
+    {
+      "file": "evidence/validation-summary.json",
+      "sha256": "904cd0fbe5ae34e9f7dc6d27882e608556cbba5760c1f5abbd3be36960e7b349",
+      "source_id": "CLOSURE PACKETS INIT-CAPTURE R075-JOIN SEGMENT-VECTORS R089-STDOUT R089-DECODE R089-JOIN R089-POW-INPUT R089-POW-OUTPUT POW-HELPER-SOURCE POW-STAGES-SOURCE POW-SOURCE RECIPE-DATA STARTUP-OWNER R089-NATIVE PHOTO-CONTROLLER PHOTO-ASSEMBLY PHOTO-REVERSE",
+      "derivation": "Results of the recorded offline checks. See evidence.md for methods and limits.",
+      "redaction": "Local executable paths are omitted. Executable hashes are included."
+    },
+    {
+      "file": "figures/capture-connections.json",
+      "sha256": "c2c5a93a89df7db5cbfa8f8be52d39587cea90222d471e7f598dce38d5427ebc",
+      "source_id": "COLD CONTACTS R002 R003",
+      "derivation": "Authored F08 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/capture-connections.svg",
+      "sha256": "b839dad4bf5f71be42e909b100dc45eb547251aaacae4f0a0bfddfc22cb04c58",
+      "source_id": "COLD CONTACTS R002 R003",
+      "derivation": "Authored F08 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/command-word.json",
+      "sha256": "b97f01dce725e5b7d82a2099d4dd8b81b70f91a2d6b3631dd0361301f49737b6",
+      "source_id": "CODEC PACKETS",
+      "derivation": "Authored F09 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/command-word.svg",
+      "sha256": "7b517bedfb2d4d12f6c894a0eaccb7c9165da72bd88b3256c5027f155cb53c7c",
+      "source_id": "CODEC PACKETS",
+      "derivation": "Authored F09 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/count-reply.json",
+      "sha256": "d12ec09a128fc7a6127a1f5135f1b892c1c6e79a50b7f65ec6d964c59a2ff6d4",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F15 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/count-reply.svg",
+      "sha256": "640b7ac4d9081c19e93ceee9a86363d53470219f627e2b41cc00b070dca24324",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F15 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/count-request.json",
+      "sha256": "92b58b9708a3bc349c53453be8eb30acd2af3101dde50f3d7005ebfc1f2e7815",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F14 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/count-request.svg",
+      "sha256": "dce001d2f740b388afbcc77f83f6638edc933289b32807b31d2278bb59bee191",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F14 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/empty-reply.json",
+      "sha256": "4b3ae872af0d310260616b3308a1294aa73b47f0ebe9dc147d4e1b36d32c32ff",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F13 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/empty-reply.svg",
+      "sha256": "56936bbedd67e274c11192c9d395514150fdbcefe07a3fc82dec18b1dbe9eabf",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F13 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/fan-response.json",
+      "sha256": "86551a357b70c99cdf7f8bdccaa9ae33872828212733985354b4d59cfe7468ff",
+      "source_id": "R089 R089-NATIVE",
+      "derivation": "Authored F27 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/fan-response.svg",
+      "sha256": "f33a25052e1d7b884ebcbe18e811150ba6ef68bf72a936ab12a83dcab6acf30e",
+      "source_id": "R089 R089-NATIVE",
+      "derivation": "Authored F27 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/initialization-sequence.json",
+      "sha256": "5a78a2fca486360981048d59792a408ba62aefdece4bab9e77786497f9a6a714",
+      "source_id": "RECIPE-DATA STARTUP-OWNER R089-NATIVE",
+      "derivation": "Authored F25 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/initialization-sequence.svg",
+      "sha256": "69592d818e88a937dbf48c5d0a1f8ca3cfb744b19b9dbd701aaa468b73ff58c7",
+      "source_id": "RECIPE-DATA STARTUP-OWNER R089-NATIVE",
+      "derivation": "Authored F25 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/lifecycle.json",
+      "sha256": "14485da3e931c8614a1e1ed04519bf6072a606160773954746b4b24a812e6249",
+      "source_id": "R052 R066 R089 R090",
+      "derivation": "Authored F04 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/lifecycle.svg",
+      "sha256": "3a395fba71d2bff197f606de3b75e07e8deeaf10f4f96b15ead67b146cacb2a5",
+      "source_id": "R052 R066 R089 R090",
+      "derivation": "Authored F04 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/mining-flow.json",
+      "sha256": "afc9f6eda78ea90cdbc9fc4a0c872df499e16a58940280f0072c2686ea41e1e1",
+      "source_id": "R089-NATIVE R089-JOIN R089-POW-INPUT R089-POW-OUTPUT",
+      "derivation": "Authored F05 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/mining-flow.svg",
+      "sha256": "36a9e1c50d85684a9c9ebd701e716fa374d5366fcd63f77f902b7c394911dfdb",
+      "source_id": "R089-NATIVE R089-JOIN R089-POW-INPUT R089-POW-OUTPUT",
+      "derivation": "Authored F05 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-0.json",
+      "sha256": "3ab6b5cf6e984c36c988a8e1f10beeec3d37fd3565c4d9fc81852f6619fd7649",
+      "source_id": "R052 R059 F09-CLOCK-PATH-AUDIT",
+      "derivation": "Authored F20 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-0.svg",
+      "sha256": "66490122993b08b8448b1ab9c52738dcf62960ccd86637f43a39ad27aa70e851",
+      "source_id": "R052 R059 F09-CLOCK-PATH-AUDIT",
+      "derivation": "Authored F20 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-3.json",
+      "sha256": "b1a0da6ededfb321c0883294436fdefe5370f7b8143dd1b1fa30f0b31c990fdc",
+      "source_id": "R037 R076 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F21 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-3.svg",
+      "sha256": "0f45a197ef85b01ad63ece330ee86befb84571f4e3c7dae44ad04eea3e70ee9e",
+      "source_id": "R037 R076 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F21 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-5.json",
+      "sha256": "44f5b9037f76c1e31dda0964cc513d05e34fc23ba7db680cd1db97800abf2afb",
+      "source_id": "R052 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F22 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-5.svg",
+      "sha256": "b171c77416bc6260349913cf63ba9a231c422b9d7df6eb1a949a6ecf75f653b5",
+      "source_id": "R052 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F22 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-6.json",
+      "sha256": "7ff63a583811f8de4372e2fba58a9f958a938b8d67b76b95c09c580611e60147",
+      "source_id": "R038 R052 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F23 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-6.svg",
+      "sha256": "78d06f7fda7de1990aebae3b04f69d0c701c6a961526d7ea4cb6156e8b171f04",
+      "source_id": "R038 R052 F02-COMMAND-REGISTER-AUDIT",
+      "derivation": "Authored F23 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-7.json",
+      "sha256": "eb3ee71194d861e05c7f2202634636cc7b02998b2365b41f39904371b3ab5b0d",
+      "source_id": "REGISTER-FINDINGS R038 R052",
+      "derivation": "Authored F24 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-7.svg",
+      "sha256": "4e5d7c48afbff169f63583cc87411167d213f1f62501ae2fa9452c8ae6256a7d",
+      "source_id": "REGISTER-FINDINGS R038 R052",
+      "derivation": "Authored F24 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-packet.json",
+      "sha256": "383a96df188aa8e110ad5cca187e5d7f85d026cbd8fa81ce30c8aae03e029cfe",
+      "source_id": "PACKETS COMMAND-RECEIPT",
+      "derivation": "Authored F06 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-packet.svg",
+      "sha256": "c2aad8ce31ae8565d47a10a3cccc3e172a53068e99031c0750c2091420ebccdb",
+      "source_id": "PACKETS COMMAND-RECEIPT",
+      "derivation": "Authored F06 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-read.json",
+      "sha256": "9ba0357f2889774a51abd6d2f0bffb56833fbb298f14117b15db4fabe49378f7",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F11 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-read.svg",
+      "sha256": "42d381bb703e9ec7ff87c120e256e47907437893f837131ea9c0a02fa98e6542",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F11 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-write.json",
+      "sha256": "e2e5a96834b643e82ad8af54aad5da5b7143579ce3fbee53bdcc3bdc7dea5699",
+      "source_id": "LAYOUT PACKETS",
+      "derivation": "Authored F10 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/register-write.svg",
+      "sha256": "97a705dc4f68347cacb80481677c323464ecb05cecc915d2dffc7bf38b0a96f9",
+      "source_id": "LAYOUT PACKETS",
+      "derivation": "Authored F10 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/reset-recovery.json",
+      "sha256": "3e8fabd0f5c0b7cbf10382998708842df74ffa34a48028c1b9efe0961f2a510d",
+      "source_id": "R052 R066",
+      "derivation": "Authored F26 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/reset-recovery.svg",
+      "sha256": "548143ddd8f08fcb105295c473d6257a919186304d3869896d82d4b762eb468a",
+      "source_id": "R052 R066",
+      "derivation": "Authored F26 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-allocation.json",
+      "sha256": "660fbc4e604ff6e25c1187d5b1256a9b892495ce0dfbd19473f2d01fdb4ce4ca",
+      "source_id": "R089-JOIN CORE-MAP-RECEIPT R078 R079",
+      "derivation": "Authored F28 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-allocation.svg",
+      "sha256": "f6a3a21dda98322be151c50ab7489bbbb5dc44bdb2458c95215d2427fdf9f157",
+      "source_id": "R089-JOIN CORE-MAP-RECEIPT R078 R079",
+      "derivation": "Authored F28 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-packet.json",
+      "sha256": "0af1a19e9a4a0595bc14ea0e46194d1ddf9e81749be7eab63bb41e8a282bb03d",
+      "source_id": "PACKETS CODEC",
+      "derivation": "Authored F03 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-packet.svg",
+      "sha256": "ce190f5a3bd502ffa90f34e255b4999e0392013acad8066276e11b1373fd74d8",
+      "source_id": "PACKETS CODEC",
+      "derivation": "Authored F03 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-poll.json",
+      "sha256": "157d504ce347e7290f77638af658a95df542a3467a6d129c42b0b10a41ea52c9",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F12 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/result-poll.svg",
+      "sha256": "73e6d193788c62e37134cd1c932b077aa2322072f09cae2212fa235fb8f2d96f",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F12 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/retention.json",
+      "sha256": "418e52aba6800c61483a3f36c016d37f9003881122438abf8124c1e80fd77330",
+      "source_id": "R070 R071 R075 SEGMENT-VECTORS R075-JOIN",
+      "derivation": "Authored F07 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/retention.svg",
+      "sha256": "57e1537dacca13a810e93b85f0ddc3d460e99963a8ca23a131bb6717c063aa12",
+      "source_id": "R070 R071 R075 SEGMENT-VECTORS R075-JOIN",
+      "derivation": "Authored F07 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/sensor-reply.json",
+      "sha256": "934fb5e03fd2d298349d077bd476eced8507a0e0dd36c47ce79859ae000cddda",
+      "source_id": "LAYOUT F05-HEALTH-CONTROL-AUDIT",
+      "derivation": "Authored F19 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/sensor-reply.svg",
+      "sha256": "67624ddb0d0605d25249b83e5689361cd105769c1c12375a993f662d8830529a",
+      "source_id": "LAYOUT F05-HEALTH-CONTROL-AUDIT",
+      "derivation": "Authored F19 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/sensor-request.json",
+      "sha256": "b03724f1b60504bf8671a8a9b72de52c7e6f6dd03e0df743e93b07c7f3e1d727",
+      "source_id": "LAYOUT F05-HEALTH-CONTROL-AUDIT",
+      "derivation": "Authored F18 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/sensor-request.svg",
+      "sha256": "6332088c53d45ab6d6d716ba10a09117816711eb429e06207097788546a0f159",
+      "source_id": "LAYOUT F05-HEALTH-CONTROL-AUDIT",
+      "derivation": "Authored F18 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/startup-control.json",
+      "sha256": "27a0db206077c684f5595e79fe101977488b254d97da39e906d325b777c238ae",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F16 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/startup-control.svg",
+      "sha256": "534a0a9ff9cd6b0703a4b92f7e6d58dafe7163d9b8ebe9e3a010473b26eb7c89",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F16 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/system.json",
+      "sha256": "3bc68c4817b6872512b39c122031bbde6755494539b07fdf8faccc36e559f1e7",
+      "source_id": "COLD CONTACTS R002 R003 R089 R090",
+      "derivation": "Authored F01 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/system.svg",
+      "sha256": "37f3c6e1e17baf943b8e41b54e79a87b16f0228f82136d3521d227b949c2cd7d",
+      "source_id": "COLD CONTACTS R002 R003 R089 R090",
+      "derivation": "Authored F01 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/work-control.json",
+      "sha256": "b7d3a73cce64715b31f751e444c5a9ec64b63c83d026ce41799778d65e37f6f1",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F17 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/work-control.svg",
+      "sha256": "cd958af31dcea8cd7a63dd98a3c65bb3012a10fc98c0ebe26b9cca016e67848f",
+      "source_id": "LAYOUT R089-NATIVE",
+      "derivation": "Authored F17 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/work-packet.json",
+      "sha256": "3adcf5e1588358327816b577dff96ff95160823f702883bef79c1426b8d577bb",
+      "source_id": "PACKETS CODEC",
+      "derivation": "Authored F02 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "figures/work-packet.svg",
+      "sha256": "0fc509bbe0cf0dfdc33e587d3711c31fa3968bb14e8d6cf1c32ebcdd0b044b1d",
+      "source_id": "PACKETS CODEC",
+      "derivation": "Authored F02 diagram or metadata from the named sources. Unknown fields have no assigned function.",
+      "redaction": "No private values occur in the diagram or metadata."
+    },
+    {
+      "file": "evidence/j2-console.json",
+      "sha256": "5ce2af14ec302359b46e6b7b5c9072dc97ac4caea22f89892aeedea63c6a122d",
+      "source_id": "R001-UART R001-ACCESS OPERATOR-J2 PHOTO-J2",
+      "derivation": "Selected source lines and the operator report. Source lines keep their recorded text and line numbers.",
+      "redaction": "Only UID, console startup and pad observations are included. Private network and device paths are omitted."
+    },
+    {
+      "file": "evidence/j2-detail.png",
+      "sha256": "9305d95512f5b3ae82c659c0605afcc780e62dfa3b4e3a2f85012283492545b4",
+      "source_id": "PHOTO-J2 PHOTO-REVERSE OPERATOR-J2",
+      "derivation": "Unchanged image supplied by the operator. It shows the J2 pads in the board reverse view.",
+      "redaction": "None."
+    }
+  ]
+}

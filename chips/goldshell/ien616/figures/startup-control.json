@@ -1,0 +1,53 @@
+{
+  "figure_id": "F16",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "R089-NATIVE"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 4,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "Control",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": null,
+  "notes": [
+    "01XX, 03XX and 0BXX use this four-byte body and a 606-byte broadcast transfer. No CRC.",
+    "Recorded startup uses XX=00. Full internal command effects are unknown."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

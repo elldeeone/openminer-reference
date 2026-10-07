@@ -1,0 +1,21 @@
+{
+  "figure_id": "F05",
+  "kind": "flow",
+  "claim_ids": [
+    "C06",
+    "C07",
+    "C08"
+  ],
+  "source_ids": [
+    "R089-NATIVE",
+    "R089-JOIN",
+    "R089-POW-INPUT",
+    "R089-POW-OUTPUT"
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "source_type": "derived diagram",
+  "legend": {
+    "solid": "Recorded path or field.",
+    "dashed": "Unknown or untested boundary."
+  }
+}

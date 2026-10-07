@@ -1,0 +1,137 @@
+{
+  "scope": "Bounded mining and fan ownership with all four stock processes STOPPED on a stock-prepared board; no independent cold boot or supply proof.",
+  "health": {
+    "PRE": {
+      "metadata": {
+        "READ /sys/class/fans/fan0/rpm": 1920,
+        "READ /sys/class/fans/fan1/rpm": 1860,
+        "READ /sys/class/fans/fan0/lvl": 34,
+        "READ /sys/class/fans/fan1/lvl": 34,
+        "READ /sys/class/fans/fan0/acc": 0,
+        "READ /sys/class/fans/fan1/acc": 0,
+        "READ /sys/class/gpio/gpio66/value": 1,
+        "READ /sys/class/gpio/gpio67/value": 1,
+        "SPI mode": 1,
+        "SPI bits": 8,
+        "SPI speed_hz": 1000000
+      },
+      "config_smbus": 41056,
+      "samples_smbus": [
+        4132,
+        4132
+      ],
+      "board_celsius": [
+        36.0625,
+        36.0625
+      ]
+    },
+    "STOPPED": {
+      "metadata": {
+        "READ /sys/class/fans/fan0/rpm": 2460,
+        "READ /sys/class/fans/fan1/rpm": 2460,
+        "READ /sys/class/fans/fan0/lvl": 100,
+        "READ /sys/class/fans/fan1/lvl": 100,
+        "READ /sys/class/fans/fan0/acc": 17800,
+        "READ /sys/class/fans/fan1/acc": 17800,
+        "READ /sys/class/gpio/gpio66/value": 1,
+        "READ /sys/class/gpio/gpio67/value": 1,
+        "SPI mode": 1,
+        "SPI bits": 8,
+        "SPI speed_hz": 1000000
+      },
+      "config_smbus": 41056,
+      "samples_smbus": [
+        49188,
+        49188
+      ],
+      "board_celsius": [
+        36.75,
+        36.75
+      ]
+    },
+    "POST": {
+      "metadata": {
+        "READ /sys/class/fans/fan0/rpm": 4740,
+        "READ /sys/class/fans/fan1/rpm": 4620,
+        "READ /sys/class/fans/fan0/lvl": 100,
+        "READ /sys/class/fans/fan1/lvl": 100,
+        "READ /sys/class/fans/fan0/acc": 0,
+        "READ /sys/class/fans/fan1/acc": 0,
+        "READ /sys/class/gpio/gpio66/value": 0,
+        "READ /sys/class/gpio/gpio67/value": 0,
+        "SPI mode": 1,
+        "SPI bits": 8,
+        "SPI speed_hz": 1000000
+      },
+      "config_smbus": 41056,
+      "samples_smbus": [
+        8237,
+        8237
+      ],
+      "board_celsius": [
+        45.125,
+        45.125
+      ]
+    }
+  },
+  "native_pool": {
+    "jobs": 297,
+    "polls": 3774,
+    "elapsed_ms": 120013,
+    "health_frames": 8590
+  },
+  "pool": {
+    "event": "mining_complete",
+    "dispatched": 297,
+    "candidates": 742,
+    "valid_filter": 740,
+    "target_pass": 128,
+    "submitted": 121,
+    "accepted": 121,
+    "stale": 7,
+    "duplicates": 0,
+    "invalid_or_retired": 2,
+    "ntime_rejected": 0,
+    "historical_excluded": 0,
+    "elapsed_ms": 120059
+  },
+  "adaptive_post_restore": {
+    "metadata": {
+      "READ /sys/class/fans/fan0/rpm": 4800,
+      "READ /sys/class/fans/fan1/rpm": 4740,
+      "READ /sys/class/fans/fan0/lvl": 100,
+      "READ /sys/class/fans/fan1/lvl": 100,
+      "READ /sys/class/fans/fan0/acc": 0,
+      "READ /sys/class/fans/fan1/acc": 0,
+      "READ /sys/class/gpio/gpio66/value": 0,
+      "READ /sys/class/gpio/gpio67/value": 0,
+      "SPI mode": 1,
+      "SPI bits": 8,
+      "SPI speed_hz": 1000000
+    },
+    "config_smbus": 41056,
+    "samples_smbus": [
+      45,
+      45
+    ],
+    "board_celsius": [
+      45.0,
+      45.0
+    ]
+  },
+  "adaptive_cooling": {
+    "transitions": [
+      {
+        "level": 80,
+        "celsius": 37.25,
+        "monotonic": 1538891.184934662
+      },
+      {
+        "level": 100,
+        "celsius": 40.0,
+        "monotonic": 1538935.01735804
+      }
+    ],
+    "final_level": 100
+  }
+}

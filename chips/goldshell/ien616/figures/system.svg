@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" role="img">
+<title>F01 · Tested system and observation points</title><desc>KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#315666"/></marker></defs>
+<style>text {font-family: DejaVu Sans, sans-serif; fill:#16313c} .title {font-size:27px;font-weight:bold} .sub {font-size:15px;fill:#49616c} .head {font-size:19px;font-weight:bold} .body {font-size:17px} .small {font-size:14px} .mono {font-family:DejaVu Sans Mono,monospace;font-size:16px}</style>
+<rect width="1100" height="640" fill="#f8fafc"/>
+<text x="40" y="47" class="title">F01 · Tested system and observation points</text>
+<text x="40" y="76" class="sub">KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2</text>
+<rect x="40" y="115" width="375" height="205" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="146" class="head">Controller</text>
+<text x="58" y="174" class="body">BoxII_CoreBoard V2.0</text>
+<text x="58" y="199" class="body">J2 console: 115200 8N1</text>
+<text x="58" y="224" class="body">SPI device: spidev1.0</text>
+<text x="58" y="249" class="body">Bank A: 18 contacts</text>
+<text x="58" y="274" class="body">Bank B: 20 contacts</text>
+<rect x="700" y="115" width="360" height="205" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="718" y="146" class="head">Hashboard</text>
+<text x="718" y="174" class="body">LEP02_ComputeBoard V2</text>
+<text x="718" y="199" class="body">30 logical addresses</text>
+<text x="718" y="224" class="body">32 reported cores per address</text>
+<path d="M 425 164 L 690 164" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="451" y="152" class="small">B4 · clock</text>
+<path d="M 425 224 L 690 224" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="451" y="212" class="small">B6 · controller data</text>
+<path d="M 690 284 L 425 284" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="451" y="272" class="small">B5 · board data</text>
+<rect x="700" y="353" width="360" height="120" rx="10" fill="#fff4df" stroke="#946319" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="718" y="384" class="head">Unknown chip connections</text>
+<text x="718" y="412" class="body">Package identity, pins and rails</text>
+<text x="718" y="437" class="body">Chip-select waveform</text>
+<rect x="385" y="353" width="275" height="145" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="403" y="384" class="head">Passive analyzer</text>
+<text x="403" y="412" class="body">Clock: channel 0</text>
+<text x="403" y="437" class="body">Board data: channel 1</text>
+<text x="403" y="462" class="body">Controller data: channel 2</text>
+<text x="403" y="487" class="body">Reference: local B3</text>
+<path d="M 555 296 L 555 343" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="353" width="305" height="145" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="384" class="head">Runtime observations</text>
+<text x="58" y="412" class="body">TMP112 board temperature</text>
+<text x="58" y="437" class="body">Two fan tachometers</text>
+<text x="58" y="462" class="body">Separate relay and meter</text>
+<text x="58" y="487" class="body">Sources: runs 89 and 90</text>
+<text x="40" y="545" class="sub">Solid: recorded path. Dashed: unknown boundary. B names are local contact names.</text>
+<text x="40" y="578" class="small">C01/C02/C14/C15 · Sources: COLD, CONTACTS, R002, R003, R089, R090</text>
+<text x="40" y="604" class="small">A controller GPIO value does not measure an ASIC rail.</text>
+</svg>

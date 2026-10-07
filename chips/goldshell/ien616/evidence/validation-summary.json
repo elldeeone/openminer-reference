@@ -1,0 +1,88 @@
+{
+  "format": "ka-box-reference-validation-v1",
+  "date": "2026-10-08",
+  "reviewer": "Codex",
+  "research_commit": "c0bf48275d619bca1dbe4db5e8583153880b027e",
+  "scope": "Offline checks of saved data. No new physical test.",
+  "checks": {
+    "source_files_checked": 158,
+    "run_records": 59,
+    "exact_quoted_paragraphs": 375,
+    "research-coverage_rows": 39,
+    "firmware-coverage_rows": 30,
+    "packet_examples": 12,
+    "initialization-capture": {
+      "transfers": 162,
+      "admissions": 30,
+      "crc_tx_packets": 63
+    },
+    "run89-initialization": {
+      "transfers": 213,
+      "admissions": 30,
+      "crc_tx_packets": 64
+    },
+    "accepted_share_packet_pairs": 121,
+    "accepted_share_digest_replays": 121,
+    "original_target_passes": 121,
+    "segments_exact": 10,
+    "source_observations_exact": 300,
+    "segmented_valid_union": 475,
+    "segmented_candidate_replays": 479,
+    "segmented_invalid_candidates_preserved": 4,
+    "native_recipe_rows_reconstructed": 162,
+    "native_command_exchanges_checked": 10,
+    "unchanged_board_photographs": 3,
+    "native_physical_transfers_compared": 4581,
+    "svg_metadata_pairs": 28,
+    "complete_packet_layouts": 13,
+    "complete_bit_layouts": 6,
+    "no_new_hardware_test": true,
+    "exhaustive_nonce_enumeration_repeated": false,
+    "verifier_binaries": {
+      "kabox_pow_stages": "fc1f61f17a6aa716a40392b8f5807821f471459241898099ae3ba2c1d68d9f0f",
+      "ks5_recorded_pow": "22fd43f2d752a8c5fc409313dcd24429b645c53ede2a7162a59f5dcf7b57954b"
+    },
+    "uart_source_lines": 4,
+    "asset_hashes": 87,
+    "repository_tests": 16,
+    "exact_photo_crops": 2,
+    "local_links_and_anchors": 260
+  },
+  "native_physical_transfers_compared": 4581,
+  "rendered_and_inspected_svg_files": 28,
+  "methods": [
+    "Hash each source file and compare the quoted line ranges with that source.",
+    "Recalculate packet CRCs independently. Check lengths, offsets and admission values.",
+    "Reconstruct all 162 recipe buffers and compare them with the native record.",
+    "Check ten command exchanges and three unchanged board photographs.",
+    "Compare all native TX/RX bytes with the saved run-89 physical decode.",
+    "Replay all 121 share inputs. Compare intermediate hashes, last digests and recorded target decisions.",
+    "Compare ten segmented sets. Replay 479 candidate hashes and check the filter decisions.",
+    "Check 300 source sets, 475 valid identities and four invalid candidates.",
+    "Render all 28 SVG files. Examine labels, layout, units and source values.",
+    "Check complete coverage of thirteen packet maps and six bit maps.",
+    "Compare all four quoted UART lines with their source records.",
+    "Compare each cropped view with its source pixels.",
+    "Examine page links, section anchors, asset hashes and the repository test results."
+  ],
+  "verifier_source_ids": [
+    "POW-HELPER-SOURCE",
+    "POW-STAGES-SOURCE",
+    "POW-SOURCE"
+  ],
+  "limits": [
+    "No exhaustive nonce enumeration was repeated.",
+    "Private pool replies were not reproduced by a new network test.",
+    "Historical raw captures were not all decompressed and decoded again.",
+    "No independent editorial review was done."
+  ],
+  "timezone": "Australia/Sydney",
+  "english_review": {
+    "standard": "ASD-STE100 Issue 9, 2025-01-15",
+    "date": "2026-10-08",
+    "scope": "Changed English text, procedure steps and figure labels.",
+    "method": "Agent examination of the writing rules and dictionary.",
+    "result": "The identified errors are corrected. No known wording problem is open in the changed text.",
+    "independent_editorial_review": false
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "figure_id": "F08",
+  "kind": "system",
+  "claim_ids": [
+    "C01",
+    "C02"
+  ],
+  "source_ids": [
+    "COLD",
+    "CONTACTS",
+    "R002",
+    "R003"
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

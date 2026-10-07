@@ -1,0 +1,84 @@
+{
+  "figure_id": "F19",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "F05-HEALTH-CONTROL-AUDIT"
+  ],
+  "direction": "hashboard to controller",
+  "length_bytes": 36,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "0C00 / 1C00",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 10,
+      "name": "Five sensor words",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 14,
+      "width": 20,
+      "name": "Unknown",
+      "status": "unknown",
+      "byte_order": "unknown",
+      "unit": "unknown"
+    },
+    {
+      "offset": 34,
+      "width": 2,
+      "name": "CRC",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": {
+    "algorithm": "CRC-16 reflected 0x8408, seed zero, adjacent byte pairs reversed, no final XOR",
+    "coverage_offset": 0,
+    "coverage_width": 34,
+    "wire_offset": 34,
+    "width": 2,
+    "byte_order": "big-endian"
+  },
+  "notes": [
+    "The selected reader copies the first five 16-bit data words. Sensor placement and calibration are unknown.",
+    "CRC covers bytes 0-33. The other twenty data bytes have no assigned meaning."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

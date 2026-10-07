@@ -1,0 +1,61 @@
+{
+  "figure_id": "F14",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "R089-NATIVE"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 6,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "0200",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 2,
+      "name": "0000",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "integer"
+    }
+  ],
+  "checksum": null,
+  "notes": [
+    "No request CRC. The recorded count transfer has 608 bytes.",
+    "The count gate applies to the tested stock-prepared population."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

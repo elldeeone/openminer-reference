@@ -1,0 +1,115 @@
+{
+  "scope": "Captured packet bodies. Transfer padding is separate.",
+  "examples": [
+    {
+      "name": "count",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 0,
+      "transfer_bytes": 608,
+      "request_hex": "a53c02000000",
+      "response": {
+        "wire_hex": "a53c0200001e",
+        "offset": 180
+      }
+    },
+    {
+      "name": "register-read",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 1,
+      "transfer_bytes": 20,
+      "request_hex": "a53c0a010005",
+      "response": {
+        "wire_hex": "a53c1a0100050000000136da",
+        "offset": 4
+      }
+    },
+    {
+      "name": "register-write",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 2,
+      "transfer_bytes": 614,
+      "request_hex": "a53c0900000500000000b31a",
+      "response": {
+        "wire_hex": "a53c0900000500000000b31a",
+        "offset": 180
+      }
+    },
+    {
+      "name": "control-01",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 127,
+      "transfer_bytes": 606,
+      "request_hex": "a53c0100",
+      "response": {
+        "wire_hex": "a53c0100",
+        "offset": 180
+      }
+    },
+    {
+      "name": "control-0b",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 128,
+      "transfer_bytes": 606,
+      "request_hex": "a53c0b00",
+      "response": {
+        "wire_hex": "a53c0b00",
+        "offset": 180
+      }
+    },
+    {
+      "name": "control-03",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 129,
+      "transfer_bytes": 606,
+      "request_hex": "a53c0300",
+      "response": {
+        "wire_hex": "a53c0300",
+        "offset": 180
+      }
+    },
+    {
+      "name": "sensor-0c",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 160,
+      "transfer_bytes": 638,
+      "request_hex": "a53c0c0000000000ffffffffffff",
+      "response": {
+        "wire_hex": "a53c0c00000000000000000000000000000000000000000000000000000000000000a4a2",
+        "offset": 180
+      }
+    },
+    {
+      "name": "control-04",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 161,
+      "transfer_bytes": 608,
+      "request_hex": "a53c040000e5",
+      "response": {
+        "wire_hex": "a53c040000e5",
+        "offset": 180
+      }
+    },
+    {
+      "name": "known-work",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 162,
+      "transfer_bytes": 672,
+      "request_hex": "a53cf700dc00b68bfd79737dacae7ed9fa5a1eb0a3a119e2b946cf375ab60d06ea6e0beb000001a100bce82e69b80000000000000000000007ffffff69b8ffffffffffffbedf",
+      "response": {
+        "wire_hex": "a53cf700dc00b68bfd79737dacae7ed9fa5a1eb0a3a119e2b946cf375ab60d06ea6e0beb000001a100bce82e69b80000000000000000000007ffffff69b8ffffffffffffbedf",
+        "offset": 180
+      }
+    },
+    {
+      "name": "empty-poll",
+      "source_id": "R089-NATIVE",
+      "transfer_index": 163,
+      "transfer_bytes": 618,
+      "request_hex": "a53c0800ffff",
+      "response": {
+        "wire_hex": "a53c0800",
+        "offset": 180
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "source_id": "FIRMWARE-COVERAGE",
+  "scope": "Quoted firmware audit rows at the source baseline. They describe source inspection and offline execution.",
+  "rows": [
+    {
+      "source_line": 61,
+      "quoted_cells": [
+        "F01 framing/CRC/TX/RX",
+        "[Transport closure](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F01_TRANSPORT_CLOSURE_AUDIT.md); transaction `0x7a704`, validator `0x7a40c`, CRC `0x79764`, SPI callback `0x72e18`, selected setup `0x757fc`, table `0x9d614`",
+        "Original instructions reproduce five observed transfer-length classes, response alternatives and all 2,292 retained CRC packets with zero failures. Runs 46/53 retain full declared physical transfer matches. W100 corrects the older unreferenced `0x77df4` clone attribution.",
+        "Selected direct path closed. W100 closes supported compiled aliases; unobserved variants and physical chip-select boundaries remain explicit limits."
+      ]
+    },
+    {
+      "source_line": 62,
+      "quoted_cells": [
+        "F02 SPI/init/register construction",
+        "[Command/register closure](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F02_COMMAND_REGISTER_AUDIT.md); descriptor `0x983f0`, selected family `0x75…`, table `0x9d614`, installer `0x77be4`",
+        "All 15 rows, 35 selected direct reads, 19 writes, nine command fixtures and ten constructor fixtures are source-bound. Recipe/addressing and selected registers have separate physical evidence. W100 finds no compiled alias to the uncalled helpers and bounds table mutation.",
+        "Selected supported path closed. Arbitrary address synthesis, corruption, unobserved addressed forms and silicon meanings remain explicit limits."
+      ]
+    },
+    {
+      "source_line": 63,
+      "quoted_cells": [
+        "F03 cold initialization",
+        "[Closure audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F03_COLD_INITIALIZATION_AUDIT.md); preparation `0x6c36c`, initializer `0x6ec88`, deinit `0x6f938`",
+        "Original instructions cover speed/open errors, retry gates, callback return and deinit; runs 32/47/52 retain qualified stock-platform recipe, cold return and repeated work.",
+        "Selected direct path closed. Stock degraded success is weaker than the independent exact-30 gate. Standalone supply preparation, minimal population, final idle purpose, electrical effects and computed aliases remain open."
+      ]
+    },
+    {
+      "source_line": 64,
+      "quoted_cells": [
+        "F04 result/filter/queue/search allocation",
+        "[Q05 result/control audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/Q05_RESULT_CONTROL_AUDIT.md); result `0x75bd0`, stock loop `0x702b8`, host validation `0x33600`, queue family `0x309d8`",
+        "Runs 38/39 retain causal filter subsets and incomplete easier sets; 43/44/48/49/53/54 qualify bounded coordinate laws and retain omissions. The 13 no-header omissions precede traced host checks/queue.",
+        "[Result lifetime audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_RESULT_LIFETIME_AUDIT.md) resolves kaspa callbacks, ID allocation, selected target/stale/queue/transport/reply decisions and cleanup. [Construction/ownership](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_WORK_CONSTRUCTION_AUDIT.md) resolves emitted filter/range bytes and selected serial scan ownership. [Hash equivalence](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_HASH_EQUIVALENCE_AUDIT.md) checks 45 original digests and preserves zero-seed non-return. [Job admission](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_JOB_ADMISSION_AUDIT.md) checks 13 normalized cases plus the malformed device gate and conditional zero-seed candidate path. [Session/pending](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_SESSION_PENDING_AUDIT.md) proves selected pool initialization/reference, a conditional multi-pool ID collision schedule, the selected one-pool availability exclusion, pending/count serialization and reachable restart/callback ordering. [Timer/HTTP ownership](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_TIMER_HTTP_OWNERSHIP_AUDIT.md) executes expiry/deadline/retry decisions and closes selected terminal count/free ownership. [Accounting/failover](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_ACCOUNTING_FAILOVER_AUDIT.md) executes statistics, pool transitions, the one-pool failover exclusion and local clone ownership. Computed aliases, changed pool topology, actual zero-seed ASIC candidate and silicon mechanism remain open."
+      ]
+    },
+    {
+      "source_line": 65,
+      "quoted_cells": [
+        "F05 ADC/temperature/fan",
+        "[Health-control closure](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F05_HEALTH_CONTROL_AUDIT.md), [W101 sensor audit](W101_SENSOR_RESPONSE_AUDIT.md); conversion `0x762c0`, minerd fallback `0x18920`, fanctrl main `0x9078`, shutdown `0x97a8`",
+        "Twenty-five original-instruction cases close selected chip/TMP112 conversions, temperature selectors, fan state and supply-disable retry. Attempts 18/19/28/38/45/46/52 bind direct health and selected ADC behavior. W101 scans 74 canonical captures and classifies all 218 selected `0C00`/`1C00` replies.",
+        "Selected direct path closed. `0C00` is always zero; dynamic `1C00` is chip-temperature telemetry, not an emission counter. Three compiled fan writers overlap; selected fanctrl cutoff is 89 C and supply disable has five calls. Calibration, junction temperature, ignored response bytes, other ADC masks and electrical effects remain open."
+      ]
+    },
+    {
+      "source_line": 66,
+      "quoted_cells": [
+        "F06 native timers and runtime ABI",
+        "[Timer/runtime closure](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F06_TIMER_RUNTIME_AUDIT.md); monotonic helper `0x6e12c`, condition wait `0x138f0`",
+        "Seven original-instruction cases, 139 direct stock import calls, attempt10 target ABI acceptance, blocked-output ARM SIGALRM, F04 deadlines and F05 shutdown waits.",
+        "Selected direct path closed. Stock imports no process alarm. Hardware expiry, D-state, indirect/library timers and exhaustive scheduler semantics remain open."
+      ]
+    },
+    {
+      "source_line": 67,
+      "quoted_cells": [
+        "F07 management/console ownership",
+        "[Management/console closure](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F07_MANAGEMENT_CONSOLE_AUDIT.md); launch `0xb6f4`, SIGCHLD `0xb820`, minerd signal `0xc014`",
+        "Twelve original-instruction cases plus attempts 03/09/35/36 bind launch, PID, signal, shared stdin and exact-owner mitigation. F16-F18 close CMOS OTA, diagnostic HTTP and registered local mining API routes.",
+        "Selected direct path closed. Exact attempt35 trigger, init timing, stale PID effects, libc null-stream result and computed calls remain open."
+      ]
+    },
+    {
+      "source_line": 68,
+      "quoted_cells": [
+        "F08 volatile SSH/root route",
+        "[Auth findings](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/ssh-auth-path/FINDINGS.md), [startup](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/ssh-startup/FINDINGS.md)",
+        "Retained bounded RAM access and closure evidence.",
+        "Keep root/access machinery separate from chip semantics; audit remaining startup/config dependencies only when relevant."
+      ]
+    },
+    {
+      "source_line": 69,
+      "quoted_cells": [
+        "F09 diagnostic/core/counter/clock interfaces",
+        "[Q05 audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/Q05_RESULT_CONTROL_AUDIT.md), [direct-access census](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_ACCESS_COUNTER_CENSUS.md), [observability audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_OBSERVABILITY_AUDIT.md), [clock audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_CLOCK_PATH_AUDIT.md), [completion audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_COMPLETION_STATUS_AUDIT.md), [W90 core census](W90_CORE_CENSUS_AUDIT.md); read/write `0x75cb8`/`0x75cf0`, clock setter `0x77248`, host counters `0x6dbe0`",
+        "Direct wrapper callers use selectors 0/3/5/6/7. The `0xffff` helper discards its read word; fixed-input register-5 writes offer no demonstrated source control. Fourteen matched setter cases, all five direct setter calls and all five ramp calls resolve selected search, address, write and error paths. The passive stock trace has 22 setter-shaped cycles with address-0 writes and matching address-1 readbacks. E59 proves a repeatable relative completion-timing effect for the selected word contrast. Stock branches on reg3 bit 16; E54 has 720 physically joined narrow-work reads with bit clear by ~7.5 ms. W90 proves that the initializer consumes register-3 low byte `20` as a 32-core census at every logical source. Absolute clock, completion timestamp, ASIC counter and reversible per-core control remain unproven.",
+        "Selected direct observability path closed. Reopen on a new source/caller/physical signal; hardware capability gaps remain Q19-Q32."
+      ]
+    },
+    {
+      "source_line": 70,
+      "quoted_cells": [
+        "F10 boot/kernel/configuration/library dependencies",
+        "[Offline acquisition findings](../02-reverse-engineering/firmware-2.2.2/OFFLINE_FINDINGS.md), [dependency inventory](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_DEPENDENCY_INVENTORY.md), [child-command audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_CHILD_COMMAND_AUDIT.md), [runtime-edge audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_RUNTIME_EDGE_AUDIT.md), [mounted-setting fragments](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_MOUNTED_CONFIG_FRAGMENT_AUDIT.md), [watchdog boot audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_WATCHDOG_BOOT_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/dependency-inventory/receipt.json), [logical flash map](../01-research/live-dumps/installed-flash-coverage/logical-map-receipt.json)",
+        "All 11,872,142 installed SquashFS bytes match the published rootfs. All 115 ELF named dependencies/interpreters resolve. Matched `xminerd` selects LEP02/Kaspa. Attempt 33 binds the mounted BFGMiner config; all 1,414 complete algorithm-setting pages select the same Kaspa row. Selected indirect command and loader targets reduce to file-log maintenance, fixed unwind support and a conditional OpenSSL engine surface. `kaspaminer` self-reexec and optional `--monitor` shell path are source-bound. Three boots prove packaged watchdog startup fails.",
+        "Selected installed dependency path closed. Atomic mounted bytes are an identifiability limit; generic library/kernel branches reopen on a concrete mining or safety observation."
+      ]
+    },
+    {
+      "source_line": 71,
+      "quoted_cells": [
+        "F11 2.2.2 to 2.2.9 differential",
+        "[Differential audit](../02-reverse-engineering/firmware-2.2.9/F11_FIRMWARE_VERSION_DIFFERENTIAL.md), [receipt](../02-reverse-engineering/firmware-2.2.9/version-differential/receipt.json); new descriptor `0x98978`, register-6 routine `0x76738`, scan `0x705f8`",
+        "Both rootfs inventories have 742 extractable entries; 20 common files and three hashed web assets differ. IEN616/30/15x2, all 15 command rows, the generic register wrappers, result decoder shape and five-call clock surface remain. Original instructions prove the changed register-6 clear/read/bit-4 sequence. The new scan removes the direct register-3 bit-16 completion gate.",
+        "Closed bounded negative for a new source/core/counter control. The added selector-0 routine has no direct caller or static pointer. E54 already supplies a much longer time-driven drain after bit 16 is clear, so installing 2.2.9 is not selected."
+      ]
+    },
+    {
+      "source_line": 72,
+      "quoted_cells": [
+        "F12 2.2.7 and installed boot/update surface",
+        "[W63 audit](../02-reverse-engineering/firmware-2.2.7/W63_FIRMWARE_227_AND_BOOT_SURFACE_AUDIT.md), [2.2.7 receipt](../02-reverse-engineering/firmware-2.2.7/surface-audit/receipt.json), [boot receipt](../02-reverse-engineering/firmware-2.2.2/boot-surface/receipt.json)",
+        "Both 2.2.2/2.2.7 rootfs inventories have 742 entries. The selected 15 commands, ordered 35-read/19-write selector sequence, register-6 behavior, result wrapper, register-3 completion gate and five clock callers are equal. Installed boot code, item table and kernel exactly match official 2.2.2. The 297-entry update ramdisk is generic and has no mining executable.",
+        "Closed bounded negative for these W63 branches. No new source/core/counter/reset observation was found; 2.2.7 installation is not selected. Signature verification, ROM behavior and recovery remain outside this result."
+      ]
+    },
+    {
+      "source_line": 73,
+      "quoted_cells": [
+        "F13 related IEN616E comparison",
+        "[W63 audit](../02-reverse-engineering/firmware-related-ien616e/W63_RELATED_IEN616E_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-related-ien616e/receipt.json)",
+        "Five official KABoxPro/E-KA1M roots across primary SquashFS and alternate-controller ext4 images install the exact IEN616 command table and use only selectors 0/3/5/6/7. Result/register-6 shapes match target 2.2.2 or 2.2.9. E-KA1M activates the alternate PLL variant dormant in KABoxPro and KA-BOX 2.2.9.",
+        "Closed hypothesis branch. No source/core/counter/reset control transfers to a reachable target path. The PLL result is model-dependent clock evidence, not authority to execute the dormant IEN616 routine."
+      ]
+    },
+    {
+      "source_line": 74,
+      "quoted_cells": [
+        "F14 retained mapped configuration",
+        "[W63 audit](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/F14_MAPPED_CONFIG_SURFACE_AUDIT.md), [redacted receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/mapped-config-surface/receipt.json)",
+        "The complete 64-piece retained mosaic yields 12,832 complete JSON pages in 14 schemas. All 5,656 miner-config pages select Kaspa and set `benchmark=false`; none enables it. Fixed raw searches find no factory/diagnostic or ASIC source/core/counter/register/nonce term. Secret values are omitted.",
+        "Closed bounded negative for mapped configuration. Historical pages do not reconstruct an atomic active filesystem, and absent plain strings do not cover compressed, encoded, fragmented or unmapped code."
+      ]
+    },
+    {
+      "source_line": 75,
+      "quoted_cells": [
+        "F15 current official KAS corpus",
+        "[W94 closure](W94_OFFICIAL_KAS_FIRMWARE_CORPUS_CLOSURE.md), [receipt](../02-reverse-engineering/official-kas-corpus-recheck/receipt.json)",
+        "The non-truncated official tree has six archives across KA-BOX, KABoxPro and E-KA1M. Eight controller roots are bound to F11-F13 and the installed analysis. The five related roots reproduce byte-identically and retain only direct selectors 0/3/5/6/7.",
+        "Closed dated public-firmware route. No reachable core-control or ASIC-counter interface appears. Private, deleted and future firmware remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 76,
+      "quoted_cells": [
+        "F16 CMOS remote update",
+        "[W95 audit](W95_CMOS_OTA_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/cmos-ota-audit/receipt.json)",
+        "Matched `minerd` obtains MQTT credentials from `hub.goldshell.com:8002`, subscribes to `/server/<client-id>/#`, accepts update JSON with `url`/`m`, downloads `firmware.cpb` and enters the existing signed CPB/IUS update path. The dated Hub frontend exposes authenticated action 9 but no firmware-named API route; its connection to delivery is strongly indicated, not captured.",
+        "Closed for the observed anonymous/static route. No archive or ASIC discriminator emerged. Backend selection, authenticated machine state and MQTT traffic remain unobserved; connecting is active control, not passive capture."
+      ]
+    },
+    {
+      "source_line": 77,
+      "quoted_cells": [
+        "F17 installed diagnostic HTTP surface",
+        "[W96 audit](W96_MINERD_DEBUG_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/minerd-debug-surface/receipt.json)",
+        "All 11 `/dbg/*` routes share authenticated callback `0x16040`. `icinfo` relabels child `devs`/`devdetails`; `perf` and `hwerr` are host-memory increments after nonce validation. The retained snapshot partitions `Nonced=3672` into 3,643 valid plus 29 failed events.",
+        "Closed for matched binaries and retained snapshot. No ASIC core actuator or emission counter emerged. Changed binaries, computed aliases and values lost before host decode remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 78,
+      "quoted_cells": [
+        "F18 installed local mining API surface",
+        "[W97 audit](W97_KASPAMINER_API_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/kaspaminer-api-surface/receipt.json)",
+        "All 46 registered commands at `0x97ee8` are bound in order. The selected `intchains_qomo` descriptor has null `identify_device`, `set_device`, `get_stats` and `zero_stats` callbacks. `pgaset`/`procset` fall back to host thermal thresholds; `zero` clears host/API statistics only.",
+        "Closed for the matched command table and descriptor. No per-core actuator or ASIC counter/clear path emerged. Computed aliases and changed binaries remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 79,
+      "quoted_cells": [
+        "F19 retained flash residual artifacts",
+        "[W99 audit](W99_FLASH_RESIDUAL_ARTIFACT_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/flash-residual-audit/receipt.json)",
+        "The full 32 MiB image partitions into 43 boot/item/kernel, 382 mapped and 87 erased blocks. Outside the exact 11,872,142-byte rootfs, only the exact public boot/kernel validate as firmware artifacts. A candidate 3 MiB FAT reconstruction yields the same privacy-redacted 32-file inventory through either FAT copy, with no executable/image magic or core/counter term.",
+        "Closed bounded negative for the retained flash identity. The slice mosaic is not atomic; encrypted or signature-free semantics and a different capture remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 80,
+      "quoted_cells": [
+        "F20 exact transport reachability",
+        "[W100 audit](W100_TRANSPORT_REACHABILITY_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/transport-reachability/receipt.json)",
+        "Twenty-seven entrypoints, all 206 decoded register-indirect calls, aligned raw pointers, relocations and compiler address constructions are inventoried. The selected callback route is `0x6c7fa → 0x757fc → [device+0] → 0x799ac → 0x72e18`; the active table globals have one generic writer. Fifteen guarded command cases make zero table writes.",
+        "Closed for compiler-emitted reachability in the matched image. Arbitrary address synthesis, corruption, injected code, changed binaries and hidden silicon remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 81,
+      "quoted_cells": [
+        "F21 retained ASIC sensor responses",
+        "[W101 audit](W101_SENSOR_RESPONSE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/sensor-response-audit/receipt.json)",
+        "All 74 canonical burst captures are scanned; 59 contain 218 CRC-valid selected replies. All 105 `0C00` payloads are zero. The 113 `1C00` payloads split into 42 zero and 71 nonzero; source wrappers copy five words into temperature conversion `0x762c0`.",
+        "Closed for retained `0C00`/`1C00` observations and selected stock consumers. Neither family is an emitted-result counter or supplies clear/resume. Sensor placement, calibration, ignored-byte meaning and unobserved states remain open."
+      ]
+    },
+    {
+      "source_line": 82,
+      "quoted_cells": [
+        "F22 BIST/core-control path",
+        "[W102 audit](W102_BIST_CORE_CONTROL_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/bist-core-control-audit/receipt.json); `BistStart` `0x75adc`",
+        "Both direct callers supply enable 1. The helper modifies only register-3 bit 20 at a logical address, then sends payload-free controls `01`/`0B`/`03`. All 74 captures contain 104 exact source-style broadcast sequences; 100 complete following censes contribute 3,000 CRC-valid `12100020` replies.",
+        "Closed for the named BIST path and retained observations. Address scope is a whole logical source; no core selector, mask, selected clear/restore or core-local effect exists. The compiled directed reinit path is not physically observed and would not discriminate per-core control."
+      ]
+    },
+    {
+      "source_line": 83,
+      "quoted_cells": [
+        "F23 complete retained receive surface",
+        "[W103 audit](W103_RESPONSE_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/response-surface-audit/receipt.json)",
+        "All 74 captures reconstruct to 509,161 transfers and 507,001 accepted frames in ten families. Every observed register selector has unchanged words across emitted results; fixed count/control/poll fields and W101 sensor data also reject frame counting.",
+        "Closed for accepted retained frames and counter correlation. Five CRC failures, 802 unknown markers and 1,127 exact residual spans remain preserved for W104 framing analysis. No clear/resume operation or powered discriminator emerges."
+      ]
+    },
+    {
+      "source_line": 84,
+      "quoted_cells": [
+        "F24 malformed receive boundary",
+        "[W104 closure](W104_RECEIVE_ANOMALY_CLOSURE.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/receive-anomaly-audit/receipt.json)",
+        "Raw re-decoding covers 342 affected bursts. All 802 unknown markers are duplicated request-word artifacts; five header-shaped frames remain physically CRC-invalid. Every one of 1,127 residual spans is classified or retained as minimal headerless activity.",
+        "Closed for the retained malformed receive boundary. No source-supported alternate frame, persistent field, counter read/clear or powered discriminator emerges. Internal pipeline ownership remains unknown."
+      ]
+    },
+    {
+      "source_line": 85,
+      "quoted_cells": [
+        "F25 complete current official firmware family tree",
+        "[W105 audit](W105_OFFICIAL_FIRMWARE_FAMILY_AUDIT.md), [receipt](../02-reverse-engineering/official-firmware-family-audit/receipt.json)",
+        "The exact official tree contains 205 unique CPBs. All 199 non-KAS packages yield 312 IUS streams and 310 filesystems. All 293 unique `intchains_qomo`/`A53C` binaries parse into seven command tables and a zero-unresolved recursive selector census.",
+        "Closed for the current public tree at commit `006b0944`. No table matches IEN616 `PKTS*32`; related selector 11 is ION577 initialization-data readback, while 4/10/12 are clock setup and 65535 is auto-addressing. Deleted history, private firmware, future releases, and target transfer of related-chip meaning remain open."
+      ]
+    },
+    {
+      "source_line": 86,
+      "quoted_cells": [
+        "F26 complete reachable official Git history",
+        "[W106 audit](W106_OFFICIAL_FIRMWARE_HISTORY_AUDIT.md), [receipt](../02-reverse-engineering/official-firmware-history-audit/receipt.json)",
+        "All 202 commits contain 217 unique CPB blobs: 205 current and 12 history-only. All six KAS blobs remain current. Ten real old non-KAS archives yield 18 filesystems and 25 transport binaries; two tiny blobs are line-ending placeholders.",
+        "Closed for objects reachable from the sole advertised branch. The 20 new historical binary versions use the existing HNS table; no new table or selector class appears. Unreachable/private refs, private firmware and future history remain outside the claim."
+      ]
+    },
+    {
+      "source_line": 87,
+      "quoted_cells": [
+        "F27 official web/support/download surfaces",
+        "[W107 audit](W107_OFFICIAL_WEB_FIRMWARE_SURFACE_AUDIT.md), [receipt](../02-reverse-engineering/official-web-firmware-surface-audit/receipt.json)",
+        "Eight site maps contain 445 unique locations; 22 selected WordPress objects and nine media objects contain no CPB. The support API contains 145 articles and 1,210 image-only attachments. The seven-post firmware topic links two current non-KAS CPBs already covered by W105.",
+        "Closed for the dated anonymous surfaces. No new miner firmware appears. The official 75,289,380-byte GoldshellZone 3.1.0 APK is a new client source selected for W108. Private/account-only catalogs, removed downloads and future content remain open."
+      ]
+    },
+    {
+      "source_line": 88,
+      "quoted_cells": [
+        "F28 GoldshellZone client update surface",
+        "[W108 audit](W108_GOLDSHELL_ZONE_APK_AUDIT.md), [receipt](../02-reverse-engineering/goldshell-zone-apk-audit/receipt.json), [route inventory](../02-reverse-engineering/goldshell-zone-apk-audit/api-route-inventory.json)",
+        "The exact official APK has 1,937 entries and 510 reconstructed app source units. The 118 direct literal HTTP functions include authenticated `GET /machines/updateable` and multipart `POST /operates/do`. Both UI branches send action 9 with `mac`, `action` and JSON `param`; the client handles no firmware URL or bytes.",
+        "Closed for this exact client. Operation 9 is cloud orchestration, not an IEN616 opcode. Watch BLE OTA is separate. Backend behavior, account-only response content and future clients remain open."
+      ]
+    },
+    {
+      "source_line": 89,
+      "quoted_cells": [
+        "F29 GoldshellZone current distribution",
+        "[W109 audit](W109_GOLDSHELL_ZONE_DISTRIBUTION_AUDIT.md), [receipt](../02-reverse-engineering/goldshell-zone-distribution-audit/receipt.json)",
+        "Apple track 6451475178 and Google package `com.goldshell.goldshellzone` both report 3.2.2 dated 2026-04-01. Apple exposes 25 history rows. The website still links 3.1.0; anonymous `GET /api/v1/version` returns application code 401.",
+        "Closed for the dated anonymous official surfaces. Current-client acquisition is outside the ASIC campaign because W108 found no target-wire operation or miner firmware bytes. Reopen only if independently obtained code exposes one."
+      ]
+    },
+    {
+      "source_line": 90,
+      "quoted_cells": [
+        "F30 retained core allocation",
+        "[Audit](CORE_ALLOCATION_CORPUS_AUDIT.md), [receipt](../02-reverse-engineering/firmware-2.2.2/protocol-analysis/core-allocation-audit/receipt.json)",
+        "All 74 canonical captures contain 6,479 work requests and 33,381 CRC-valid result frames. Of 33,371 source-local in-window frames, 33,370 match `core = (source_offset >> 1) & 31`; the one mismatch and all three out-of-window coordinate mismatches fail the assigned job filter.",
+        "Closed for retained predictive core attribution. It supplies neither an unchanged-work core actuator nor a persistent counter."
+      ]
+    }
+  ]
+}

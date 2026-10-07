@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760" role="img">
+<title>F05 · Work, result and pool decision</title><desc>Run 89: 121 accepted shares. Each gate has its own evidence.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#315666"/></marker></defs>
+<style>text {font-family: DejaVu Sans, sans-serif; fill:#16313c} .title {font-size:27px;font-weight:bold} .sub {font-size:15px;fill:#49616c} .head {font-size:19px;font-weight:bold} .body {font-size:17px} .small {font-size:14px} .mono {font-family:DejaVu Sans Mono,monospace;font-size:16px}</style>
+<rect width="1100" height="760" fill="#f8fafc"/>
+<text x="40" y="47" class="title">F05 · Work, result and pool decision</text>
+<text x="40" y="76" class="sub">Run 89: 121 accepted shares. Each gate has its own evidence.</text>
+<rect x="40" y="115" width="690" height="83" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="146" class="head">1 · Pool job</text>
+<text x="58" y="174" class="body">Keep recorded hash, timestamp and target.</text>
+<path d="M 385 200 L 385 218" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="223" width="690" height="83" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="254" class="head">2 · Sent work</text>
+<text x="58" y="282" class="body">Record slot, transmitted bytes and job ownership.</text>
+<path d="M 385 308 L 385 326" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="331" width="690" height="83" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="362" class="head">3 · Physical result</text>
+<text x="58" y="390" class="body">Check frame, CRC, address and slot.</text>
+<path d="M 385 416 L 385 434" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="439" width="690" height="83" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="470" class="head">4 · Local validation</text>
+<text x="58" y="498" class="body">Calculate PoW and check the recorded target.</text>
+<path d="M 385 524 L 385 542" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="547" width="690" height="83" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="58" y="578" class="head">5 · Pool decision</text>
+<text x="58" y="606" class="body">Associate request ID and recorded accepted reply.</text>
+<rect x="785" y="325" width="275" height="185" rx="10" fill="#e6f3f2" stroke="#2e7776" stroke-width="2"/>
+<text x="803" y="356" class="head">Failure classes</text>
+<text x="803" y="384" class="body">Malformed or unassigned</text>
+<text x="803" y="409" class="body">Invalid PoW</text>
+<text x="803" y="434" class="body">Stale or duplicate</text>
+<text x="803" y="459" class="body">Rejected or unanswered</text>
+<path d="M 738 370 L 775 370" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M 738 478 L 775 478" fill="none" stroke="#315666" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="40" y="710" class="body">Private replies stay outside the reference. Published inputs give the data for local hash replay.</text>
+<text x="40" y="740" class="small">C06/C07/C08 · Sources: R089-NATIVE, R089-JOIN, R089-POW-INPUT, R089-POW-OUTPUT</text>
+</svg>

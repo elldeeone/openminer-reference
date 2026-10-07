@@ -1,0 +1,40 @@
+{
+  "figure_id": "F22",
+  "kind": "register",
+  "claim_ids": [
+    "C09"
+  ],
+  "source_ids": [
+    "R052",
+    "F02-COMMAND-REGISTER-AUDIT"
+  ],
+  "width_bits": 32,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 4,
+      "name": "S",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 4,
+      "width": 28,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "S: the selected source clears the low nibble and inserts zero.",
+    "An early stock read returns 00000001. Run 52 ends at 00000000 at all 30 addresses.",
+    "Full purpose, writable mask and reset value are unknown."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

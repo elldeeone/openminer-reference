@@ -1,0 +1,63 @@
+{
+  "figure_id": "F23",
+  "kind": "register",
+  "claim_ids": [
+    "C09",
+    "C18"
+  ],
+  "source_ids": [
+    "R038",
+    "R052",
+    "F02-COMMAND-REGISTER-AUDIT"
+  ],
+  "width_bits": 32,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 4,
+      "name": "?",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "name": "S",
+      "status": "tested",
+      "unit": "bit"
+    },
+    {
+      "offset": 5,
+      "width": 3,
+      "name": "?",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 8,
+      "width": 3,
+      "name": "M",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 11,
+      "width": 21,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "S: selected bit-4 start/write contrast. M: source mode field at bits 8-10.",
+    "Recorded sequence: 0F00000C, then 0F00001C, followed by a register-7 read.",
+    "Channel identity, scale and general writable mask are unknown."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "figure_id": "F21",
+  "kind": "register",
+  "claim_ids": [
+    "C09",
+    "C13"
+  ],
+  "source_ids": [
+    "R037",
+    "R076",
+    "F02-COMMAND-REGISTER-AUDIT"
+  ],
+  "width_bits": 32,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 8,
+      "name": "Core count",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 8,
+      "width": 4,
+      "name": "Work ID",
+      "status": "tested",
+      "unit": "bit"
+    },
+    {
+      "offset": 12,
+      "width": 4,
+      "name": "?",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 16,
+      "width": 1,
+      "name": "C",
+      "status": "tested",
+      "unit": "bit"
+    },
+    {
+      "offset": 17,
+      "width": 3,
+      "name": "?",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 20,
+      "width": 1,
+      "name": "B",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 21,
+      "width": 11,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "Low byte: stock-reported core count. The recorded value 20 hexadecimal gives 32.",
+    "C: tested completion/rearm bit. B: source BistStart control bit, not individual-core control.",
+    "Admission: 12100020. Unknown fields are not zero defaults."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

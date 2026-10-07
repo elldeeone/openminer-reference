@@ -1,0 +1,20 @@
+{
+  "figure_id": "F07",
+  "kind": "behavior",
+  "claim_ids": [
+    "C12"
+  ],
+  "source_ids": [
+    "R070",
+    "R071",
+    "R075",
+    "SEGMENT-VECTORS",
+    "R075-JOIN"
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "source_type": "derived diagram",
+  "legend": {
+    "solid": "Recorded path or field.",
+    "dashed": "Unknown or untested boundary."
+  }
+}

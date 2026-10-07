@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="575" viewBox="0 0 1000 575" role="img">
+<title>F08 · KA Box capture connections</title><desc>Local contact names from the saved bench record. Connector positions are not to scale.</desc>
+<defs><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#253449"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172533}</style>
+<rect width="1000" height="575" fill="white"/>
+<text x="40" y="34" font-size="22" text-anchor="start" font-weight="600">F08 · KA Box capture connections</text>
+<text x="40" y="64" font-size="14" text-anchor="start">Local contact names from the saved bench record. Connector positions are not to scale.</text>
+<rect x="40" y="110" width="290" height="240" fill="#e6eef9" stroke="#748398"/>
+<text x="58" y="140" font-size="18" text-anchor="start" font-weight="600">Bank B: 20 contacts (2 × 10)</text>
+<text x="60" y="188" font-size="16" text-anchor="start">B4: clock</text>
+<text x="60" y="235" font-size="16" text-anchor="start">B6: controller data</text>
+<text x="60" y="282" font-size="16" text-anchor="start">B5: board data</text>
+<text x="60" y="329" font-size="16" text-anchor="start">B3: local reference</text>
+<rect x="645" y="110" width="315" height="240" fill="#e6eef9" stroke="#748398"/>
+<text x="665" y="140" font-size="18" text-anchor="start" font-weight="600">Passive analyzer</text>
+<text x="665" y="188" font-size="16" text-anchor="start">Channel 0</text>
+<path d="M340 182 L635 182" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="665" y="235" font-size="16" text-anchor="start">Channel 2</text>
+<path d="M340 229 L635 229" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="665" y="282" font-size="16" text-anchor="start">Channel 1</text>
+<path d="M340 276 L635 276" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="665" y="329" font-size="16" text-anchor="start">Reference connection</text>
+<path d="M340 323 L635 323" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="40" y="385" width="440" height="95" fill="url(#unknown)" stroke="#748398" stroke-dasharray="5 4"/>
+<text x="60" y="415" font-size="17" text-anchor="start" font-weight="600">Bank A: 18 contacts (2 × 9)</text>
+<text x="60" y="445" font-size="14" text-anchor="start">Signal functions and full net map are unknown.</text>
+<rect x="520" y="385" width="440" height="95" fill="url(#unknown)" stroke="#748398" stroke-dasharray="5 4"/>
+<text x="540" y="415" font-size="17" text-anchor="start" font-weight="600">Unmeasured boundaries</text>
+<text x="540" y="445" font-size="14" text-anchor="start">Chip select, IO levels and ASIC package pins.</text>
+<text x="40" y="515" font-size="13" text-anchor="start">A DC voltage reading does not identify a digital signal or a safe probe limit.</text>
+<text x="40" y="543" font-size="11" text-anchor="start">Sources: COLD, CONTACTS, R002, R003</text>
+</svg>

@@ -1,0 +1,84 @@
+{
+  "figure_id": "F10",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "PACKETS"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 12,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "09NN",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 2,
+      "name": "Selector",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 6,
+      "width": 4,
+      "name": "Value",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 10,
+      "width": 2,
+      "name": "CRC",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": {
+    "algorithm": "CRC-16 reflected 0x8408, seed zero, adjacent byte pairs reversed, no final XOR",
+    "coverage_offset": 0,
+    "coverage_width": 10,
+    "wire_offset": 10,
+    "width": 2,
+    "byte_order": "big-endian"
+  },
+  "notes": [
+    "NN=00 selects the recorded broadcast form. Directed writes use the specified nonzero address.",
+    "CRC covers bytes 0-9. A write echo is separate from a later register read."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

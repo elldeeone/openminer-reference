@@ -1,0 +1,67 @@
+{
+  "schema": "kabox.connector-photo-count.v1",
+  "scope": "Offline visual annotation of retained controller-board connector solder footprints; no target, device or network action.",
+  "source": {
+    "path": "7-Photo-7.jpg",
+    "sha256": "38b8faee288ff9ac4ae624719054a79e774a2b726f8422ed16b8ffd79bcf8d3b",
+    "width": 1280,
+    "height": 960
+  },
+  "annotation": {
+    "path": "annotated-reverse.png",
+    "sha256": "38949853b46042659cc0c60a504336a64377beea9fd02f6c9541a3c9e3754396",
+    "crop": [
+      70,
+      395,
+      555,
+      530
+    ]
+  },
+  "banks": {
+    "A": {
+      "position": "pushbutton side",
+      "rows": 2,
+      "columns": 9,
+      "contacts": 18,
+      "column_centers_x": [
+        120,
+        140,
+        160,
+        180,
+        200,
+        220,
+        240,
+        260,
+        280
+      ],
+      "row_centers_y": [
+        462,
+        482
+      ]
+    },
+    "B": {
+      "position": "power-link side",
+      "rows": 2,
+      "columns": 10,
+      "contacts": 20,
+      "column_centers_x": [
+        325,
+        345,
+        365,
+        385,
+        405,
+        425,
+        445,
+        465,
+        485,
+        505
+      ],
+      "row_centers_y": [
+        462,
+        482
+      ]
+    }
+  },
+  "conclusion": "PASS: bank A has two rows of nine contacts (18 total); bank B has two rows of ten contacts (20 total). This is physical footprint count, not manufacturer pin numbering or electrical net identity.",
+  "tool_sha256": "e47e5ba07abb5d90a5790c20147b90bb9864588f847e85784211737ff48806c5"
+}

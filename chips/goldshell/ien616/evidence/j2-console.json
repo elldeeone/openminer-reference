@@ -1,0 +1,79 @@
+{
+  "format": "ien616-j2-console-v1",
+  "documented_date": "2026-10-08",
+  "setup": "Tested KA Box, BoxII_CoreBoard V2.0, LEP02_ComputeBoard V2, firmware 2.2.2.",
+  "console_access": {
+    "claim_id": "C19",
+    "label": "proven",
+    "test_date_utc": "2026-10-03",
+    "test": "Controller access attempt 01.",
+    "connector": "J2",
+    "device": "ttyAMA3",
+    "baud": 115200,
+    "data_bits": 8,
+    "parity": "none",
+    "stop_bits": 1,
+    "observed_uid": 0,
+    "observation": "The stock serial console started /bin/sh without a password prompt. The identity command returned uid=0(root) gid=0(root).",
+    "source_records": [
+      {
+        "source_id": "R001-UART",
+        "records": [
+          {
+            "line": 9,
+            "text": "uid=0(root) gid=0(root)\r"
+          },
+          {
+            "line": 87,
+            "text": "ttyAMA3::respawn:/sbin/getty -L -n -l /bin/sh ttyAMA3 115200 vt100 # GENERIC_SERIAL\r"
+          }
+        ]
+      },
+      {
+        "source_id": "R001-ACCESS",
+        "records": [
+          {
+            "line": 18,
+            "text": "| Root uid=0; Linux 3.10.0-infotm armv7l; Hardware iMAPx910 | uart-identity.raw, uart-identity.txt | Executed console response; four CPU entries |"
+          },
+          {
+            "line": 19,
+            "text": "| ttyAMA3 at 115200, stock getty launches /bin/sh without a password prompt | uart-identity.txt, dbg-kmsg.txt, dbg-psinfo.json | Stock service-console access, no exploit used |"
+          }
+        ]
+      }
+    ],
+    "limit": "This result applies to the tested stock console. It does not establish SSH access or a replacement firmware recovery path."
+  },
+  "physical_pads": {
+    "claim_id": "C20",
+    "source_id": "OPERATOR-J2",
+    "evidence_type": "operator report and photograph inspection",
+    "report_date": "2026-10-08",
+    "timezone": "Australia/Sydney",
+    "operator_words": "the ground is the square one and then i think its TXD RXD",
+    "image": "evidence/j2-detail.png",
+    "orientation": "As shown in the board reverse view.",
+    "square_pad": {
+      "position": "left",
+      "signal": "GND",
+      "basis": "Operator identification."
+    },
+    "round_pads": {
+      "positions": [
+        "middle",
+        "right"
+      ],
+      "signals": [
+        "TXD",
+        "RXD"
+      ],
+      "order_status": "unknown",
+      "operator_suggestion": [
+        "TXD",
+        "RXD"
+      ]
+    },
+    "limit": "The operator identified the square pad as ground. The order of TXD and RXD is tentative. No new electrical test was done."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "figure_id": "F04",
+  "kind": "sequence",
+  "claim_ids": [
+    "C05",
+    "C15"
+  ],
+  "source_ids": [
+    "R052",
+    "R066",
+    "R089",
+    "R090"
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "source_type": "derived diagram",
+  "legend": {
+    "solid": "Recorded path or field.",
+    "dashed": "Unknown or untested boundary."
+  }
+}
