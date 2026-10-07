@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="460" viewBox="0 0 1000 460" role="img">
+<title>F26 · KA Box enable, reset and recovery</title><desc>Separate tests after fresh initialization. Controller levels do not measure internal supply rails.</desc>
+<defs><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#253449"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172533}</style>
+<rect width="1000" height="460" fill="white"/>
+<text x="40" y="34" font-size="22" text-anchor="start" font-weight="600">F26 · KA Box enable, reset and recovery</text>
+<text x="40" y="64" font-size="14" text-anchor="start">Separate tests after fresh initialization. Controller levels do not measure internal supply rails.</text>
+<rect x="40" y="110" width="275" height="125" fill="#e6eef9" stroke="#748398"/>
+<text x="54" y="137" font-size="16" text-anchor="start" font-weight="600">Initialized state</text>
+<text x="54" y="170" font-size="13" text-anchor="start">30 addresses respond.</text>
+<text x="54" y="193" font-size="13" text-anchor="start">Five selected registers.</text>
+<rect x="365" y="110" width="275" height="125" fill="#fff1cf" stroke="#748398"/>
+<text x="379" y="137" font-size="16" text-anchor="start" font-weight="600">Enable LOW, 1,000 ms</text>
+<text x="379" y="170" font-size="13" text-anchor="start">Selected positive state stays.</text>
+<text x="379" y="193" font-size="13" text-anchor="start">Completion bit is time-dependent.</text>
+<rect x="690" y="110" width="270" height="125" fill="url(#unknown)" stroke="#748398"/>
+<text x="704" y="137" font-size="16" text-anchor="start" font-weight="600">Reset LOW, 2,000 ms</text>
+<text x="704" y="170" font-size="13" text-anchor="start">No accepted directed replies.</text>
+<text x="704" y="193" font-size="13" text-anchor="start">Numeric defaults are unknown.</text>
+<rect x="40" y="290" width="440" height="100" fill="#e6eef9" stroke="#748398"/>
+<text x="58" y="321" font-size="18" text-anchor="start" font-weight="600">Full initializer</text>
+<text x="58" y="353" font-size="14" text-anchor="start">Restores all 150 selected reads in run 66.</text>
+<rect x="520" y="290" width="440" height="100" fill="#fff1cf" stroke="#748398"/>
+<text x="538" y="321" font-size="18" text-anchor="start" font-weight="600">Controls 01 / 0B / 03 alone</text>
+<text x="538" y="353" font-size="14" text-anchor="start">Restore 0 of 150 selected reads after reset.</text>
+<text x="40" y="420" font-size="13" text-anchor="start">No reply is not a zero register value.</text>
+<text x="40" y="448" font-size="11" text-anchor="start">Sources: R052, R066</text>
+</svg>

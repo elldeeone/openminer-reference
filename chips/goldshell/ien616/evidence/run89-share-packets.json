@@ -1,0 +1,2916 @@
+{
+  "source_ids": [
+    "R089-STDOUT",
+    "R089-DECODE",
+    "R089-JOIN"
+  ],
+  "all_native_transfers_rechecked": 4581,
+  "physical_start_burst": 8177,
+  "physical_end_burst": 12787,
+  "shares": [
+    {
+      "request_id": 3,
+      "sequence": 189,
+      "slot": 13,
+      "nonce": "6ccc0e00720aeb25",
+      "difficulty": 1024,
+      "work_transfer": 971,
+      "result_transfer": 975,
+      "work_physical": {
+        "start_burst": 9154,
+        "end_burst": 9154,
+        "first_seconds": 143.4179855,
+        "last_seconds": 143.4230527
+      },
+      "result_physical": {
+        "start_burst": 9158,
+        "end_burst": 9158,
+        "first_seconds": 143.5153108,
+        "last_seconds": 143.5199708
+      },
+      "work_packet_hex": "a53cd7003f32aabcb38c988711b9db10f64d4473cf9944e57e3bfb0d9d0d09b8e88195ae000001a115cf677b6ccc0000000000000000000007ffffff6cccffffffffffff950f",
+      "result_packet_hex": "a53cd80f6ccc0e00720aeb25120030a5",
+      "result_offset": 88
+    },
+    {
+      "request_id": 4,
+      "sequence": 199,
+      "slot": 9,
+      "nonce": "6ccc1601088f7e75",
+      "difficulty": 1024,
+      "work_transfer": 1114,
+      "result_transfer": 1120,
+      "work_physical": {
+        "start_burst": 9297,
+        "end_burst": 9297,
+        "first_seconds": 147.3331551,
+        "last_seconds": 147.3382224
+      },
+      "result_physical": {
+        "start_burst": 9303,
+        "end_burst": 9303,
+        "first_seconds": 147.4886138,
+        "last_seconds": 147.4932739
+      },
+      "work_packet_hex": "a53c9700c8841f76c354f0bf5b6daf5241cf55238f73cb9fd4bc0c3288289e619e7f7e06000001a115cf76cb6ccc0000000000000000000007ffffff6cccffffffffffff3c5e",
+      "result_packet_hex": "a53c98176ccc1601088f7e751a00a9ea",
+      "result_offset": 136
+    },
+    {
+      "request_id": 5,
+      "sequence": 209,
+      "slot": 5,
+      "nonce": "6ccc0d0066212438",
+      "difficulty": 128,
+      "work_transfer": 1277,
+      "result_transfer": 1280,
+      "work_physical": {
+        "start_burst": 9463,
+        "end_burst": 9463,
+        "first_seconds": 151.8452577,
+        "last_seconds": 151.850325
+      },
+      "result_physical": {
+        "start_burst": 9466,
+        "end_burst": 9466,
+        "first_seconds": 151.9165164,
+        "last_seconds": 151.9211764
+      },
+      "work_packet_hex": "a53c5700a5c69dc39841ec552f911190991349f3b000ebf88b6731240d54eb4d48fe8d5f000001a115cf887a6ccc0000000000000000000007ffffff6cccffffffffffff065a",
+      "result_packet_hex": "a53c580e6ccc0d00662124381c005f9d",
+      "result_offset": 82
+    },
+    {
+      "request_id": 6,
+      "sequence": 210,
+      "slot": 6,
+      "nonce": "6ccc1b015258b967",
+      "difficulty": 128,
+      "work_transfer": 1290,
+      "result_transfer": 1297,
+      "work_physical": {
+        "start_burst": 9476,
+        "end_burst": 9476,
+        "first_seconds": 152.206486,
+        "last_seconds": 152.2115533
+      },
+      "result_physical": {
+        "start_burst": 9483,
+        "end_burst": 9483,
+        "first_seconds": 152.4018296,
+        "last_seconds": 152.4064896
+      },
+      "work_packet_hex": "a53c6700ab44a28333cff6fb8158152d9defc9e39595b1898dc9f7443a2cd15125023963000001a115cf89d16ccc0000000000000000000007ffffff6cccffffffffffff8816",
+      "result_packet_hex": "a53c681c6ccc1b015258b96713004727",
+      "result_offset": 166
+    },
+    {
+      "request_id": 7,
+      "sequence": 210,
+      "slot": 6,
+      "nonce": "6ccc18018da441f3",
+      "difficulty": 128,
+      "work_transfer": 1290,
+      "result_transfer": 1299,
+      "work_physical": {
+        "start_burst": 9476,
+        "end_burst": 9476,
+        "first_seconds": 152.206486,
+        "last_seconds": 152.2115533
+      },
+      "result_physical": {
+        "start_burst": 9485,
+        "end_burst": 9485,
+        "first_seconds": 152.4618388,
+        "last_seconds": 152.4664988
+      },
+      "work_packet_hex": "a53c6700ab44a28333cff6fb8158152d9defc9e39595b1898dc9f7443a2cd15125023963000001a115cf89d16ccc0000000000000000000007ffffff6cccffffffffffff8816",
+      "result_packet_hex": "a53c68196ccc18018da441f319007279",
+      "result_offset": 148
+    },
+    {
+      "request_id": 8,
+      "sequence": 213,
+      "slot": 9,
+      "nonce": "6ccc0a0015a05d7c",
+      "difficulty": 128,
+      "work_transfer": 1325,
+      "result_transfer": 1327,
+      "work_physical": {
+        "start_burst": 9511,
+        "end_burst": 9511,
+        "first_seconds": 153.1354894,
+        "last_seconds": 153.1405567
+      },
+      "result_physical": {
+        "start_burst": 9513,
+        "end_burst": 9513,
+        "first_seconds": 153.1720567,
+        "last_seconds": 153.1767168
+      },
+      "work_packet_hex": "a53c9700ce6781be832e8dbf87ebc4355a898fdbf16cbda47efa90be69b6271aab6a98cb000001a115cf8d6d6ccc0000000000000000000007ffffff6cccffffffffffff3ff5",
+      "result_packet_hex": "a53c980b6ccc0a0015a05d7c1e001581",
+      "result_offset": 64
+    },
+    {
+      "request_id": 9,
+      "sequence": 213,
+      "slot": 9,
+      "nonce": "6ccc110246eb5a83",
+      "difficulty": 128,
+      "work_transfer": 1325,
+      "result_transfer": 1336,
+      "work_physical": {
+        "start_burst": 9511,
+        "end_burst": 9511,
+        "first_seconds": 153.1354894,
+        "last_seconds": 153.1405567
+      },
+      "result_physical": {
+        "start_burst": 9522,
+        "end_burst": 9523,
+        "first_seconds": 153.4568134,
+        "last_seconds": 153.4616427
+      },
+      "work_packet_hex": "a53c9700ce6781be832e8dbf87ebc4355a898fdbf16cbda47efa90be69b6271aab6a98cb000001a115cf8d6d6ccc0000000000000000000007ffffff6cccffffffffffff3ff5",
+      "result_packet_hex": "a53c98126ccc110246eb5a830100a13f",
+      "result_offset": 106
+    },
+    {
+      "request_id": 10,
+      "sequence": 216,
+      "slot": 12,
+      "nonce": "6ccc1c009672aa31",
+      "difficulty": 128,
+      "work_transfer": 1366,
+      "result_transfer": 1370,
+      "work_physical": {
+        "start_burst": 9553,
+        "end_burst": 9553,
+        "first_seconds": 154.2525169,
+        "last_seconds": 154.2575841
+      },
+      "result_physical": {
+        "start_burst": 9557,
+        "end_burst": 9557,
+        "first_seconds": 154.3485862,
+        "last_seconds": 154.3532462
+      },
+      "work_packet_hex": "a53cc7001344ee959bf0ea9f4f9ecf29597065a331989b95881017ab5391265b2cf70ecf000001a115cf91d76ccc0000000000000000000007ffffff6cccffffffffffff44a3",
+      "result_packet_hex": "a53cc81d6ccc1c009672aa31180074e3",
+      "result_offset": 172
+    },
+    {
+      "request_id": 11,
+      "sequence": 218,
+      "slot": 14,
+      "nonce": "6ccc1001b46cdc7c",
+      "difficulty": 128,
+      "work_transfer": 1392,
+      "result_transfer": 1401,
+      "work_physical": {
+        "start_burst": 9580,
+        "end_burst": 9580,
+        "first_seconds": 154.9612052,
+        "last_seconds": 154.9662725
+      },
+      "result_physical": {
+        "start_burst": 9589,
+        "end_burst": 9589,
+        "first_seconds": 155.2084947,
+        "last_seconds": 155.2131547
+      },
+      "work_packet_hex": "a53ce700a1692e8d9335b78d13ac93e9e7490d43f4a2ea18c0c1207e1888ed0c2b195132000001a115cf94a96ccc0000000000000000000007ffffff6cccffffffffffff6af4",
+      "result_packet_hex": "a53ce8116ccc1001b46cdc7c1e000ad2",
+      "result_offset": 100
+    },
+    {
+      "request_id": 12,
+      "sequence": 222,
+      "slot": 4,
+      "nonce": "6ccc1a007491def0",
+      "difficulty": 128,
+      "work_transfer": 1460,
+      "result_transfer": 1463,
+      "work_physical": {
+        "start_burst": 9648,
+        "end_burst": 9648,
+        "first_seconds": 156.8600115,
+        "last_seconds": 156.8650788
+      },
+      "result_physical": {
+        "start_burst": 9651,
+        "end_burst": 9651,
+        "first_seconds": 156.9296272,
+        "last_seconds": 156.9342872
+      },
+      "work_packet_hex": "a53c47009c934f257932780a6b3f0c65195305d3f1b85917f9f6b58d17b68c0ee9b44661000001a115cf9c026ccc0000000000000000000007ffffff6cccffffffffffff4f45",
+      "result_packet_hex": "a53c481b6ccc1a007491def01800ce23",
+      "result_offset": 160
+    },
+    {
+      "request_id": 13,
+      "sequence": 223,
+      "slot": 5,
+      "nonce": "6ccc130278ea7418",
+      "difficulty": 128,
+      "work_transfer": 1479,
+      "result_transfer": 1491,
+      "work_physical": {
+        "start_burst": 9667,
+        "end_burst": 9667,
+        "first_seconds": 157.3910397,
+        "last_seconds": 157.396107
+      },
+      "result_physical": {
+        "start_burst": 9679,
+        "end_burst": 9679,
+        "first_seconds": 157.7321772,
+        "last_seconds": 157.7368372
+      },
+      "work_packet_hex": "a53c5700f42367ad7a3ff18ca1af623d4f377130cada6fb66db44b6fac1ce50c45208c10000001a115cf9e136ccc0000000000000000000007ffffff6cccffffffffffff932d",
+      "result_packet_hex": "a53c58146ccc130278ea74180c00990a",
+      "result_offset": 118
+    },
+    {
+      "request_id": 14,
+      "sequence": 224,
+      "slot": 6,
+      "nonce": "6ccc1c018bdd1787",
+      "difficulty": 128,
+      "work_transfer": 1493,
+      "result_transfer": 1501,
+      "work_physical": {
+        "start_burst": 9681,
+        "end_burst": 9681,
+        "first_seconds": 157.7713941,
+        "last_seconds": 157.7764614
+      },
+      "result_physical": {
+        "start_burst": 9689,
+        "end_burst": 9689,
+        "first_seconds": 157.9961109,
+        "last_seconds": 158.0007709
+      },
+      "work_packet_hex": "a53c6700e60b46a9376e97228498916ab94835b88a39ae52ca3f07c6d8e6121065c8d2cb000001a115cf9f906ccc0000000000000000000007ffffff6cccffffffffffff96d1",
+      "result_packet_hex": "a53c681d6ccc1c018bdd1787030001db",
+      "result_offset": 172
+    },
+    {
+      "request_id": 15,
+      "sequence": 224,
+      "slot": 6,
+      "nonce": "6ccc0702b033b8b9",
+      "difficulty": 128,
+      "work_transfer": 1493,
+      "result_transfer": 1506,
+      "work_physical": {
+        "start_burst": 9681,
+        "end_burst": 9681,
+        "first_seconds": 157.7713941,
+        "last_seconds": 157.7764614
+      },
+      "result_physical": {
+        "start_burst": 9695,
+        "end_burst": 9695,
+        "first_seconds": 158.1551423,
+        "last_seconds": 158.1598023
+      },
+      "work_packet_hex": "a53c6700e60b46a9376e97228498916ab94835b88a39ae52ca3f07c6d8e6121065c8d2cb000001a115cf9f906ccc0000000000000000000007ffffff6cccffffffffffff96d1",
+      "result_packet_hex": "a53c68086ccc0702b033b8b91c00bae1",
+      "result_offset": 46
+    },
+    {
+      "request_id": 16,
+      "sequence": 229,
+      "slot": 11,
+      "nonce": "6ccc1c0051671d48",
+      "difficulty": 128,
+      "work_transfer": 1560,
+      "result_transfer": 1563,
+      "work_physical": {
+        "start_burst": 9749,
+        "end_burst": 9749,
+        "first_seconds": 159.5977777,
+        "last_seconds": 159.6028449
+      },
+      "result_physical": {
+        "start_burst": 9752,
+        "end_burst": 9752,
+        "first_seconds": 159.6651532,
+        "last_seconds": 159.6698132
+      },
+      "work_packet_hex": "a53cb7001b4425d7c359b4f73735422a42c0a68168993b6105dd6a40559ee7c569fcec07000001a115cfa6a76ccc0000000000000000000007ffffff6cccffffffffffff7499",
+      "result_packet_hex": "a53cb81d6ccc1c0051671d4804007839",
+      "result_offset": 172
+    },
+    {
+      "request_id": 17,
+      "sequence": 229,
+      "slot": 11,
+      "nonce": "6ccc0e00d86d485b",
+      "difficulty": 128,
+      "work_transfer": 1560,
+      "result_transfer": 1565,
+      "work_physical": {
+        "start_burst": 9749,
+        "end_burst": 9749,
+        "first_seconds": 159.5977777,
+        "last_seconds": 159.6028449
+      },
+      "result_physical": {
+        "start_burst": 9754,
+        "end_burst": 9754,
+        "first_seconds": 159.72531,
+        "last_seconds": 159.72997
+      },
+      "work_packet_hex": "a53cb7001b4425d7c359b4f73735422a42c0a68168993b6105dd6a40559ee7c569fcec07000001a115cfa6a76ccc0000000000000000000007ffffff6cccffffffffffff7499",
+      "result_packet_hex": "a53cb80f6ccc0e00d86d485b0d00dee4",
+      "result_offset": 88
+    },
+    {
+      "request_id": 18,
+      "sequence": 229,
+      "slot": 11,
+      "nonce": "6ccc06012db1eb14",
+      "difficulty": 128,
+      "work_transfer": 1560,
+      "result_transfer": 1567,
+      "work_physical": {
+        "start_burst": 9749,
+        "end_burst": 9749,
+        "first_seconds": 159.5977777,
+        "last_seconds": 159.6028449
+      },
+      "result_physical": {
+        "start_burst": 9756,
+        "end_burst": 9756,
+        "first_seconds": 159.7851076,
+        "last_seconds": 159.7897676
+      },
+      "work_packet_hex": "a53cb7001b4425d7c359b4f73735422a42c0a68168993b6105dd6a40559ee7c569fcec07000001a115cfa6a76ccc0000000000000000000007ffffff6cccffffffffffff7499",
+      "result_packet_hex": "a53cb8076ccc06012db1eb140a0076dc",
+      "result_offset": 40
+    },
+    {
+      "request_id": 19,
+      "sequence": 229,
+      "slot": 11,
+      "nonce": "6ccc11022b830b38",
+      "difficulty": 128,
+      "work_transfer": 1560,
+      "result_transfer": 1571,
+      "work_physical": {
+        "start_burst": 9749,
+        "end_burst": 9749,
+        "first_seconds": 159.5977777,
+        "last_seconds": 159.6028449
+      },
+      "result_physical": {
+        "start_burst": 9760,
+        "end_burst": 9760,
+        "first_seconds": 159.9051165,
+        "last_seconds": 159.9097765
+      },
+      "work_packet_hex": "a53cb7001b4425d7c359b4f73735422a42c0a68168993b6105dd6a40559ee7c569fcec07000001a115cfa6a76ccc0000000000000000000007ffffff6cccffffffffffff7499",
+      "result_packet_hex": "a53cb8126ccc11022b830b381c008b49",
+      "result_offset": 106
+    },
+    {
+      "request_id": 20,
+      "sequence": 230,
+      "slot": 12,
+      "nonce": "6ccc0302855357bc",
+      "difficulty": 128,
+      "work_transfer": 1580,
+      "result_transfer": 1592,
+      "work_physical": {
+        "start_burst": 9769,
+        "end_burst": 9769,
+        "first_seconds": 160.1567251,
+        "last_seconds": 160.1617924
+      },
+      "result_physical": {
+        "start_burst": 9781,
+        "end_burst": 9781,
+        "first_seconds": 160.5050848,
+        "last_seconds": 160.5097449
+      },
+      "work_packet_hex": "a53cc70081d64a95c6a41bbbfc7dba4c69a6ee52c1c49eae1ff8fd1373510b8969e6bdef000001a115cfa8eb6ccc0000000000000000000007ffffff6cccffffffffffff23ab",
+      "result_packet_hex": "a53cc8046ccc0302855357bc1e00d18b",
+      "result_offset": 22
+    },
+    {
+      "request_id": 21,
+      "sequence": 232,
+      "slot": 14,
+      "nonce": "6ccc0c0059f449d3",
+      "difficulty": 128,
+      "work_transfer": 1609,
+      "result_transfer": 1612,
+      "work_physical": {
+        "start_burst": 9798,
+        "end_burst": 9798,
+        "first_seconds": 160.9511489,
+        "last_seconds": 160.9562162
+      },
+      "result_physical": {
+        "start_burst": 9801,
+        "end_burst": 9801,
+        "first_seconds": 161.018414,
+        "last_seconds": 161.023074
+      },
+      "work_packet_hex": "a53ce700fa574dceb35b4b2bddb5aacecea393a6cde21f14b5b5e9e33a47d0a8c8564719000001a115cfac0f6ccc0000000000000000000007ffffff6cccffffffffffff7963",
+      "result_packet_hex": "a53ce80d6ccc0c0059f449d30900609a",
+      "result_offset": 76
+    },
+    {
+      "request_id": 22,
+      "sequence": 233,
+      "slot": 1,
+      "nonce": "6ccc1301089bd982",
+      "difficulty": 128,
+      "work_transfer": 1621,
+      "result_transfer": 1627,
+      "work_physical": {
+        "start_burst": 9810,
+        "end_burst": 9810,
+        "first_seconds": 161.2680541,
+        "last_seconds": 161.2731214
+      },
+      "result_physical": {
+        "start_burst": 9816,
+        "end_burst": 9816,
+        "first_seconds": 161.4296464,
+        "last_seconds": 161.4343064
+      },
+      "work_packet_hex": "a53c1700c260b0afa1615d3e4a3fb6e5a7a7a446b86aa87a971d568a1fa092f07bcd2468000001a115cfad426ccc0000000000000000000007ffffff6cccffffffffffff0f74",
+      "result_packet_hex": "a53c18146ccc1301089bd9820100132a",
+      "result_offset": 118
+    },
+    {
+      "request_id": 23,
+      "sequence": 241,
+      "slot": 9,
+      "nonce": "6ccc0b0084113391",
+      "difficulty": 128,
+      "work_transfer": 1724,
+      "result_transfer": 1728,
+      "work_physical": {
+        "start_burst": 9913,
+        "end_burst": 9913,
+        "first_seconds": 164.0511436,
+        "last_seconds": 164.0562109
+      },
+      "result_physical": {
+        "start_burst": 9917,
+        "end_burst": 9917,
+        "first_seconds": 164.1484163,
+        "last_seconds": 164.1530763
+      },
+      "work_packet_hex": "a53c9700fbe7344b60a9b5acb9a0107e4b4c389b6d2e04f439d077ff5855e383b0d938b6000001a115cfb8286ccc0000000000000000000007ffffff6cccffffffffffff67c4",
+      "result_packet_hex": "a53c980c6ccc0b00841133910800a420",
+      "result_offset": 70
+    },
+    {
+      "request_id": 24,
+      "sequence": 242,
+      "slot": 10,
+      "nonce": "6ccc1d003c83c3b5",
+      "difficulty": 128,
+      "work_transfer": 1743,
+      "result_transfer": 1745,
+      "work_physical": {
+        "start_burst": 9932,
+        "end_burst": 9932,
+        "first_seconds": 164.5786859,
+        "last_seconds": 164.5837531
+      },
+      "result_physical": {
+        "start_burst": 9934,
+        "end_burst": 9934,
+        "first_seconds": 164.6154409,
+        "last_seconds": 164.6201009
+      },
+      "work_packet_hex": "a53ca7008665581b55be4ab59b87969a041474ea15eac8222cf9cfffb44eb3b83dea9934000001a115cfba216ccc0000000000000000000007ffffff6cccffffffffffffed38",
+      "result_packet_hex": "a53ca81e6ccc1d003c83c3b51a00c470",
+      "result_offset": 178
+    },
+    {
+      "request_id": 25,
+      "sequence": 242,
+      "slot": 10,
+      "nonce": "6ccc040122d433b6",
+      "difficulty": 128,
+      "work_transfer": 1743,
+      "result_transfer": 1749,
+      "work_physical": {
+        "start_burst": 9932,
+        "end_burst": 9932,
+        "first_seconds": 164.5786859,
+        "last_seconds": 164.5837531
+      },
+      "result_physical": {
+        "start_burst": 9938,
+        "end_burst": 9938,
+        "first_seconds": 164.7360056,
+        "last_seconds": 164.7406656
+      },
+      "work_packet_hex": "a53ca7008665581b55be4ab59b87969a041474ea15eac8222cf9cfffb44eb3b83dea9934000001a115cfba216ccc0000000000000000000007ffffff6cccffffffffffffed38",
+      "result_packet_hex": "a53ca8056ccc040122d433b61b0018dd",
+      "result_offset": 28
+    },
+    {
+      "request_id": 26,
+      "sequence": 243,
+      "slot": 11,
+      "nonce": "6ccc0301a012f938",
+      "difficulty": 128,
+      "work_transfer": 1757,
+      "result_transfer": 1766,
+      "work_physical": {
+        "start_burst": 9946,
+        "end_burst": 9946,
+        "first_seconds": 164.9747515,
+        "last_seconds": 164.9798188
+      },
+      "result_physical": {
+        "start_burst": 9955,
+        "end_burst": 9955,
+        "first_seconds": 165.221722,
+        "last_seconds": 165.2263821
+      },
+      "work_packet_hex": "a53cb7002bc925582731a5149162a31dcc129b4627e6b0351aca4fffda76985249e83c02000001a115cfbba76ccc0000000000000000000007ffffff6cccffffffffffffae43",
+      "result_packet_hex": "a53cb8046ccc0301a012f9381c0026f2",
+      "result_offset": 22
+    },
+    {
+      "request_id": 27,
+      "sequence": 244,
+      "slot": 12,
+      "nonce": "6ccc00003178ef77",
+      "difficulty": 128,
+      "work_transfer": 1774,
+      "result_transfer": 1776,
+      "work_physical": {
+        "start_burst": 9963,
+        "end_burst": 9963,
+        "first_seconds": 165.4410548,
+        "last_seconds": 165.446122
+      },
+      "result_physical": {
+        "start_burst": 9965,
+        "end_burst": 9965,
+        "first_seconds": 165.4784417,
+        "last_seconds": 165.4831017
+      },
+      "work_packet_hex": "a53cc700e1765dcb4b58b39d8d1c5d8029394090f59497c543ef296b544f9f3cf2179686000001a115cfbd826ccc0000000000000000000007ffffff6cccffffffffffffded4",
+      "result_packet_hex": "a53cc8016ccc00003178ef771b00c999",
+      "result_offset": 4
+    },
+    {
+      "request_id": 28,
+      "sequence": 244,
+      "slot": 12,
+      "nonce": "6ccc0e012ab01f1c",
+      "difficulty": 128,
+      "work_transfer": 1774,
+      "result_transfer": 1781,
+      "work_physical": {
+        "start_burst": 9963,
+        "end_burst": 9963,
+        "first_seconds": 165.4410548,
+        "last_seconds": 165.446122
+      },
+      "result_physical": {
+        "start_burst": 9970,
+        "end_burst": 9970,
+        "first_seconds": 165.6287283,
+        "last_seconds": 165.6333883
+      },
+      "work_packet_hex": "a53cc700e1765dcb4b58b39d8d1c5d8029394090f59497c543ef296b544f9f3cf2179686000001a115cfbd826ccc0000000000000000000007ffffff6cccffffffffffffded4",
+      "result_packet_hex": "a53cc80f6ccc0e012ab01f1c0e008448",
+      "result_offset": 88
+    },
+    {
+      "request_id": 29,
+      "sequence": 247,
+      "slot": 1,
+      "nonce": "6ccc060096306910",
+      "difficulty": 128,
+      "work_transfer": 1811,
+      "result_transfer": 1815,
+      "work_physical": {
+        "start_burst": 10000,
+        "end_burst": 10000,
+        "first_seconds": 166.444419,
+        "last_seconds": 166.4494863
+      },
+      "result_physical": {
+        "start_burst": 10004,
+        "end_burst": 10004,
+        "first_seconds": 166.5417151,
+        "last_seconds": 166.5463751
+      },
+      "work_packet_hex": "a53c1700b6a1d04dd41f516a690dc5e53d70202671a5f1cbc859fff5e9f9be232c7dc18a000001a115cfc1836ccc0000000000000000000007ffffff6cccffffffffffff4240",
+      "result_packet_hex": "a53c18076ccc060096306910080077b9",
+      "result_offset": 40
+    },
+    {
+      "request_id": 30,
+      "sequence": 248,
+      "slot": 2,
+      "nonce": "6ccc040146660e39",
+      "difficulty": 128,
+      "work_transfer": 1824,
+      "result_transfer": 1831,
+      "work_physical": {
+        "start_burst": 10013,
+        "end_burst": 10013,
+        "first_seconds": 166.7913495,
+        "last_seconds": 166.7964168
+      },
+      "result_physical": {
+        "start_burst": 10020,
+        "end_burst": 10020,
+        "first_seconds": 166.9853068,
+        "last_seconds": 166.9899668
+      },
+      "work_packet_hex": "a53c2700cf03ac91213107d2a2a31daeb4cbfe02b8c248cdc4b3c9c47e63a3903f49fa53000001a115cfc2dc6ccc0000000000000000000007ffffff6cccffffffffffff2a31",
+      "result_packet_hex": "a53c28056ccc040146660e391c005eb8",
+      "result_offset": 28
+    },
+    {
+      "request_id": 31,
+      "sequence": 249,
+      "slot": 3,
+      "nonce": "6ccc1401a7042342",
+      "difficulty": 128,
+      "work_transfer": 1837,
+      "result_transfer": 1846,
+      "work_physical": {
+        "start_burst": 10026,
+        "end_burst": 10026,
+        "first_seconds": 167.1498828,
+        "last_seconds": 167.1549501
+      },
+      "result_physical": {
+        "start_burst": 10036,
+        "end_burst": 10036,
+        "first_seconds": 167.4017107,
+        "last_seconds": 167.4063707
+      },
+      "work_packet_hex": "a53c370084c7aebca052d8dcc10e1d2814de710ddf3af8eb1bac3a1bb658189e69081a1b000001a115cfc42b6ccc0000000000000000000007ffffff6cccffffffffffff0d87",
+      "result_packet_hex": "a53c38156ccc1401a704234201008dd9",
+      "result_offset": 124
+    },
+    {
+      "request_id": 32,
+      "sequence": 249,
+      "slot": 3,
+      "nonce": "6ccc1901f0dd282a",
+      "difficulty": 128,
+      "work_transfer": 1837,
+      "result_transfer": 1847,
+      "work_physical": {
+        "start_burst": 10026,
+        "end_burst": 10026,
+        "first_seconds": 167.1498828,
+        "last_seconds": 167.1549501
+      },
+      "result_physical": {
+        "start_burst": 10037,
+        "end_burst": 10037,
+        "first_seconds": 167.4318239,
+        "last_seconds": 167.4364839
+      },
+      "work_packet_hex": "a53c370084c7aebca052d8dcc10e1d2814de710ddf3af8eb1bac3a1bb658189e69081a1b000001a115cfc42b6ccc0000000000000000000007ffffff6cccffffffffffff0d87",
+      "result_packet_hex": "a53c381a6ccc1901f0dd282a15000dd3",
+      "result_offset": 154
+    },
+    {
+      "request_id": 33,
+      "sequence": 250,
+      "slot": 4,
+      "nonce": "6ccc0802642c6598",
+      "difficulty": 128,
+      "work_transfer": 1850,
+      "result_transfer": 1862,
+      "work_physical": {
+        "start_burst": 10040,
+        "end_burst": 10040,
+        "first_seconds": 167.5010348,
+        "last_seconds": 167.5061021
+      },
+      "result_physical": {
+        "start_burst": 10052,
+        "end_burst": 10052,
+        "first_seconds": 167.8383796,
+        "last_seconds": 167.8430396
+      },
+      "work_packet_hex": "a53c4700e852e725d0df6e3ba60547e0613bbf3ef31af0b65e21fd3e37b3c9d5384520fd000001a115cfc5876ccc0000000000000000000007ffffff6cccffffffffffffc9ef",
+      "result_packet_hex": "a53c48096ccc0802642c65980c009acd",
+      "result_offset": 52
+    },
+    {
+      "request_id": 34,
+      "sequence": 254,
+      "slot": 8,
+      "nonce": "6ccc0b018c42aa2e",
+      "difficulty": 128,
+      "work_transfer": 1905,
+      "result_transfer": 1913,
+      "work_physical": {
+        "start_burst": 10095,
+        "end_burst": 10095,
+        "first_seconds": 168.9909618,
+        "last_seconds": 168.996029
+      },
+      "result_physical": {
+        "start_burst": 10103,
+        "end_burst": 10103,
+        "first_seconds": 169.2153261,
+        "last_seconds": 169.2199861
+      },
+      "work_packet_hex": "a53c870062ed5675089cd1d7c8f3820bca1b4edbe8abffebc3b9f1f4faae9974ccfa15fa000001a115cfcb6c6ccc0000000000000000000007ffffff6cccffffffffffff4ca7",
+      "result_packet_hex": "a53c880c6ccc0b018c42aa2e17006c92",
+      "result_offset": 70
+    },
+    {
+      "request_id": 35,
+      "sequence": 254,
+      "slot": 8,
+      "nonce": "6ccc030274693786",
+      "difficulty": 128,
+      "work_transfer": 1905,
+      "result_transfer": 1917,
+      "work_physical": {
+        "start_burst": 10095,
+        "end_burst": 10095,
+        "first_seconds": 168.9909618,
+        "last_seconds": 168.996029
+      },
+      "result_physical": {
+        "start_burst": 10107,
+        "end_burst": 10107,
+        "first_seconds": 169.3353224,
+        "last_seconds": 169.3399824
+      },
+      "work_packet_hex": "a53c870062ed5675089cd1d7c8f3820bca1b4edbe8abffebc3b9f1f4faae9974ccfa15fa000001a115cfcb6c6ccc0000000000000000000007ffffff6cccffffffffffff4ca7",
+      "result_packet_hex": "a53c88046ccc030274693786030038c7",
+      "result_offset": 22
+    },
+    {
+      "request_id": 36,
+      "sequence": 257,
+      "slot": 11,
+      "nonce": "6ccc1a00207ab17a",
+      "difficulty": 128,
+      "work_transfer": 1955,
+      "result_transfer": 1957,
+      "work_physical": {
+        "start_burst": 10145,
+        "end_burst": 10145,
+        "first_seconds": 170.3812377,
+        "last_seconds": 170.386305
+      },
+      "result_physical": {
+        "start_burst": 10147,
+        "end_burst": 10147,
+        "first_seconds": 170.4187055,
+        "last_seconds": 170.4233655
+      },
+      "work_packet_hex": "a53cb7007441d6f8cb7fb71004c0c6cd5a1eefa177ab4d1773d8f8fad5ec8d95c7e4e496000001a115cfd0d56ccc0000000000000000000007ffffff6cccffffffffffff53f4",
+      "result_packet_hex": "a53cb81b6ccc1a00207ab17a1d001c51",
+      "result_offset": 160
+    },
+    {
+      "request_id": 37,
+      "sequence": 257,
+      "slot": 11,
+      "nonce": "6ccc1c006a3018e5",
+      "difficulty": 128,
+      "work_transfer": 1955,
+      "result_transfer": 1959,
+      "work_physical": {
+        "start_burst": 10145,
+        "end_burst": 10145,
+        "first_seconds": 170.3812377,
+        "last_seconds": 170.386305
+      },
+      "result_physical": {
+        "start_burst": 10149,
+        "end_burst": 10149,
+        "first_seconds": 170.4786586,
+        "last_seconds": 170.4833186
+      },
+      "work_packet_hex": "a53cb7007441d6f8cb7fb71004c0c6cd5a1eefa177ab4d1773d8f8fad5ec8d95c7e4e496000001a115cfd0d56ccc0000000000000000000007ffffff6cccffffffffffff53f4",
+      "result_packet_hex": "a53cb81d6ccc1c006a3018e51200d20c",
+      "result_offset": 172
+    },
+    {
+      "request_id": 38,
+      "sequence": 257,
+      "slot": 11,
+      "nonce": "6ccc0501b21161d8",
+      "difficulty": 128,
+      "work_transfer": 1955,
+      "result_transfer": 1964,
+      "work_physical": {
+        "start_burst": 10145,
+        "end_burst": 10145,
+        "first_seconds": 170.3812377,
+        "last_seconds": 170.386305
+      },
+      "result_physical": {
+        "start_burst": 10154,
+        "end_burst": 10154,
+        "first_seconds": 170.6395859,
+        "last_seconds": 170.6442459
+      },
+      "work_packet_hex": "a53cb7007441d6f8cb7fb71004c0c6cd5a1eefa177ab4d1773d8f8fad5ec8d95c7e4e496000001a115cfd0d56ccc0000000000000000000007ffffff6cccffffffffffff53f4",
+      "result_packet_hex": "a53cb8066ccc0501b21161d80c003981",
+      "result_offset": 34
+    },
+    {
+      "request_id": 39,
+      "sequence": 260,
+      "slot": 14,
+      "nonce": "6ccc0200474d72cf",
+      "difficulty": 128,
+      "work_transfer": 1991,
+      "result_transfer": 1994,
+      "work_physical": {
+        "start_burst": 10181,
+        "end_burst": 10181,
+        "first_seconds": 171.3511699,
+        "last_seconds": 171.3562372
+      },
+      "result_physical": {
+        "start_burst": 10184,
+        "end_burst": 10184,
+        "first_seconds": 171.4183793,
+        "last_seconds": 171.4230393
+      },
+      "work_packet_hex": "a53ce70089e814f32195433d4e0ebeaf4481b9b59ceb753c830df1bf7fb3dfa5a2547bc0000001a115cfd4ad6ccc0000000000000000000007ffffff6cccffffffffffffece4",
+      "result_packet_hex": "a53ce8036ccc0200474d72cf0700cb80",
+      "result_offset": 16
+    },
+    {
+      "request_id": 40,
+      "sequence": 261,
+      "slot": 1,
+      "nonce": "6ccc170119b54122",
+      "difficulty": 128,
+      "work_transfer": 2008,
+      "result_transfer": 2014,
+      "work_physical": {
+        "start_burst": 10198,
+        "end_burst": 10198,
+        "first_seconds": 171.8380321,
+        "last_seconds": 171.8430994
+      },
+      "result_physical": {
+        "start_burst": 10204,
+        "end_burst": 10204,
+        "first_seconds": 171.9949965,
+        "last_seconds": 171.9996565
+      },
+      "work_packet_hex": "a53c17005a6f8079ae4f81686ef2c79959ced87d37a5bbead247d5d122e552f278e76010000001a115cfd68d6ccc0000000000000000000007ffffff6cccffffffffffff76e1",
+      "result_packet_hex": "a53c18186ccc170119b5412211008d07",
+      "result_offset": 142
+    },
+    {
+      "request_id": 41,
+      "sequence": 262,
+      "slot": 2,
+      "nonce": "6ccc0500a8711303",
+      "difficulty": 128,
+      "work_transfer": 2028,
+      "result_transfer": 2032,
+      "work_physical": {
+        "start_burst": 10219,
+        "end_burst": 10219,
+        "first_seconds": 172.3943865,
+        "last_seconds": 172.3994537
+      },
+      "result_physical": {
+        "start_burst": 10223,
+        "end_burst": 10223,
+        "first_seconds": 172.4916676,
+        "last_seconds": 172.4963276
+      },
+      "work_packet_hex": "a53c2700cc030985342ea797309013021c9b5a30319ba5de8447c70f0dc35b5132160b41000001a115cfd8a86ccc0000000000000000000007ffffff6cccffffffffffff819f",
+      "result_packet_hex": "a53c28066ccc0500a87113030100f2d1",
+      "result_offset": 34
+    },
+    {
+      "request_id": 42,
+      "sequence": 263,
+      "slot": 3,
+      "nonce": "6ccc04022e3cea97",
+      "difficulty": 128,
+      "work_transfer": 2040,
+      "result_transfer": 2050,
+      "work_physical": {
+        "start_burst": 10231,
+        "end_burst": 10231,
+        "first_seconds": 172.7146128,
+        "last_seconds": 172.7196801
+      },
+      "result_physical": {
+        "start_burst": 10241,
+        "end_burst": 10241,
+        "first_seconds": 173.0150423,
+        "last_seconds": 173.0197023
+      },
+      "work_packet_hex": "a53c370038ecf219882edc85b48a5161b0aac4c3167c12da85bad53819ca0961a0ca4bbf000001a115cfd9ed6ccc0000000000000000000007ffffff6cccffffffffffff3447",
+      "result_packet_hex": "a53c38056ccc04022e3cea970b003550",
+      "result_offset": 28
+    },
+    {
+      "request_id": 43,
+      "sequence": 264,
+      "slot": 4,
+      "nonce": "6ccc0901f6fd37b2",
+      "difficulty": 128,
+      "work_transfer": 2056,
+      "result_transfer": 2066,
+      "work_physical": {
+        "start_burst": 10247,
+        "end_burst": 10247,
+        "first_seconds": 173.1743196,
+        "last_seconds": 173.1793869
+      },
+      "result_physical": {
+        "start_burst": 10257,
+        "end_burst": 10257,
+        "first_seconds": 173.4517333,
+        "last_seconds": 173.4563933
+      },
+      "work_packet_hex": "a53c4700fd0a5f63600a0de902ae176aba1dd52e1de448ba41a53743454576f71701a76f000001a115cfdbb96ccc0000000000000000000007ffffff6cccffffffffffff2789",
+      "result_packet_hex": "a53c480a6ccc0901f6fd37b2190043d9",
+      "result_offset": 58
+    },
+    {
+      "request_id": 44,
+      "sequence": 265,
+      "slot": 5,
+      "nonce": "6ccc0c012384bbbc",
+      "difficulty": 128,
+      "work_transfer": 2069,
+      "result_transfer": 2076,
+      "work_physical": {
+        "start_burst": 10260,
+        "end_burst": 10260,
+        "first_seconds": 173.5211735,
+        "last_seconds": 173.5262408
+      },
+      "result_physical": {
+        "start_burst": 10267,
+        "end_burst": 10267,
+        "first_seconds": 173.7084465,
+        "last_seconds": 173.7131065
+      },
+      "work_packet_hex": "a53c57005694510d3ab9ee01c8dc55885af75bad22c913050c58cda24673cc037ea9f7e0000001a115cfdd286ccc0000000000000000000007ffffff6cccffffffffffffa75f",
+      "result_packet_hex": "a53c580d6ccc0c012384bbbc1e000a04",
+      "result_offset": 76
+    },
+    {
+      "request_id": 45,
+      "sequence": 270,
+      "slot": 10,
+      "nonce": "6ccc10016a55345b",
+      "difficulty": 128,
+      "work_transfer": 2146,
+      "result_transfer": 2154,
+      "work_physical": {
+        "start_burst": 10339,
+        "end_burst": 10339,
+        "first_seconds": 175.6509403,
+        "last_seconds": 175.6560076
+      },
+      "result_physical": {
+        "start_burst": 10347,
+        "end_burst": 10347,
+        "first_seconds": 175.8683887,
+        "last_seconds": 175.8730487
+      },
+      "work_packet_hex": "a53ca700411d0f8bf3b670d67ee65b8f8bda5bba661b00640d4d7e76eb8dc4c3063ff779000001a115cfe5746ccc0000000000000000000007ffffff6cccffffffffffffce1d",
+      "result_packet_hex": "a53ca8116ccc10016a55345b0d008ef0",
+      "result_offset": 100
+    },
+    {
+      "request_id": 46,
+      "sequence": 271,
+      "slot": 11,
+      "nonce": "6ccc1a001160b7c0",
+      "difficulty": 128,
+      "work_transfer": 2158,
+      "result_transfer": 2160,
+      "work_physical": {
+        "start_burst": 10351,
+        "end_burst": 10351,
+        "first_seconds": 175.967692,
+        "last_seconds": 175.9727593
+      },
+      "result_physical": {
+        "start_burst": 10353,
+        "end_burst": 10353,
+        "first_seconds": 176.0049998,
+        "last_seconds": 176.0096599
+      },
+      "work_packet_hex": "a53cb7005eaca3a6c8b944d433313da58a6cbb9785204aadc175eff820332e18e82da116000001a115cfe6a76ccc0000000000000000000007ffffff6cccffffffffffffece6",
+      "result_packet_hex": "a53cb81b6ccc1a001160b7c0000008f5",
+      "result_offset": 160
+    },
+    {
+      "request_id": 47,
+      "sequence": 273,
+      "slot": 13,
+      "nonce": "6ccc070030ad143b",
+      "difficulty": 128,
+      "work_transfer": 2192,
+      "result_transfer": 2194,
+      "work_physical": {
+        "start_burst": 10385,
+        "end_burst": 10385,
+        "first_seconds": 176.9212416,
+        "last_seconds": 176.9263089
+      },
+      "result_physical": {
+        "start_burst": 10387,
+        "end_burst": 10387,
+        "first_seconds": 176.958365,
+        "last_seconds": 176.963025
+      },
+      "work_packet_hex": "a53cd7007ddcb04a445ea82a7c5c8240c058b8f6bf9f1ff5e4908b228ce22d7354a7b3aa000001a115cfea516ccc0000000000000000000007ffffff6cccffffffffffff9312",
+      "result_packet_hex": "a53cd8086ccc070030ad143b1d00eb5a",
+      "result_offset": 46
+    },
+    {
+      "request_id": 48,
+      "sequence": 275,
+      "slot": 1,
+      "nonce": "6ccc0600a3cbd655",
+      "difficulty": 128,
+      "work_transfer": 2221,
+      "result_transfer": 2225,
+      "work_physical": {
+        "start_burst": 10414,
+        "end_burst": 10414,
+        "first_seconds": 177.7243321,
+        "last_seconds": 177.7293994
+      },
+      "result_physical": {
+        "start_burst": 10418,
+        "end_burst": 10418,
+        "first_seconds": 177.821841,
+        "last_seconds": 177.826501
+      },
+      "work_packet_hex": "a53c17004c776d780f824663562ee9db16d3d3391a4c2b6beb4939cbaf79609bee3a2fe0000001a115cfed886ccc0000000000000000000007ffffff6cccffffffffffff912c",
+      "result_packet_hex": "a53c18076ccc0600a3cbd6550a00f3cd",
+      "result_offset": 40
+    },
+    {
+      "request_id": 49,
+      "sequence": 277,
+      "slot": 3,
+      "nonce": "6ccc16007e1a79c0",
+      "difficulty": 128,
+      "work_transfer": 2249,
+      "result_transfer": 2253,
+      "work_physical": {
+        "start_burst": 10442,
+        "end_burst": 10442,
+        "first_seconds": 178.4830244,
+        "last_seconds": 178.4880917
+      },
+      "result_physical": {
+        "start_burst": 10446,
+        "end_burst": 10446,
+        "first_seconds": 178.5829014,
+        "last_seconds": 178.5875615
+      },
+      "work_packet_hex": "a53c37004f995c1c67ef848ef240d26207310cc46bfcc846f7ae60c118a8e3e7d4f4fccd000001a115cff07d6ccc0000000000000000000007ffffff6cccffffffffffff8a4e",
+      "result_packet_hex": "a53c38176ccc16007e1a79c00000192f",
+      "result_offset": 136
+    },
+    {
+      "request_id": 50,
+      "sequence": 277,
+      "slot": 3,
+      "nonce": "6ccc0801df5b2bee",
+      "difficulty": 128,
+      "work_transfer": 2249,
+      "result_transfer": 2258,
+      "work_physical": {
+        "start_burst": 10442,
+        "end_burst": 10442,
+        "first_seconds": 178.4830244,
+        "last_seconds": 178.4880917
+      },
+      "result_physical": {
+        "start_burst": 10451,
+        "end_burst": 10451,
+        "first_seconds": 178.7450685,
+        "last_seconds": 178.7497285
+      },
+      "work_packet_hex": "a53c37004f995c1c67ef848ef240d26207310cc46bfcc846f7ae60c118a8e3e7d4f4fccd000001a115cff07d6ccc0000000000000000000007ffffff6cccffffffffffff8a4e",
+      "result_packet_hex": "a53c38096ccc0801df5b2bee1700278f",
+      "result_offset": 52
+    },
+    {
+      "request_id": 51,
+      "sequence": 281,
+      "slot": 7,
+      "nonce": "6ccc14020af6cb45",
+      "difficulty": 128,
+      "work_transfer": 2299,
+      "result_transfer": 2309,
+      "work_physical": {
+        "start_burst": 10492,
+        "end_burst": 10492,
+        "first_seconds": 179.8446806,
+        "last_seconds": 179.8497478
+      },
+      "result_physical": {
+        "start_burst": 10502,
+        "end_burst": 10502,
+        "first_seconds": 180.1217763,
+        "last_seconds": 180.1264364
+      },
+      "work_packet_hex": "a53c7700ce8e431d3a825bd5afa3547849852fdee0dbbbd76ce2a3ec8d77b90aab276ae6000001a115cff5d16ccc0000000000000000000007ffffff6cccffffffffffff933b",
+      "result_packet_hex": "a53c78156ccc14020af6cb4502003e90",
+      "result_offset": 124
+    },
+    {
+      "request_id": 52,
+      "sequence": 283,
+      "slot": 9,
+      "nonce": "6ccc0a0045552231",
+      "difficulty": 128,
+      "work_transfer": 2325,
+      "result_transfer": 2327,
+      "work_physical": {
+        "start_burst": 10518,
+        "end_burst": 10518,
+        "first_seconds": 180.5376271,
+        "last_seconds": 180.5426944
+      },
+      "result_physical": {
+        "start_burst": 10520,
+        "end_burst": 10520,
+        "first_seconds": 180.5749899,
+        "last_seconds": 180.5796499
+      },
+      "work_packet_hex": "a53c9700964339086ef4412b08ffd6915b3e089c6407bd1b4178213b4b9b683900f6063d000001a115cff88a6ccc0000000000000000000007ffffff6cccffffffffffff5c9e",
+      "result_packet_hex": "a53c980b6ccc0a0045552231180086d6",
+      "result_offset": 64
+    },
+    {
+      "request_id": 53,
+      "sequence": 287,
+      "slot": 13,
+      "nonce": "6ccc0501bbf199a3",
+      "difficulty": 128,
+      "work_transfer": 2380,
+      "result_transfer": 2389,
+      "work_physical": {
+        "start_burst": 10574,
+        "end_burst": 10574,
+        "first_seconds": 182.0496227,
+        "last_seconds": 182.05469
+      },
+      "result_physical": {
+        "start_burst": 10584,
+        "end_burst": 10584,
+        "first_seconds": 182.3016638,
+        "last_seconds": 182.3063238
+      },
+      "work_packet_hex": "a53cd7004cffa54beeefb477823d527a0c67fb73c631c6c76f3804a1d7a17a0556c479df000001a115cffe766ccc0000000000000000000007ffffff6cccffffffffffff31e5",
+      "result_packet_hex": "a53cd8066ccc0501bbf199a31100debb",
+      "result_offset": 34
+    },
+    {
+      "request_id": 54,
+      "sequence": 287,
+      "slot": 13,
+      "nonce": "6ccc1101ba8e0cc2",
+      "difficulty": 128,
+      "work_transfer": 2380,
+      "result_transfer": 2390,
+      "work_physical": {
+        "start_burst": 10574,
+        "end_burst": 10574,
+        "first_seconds": 182.0496227,
+        "last_seconds": 182.05469
+      },
+      "result_physical": {
+        "start_burst": 10585,
+        "end_burst": 10585,
+        "first_seconds": 182.3316582,
+        "last_seconds": 182.3363182
+      },
+      "work_packet_hex": "a53cd7004cffa54beeefb477823d527a0c67fb73c631c6c76f3804a1d7a17a0556c479df000001a115cffe766ccc0000000000000000000007ffffff6cccffffffffffff31e5",
+      "result_packet_hex": "a53cd8126ccc1101ba8e0cc20100c27c",
+      "result_offset": 106
+    },
+    {
+      "request_id": 55,
+      "sequence": 289,
+      "slot": 1,
+      "nonce": "6ccc150144c2618b",
+      "difficulty": 128,
+      "work_transfer": 2405,
+      "result_transfer": 2412,
+      "work_physical": {
+        "start_burst": 10600,
+        "end_burst": 10600,
+        "first_seconds": 182.7176312,
+        "last_seconds": 182.7226985
+      },
+      "result_physical": {
+        "start_burst": 10607,
+        "end_burst": 10607,
+        "first_seconds": 182.9052326,
+        "last_seconds": 182.9098926
+      },
+      "work_packet_hex": "a53c1700aa591d5132981365fed71f3bec81dd84f21fdf2d434f26086b33cee972b88dbc000001a115d000ff6ccc0000000000000000000007ffffff6cccfffffffffffff82f",
+      "result_packet_hex": "a53c18166ccc150144c2618b0500699b",
+      "result_offset": 130
+    },
+    {
+      "request_id": 56,
+      "sequence": 290,
+      "slot": 2,
+      "nonce": "6ccc0a0201d9f625",
+      "difficulty": 128,
+      "work_transfer": 2417,
+      "result_transfer": 2427,
+      "work_physical": {
+        "start_burst": 10612,
+        "end_burst": 10612,
+        "first_seconds": 183.0344001,
+        "last_seconds": 183.0394674
+      },
+      "result_physical": {
+        "start_burst": 10622,
+        "end_burst": 10622,
+        "first_seconds": 183.328297,
+        "last_seconds": 183.332957
+      },
+      "work_packet_hex": "a53c2700f27fbed285bda600f02ec81af4e039ed30b760fbce5166115d457e840ee17ad1000001a115d002336ccc0000000000000000000007ffffff6cccffffffffffff71a5",
+      "result_packet_hex": "a53c280b6ccc0a0201d9f6251200a670",
+      "result_offset": 64
+    },
+    {
+      "request_id": 57,
+      "sequence": 292,
+      "slot": 4,
+      "nonce": "6ccc050088e855ba",
+      "difficulty": 128,
+      "work_transfer": 2445,
+      "result_transfer": 2449,
+      "work_physical": {
+        "start_burst": 10640,
+        "end_burst": 10640,
+        "first_seconds": 183.8042524,
+        "last_seconds": 183.8093197
+      },
+      "result_physical": {
+        "start_burst": 10644,
+        "end_burst": 10644,
+        "first_seconds": 183.901637,
+        "last_seconds": 183.9062971
+      },
+      "work_packet_hex": "a53c4700b5a152479d4d37b750b10062f5d17ad6f874a5d3dbbadda09139df131284df4a000001a115d005446ccc0000000000000000000007ffffff6cccffffffffffff17dc",
+      "result_packet_hex": "a53c48066ccc050088e855ba1d004d13",
+      "result_offset": 34
+    },
+    {
+      "request_id": 58,
+      "sequence": 293,
+      "slot": 5,
+      "nonce": "6ccc120083813fec",
+      "difficulty": 128,
+      "work_transfer": 2457,
+      "result_transfer": 2461,
+      "work_physical": {
+        "start_burst": 10652,
+        "end_burst": 10652,
+        "first_seconds": 184.1213634,
+        "last_seconds": 184.1264307
+      },
+      "result_physical": {
+        "start_burst": 10656,
+        "end_burst": 10656,
+        "first_seconds": 184.2219093,
+        "last_seconds": 184.2265694
+      },
+      "work_packet_hex": "a53c5700f56ff20ae6e433e5e995bf8be1221b5ad21457cc35bbdc11dfbb2795dfa7eb2b000001a115d0068e6ccc0000000000000000000007ffffff6cccffffffffffffc8f1",
+      "result_packet_hex": "a53c58136ccc120083813fec1600683a",
+      "result_offset": 112
+    },
+    {
+      "request_id": 59,
+      "sequence": 294,
+      "slot": 6,
+      "nonce": "6ccc0900d610ab65",
+      "difficulty": 128,
+      "work_transfer": 2469,
+      "result_transfer": 2474,
+      "work_physical": {
+        "start_burst": 10664,
+        "end_burst": 10664,
+        "first_seconds": 184.4543745,
+        "last_seconds": 184.4594418
+      },
+      "result_physical": {
+        "start_burst": 10669,
+        "end_burst": 10669,
+        "first_seconds": 184.5815991,
+        "last_seconds": 184.5862591
+      },
+      "work_packet_hex": "a53c67003716ec12ac33f61d2513f71d373a7ab6b139077d29119fd3dbd02502bc39f6dc000001a115d007dc6ccc0000000000000000000007ffffff6cccffffffffffff29e7",
+      "result_packet_hex": "a53c680a6ccc0900d610ab651200cae1",
+      "result_offset": 58
+    },
+    {
+      "request_id": 60,
+      "sequence": 294,
+      "slot": 6,
+      "nonce": "6ccc03024631df00",
+      "difficulty": 128,
+      "work_transfer": 2469,
+      "result_transfer": 2480,
+      "work_physical": {
+        "start_burst": 10664,
+        "end_burst": 10664,
+        "first_seconds": 184.4543745,
+        "last_seconds": 184.4594418
+      },
+      "result_physical": {
+        "start_burst": 10675,
+        "end_burst": 10675,
+        "first_seconds": 184.7615732,
+        "last_seconds": 184.7662332
+      },
+      "work_packet_hex": "a53c67003716ec12ac33f61d2513f71d373a7ab6b139077d29119fd3dbd02502bc39f6dc000001a115d007dc6ccc0000000000000000000007ffffff6cccffffffffffff29e7",
+      "result_packet_hex": "a53c68046ccc03024631df000000bd3f",
+      "result_offset": 22
+    },
+    {
+      "request_id": 61,
+      "sequence": 296,
+      "slot": 8,
+      "nonce": "6ccc170188258991",
+      "difficulty": 128,
+      "work_transfer": 2499,
+      "result_transfer": 2507,
+      "work_physical": {
+        "start_burst": 10694,
+        "end_burst": 10694,
+        "first_seconds": 185.2678861,
+        "last_seconds": 185.2729534
+      },
+      "result_physical": {
+        "start_burst": 10702,
+        "end_burst": 10702,
+        "first_seconds": 185.4958866,
+        "last_seconds": 185.5005466
+      },
+      "work_packet_hex": "a53c87002c2815b89846a27d162b278f6d3320c24321293fca2f42ecf5042c4a3e8f99a3000001a115d00af66ccc0000000000000000000007ffffff6cccffffffffffff7c43",
+      "result_packet_hex": "a53c88186ccc17018825899108001953",
+      "result_offset": 142
+    },
+    {
+      "request_id": 62,
+      "sequence": 298,
+      "slot": 10,
+      "nonce": "6ccc0001bf4363ec",
+      "difficulty": 128,
+      "work_transfer": 2524,
+      "result_transfer": 2533,
+      "work_physical": {
+        "start_burst": 10719,
+        "end_burst": 10719,
+        "first_seconds": 185.9477223,
+        "last_seconds": 185.9527896
+      },
+      "result_physical": {
+        "start_burst": 10728,
+        "end_burst": 10728,
+        "first_seconds": 186.1950097,
+        "last_seconds": 186.1996698
+      },
+      "work_packet_hex": "a53ca700c2311111cb8dba8ed7a6ffe360d64c55cf4ac9fa1d9ba3545904980c4d75f33e000001a115d00d8f6ccc0000000000000000000007ffffff6cccfffffffffffffe86",
+      "result_packet_hex": "a53ca8016ccc0001bf4363ec16003ac1",
+      "result_offset": 4
+    },
+    {
+      "request_id": 63,
+      "sequence": 300,
+      "slot": 12,
+      "nonce": "6ccc10021e85e120",
+      "difficulty": 128,
+      "work_transfer": 2550,
+      "result_transfer": 2561,
+      "work_physical": {
+        "start_burst": 10746,
+        "end_burst": 10746,
+        "first_seconds": 186.653366,
+        "last_seconds": 186.6584333
+      },
+      "result_physical": {
+        "start_burst": 10757,
+        "end_burst": 10757,
+        "first_seconds": 186.9651529,
+        "last_seconds": 186.9698129
+      },
+      "work_packet_hex": "a53cc700fafe2a6e075dfe2b3ca591587b9f3588fcbe99d7b3a4047b76882dd5f63cd895000001a115d0106a6ccc0000000000000000000007ffffff6cccffffffffffffbcb3",
+      "result_packet_hex": "a53cc8116ccc10021e85e1201000b109",
+      "result_offset": 100
+    },
+    {
+      "request_id": 64,
+      "sequence": 302,
+      "slot": 14,
+      "nonce": "6ccc140003168328",
+      "difficulty": 128,
+      "work_transfer": 2575,
+      "result_transfer": 2576,
+      "work_physical": {
+        "start_burst": 10771,
+        "end_burst": 10771,
+        "first_seconds": 187.3208914,
+        "last_seconds": 187.3259587
+      },
+      "result_physical": {
+        "start_burst": 10772,
+        "end_burst": 10772,
+        "first_seconds": 187.326175,
+        "last_seconds": 187.330835
+      },
+      "work_packet_hex": "a53ce7008d34ba446e385f549c6ab0ae6c5a11c0122ff1e734af99d6339bc642d390f694000001a115d012fe6ccc0000000000000000000007ffffff6cccffffffffffff8632",
+      "result_packet_hex": "a53ce8156ccc1400031683281400a2be",
+      "result_offset": 124
+    },
+    {
+      "request_id": 65,
+      "sequence": 303,
+      "slot": 1,
+      "nonce": "6ccc1900db46f1fe",
+      "difficulty": 128,
+      "work_transfer": 2589,
+      "result_transfer": 2594,
+      "work_physical": {
+        "start_burst": 10785,
+        "end_burst": 10785,
+        "first_seconds": 187.702477,
+        "last_seconds": 187.7075443
+      },
+      "result_physical": {
+        "start_burst": 10790,
+        "end_burst": 10790,
+        "first_seconds": 187.8359484,
+        "last_seconds": 187.8406084
+      },
+      "work_packet_hex": "a53c170074277eaf0b4866235b2e2ff363479a5b3148df42a619a98bd7e3f06e562c422f000001a115d013466ccc0000000000000000000007ffffff6cccffffffffffff4fff",
+      "result_packet_hex": "a53c181a6ccc1900db46f1fe1f001573",
+      "result_offset": 154
+    },
+    {
+      "request_id": 66,
+      "sequence": 308,
+      "slot": 6,
+      "nonce": "6ccc1d02bb0b136d",
+      "difficulty": 128,
+      "work_transfer": 2661,
+      "result_transfer": 2674,
+      "work_physical": {
+        "start_burst": 10858,
+        "end_burst": 10858,
+        "first_seconds": 189.6741889,
+        "last_seconds": 189.6792561
+      },
+      "result_physical": {
+        "start_burst": 10872,
+        "end_burst": 10872,
+        "first_seconds": 190.0556347,
+        "last_seconds": 190.0602947
+      },
+      "work_packet_hex": "a53c670091c434f371d0094a72479fe06e57de34dcd171281341532d134b0eb0003b9090000001a115d01c3b6ccc0000000000000000000007ffffff6cccffffffffffff0c4c",
+      "result_packet_hex": "a53c681e6ccc1d02bb0b136d160056b1",
+      "result_offset": 178
+    },
+    {
+      "request_id": 67,
+      "sequence": 310,
+      "slot": 8,
+      "nonce": "6ccc0902e15f9458",
+      "difficulty": 128,
+      "work_transfer": 2694,
+      "result_transfer": 2708,
+      "work_physical": {
+        "start_burst": 10892,
+        "end_burst": 10892,
+        "first_seconds": 190.6009178,
+        "last_seconds": 190.6059851
+      },
+      "result_physical": {
+        "start_burst": 10906,
+        "end_burst": 10906,
+        "first_seconds": 191.0017277,
+        "last_seconds": 191.0063877
+      },
+      "work_packet_hex": "a53c8700047b3e0bd8f23b08bbed801f9dceda8040ca22efb81382e3da8d6f218045fd38000001a115d01fd36ccc0000000000000000000007ffffff6cccffffffffffffe975",
+      "result_packet_hex": "a53c880a6ccc0902e15f94580c0055a4",
+      "result_offset": 58
+    },
+    {
+      "request_id": 68,
+      "sequence": 311,
+      "slot": 9,
+      "nonce": "6ccc1d0068432e0d",
+      "difficulty": 128,
+      "work_transfer": 2711,
+      "result_transfer": 2714,
+      "work_physical": {
+        "start_burst": 10909,
+        "end_burst": 10909,
+        "first_seconds": 191.0720023,
+        "last_seconds": 191.0770696
+      },
+      "result_physical": {
+        "start_burst": 10912,
+        "end_burst": 10912,
+        "first_seconds": 191.1391659,
+        "last_seconds": 191.1438259
+      },
+      "work_packet_hex": "a53c9700810e6d505a304326f05aaa9e466347b63dd54eda52dfda45531f0abbb5958bdb000001a115d021ab6ccc0000000000000000000007ffffff6cccffffffffffffb257",
+      "result_packet_hex": "a53c981e6ccc1d0068432e0d0600a0c9",
+      "result_offset": 178
+    },
+    {
+      "request_id": 69,
+      "sequence": 311,
+      "slot": 9,
+      "nonce": "6ccc1c01ea40490e",
+      "difficulty": 128,
+      "work_transfer": 2711,
+      "result_transfer": 2720,
+      "work_physical": {
+        "start_burst": 10909,
+        "end_burst": 10909,
+        "first_seconds": 191.0720023,
+        "last_seconds": 191.0770696
+      },
+      "result_physical": {
+        "start_burst": 10918,
+        "end_burst": 10918,
+        "first_seconds": 191.3350185,
+        "last_seconds": 191.3396785
+      },
+      "work_packet_hex": "a53c9700810e6d505a304326f05aaa9e466347b63dd54eda52dfda45531f0abbb5958bdb000001a115d021ab6ccc0000000000000000000007ffffff6cccffffffffffffb257",
+      "result_packet_hex": "a53c981d6ccc1c01ea40490e070014e1",
+      "result_offset": 172
+    },
+    {
+      "request_id": 70,
+      "sequence": 313,
+      "slot": 11,
+      "nonce": "6ccc17017a67d34c",
+      "difficulty": 128,
+      "work_transfer": 2735,
+      "result_transfer": 2744,
+      "work_physical": {
+        "start_burst": 10933,
+        "end_burst": 10933,
+        "first_seconds": 191.7213164,
+        "last_seconds": 191.7263837
+      },
+      "result_physical": {
+        "start_burst": 10942,
+        "end_burst": 10942,
+        "first_seconds": 191.9682832,
+        "last_seconds": 191.9729432
+      },
+      "work_packet_hex": "a53cb700e7eec83c3c4b5e092bf6a783d5c1e199fce9e7c564b5be3e52260dde11956c76000001a115d024306ccc0000000000000000000007ffffff6cccffffffffffff4b51",
+      "result_packet_hex": "a53cb8186ccc17017a67d34c06006325",
+      "result_offset": 142
+    },
+    {
+      "request_id": 71,
+      "sequence": 316,
+      "slot": 14,
+      "nonce": "6ccc1401c2ee4c61",
+      "difficulty": 128,
+      "work_transfer": 2775,
+      "result_transfer": 2785,
+      "work_physical": {
+        "start_burst": 10973,
+        "end_burst": 10973,
+        "first_seconds": 192.8074982,
+        "last_seconds": 192.8125655
+      },
+      "result_physical": {
+        "start_burst": 10983,
+        "end_burst": 10983,
+        "first_seconds": 193.0848753,
+        "last_seconds": 193.0895353
+      },
+      "work_packet_hex": "a53ce7002c345b6f128aa01a96578607fffaee4e63ebb0a42f14809c7b2e62482de94171000001a115d028716ccc0000000000000000000007ffffff6cccffffffffffff9428",
+      "result_packet_hex": "a53ce8156ccc1401c2ee4c6110006b64",
+      "result_offset": 124
+    },
+    {
+      "request_id": 72,
+      "sequence": 317,
+      "slot": 1,
+      "nonce": "6ccc1302e087c708",
+      "difficulty": 128,
+      "work_transfer": 2792,
+      "result_transfer": 2805,
+      "work_physical": {
+        "start_burst": 10990,
+        "end_burst": 10990,
+        "first_seconds": 193.2744181,
+        "last_seconds": 193.2794854
+      },
+      "result_physical": {
+        "start_burst": 11003,
+        "end_burst": 11003,
+        "first_seconds": 193.6615435,
+        "last_seconds": 193.6662035
+      },
+      "work_packet_hex": "a53c17003e11d24f1ee7955b0a43441fdcf81ca762323644f3ded0008594319927618371000001a115d02a476ccc0000000000000000000007ffffff6cccffffffffffffa714",
+      "result_packet_hex": "a53c18146ccc1302e087c7080400a89b",
+      "result_offset": 118
+    },
+    {
+      "request_id": 73,
+      "sequence": 317,
+      "slot": 1,
+      "nonce": "6ccc16033f3fc0c7",
+      "difficulty": 128,
+      "work_transfer": 2792,
+      "result_transfer": 2807,
+      "work_physical": {
+        "start_burst": 10990,
+        "end_burst": 10990,
+        "first_seconds": 193.2744181,
+        "last_seconds": 193.2794854
+      },
+      "result_physical": {
+        "start_burst": 11005,
+        "end_burst": 11005,
+        "first_seconds": 193.7220341,
+        "last_seconds": 193.7266941
+      },
+      "work_packet_hex": "a53c17003e11d24f1ee7955b0a43441fdcf81ca762323644f3ded0008594319927618371000001a115d02a476ccc0000000000000000000007ffffff6cccffffffffffffa714",
+      "result_packet_hex": "a53c18176ccc16033f3fc0c703005912",
+      "result_offset": 136
+    },
+    {
+      "request_id": 74,
+      "sequence": 318,
+      "slot": 2,
+      "nonce": "6ccc1a022c0f5221",
+      "difficulty": 128,
+      "work_transfer": 2814,
+      "result_transfer": 2825,
+      "work_physical": {
+        "start_burst": 11012,
+        "end_burst": 11012,
+        "first_seconds": 193.9110663,
+        "last_seconds": 193.9161336
+      },
+      "result_physical": {
+        "start_burst": 11023,
+        "end_burst": 11023,
+        "first_seconds": 194.2182005,
+        "last_seconds": 194.2228605
+      },
+      "work_packet_hex": "a53c27009d82a277c7a9300d26d857b2002f06e17a124f10c8967218575b1f2f546a2e88000001a115d02cbc6ccc0000000000000000000007ffffff6cccffffffffffff0a2c",
+      "result_packet_hex": "a53c281b6ccc1a022c0f522110007af5",
+      "result_offset": 160
+    },
+    {
+      "request_id": 75,
+      "sequence": 324,
+      "slot": 8,
+      "nonce": "6ccc08009699ff82",
+      "difficulty": 128,
+      "work_transfer": 2900,
+      "result_transfer": 2904,
+      "work_physical": {
+        "start_burst": 11098,
+        "end_burst": 11098,
+        "first_seconds": 196.2708852,
+        "last_seconds": 196.2759525
+      },
+      "result_physical": {
+        "start_burst": 11102,
+        "end_burst": 11102,
+        "first_seconds": 196.3682393,
+        "last_seconds": 196.3728994
+      },
+      "work_packet_hex": "a53c8700aa78aa691efcc1ce851863fefc5b47343286c92c0b6ea01e2e1d61f7b55b753f000001a115d035fb6ccc0000000000000000000007ffffff6cccffffffffffff4f9e",
+      "result_packet_hex": "a53c88096ccc08009699ff820100af8e",
+      "result_offset": 52
+    },
+    {
+      "request_id": 76,
+      "sequence": 324,
+      "slot": 8,
+      "nonce": "6ccc0904526d809b",
+      "difficulty": 128,
+      "work_transfer": 2900,
+      "result_transfer": 2920,
+      "work_physical": {
+        "start_burst": 11098,
+        "end_burst": 11098,
+        "first_seconds": 196.2708852,
+        "last_seconds": 196.2759525
+      },
+      "result_physical": {
+        "start_burst": 11118,
+        "end_burst": 11118,
+        "first_seconds": 196.8519325,
+        "last_seconds": 196.8565925
+      },
+      "work_packet_hex": "a53c8700aa78aa691efcc1ce851863fefc5b47343286c92c0b6ea01e2e1d61f7b55b753f000001a115d035fb6ccc0000000000000000000007ffffff6cccffffffffffff4f9e",
+      "result_packet_hex": "a53c880a6ccc0904526d809b0d002db2",
+      "result_offset": 58
+    },
+    {
+      "request_id": 77,
+      "sequence": 329,
+      "slot": 13,
+      "nonce": "6ccc12010f509202",
+      "difficulty": 128,
+      "work_transfer": 2985,
+      "result_transfer": 2991,
+      "work_physical": {
+        "start_burst": 11183,
+        "end_burst": 11183,
+        "first_seconds": 198.6407774,
+        "last_seconds": 198.6458447
+      },
+      "result_physical": {
+        "start_burst": 11189,
+        "end_burst": 11189,
+        "first_seconds": 198.7982259,
+        "last_seconds": 198.8028859
+      },
+      "work_packet_hex": "a53cd70079d0ac64c3577fd267aaeca3f7d9e7d34b491ef600e35a2d42fe66510a80cb51000001a115d03f3a6ccc0000000000000000000007ffffff6cccffffffffffff26d5",
+      "result_packet_hex": "a53cd8136ccc12010f5092020100494d",
+      "result_offset": 112
+    },
+    {
+      "request_id": 78,
+      "sequence": 329,
+      "slot": 13,
+      "nonce": "6ccc1b010755640d",
+      "difficulty": 128,
+      "work_transfer": 2985,
+      "result_transfer": 2992,
+      "work_physical": {
+        "start_burst": 11183,
+        "end_burst": 11183,
+        "first_seconds": 198.6407774,
+        "last_seconds": 198.6458447
+      },
+      "result_physical": {
+        "start_burst": 11190,
+        "end_burst": 11190,
+        "first_seconds": 198.8281693,
+        "last_seconds": 198.8328293
+      },
+      "work_packet_hex": "a53cd70079d0ac64c3577fd267aaeca3f7d9e7d34b491ef600e35a2d42fe66510a80cb51000001a115d03f3a6ccc0000000000000000000007ffffff6cccffffffffffff26d5",
+      "result_packet_hex": "a53cd81c6ccc1b010755640d0600520c",
+      "result_offset": 166
+    },
+    {
+      "request_id": 79,
+      "sequence": 331,
+      "slot": 1,
+      "nonce": "6ccc1a01664aaae4",
+      "difficulty": 128,
+      "work_transfer": 3011,
+      "result_transfer": 3019,
+      "work_physical": {
+        "start_burst": 11209,
+        "end_burst": 11209,
+        "first_seconds": 199.3579425,
+        "last_seconds": 199.3630098
+      },
+      "result_physical": {
+        "start_burst": 11217,
+        "end_burst": 11217,
+        "first_seconds": 199.5748633,
+        "last_seconds": 199.5795233
+      },
+      "work_packet_hex": "a53c1700fed4baeb78869027b50ce9ded597cad278d34b50891e4e1f8c19a82453b1fc64000001a115d0420a6ccc0000000000000000000007ffffff6cccffffffffffff59c2",
+      "result_packet_hex": "a53c181b6ccc1a01664aaae41200c45c",
+      "result_offset": 160
+    },
+    {
+      "request_id": 80,
+      "sequence": 332,
+      "slot": 2,
+      "nonce": "6ccc1d025a8c2428",
+      "difficulty": 128,
+      "work_transfer": 3027,
+      "result_transfer": 3039,
+      "work_physical": {
+        "start_burst": 11225,
+        "end_burst": 11225,
+        "first_seconds": 199.7941711,
+        "last_seconds": 199.7992384
+      },
+      "result_physical": {
+        "start_burst": 11237,
+        "end_burst": 11237,
+        "first_seconds": 200.1351255,
+        "last_seconds": 200.1397855
+      },
+      "work_packet_hex": "a53c27006db13f4c17afe35a982502677c67b89da02b56f765f17efbc531e589e789c9bb000001a115d043b06ccc0000000000000000000007ffffff6cccffffffffffff488e",
+      "result_packet_hex": "a53c281e6ccc1d025a8c24281400f33c",
+      "result_offset": 178
+    },
+    {
+      "request_id": 81,
+      "sequence": 335,
+      "slot": 5,
+      "nonce": "6ccc0f006ac6fc14",
+      "difficulty": 128,
+      "work_transfer": 3067,
+      "result_transfer": 3070,
+      "work_physical": {
+        "start_burst": 11265,
+        "end_burst": 11265,
+        "first_seconds": 200.8841233,
+        "last_seconds": 200.8891906
+      },
+      "result_physical": {
+        "start_burst": 11268,
+        "end_burst": 11268,
+        "first_seconds": 200.9515252,
+        "last_seconds": 200.9561853
+      },
+      "work_packet_hex": "a53c57002294108be2ded5550486d58570eafc44b50e74745fd02440bef53d5d74953ffa000001a115d047f06ccc0000000000000000000007ffffff6cccffffffffffffa184",
+      "result_packet_hex": "a53c58106ccc0f006ac6fc140a00bd30",
+      "result_offset": 94
+    },
+    {
+      "request_id": 82,
+      "sequence": 336,
+      "slot": 6,
+      "nonce": "6ccc0d031f012a00",
+      "difficulty": 128,
+      "work_transfer": 3083,
+      "result_transfer": 3098,
+      "work_physical": {
+        "start_burst": 11281,
+        "end_burst": 11281,
+        "first_seconds": 201.3210732,
+        "last_seconds": 201.3261405
+      },
+      "result_physical": {
+        "start_burst": 11296,
+        "end_burst": 11296,
+        "first_seconds": 201.7615596,
+        "last_seconds": 201.7662196
+      },
+      "work_packet_hex": "a53c6700ddab6a4c1fb82b99ad3ef9badfd9d43e12c29d000e073e70bed618751db4c797000001a115d049a86ccc0000000000000000000007ffffff6cccffffffffffff57b1",
+      "result_packet_hex": "a53c680e6ccc0d031f012a000000e4a9",
+      "result_offset": 82
+    },
+    {
+      "request_id": 83,
+      "sequence": 337,
+      "slot": 7,
+      "nonce": "6ccc01019f1ee7ec",
+      "difficulty": 128,
+      "work_transfer": 3106,
+      "result_transfer": 3115,
+      "work_physical": {
+        "start_burst": 11304,
+        "end_burst": 11304,
+        "first_seconds": 201.9809479,
+        "last_seconds": 201.9860152
+      },
+      "result_physical": {
+        "start_burst": 11313,
+        "end_burst": 11313,
+        "first_seconds": 202.2281484,
+        "last_seconds": 202.2328084
+      },
+      "work_packet_hex": "a53c770093ed73b57e1fea45299cc72897525c9d2526e68a3e211b641125b9b725a73890000001a115d04c266ccc0000000000000000000007ffffff6cccffffffffffff166e",
+      "result_packet_hex": "a53c78026ccc01019f1ee7ec16007603",
+      "result_offset": 10
+    },
+    {
+      "request_id": 84,
+      "sequence": 342,
+      "slot": 12,
+      "nonce": "6ccc18021d13d2cc",
+      "difficulty": 128,
+      "work_transfer": 3177,
+      "result_transfer": 3188,
+      "work_physical": {
+        "start_burst": 11375,
+        "end_burst": 11375,
+        "first_seconds": 203.9317802,
+        "last_seconds": 203.9368475
+      },
+      "result_physical": {
+        "start_burst": 11386,
+        "end_burst": 11386,
+        "first_seconds": 204.2381436,
+        "last_seconds": 204.2428037
+      },
+      "work_packet_hex": "a53cc7002487cbb3796545f779139cb8d1cd7ec76dfb14b0ec3f590e72e788b33debf0a4000001a115d053dd6ccc0000000000000000000007ffffff6cccffffffffffff2cd7",
+      "result_packet_hex": "a53cc8196ccc18021d13d2cc060018ee",
+      "result_offset": 148
+    },
+    {
+      "request_id": 85,
+      "sequence": 344,
+      "slot": 14,
+      "nonce": "6ccc160159c7ee06",
+      "difficulty": 128,
+      "work_transfer": 3205,
+      "result_transfer": 3213,
+      "work_physical": {
+        "start_burst": 11403,
+        "end_burst": 11403,
+        "first_seconds": 204.68518,
+        "last_seconds": 204.6902473
+      },
+      "result_physical": {
+        "start_burst": 11411,
+        "end_burst": 11411,
+        "first_seconds": 204.9093443,
+        "last_seconds": 204.9140043
+      },
+      "work_packet_hex": "a53ce700bea5cf179abe2d53035a0f908cb44e35441231d95347aae4fdee41530608f849000001a115d056e16ccc0000000000000000000007ffffff6cccffffffffffff7af4",
+      "result_packet_hex": "a53ce8176ccc160159c7ee060300d13e",
+      "result_offset": 136
+    },
+    {
+      "request_id": 86,
+      "sequence": 349,
+      "slot": 5,
+      "nonce": "6ccc0d014e5d3d87",
+      "difficulty": 128,
+      "work_transfer": 3272,
+      "result_transfer": 3279,
+      "work_physical": {
+        "start_burst": 11470,
+        "end_burst": 11470,
+        "first_seconds": 206.5142924,
+        "last_seconds": 206.5193597
+      },
+      "result_physical": {
+        "start_burst": 11477,
+        "end_burst": 11477,
+        "first_seconds": 206.7015284,
+        "last_seconds": 206.7061884
+      },
+      "work_packet_hex": "a53c57005d70844aeeb406a58075fc08b23b0e50f816a1f165915487516068ba965458a0000001a115d05df26ccc0000000000000000000007ffffff6cccffffffffffff35d5",
+      "result_packet_hex": "a53c580e6ccc0d014e5d3d87030032fe",
+      "result_offset": 82
+    },
+    {
+      "request_id": 87,
+      "sequence": 352,
+      "slot": 8,
+      "nonce": "6ccc0400dde23bfc",
+      "difficulty": 128,
+      "work_transfer": 3312,
+      "result_transfer": 3317,
+      "work_physical": {
+        "start_burst": 11510,
+        "end_burst": 11510,
+        "first_seconds": 207.6007633,
+        "last_seconds": 207.6058306
+      },
+      "result_physical": {
+        "start_burst": 11515,
+        "end_burst": 11515,
+        "first_seconds": 207.7281663,
+        "last_seconds": 207.7328264
+      },
+      "work_packet_hex": "a53c87003e6da5f5fd1538860234e5787b06489a68956c3f88795a89e1d4c1035d78f7a3000001a115d061c06ccc0000000000000000000007ffffff6cccffffffffffff6f37",
+      "result_packet_hex": "a53c88056ccc0400dde23bfc1e000aee",
+      "result_offset": 28
+    },
+    {
+      "request_id": 88,
+      "sequence": 352,
+      "slot": 8,
+      "nonce": "6ccc1d00dc50ca25",
+      "difficulty": 128,
+      "work_transfer": 3312,
+      "result_transfer": 3318,
+      "work_physical": {
+        "start_burst": 11510,
+        "end_burst": 11510,
+        "first_seconds": 207.6007633,
+        "last_seconds": 207.6058306
+      },
+      "result_physical": {
+        "start_burst": 11516,
+        "end_burst": 11516,
+        "first_seconds": 207.7581977,
+        "last_seconds": 207.7628578
+      },
+      "work_packet_hex": "a53c87003e6da5f5fd1538860234e5787b06489a68956c3f88795a89e1d4c1035d78f7a3000001a115d061c06ccc0000000000000000000007ffffff6cccffffffffffff6f37",
+      "result_packet_hex": "a53c881e6ccc1d00dc50ca251200ba3b",
+      "result_offset": 178
+    },
+    {
+      "request_id": 89,
+      "sequence": 352,
+      "slot": 8,
+      "nonce": "6ccc03021f6f5968",
+      "difficulty": 128,
+      "work_transfer": 3312,
+      "result_transfer": 3323,
+      "work_physical": {
+        "start_burst": 11510,
+        "end_burst": 11510,
+        "first_seconds": 207.6007633,
+        "last_seconds": 207.6058306
+      },
+      "result_physical": {
+        "start_burst": 11521,
+        "end_burst": 11521,
+        "first_seconds": 207.9081697,
+        "last_seconds": 207.9128297
+      },
+      "work_packet_hex": "a53c87003e6da5f5fd1538860234e5787b06489a68956c3f88795a89e1d4c1035d78f7a3000001a115d061c06ccc0000000000000000000007ffffff6cccffffffffffff6f37",
+      "result_packet_hex": "a53c88046ccc03021f6f59681400adc2",
+      "result_offset": 22
+    },
+    {
+      "request_id": 90,
+      "sequence": 353,
+      "slot": 9,
+      "nonce": "6ccc110014db5e7e",
+      "difficulty": 128,
+      "work_transfer": 3326,
+      "result_transfer": 3328,
+      "work_physical": {
+        "start_burst": 11524,
+        "end_burst": 11524,
+        "first_seconds": 207.9777156,
+        "last_seconds": 207.9827829
+      },
+      "result_physical": {
+        "start_burst": 11526,
+        "end_burst": 11526,
+        "first_seconds": 208.0147803,
+        "last_seconds": 208.0194403
+      },
+      "work_packet_hex": "a53c9700c7fbf33f35ff1922faef2d2d780e5d04776e1d7eea56a341468a3a41c8714da5000001a115d062996ccc0000000000000000000007ffffff6cccffffffffffff6eff",
+      "result_packet_hex": "a53c98126ccc110014db5e7e1f006850",
+      "result_offset": 106
+    },
+    {
+      "request_id": 91,
+      "sequence": 355,
+      "slot": 11,
+      "nonce": "6ccc0500ee6093d6",
+      "difficulty": 128,
+      "work_transfer": 3364,
+      "result_transfer": 3369,
+      "work_physical": {
+        "start_burst": 11562,
+        "end_burst": 11562,
+        "first_seconds": 209.0441795,
+        "last_seconds": 209.0492468
+      },
+      "result_physical": {
+        "start_burst": 11567,
+        "end_burst": 11567,
+        "first_seconds": 209.1714467,
+        "last_seconds": 209.1761067
+      },
+      "work_packet_hex": "a53cb700d12e8e6f7eb0748c33a60b6f7efd6c30cb64cb1539f978eaf7abd7071d3d613e000001a115d067e06ccc0000000000000000000007ffffff6cccffffffffffff99a9",
+      "result_packet_hex": "a53cb8066ccc0500ee6093d60b009837",
+      "result_offset": 34
+    },
+    {
+      "request_id": 92,
+      "sequence": 355,
+      "slot": 11,
+      "nonce": "6ccc0d015b515ed5",
+      "difficulty": 128,
+      "work_transfer": 3364,
+      "result_transfer": 3374,
+      "work_physical": {
+        "start_burst": 11562,
+        "end_burst": 11562,
+        "first_seconds": 209.0441795,
+        "last_seconds": 209.0492468
+      },
+      "result_physical": {
+        "start_burst": 11572,
+        "end_burst": 11572,
+        "first_seconds": 209.3249526,
+        "last_seconds": 209.3296126
+      },
+      "work_packet_hex": "a53cb700d12e8e6f7eb0748c33a60b6f7efd6c30cb64cb1539f978eaf7abd7071d3d613e000001a115d067e06ccc0000000000000000000007ffffff6cccffffffffffff99a9",
+      "result_packet_hex": "a53cb80e6ccc0d015b515ed50a00b702",
+      "result_offset": 82
+    },
+    {
+      "request_id": 93,
+      "sequence": 356,
+      "slot": 12,
+      "nonce": "6ccc0b016d486776",
+      "difficulty": 128,
+      "work_transfer": 3377,
+      "result_transfer": 3384,
+      "work_physical": {
+        "start_burst": 11575,
+        "end_burst": 11575,
+        "first_seconds": 209.3944505,
+        "last_seconds": 209.3995177
+      },
+      "result_physical": {
+        "start_burst": 11582,
+        "end_burst": 11582,
+        "first_seconds": 209.5891074,
+        "last_seconds": 209.5937674
+      },
+      "work_packet_hex": "a53cc7009105947654f27265cedc97a7af00baecf1df9f0c64136cb60581cde374c9a062000001a115d0692f6ccc0000000000000000000007ffffff6cccffffffffffff6180",
+      "result_packet_hex": "a53cc80c6ccc0b016d4867761b00a77c",
+      "result_offset": 70
+    },
+    {
+      "request_id": 94,
+      "sequence": 356,
+      "slot": 12,
+      "nonce": "6ccc1201662bf8a6",
+      "difficulty": 128,
+      "work_transfer": 3377,
+      "result_transfer": 3385,
+      "work_physical": {
+        "start_burst": 11575,
+        "end_burst": 11575,
+        "first_seconds": 209.3944505,
+        "last_seconds": 209.3995177
+      },
+      "result_physical": {
+        "start_burst": 11583,
+        "end_burst": 11583,
+        "first_seconds": 209.6228039,
+        "last_seconds": 209.627464
+      },
+      "work_packet_hex": "a53cc7009105947654f27265cedc97a7af00baecf1df9f0c64136cb60581cde374c9a062000001a115d0692f6ccc0000000000000000000007ffffff6cccffffffffffff6180",
+      "result_packet_hex": "a53cc8136ccc1201662bf8a61300b58e",
+      "result_offset": 112
+    },
+    {
+      "request_id": 95,
+      "sequence": 357,
+      "slot": 13,
+      "nonce": "6ccc0b001e44b10d",
+      "difficulty": 128,
+      "work_transfer": 3395,
+      "result_transfer": 3397,
+      "work_physical": {
+        "start_burst": 11593,
+        "end_burst": 11593,
+        "first_seconds": 209.9040483,
+        "last_seconds": 209.9091156
+      },
+      "result_physical": {
+        "start_burst": 11595,
+        "end_burst": 11595,
+        "first_seconds": 209.9414444,
+        "last_seconds": 209.9461044
+      },
+      "work_packet_hex": "a53cd70000c7ef53fca59a6650a0ef6bb149f73f0bd18bad4f83f7ea70bcf23c611b4eb2000001a115d06b386ccc0000000000000000000007ffffff6cccffffffffffff4e7c",
+      "result_packet_hex": "a53cd80c6ccc0b001e44b10d060066af",
+      "result_offset": 70
+    },
+    {
+      "request_id": 96,
+      "sequence": 358,
+      "slot": 14,
+      "nonce": "6ccc1300d9f95934",
+      "difficulty": 128,
+      "work_transfer": 3408,
+      "result_transfer": 3413,
+      "work_physical": {
+        "start_burst": 11606,
+        "end_burst": 11606,
+        "first_seconds": 210.2508793,
+        "last_seconds": 210.2559466
+      },
+      "result_physical": {
+        "start_burst": 11611,
+        "end_burst": 11611,
+        "first_seconds": 210.3780905,
+        "last_seconds": 210.3827505
+      },
+      "work_packet_hex": "a53ce70083ef109478e064b2b8795750019bb9bdbf1f57aaf5ea0a06c9c8340207339935000001a115d06c896ccc0000000000000000000007ffffff6cccffffffffffff51d1",
+      "result_packet_hex": "a53ce8146ccc1300d9f959341a00ad68",
+      "result_offset": 118
+    },
+    {
+      "request_id": 97,
+      "sequence": 359,
+      "slot": 1,
+      "nonce": "6ccc0e003d9c501a",
+      "difficulty": 128,
+      "work_transfer": 3425,
+      "result_transfer": 3428,
+      "work_physical": {
+        "start_burst": 11623,
+        "end_burst": 11623,
+        "first_seconds": 210.7297228,
+        "last_seconds": 210.7347901
+      },
+      "result_physical": {
+        "start_burst": 11626,
+        "end_burst": 11626,
+        "first_seconds": 210.7983137,
+        "last_seconds": 210.8029737
+      },
+      "work_packet_hex": "a53c1700fd1a47925e5943ce051b6d38114dca09528123db650f2f58c1a2d101ba427d60000001a115d06e676ccc0000000000000000000007ffffff6cccffffffffffffb852",
+      "result_packet_hex": "a53c180f6ccc0e003d9c501a0d002e14",
+      "result_offset": 88
+    },
+    {
+      "request_id": 98,
+      "sequence": 359,
+      "slot": 1,
+      "nonce": "6ccc0800dd964f97",
+      "difficulty": 128,
+      "work_transfer": 3425,
+      "result_transfer": 3430,
+      "work_physical": {
+        "start_burst": 11623,
+        "end_burst": 11623,
+        "first_seconds": 210.7297228,
+        "last_seconds": 210.7347901
+      },
+      "result_physical": {
+        "start_burst": 11628,
+        "end_burst": 11628,
+        "first_seconds": 210.8581043,
+        "last_seconds": 210.8627643
+      },
+      "work_packet_hex": "a53c1700fd1a47925e5943ce051b6d38114dca09528123db650f2f58c1a2d101ba427d60000001a115d06e676ccc0000000000000000000007ffffff6cccffffffffffffb852",
+      "result_packet_hex": "a53c18096ccc0800dd964f970b007f79",
+      "result_offset": 52
+    },
+    {
+      "request_id": 99,
+      "sequence": 359,
+      "slot": 1,
+      "nonce": "6ccc0001a8f16bca",
+      "difficulty": 128,
+      "work_transfer": 3425,
+      "result_transfer": 3434,
+      "work_physical": {
+        "start_burst": 11623,
+        "end_burst": 11623,
+        "first_seconds": 210.7297228,
+        "last_seconds": 210.7347901
+      },
+      "result_physical": {
+        "start_burst": 11632,
+        "end_burst": 11632,
+        "first_seconds": 210.9783473,
+        "last_seconds": 210.9830073
+      },
+      "work_packet_hex": "a53c1700fd1a47925e5943ce051b6d38114dca09528123db650f2f58c1a2d101ba427d60000001a115d06e676ccc0000000000000000000007ffffff6cccffffffffffffb852",
+      "result_packet_hex": "a53c18016ccc0001a8f16bca050055bc",
+      "result_offset": 4
+    },
+    {
+      "request_id": 100,
+      "sequence": 360,
+      "slot": 2,
+      "nonce": "6ccc12015362455d",
+      "difficulty": 128,
+      "work_transfer": 3437,
+      "result_transfer": 3444,
+      "work_physical": {
+        "start_burst": 11635,
+        "end_burst": 11635,
+        "first_seconds": 211.0475957,
+        "last_seconds": 211.052663
+      },
+      "result_physical": {
+        "start_burst": 11642,
+        "end_burst": 11642,
+        "first_seconds": 211.2347703,
+        "last_seconds": 211.2394303
+      },
+      "work_packet_hex": "a53c27008ec2034b1c38cc659bca4eb5d6111e328c5fa019327a6947ea2edf9886554e0f000001a115d06fb36ccc0000000000000000000007ffffff6cccffffffffffff8dcb",
+      "result_packet_hex": "a53c28136ccc12015362455d0e00d45a",
+      "result_offset": 112
+    },
+    {
+      "request_id": 101,
+      "sequence": 360,
+      "slot": 2,
+      "nonce": "6ccc09019e935cfd",
+      "difficulty": 128,
+      "work_transfer": 3437,
+      "result_transfer": 3446,
+      "work_physical": {
+        "start_burst": 11635,
+        "end_burst": 11635,
+        "first_seconds": 211.0475957,
+        "last_seconds": 211.052663
+      },
+      "result_physical": {
+        "start_burst": 11644,
+        "end_burst": 11644,
+        "first_seconds": 211.2947523,
+        "last_seconds": 211.2994123
+      },
+      "work_packet_hex": "a53c27008ec2034b1c38cc659bca4eb5d6111e328c5fa019327a6947ea2edf9886554e0f000001a115d06fb36ccc0000000000000000000007ffffff6cccffffffffffff8dcb",
+      "result_packet_hex": "a53c280a6ccc09019e935cfd1e00d5cc",
+      "result_offset": 58
+    },
+    {
+      "request_id": 102,
+      "sequence": 362,
+      "slot": 4,
+      "nonce": "6ccc0500ccc7a25b",
+      "difficulty": 256,
+      "work_transfer": 3467,
+      "result_transfer": 3472,
+      "work_physical": {
+        "start_burst": 11665,
+        "end_burst": 11665,
+        "first_seconds": 211.8763844,
+        "last_seconds": 211.8814517
+      },
+      "result_physical": {
+        "start_burst": 11670,
+        "end_burst": 11670,
+        "first_seconds": 212.0048812,
+        "last_seconds": 212.0095412
+      },
+      "work_packet_hex": "a53c47000fe897a1ea9696a08422848fa945390e519b0d8452cde9cdcdb9d6ddfa4d4809000001a115d072f96ccc0000000000000000000007ffffff6cccffffffffffff13c9",
+      "result_packet_hex": "a53c48066ccc0500ccc7a25b0d00a149",
+      "result_offset": 34
+    },
+    {
+      "request_id": 103,
+      "sequence": 370,
+      "slot": 12,
+      "nonce": "6ccc04010374369b",
+      "difficulty": 256,
+      "work_transfer": 3597,
+      "result_transfer": 3603,
+      "work_physical": {
+        "start_burst": 11797,
+        "end_burst": 11797,
+        "first_seconds": 215.4873725,
+        "last_seconds": 215.4924398
+      },
+      "result_physical": {
+        "start_burst": 11803,
+        "end_burst": 11803,
+        "first_seconds": 215.6447825,
+        "last_seconds": 215.6494426
+      },
+      "work_packet_hex": "a53cc700470096f4c9e45f7e38d6aa37b20658106156ff0e2821cf9e333f60cf6e5b5fc8000001a115d080f36ccc0000000000000000000007ffffff6cccfffffffffffff90e",
+      "result_packet_hex": "a53cc8056ccc04010374369b0d009493",
+      "result_offset": 28
+    },
+    {
+      "request_id": 104,
+      "sequence": 379,
+      "slot": 7,
+      "nonce": "6ccc1500a69ab755",
+      "difficulty": 256,
+      "work_transfer": 3727,
+      "result_transfer": 3731,
+      "work_physical": {
+        "start_burst": 11929,
+        "end_burst": 11929,
+        "first_seconds": 219.0506949,
+        "last_seconds": 219.0557622
+      },
+      "result_physical": {
+        "start_burst": 11933,
+        "end_burst": 11933,
+        "first_seconds": 219.1482016,
+        "last_seconds": 219.1528616
+      },
+      "work_packet_hex": "a53c77008b77b426d87bda66621ca9e07d6624595b96adea7e6a5e319a16c24bd555811c000001a115d08f046ccc0000000000000000000007ffffff6cccffffffffffff66e9",
+      "result_packet_hex": "a53c78166ccc1500a69ab7550a006ce7",
+      "result_offset": 130
+    },
+    {
+      "request_id": 105,
+      "sequence": 382,
+      "slot": 10,
+      "nonce": "6ccc0000dedb990f",
+      "difficulty": 256,
+      "work_transfer": 3770,
+      "result_transfer": 3775,
+      "work_physical": {
+        "start_burst": 11972,
+        "end_burst": 11972,
+        "first_seconds": 220.2308285,
+        "last_seconds": 220.2358958
+      },
+      "result_physical": {
+        "start_burst": 11977,
+        "end_burst": 11977,
+        "first_seconds": 220.3582482,
+        "last_seconds": 220.3629082
+      },
+      "work_packet_hex": "a53ca700c4bb3a79910739b429068ab7b42e938146eee84d27b306c85ae6c09a0e8a4ace000001a115d093886ccc0000000000000000000007ffffff6cccffffffffffff5690",
+      "result_packet_hex": "a53ca8016ccc0000dedb990f070018c2",
+      "result_offset": 4
+    },
+    {
+      "request_id": 106,
+      "sequence": 386,
+      "slot": 14,
+      "nonce": "6ccc1101a6b41ac8",
+      "difficulty": 256,
+      "work_transfer": 3825,
+      "result_transfer": 3834,
+      "work_physical": {
+        "start_burst": 12027,
+        "end_burst": 12027,
+        "first_seconds": 221.7239615,
+        "last_seconds": 221.7290288
+      },
+      "result_physical": {
+        "start_burst": 12036,
+        "end_burst": 12036,
+        "first_seconds": 221.9717608,
+        "last_seconds": 221.9764208
+      },
+      "work_packet_hex": "a53ce70020288c5cb6aba34ff124643866dd3a0e65e4cc543bdeea89d6a55d88d1c4f957000001a115d0995a6ccc0000000000000000000007ffffff6cccffffffffffff4c1a",
+      "result_packet_hex": "a53ce8126ccc1101a6b41ac80400a452",
+      "result_offset": 106
+    },
+    {
+      "request_id": 107,
+      "sequence": 386,
+      "slot": 14,
+      "nonce": "6ccc0a034ce46666",
+      "difficulty": 256,
+      "work_transfer": 3825,
+      "result_transfer": 3841,
+      "work_physical": {
+        "start_burst": 12027,
+        "end_burst": 12027,
+        "first_seconds": 221.7239615,
+        "last_seconds": 221.7290288
+      },
+      "result_physical": {
+        "start_burst": 12043,
+        "end_burst": 12043,
+        "first_seconds": 222.1956685,
+        "last_seconds": 222.2003285
+      },
+      "work_packet_hex": "a53ce70020288c5cb6aba34ff124643866dd3a0e65e4cc543bdeea89d6a55d88d1c4f957000001a115d0995a6ccc0000000000000000000007ffffff6cccffffffffffff4c1a",
+      "result_packet_hex": "a53ce80b6ccc0a034ce4666613009c02",
+      "result_offset": 64
+    },
+    {
+      "request_id": 108,
+      "sequence": 391,
+      "slot": 5,
+      "nonce": "6ccc0501d7795a30",
+      "difficulty": 256,
+      "work_transfer": 3906,
+      "result_transfer": 3915,
+      "work_physical": {
+        "start_burst": 12108,
+        "end_burst": 12108,
+        "first_seconds": 223.9772579,
+        "last_seconds": 223.9823252
+      },
+      "result_physical": {
+        "start_burst": 12117,
+        "end_burst": 12117,
+        "first_seconds": 224.2282452,
+        "last_seconds": 224.2329052
+      },
+      "work_packet_hex": "a53c5700d4b0854f99416df59424de32c921d01efc9622967779e020951e0777ed8f361a000001a115d0a23e6ccc0000000000000000000007ffffff6cccffffffffffffc881",
+      "result_packet_hex": "a53c58066ccc0501d7795a3018000de4",
+      "result_offset": 34
+    },
+    {
+      "request_id": 109,
+      "sequence": 391,
+      "slot": 5,
+      "nonce": "6ccc110263f548b6",
+      "difficulty": 256,
+      "work_transfer": 3906,
+      "result_transfer": 3918,
+      "work_physical": {
+        "start_burst": 12108,
+        "end_burst": 12108,
+        "first_seconds": 223.9772579,
+        "last_seconds": 223.9823252
+      },
+      "result_physical": {
+        "start_burst": 12120,
+        "end_burst": 12120,
+        "first_seconds": 224.3187809,
+        "last_seconds": 224.3234409
+      },
+      "work_packet_hex": "a53c5700d4b0854f99416df59424de32c921d01efc9622967779e020951e0777ed8f361a000001a115d0a23e6ccc0000000000000000000007ffffff6cccffffffffffffc881",
+      "result_packet_hex": "a53c58126ccc110263f548b61b006ea5",
+      "result_offset": 106
+    },
+    {
+      "request_id": 110,
+      "sequence": 393,
+      "slot": 7,
+      "nonce": "6ccc15006726d375",
+      "difficulty": 256,
+      "work_transfer": 3934,
+      "result_transfer": 3937,
+      "work_physical": {
+        "start_burst": 12136,
+        "end_burst": 12136,
+        "first_seconds": 224.7505924,
+        "last_seconds": 224.7556597
+      },
+      "result_physical": {
+        "start_burst": 12139,
+        "end_burst": 12139,
+        "first_seconds": 224.8179943,
+        "last_seconds": 224.8226543
+      },
+      "work_packet_hex": "a53c7700fa7c84903bb1ea2cf0201a5c99e763867c0caa10bf282335754e92e137639844000001a115d0a53d6ccc0000000000000000000007ffffff6cccffffffffffffb35c",
+      "result_packet_hex": "a53c78166ccc15006726d3751a0026ac",
+      "result_offset": 130
+    },
+    {
+      "request_id": 111,
+      "sequence": 405,
+      "slot": 5,
+      "nonce": "6ccc0b021ed54e14",
+      "difficulty": 256,
+      "work_transfer": 4101,
+      "result_transfer": 4112,
+      "work_physical": {
+        "start_burst": 12304,
+        "end_burst": 12304,
+        "first_seconds": 229.3174024,
+        "last_seconds": 229.3224697
+      },
+      "result_physical": {
+        "start_burst": 12315,
+        "end_burst": 12315,
+        "first_seconds": 229.6246161,
+        "last_seconds": 229.6292762
+      },
+      "work_packet_hex": "a53c57007b29099b616c75109585830d2035bddbee5944dfc74d4dc928ea87a8b1858dd5000001a115d0b7026ccc0000000000000000000007ffffff6cccffffffffffffd49a",
+      "result_packet_hex": "a53c580c6ccc0b021ed54e140a008abf",
+      "result_offset": 70
+    },
+    {
+      "request_id": 112,
+      "sequence": 406,
+      "slot": 6,
+      "nonce": "6ccc1801542182b0",
+      "difficulty": 256,
+      "work_transfer": 4114,
+      "result_transfer": 4121,
+      "work_physical": {
+        "start_burst": 12317,
+        "end_burst": 12317,
+        "first_seconds": 229.6639435,
+        "last_seconds": 229.6690108
+      },
+      "result_physical": {
+        "start_burst": 12324,
+        "end_burst": 12324,
+        "first_seconds": 229.851351,
+        "last_seconds": 229.8560111
+      },
+      "work_packet_hex": "a53c67005c8988b58313d855b03001096fdb6b2e4368b6eb8ec17abf6a639edd39d5fb14000001a115d0b8726ccc0000000000000000000007ffffff6cccffffffffffffcb7c",
+      "result_packet_hex": "a53c68196ccc1801542182b018000a02",
+      "result_offset": 148
+    },
+    {
+      "request_id": 113,
+      "sequence": 407,
+      "slot": 7,
+      "nonce": "6ccc12022ffae027",
+      "difficulty": 256,
+      "work_transfer": 4126,
+      "result_transfer": 4137,
+      "work_physical": {
+        "start_burst": 12329,
+        "end_burst": 12329,
+        "first_seconds": 229.9808146,
+        "last_seconds": 229.9858819
+      },
+      "result_physical": {
+        "start_burst": 12340,
+        "end_burst": 12340,
+        "first_seconds": 230.3047403,
+        "last_seconds": 230.3094003
+      },
+      "work_packet_hex": "a53c77008119851bf5f366d929ba1dfd6e505f0d46c7af7e70e89c422a3a9d13f8e65cbe000001a115d0b9ad6ccc0000000000000000000007ffffff6cccffffffffffffbc9f",
+      "result_packet_hex": "a53c78136ccc12022ffae02713009da6",
+      "result_offset": 112
+    },
+    {
+      "request_id": 114,
+      "sequence": 408,
+      "slot": 8,
+      "nonce": "6ccc0900ea02e8b8",
+      "difficulty": 256,
+      "work_transfer": 4141,
+      "result_transfer": 4146,
+      "work_physical": {
+        "start_burst": 12344,
+        "end_burst": 12344,
+        "first_seconds": 230.4039568,
+        "last_seconds": 230.4090241
+      },
+      "result_physical": {
+        "start_burst": 12349,
+        "end_burst": 12349,
+        "first_seconds": 230.5312805,
+        "last_seconds": 230.5359405
+      },
+      "work_packet_hex": "a53c87001ce25f17bd774befddc95daff677952687c9e6f6037ee1d0ea70940c42a44ea9000001a115d0bb566ccc0000000000000000000007ffffff6cccffffffffffffee79",
+      "result_packet_hex": "a53c880a6ccc0900ea02e8b81c00ede9",
+      "result_offset": 58
+    },
+    {
+      "request_id": 115,
+      "sequence": 408,
+      "slot": 8,
+      "nonce": "6ccc0d029b0d030f",
+      "difficulty": 256,
+      "work_transfer": 4141,
+      "result_transfer": 4154,
+      "work_physical": {
+        "start_burst": 12344,
+        "end_burst": 12344,
+        "first_seconds": 230.4039568,
+        "last_seconds": 230.4090241
+      },
+      "result_physical": {
+        "start_burst": 12357,
+        "end_burst": 12357,
+        "first_seconds": 230.7713474,
+        "last_seconds": 230.7760074
+      },
+      "work_packet_hex": "a53c87001ce25f17bd774befddc95daff677952687c9e6f6037ee1d0ea70940c42a44ea9000001a115d0bb566ccc0000000000000000000007ffffff6cccffffffffffffee79",
+      "result_packet_hex": "a53c880e6ccc0d029b0d030f07001750",
+      "result_offset": 82
+    },
+    {
+      "request_id": 116,
+      "sequence": 409,
+      "slot": 9,
+      "nonce": "6ccc09030cd79892",
+      "difficulty": 256,
+      "work_transfer": 4157,
+      "result_transfer": 4172,
+      "work_physical": {
+        "start_burst": 12360,
+        "end_burst": 12360,
+        "first_seconds": 230.8406679,
+        "last_seconds": 230.8457352
+      },
+      "result_physical": {
+        "start_burst": 12375,
+        "end_burst": 12375,
+        "first_seconds": 231.2755343,
+        "last_seconds": 231.2801943
+      },
+      "work_packet_hex": "a53c9700156939bbc0456cbe5c52cb6472cc6f2e508d16ade1d4b794e1b7343e05058c0f000001a115d0bd0b6ccc0000000000000000000007ffffff6cccffffffffffff71ee",
+      "result_packet_hex": "a53c980a6ccc09030cd798920900c34f",
+      "result_offset": 58
+    },
+    {
+      "request_id": 117,
+      "sequence": 410,
+      "slot": 10,
+      "nonce": "6ccc0e01118d0039",
+      "difficulty": 256,
+      "work_transfer": 4175,
+      "result_transfer": 4181,
+      "work_physical": {
+        "start_burst": 12378,
+        "end_burst": 12378,
+        "first_seconds": 231.3494906,
+        "last_seconds": 231.3545579
+      },
+      "result_physical": {
+        "start_burst": 12384,
+        "end_burst": 12384,
+        "first_seconds": 231.5113041,
+        "last_seconds": 231.5159641
+      },
+      "work_packet_hex": "a53ca7005d3e6a2d6f34b87ddea34a5200b7e722af2a611c3b3f4dd9a5a26e5bb8312afd000001a115d0bf016ccc0000000000000000000007ffffff6cccffffffffffff925b",
+      "result_packet_hex": "a53ca80f6ccc0e01118d00391c00d730",
+      "result_offset": 88
+    },
+    {
+      "request_id": 118,
+      "sequence": 414,
+      "slot": 14,
+      "nonce": "6ccc0b027f0ae618",
+      "difficulty": 256,
+      "work_transfer": 4250,
+      "result_transfer": 4262,
+      "work_physical": {
+        "start_burst": 12455,
+        "end_burst": 12455,
+        "first_seconds": 233.4512128,
+        "last_seconds": 233.4562801
+      },
+      "result_physical": {
+        "start_burst": 12467,
+        "end_burst": 12467,
+        "first_seconds": 233.8080624,
+        "last_seconds": 233.8127224
+      },
+      "work_packet_hex": "a53ce7004eed0ac9c625215f145ed6f22e089e2950f814dc0cfadfef70cb294cbe0f0943000001a115d0c73a6ccc0000000000000000000007ffffff6cccffffffffffff24cc",
+      "result_packet_hex": "a53ce80c6ccc0b027f0ae6180c0062c1",
+      "result_offset": 70
+    },
+    {
+      "request_id": 119,
+      "sequence": 416,
+      "slot": 2,
+      "nonce": "6ccc15002a3dd728",
+      "difficulty": 256,
+      "work_transfer": 4282,
+      "result_transfer": 4284,
+      "work_physical": {
+        "start_burst": 12487,
+        "end_burst": 12487,
+        "first_seconds": 234.3439625,
+        "last_seconds": 234.3490298
+      },
+      "result_physical": {
+        "start_burst": 12489,
+        "end_burst": 12489,
+        "first_seconds": 234.3812803,
+        "last_seconds": 234.3859403
+      },
+      "work_packet_hex": "a53c2700fdc52906db224dda75876376e55f9fffb620247d9e7918d0de80d94a36e03368000001a115d0caa86ccc0000000000000000000007ffffff6cccffffffffffff52d5",
+      "result_packet_hex": "a53c28166ccc15002a3dd72814009ca9",
+      "result_offset": 130
+    },
+    {
+      "request_id": 120,
+      "sequence": 417,
+      "slot": 3,
+      "nonce": "6ccc0b01fec96f8c",
+      "difficulty": 256,
+      "work_transfer": 4295,
+      "result_transfer": 4305,
+      "work_physical": {
+        "start_burst": 12500,
+        "end_burst": 12500,
+        "first_seconds": 234.6945404,
+        "last_seconds": 234.6996076
+      },
+      "result_physical": {
+        "start_burst": 12510,
+        "end_burst": 12510,
+        "first_seconds": 234.984652,
+        "last_seconds": 234.989312
+      },
+      "work_packet_hex": "a53c3700b1ec61ceb43c93f39069fb8ef0c908745dcd726bddf71ce31133a99b1e93140e000001a115d0cc096ccc0000000000000000000007ffffff6cccffffffffffff07fa",
+      "result_packet_hex": "a53c380c6ccc0b01fec96f8c0600efde",
+      "result_offset": 70
+    },
+    {
+      "request_id": 121,
+      "sequence": 420,
+      "slot": 6,
+      "nonce": "6ccc09018c176ce3",
+      "difficulty": 256,
+      "work_transfer": 4340,
+      "result_transfer": 4348,
+      "work_physical": {
+        "start_burst": 12545,
+        "end_burst": 12546,
+        "first_seconds": 235.9433388,
+        "last_seconds": 235.9484276
+      },
+      "result_physical": {
+        "start_burst": 12554,
+        "end_burst": 12554,
+        "first_seconds": 236.1646375,
+        "last_seconds": 236.1692975
+      },
+      "work_packet_hex": "a53c670031374c5b5611af36b57264c30d4646d73d29ff5491c662b85b853c36f04b3868000001a115d0d0f96ccc0000000000000000000007ffffff6cccffffffffffffb497",
+      "result_packet_hex": "a53c680a6ccc09018c176ce31100bcb5",
+      "result_offset": 58
+    },
+    {
+      "request_id": 122,
+      "sequence": 424,
+      "slot": 10,
+      "nonce": "6ccc0103805c49eb",
+      "difficulty": 256,
+      "work_transfer": 4397,
+      "result_transfer": 4414,
+      "work_physical": {
+        "start_burst": 12603,
+        "end_burst": 12603,
+        "first_seconds": 237.5006293,
+        "last_seconds": 237.5056966
+      },
+      "result_physical": {
+        "start_burst": 12620,
+        "end_burst": 12620,
+        "first_seconds": 237.9881781,
+        "last_seconds": 237.9928381
+      },
+      "work_packet_hex": "a53ca7009d0a66468c1d0ee7f40f7cdbdaa34ab3d2c31528d3a90d2892ad790670e79fda000001a115d0d7006ccc0000000000000000000007ffffff6cccffffffffffff287c",
+      "result_packet_hex": "a53ca8026ccc0103805c49eb1500fd7a",
+      "result_offset": 10
+    },
+    {
+      "request_id": 123,
+      "sequence": 431,
+      "slot": 3,
+      "nonce": "6ccc0800d3cb1750",
+      "difficulty": 256,
+      "work_transfer": 4513,
+      "result_transfer": 4518,
+      "work_physical": {
+        "start_burst": 12720,
+        "end_burst": 12720,
+        "first_seconds": 240.730727,
+        "last_seconds": 240.7357943
+      },
+      "result_physical": {
+        "start_burst": 12725,
+        "end_burst": 12725,
+        "first_seconds": 240.8579507,
+        "last_seconds": 240.8626107
+      },
+      "work_packet_hex": "a53c370014e8c2762caa90bed9ed3467b607f3cc333b79c1ca8b3064d8c2c6f3cd6cd83d000001a115d0e3a16ccc0000000000000000000007ffffff6cccffffffffffffb170",
+      "result_packet_hex": "a53c38096ccc0800d3cb1750080092b7",
+      "result_offset": 52
+    }
+  ]
+}

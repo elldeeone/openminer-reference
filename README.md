@@ -22,15 +22,7 @@ sequences, test evidence and remaining unknowns.
 | Chip | Tested hardware | Current progress |
 | --- | --- | --- |
 | [Bitmain BM2382](chips/bitmain/bm2382/README.md) | KS5 Pro; two mining hashboards used because of the site power limit | Stock-hashboard control demonstrated. Chip electrical mapping and independent miner-board validation remain open. |
-
-## Start here
-
-1. Read the [BM2382 progress and remaining work](chips/bitmain/bm2382/README.md#progress-and-remaining-work).
-2. Use the [protocol](chips/bitmain/bm2382/protocol.md),
-   [initialization](chips/bitmain/bm2382/initialization.md) and
-   [mining example](chips/bitmain/bm2382/mining.md) to understand the tested interface.
-3. Read the [hardware requirements](chips/bitmain/bm2382/hardware.md) and
-   [unknowns](chips/bitmain/bm2382/unknowns.md) before designing a new board.
+| [Goldshell IEN616](chips/goldshell/ien616/README.md) | KA Box. One stock hashboard with firmware 2.2.2. | Stock-hashboard control is proven after stock preparation. Chip electrical mapping, independent cold boot and independent miner-board validation are not complete. |
 
 ## Contribute
 

@@ -1,0 +1,47 @@
+{
+  "figure_id": "F09",
+  "kind": "register",
+  "claim_ids": [
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "CODEC",
+    "PACKETS"
+  ],
+  "width_bits": 16,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 8,
+      "name": "Logical address",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 8,
+      "width": 4,
+      "name": "Opcode",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 12,
+      "width": 4,
+      "name": "Work slot",
+      "status": "known",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "Work: opcode 7, address 00. Result: opcode 8, address 01-1E. Slots use 1-15.",
+    "The command is a big-endian 16-bit word. Other commands have their own template."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

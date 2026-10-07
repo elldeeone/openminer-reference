@@ -1,0 +1,61 @@
+{
+  "figure_id": "F11",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "R089-NATIVE"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 6,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "0ANN",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 2,
+      "name": "Selector",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": null,
+  "notes": [
+    "No request CRC. The register reply has a 32-bit value and its own CRC.",
+    "Address 1 uses a 20-byte transfer. Address 30 uses a 194-byte transfer."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

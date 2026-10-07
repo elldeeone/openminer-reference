@@ -1,0 +1,83 @@
+{
+  "figure_id": "F06",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C09"
+  ],
+  "source_ids": [
+    "PACKETS",
+    "COMMAND-RECEIPT"
+  ],
+  "direction": "hashboard to controller",
+  "length_bytes": 12,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "1ANN",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 2,
+      "name": "Selector",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 6,
+      "width": 4,
+      "name": "Value",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 10,
+      "width": 2,
+      "name": "CRC",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": {
+    "algorithm": "CRC-16 reflected 0x8408, seed zero, adjacent byte pairs reversed, no final XOR",
+    "coverage_offset": 0,
+    "coverage_width": 10,
+    "wire_offset": 10,
+    "width": 2,
+    "byte_order": "big-endian"
+  },
+  "notes": [
+    "Selector and value are big-endian. Check the requested address and selector.",
+    "CRC covers bytes 0-9. The value layout depends on the selected register."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

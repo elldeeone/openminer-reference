@@ -1,0 +1,61 @@
+{
+  "figure_id": "F18",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "LAYOUT",
+    "F05-HEALTH-CONTROL-AUDIT"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 14,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "0C00 / 1C00",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 10,
+      "name": "Request data",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": null,
+  "notes": [
+    "The request has ten data bytes and no CRC. The full transfer has 638 bytes.",
+    "0C00 is the selected startup path. 1C00 is the selected runtime path."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

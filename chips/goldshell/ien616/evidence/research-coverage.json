@@ -1,0 +1,396 @@
+{
+  "source_id": "COVERAGE",
+  "scope": "Quoted question rows at the source baseline. CLOSURE and STATE determine the final scope.",
+  "rows": [
+    {
+      "source_line": 43,
+      "quoted_cells": [
+        "Q01",
+        "Target identity, firmware match, logical population and physical-topology limits are attributed.",
+        "target identity and logical population proven within reported scope",
+        "[E01], [E03]: matched installed 2.2.2 identifies IEN616 and 30 logical positions; official 2.2.7/2.2.9 agree. [SOURCE] retains a later series-level filing discrepancy without overriding the target configuration. [COLD] and [PUBLIC] show no visible package plane.",
+        "Physical package count/revision remains open; do not equate 30 logical positions with 30 packages."
+      ]
+    },
+    {
+      "source_line": 44,
+      "quoted_cells": [
+        "Q02",
+        "LAN and control-board console UART are exercised as read/write access paths; passive analyser taps identify controller/hashboard and separate PSU/power links with validated byte/timing collection.",
+        "proven within captured scope",
+        "[E01] LAN/console; [E02]/[E03] passive bank-B SPI. [COLD] binds both DC reports. [connector count] proves A=18/B=20 contacts; B10 and both second rows are unmeasured. Attempt02 timing is ambiguous and its 5 V stop bound failed.",
+        "Held-out origin/count photos and cold continuity; complete electrical topology remains open."
+      ]
+    },
+    {
+      "source_line": 45,
+      "quoted_cells": [
+        "Q03",
+        "Access, collection, watchdog, cooling, stop and restoration are target-qualified.",
+        "proven within qualified scope",
+        "[E46]/[E52]/[E53]/[E54] bounded owner/watchdogs/capture/health/park/OFF. [E45] thermal stop retained.",
+        "Fresh preflight before a new exact package; no unattended or broader envelope claim."
+      ]
+    },
+    {
+      "source_line": 46,
+      "quoted_cells": [
+        "Q03R",
+        "A repeatable controller-root route is proven, with privilege/endpoint identity, prerequisites, volatile/persistent changes and observed recovery limits.",
+        "proven within observed scope",
+        "[E01] UID 0 console; [FW] retained volatile SSH/auth/startup receipts. Persistent root/recovery image not qualified.",
+        "Reuse target access recovery with fresh endpoint/privilege identity; no foreign credentials."
+      ]
+    },
+    {
+      "source_line": 47,
+      "quoted_cells": [
+        "Q04",
+        "Stock cold-start, steady work, service, job change and stop have complete correlated captures.",
+        "proven for selected windows",
+        "[E02]/[E03]/[E47] selected stock captures/cold return. Exhaustive transition and fault corpus unknown.",
+        "Q05 is closed; target another lifecycle window only for a concrete unresolved fault or transition hypothesis."
+      ]
+    },
+    {
+      "source_line": 48,
+      "quoted_cells": [
+        "Q05",
+        "Matched module/function/branch/dependency inventory accounts for all discovered mining-critical paths and opcodes/registers, with audit boundaries and unobserved branches explicit.",
+        "closed for matched 2.2.2 and selected installed runtime",
+        "[Q05 closure] reconciles F01-F07/F09/F10; [F11], [F12], [F14], [F16], [W96]-[W101] add bounded later-version, boot/update, mapped-config, CMOS OTA, diagnostic-route, local-API, primary-source, residual-flash, exact transport-reachability and sensor-response comparisons. Selected paths are source-bound; all installed SquashFS bytes and 115 named ELF edges match. W99 finds no distinct executable/image in the 21,682,290-byte physical complement. W100 closes compiler-emitted reachability for 27 transport entries. W101 binds all 218 retained `0C00`/`1C00` replies to chip-temperature consumers. Changed configuration, arbitrary synthesized pointers, atomic mounted-state limits and generic library/kernel branches retain explicit reopening conditions.",
+        "Hardware semantics remain Q12-Q38. Reopen the exact-binary route only on a different executable, runtime pointer mutation, captured command or source-backed entry route."
+      ]
+    },
+    {
+      "source_line": 49,
+      "quoted_cells": [
+        "Q06",
+        "Framing, CRC, lengths, endianness, padding and observed timing decode the complete declared buffers.",
+        "selected transport path proven",
+        "[F01 transport], [E46]/[E53]: original instructions reproduce the selected alternatives, chain padding, retry/error behavior, poll/drain ownership and all 2,292 captured CRC packets; declared native/physical transfers match.",
+        "Unobserved command variants and physical chip-select boundaries remain."
+      ]
+    },
+    {
+      "source_line": 50,
+      "quoted_cells": [
+        "Q07",
+        "Initializer, enumeration, addressing/forwarding and reset are independently reproduced.",
+        "proven for qualified recipe",
+        "[E39]/[E47]/[E52]: 162-message recipe, 30 admissions, three reset recoveries. Requires stock preparation.",
+        "Trace supply/controller prerequisites; standalone bootstrap remains unknown."
+      ]
+    },
+    {
+      "source_line": 51,
+      "quoted_cells": [
+        "Q08",
+        "Work fields, bounds, IDs, timestamp and target encoding have independent physical contrasts.",
+        "proven for selected contrasts and bounded wrap",
+        "[E43]/[E44]/[E53]: start-relative coordinates and selected work inputs/IDs. F04 closes the stock constructor. [E77] proves full-64-bit modulo source carry and one wrapped interval. [E78] changes every range byte; [E79] proves both returned prefix bytes with result-bearing exact repeats.",
+        "Full-cycle recurrence, other widths and untested work fields remain unknown."
+      ]
+    },
+    {
+      "source_line": 52,
+      "quoted_cells": [
+        "Q09",
+        "Physical results validate against original inputs/targets; invalid/stale/duplicate/unassigned classes remain distinct.",
+        "proven for retained classifications",
+        "[E02]/[E46]/[E47]/[E53]/[E81]: original-input PoW and actual targets; invalid/unassigned stock results retained.",
+        "Extend independent lineage checks to every newly qualified path."
+      ]
+    },
+    {
+      "source_line": 53,
+      "quoted_cells": [
+        "Q10",
+        "Varied jobs, replacement, ID reuse and actual pool response lineage are demonstrated.",
+        "proven for selected live jobs",
+        "[E46] current jobs and 199 actual accepted shares across sustained/fresh owners; [E81] adds 37 accepted shares with independent cooling ownership. F04 proves host IDs cycle 1-15, occupied-slot replacement and selected serial ownership. Late silicon results across reuse remain unknown.",
+        "Select a physical ID/replacement boundary only with an opposing stale-result prediction."
+      ]
+    },
+    {
+      "source_line": 54,
+      "quoted_cells": [
+        "Q11",
+        "Supported-duration operation, fault/stop, fresh owner and stock return have physical proof.",
+        "proven for bounded lifecycle",
+        "[E46] 616.402s + 121.017s, pool EOF/LOW/released child; [E81] four stock owners STOPPED, 37 accepted shares; [E83] four stopped, 137 accepted shares, physical join, park/LOW/OFF; [E89] 121 accepted shares with our automatic cooling and full physical join; [E82]/[E84]/[E90] separate cold stock returns. [E45] and [E87] safety stops retained; E81 host closeout race is documented.",
+        "Other faults/reconnect/endurance remain separate questions; no consumed retry."
+      ]
+    },
+    {
+      "source_line": 55,
+      "quoted_cells": [
+        "Q12",
+        "Each discovered register has access width, selector scope, state-dependent responses and repeat-read observations.",
+        "proven for five registers/two states",
+        "[E37] 600 reads: 0/3/5/6/7, all 30 positions, repeated pre/post initializer. F02/Q05 close the selected direct selector census; unknown silicon registers remain open.",
+        "Reopen on a new caller, observed packet or qualified physical response. Q30 owns read side effects."
+      ]
+    },
+    {
+      "source_line": 56,
+      "quoted_cells": [
+        "Q13",
+        "Supported writable masks have independent readback, shams, non-target controls and exact restoration.",
+        "proven for selected masks",
+        "[E52] register-0 bit 16, addresses 1/20, 29 non-targets, exact restores; ADC selected masks restored. F02 accounts for installed constructors. [F11] adds a source-backed 2.2.9 register-6 clear/read/bit-4 sequence but no new physical mask proof.",
+        "Reopen only when another reachable constructor or safe field-specific prediction supplies shams and restoration."
+      ]
+    },
+    {
+      "source_line": 57,
+      "quoted_cells": [
+        "Q14",
+        "Enable/reset/recipe effects are separated where observable; unobservable reset words remain unknown.",
+        "selected external behavior proven; internal reset words unidentifiable",
+        "[E52] enable retains state and reset removes addressed replies. [E66] proves exact stock controls 127-129 restore 0/150 replies while full initialization restores 150/150 exact reads. All 1,029 transfers match capture.",
+        "Reopen only on a new observation surface for the reply-absent state; no-reply is not zero."
+      ]
+    },
+    {
+      "source_line": 58,
+      "quoted_cells": [
+        "Q15",
+        "Frequency-path settings have measured timing/performance effects, not only retained words.",
+        "proven for selected relative word contrast and captured address-0/address-1 path; absolute clock law unknown",
+        "[F09 clock] reconciles 22 captured stock setter cycles: 88 CRC-valid address-0 writes have matching address-1 replies, ending `46320060`. Installed selected-plan match plus separate 30-position 637.5 reports strongly indicate its producer. [E59] A/B/A/B/A averages 538.7753/552.5979 ms; ratio 1.0256557 matches the 1.0256410 fixture. Absolute MHz/reference clock, all-position broadcast and wider voltage/performance law remain unknown.",
+        "Independently measure reference clock before assigning MHz. Qualify all-position broadcast or more operating points only for a concrete decision."
+      ]
+    },
+    {
+      "source_line": 59,
+      "quoted_cells": [
+        "Q16",
+        "Filter settings have frozen output-subset predictions, repeats and held-out work.",
+        "broad nested population boundary proven",
+        "[E68] proves 241 exact and 475 lossy at slow drain. [E69] freezes eight nested populations: exact through 280, all expected valid results through 400, missing begins at 440. Deterministic invalid extras begin at 320.",
+        "Preserve valid-retention and invalid-extra boundaries separately."
+      ]
+    },
+    {
+      "source_line": 60,
+      "quoted_cells": [
+        "Q17",
+        "ADC/sensor channels, conversion/start, read stability and calibration limits are characterized.",
+        "proven for selected ADC/temperature paths",
+        "[E38]/[E52] selected A/B/A, 60 exact restores, 180 stable repeats. [F05 health] executes chip/TMP112 conversions and selectors; E18/E19 prove direct digital agreement. [W101] binds all 218 retained `0C00`/`1C00` replies and their five-word temperature-conversion consumers. Channel identity, placement, ignored-byte meaning and absolute/junction calibration remain unknown.",
+        "Pair calibrated independent measurement; trace other channels/masks only with a discriminator."
+      ]
+    },
+    {
+      "source_line": 61,
+      "quoted_cells": [
+        "Q18",
+        "Status bits have controlled idle/active/exhausted/replaced-work transitions; names are not assumed semantics.",
+        "proven selected completion/rearm behavior",
+        "[E55]/[E58] prove range-dependent set-to-clear timing. [E76] holds the range fixed across 0/1/4/4 results: every position clears before drain, stays clear through drain and byte-identical replacement reasserts then exactly repeats the transition matrix.",
+        "Preserve the internal last-nonce event and circuitry as unknown."
+      ]
+    },
+    {
+      "source_line": 62,
+      "quoted_cells": [
+        "Q19",
+        "Any core access surface has selector census, boundary checks and active/idle behaviour.",
+        "readable core census and predictive coordinate law proven; directed core control unknown",
+        "[W90] binds 32 cores per source/960 total and coordinates 0–31. [W97]-[W105] close the selected API, source, firmware, BIST, malformed-frame and related-binary actuator candidates. The core-allocation audit checks all 33,381 retained result frames: 33,370/33,371 source-local in-window frames follow the source-offset rule, and the sole mismatch fails the assigned filter.",
+        "A directed reversible per-core effect needs a new ASIC-side source-backed control. Package mapping is separate electrical/anatomical work."
+      ]
+    },
+    {
+      "source_line": 63,
+      "quoted_cells": [
+        "Q20",
+        "Independent chip/core controls cause predicted local output effects and restore without affecting controls.",
+        "logical-source effects, core census and coordinate law proven; reversible per-core control open",
+        "[E62]–[E65] prove source locality and sibling controls. [W90] proves the census and full coordinate coverage. [W97]/[W102] close generic setter and whole-source BIST paths. The core-allocation audit strengthens attribution but confirms range selection changes the work packet and is not the unchanged-work actuator required by W91.",
+        "Selective core change, sibling sham and exact restore still need a safe source-backed command."
+      ]
+    },
+    {
+      "source_line": 64,
+      "quoted_cells": [
+        "Q21",
+        "Exhaustively enumerable windows match frozen physical result sets; omissions/extra results are retained.",
+        "broad complete valid stream proven by segments; invalid emission bounded",
+        "[E68] enumerates 2.061T checks. [E70]/[E71] prove five entries and dynamic endpoints. [E72]-[E74] bound variable invalids and pair ranges. [E75] recovers all 475 valid identities: 10/10 segments and 300/300 sources exact.",
+        "Closed for segmented operation; one-job five-entry cap remains architectural."
+      ]
+    },
+    {
+      "source_line": 65,
+      "quoted_cells": [
+        "Q22",
+        "Start/end/seed/offset changes discriminate allocation models, including boundary cases.",
+        "proven for selected allocation, byte and wrap contrasts",
+        "[E43]/[E44]/[E53] reject absolute-coordinate models and move identical nonce/digest. [E77] proves the selected wrap model. [E78] changes all eight range bytes with complete opposing predictions.",
+        "Full-cycle and continued recurrence remain open; other arbitrary boundaries are unqualified."
+      ]
+    },
+    {
+      "source_line": 66,
+      "quoted_cells": [
+        "Q23",
+        "Reported address/core coordinates have independent attribution; observationally equivalent anatomy remains open.",
+        "logical source and predictive core-coordinate domains proven; physical anatomy unknown",
+        "[POLL] proves result insertion depth across all 30 addresses; [E53] proves supplied-start movement; [W90] proves the stock 32-core census. The retained core audit extends `core = (source_offset >> 1) & 31` to the full result corpus and preserves all eleven invalid/stale exceptions.",
+        "Physical package mapping, lanes and anatomy remain optional electrical/new-board research, not behavioral parity gates."
+      ]
+    },
+    {
+      "source_line": 67,
+      "quoted_cells": [
+        "Q24",
+        "Recurrence, search phase and clock-dependent timing have frozen predictions and repeats.",
+        "proven selected relative recurrence; full-cycle law unidentifiable on current command",
+        "[E58]/[E59] prove repeated relative timing and the selected clock ratio. [E77] proves bounded modulo wrap. [W81] shows one full cycle is `2^36` times the tested interval and later cycles have no distinct encoding.",
+        "Reopen on a shorter source-backed cycle field, checkpoint/readback or independent clock/state surface."
+      ]
+    },
+    {
+      "source_line": 68,
+      "quoted_cells": [
+        "Q25",
+        "Held-out jobs, IDs, regions, targets and fresh boots validate one frozen model without per-run fitting.",
+        "broad fresh-work model proven under bounded retention law",
+        "[E67] passes 14 local sets. [E68] predicts a genuinely fresh 475-result job before use; [E69]-[E74] bound service, retention, pair-range and invalid classes. [E75] recovers the exact complete valid population with no per-run fitting.",
+        "Preserve segmentation and the five-entry per-source limit; fresh boot breadth remains narrower than BM2382."
+      ]
+    },
+    {
+      "source_line": 69,
+      "quoted_cells": [
+        "Q26",
+        "Duplicate classes have discriminating source/phase controls and explicit residual unknowns.",
+        "accepted bounded architecture difference and replay class",
+        "[E65] drained same-slot replay returns identical complete A/B frames twice with stable source ownership and order. Qualified same-job source windows are disjoint, unlike BM2382's overlapping same-nonce/two-source class.",
+        "Other work/replacement collisions remain open; do not generalize this duplicate cause."
+      ]
+    },
+    {
+      "source_line": 70,
+      "quoted_cells": [
+        "Q27",
+        "Missing outputs have discriminating search/filter/read/queue hypotheses; complete drain buffers are retained.",
+        "per-source capacity and dynamic endpoint law proven",
+        "[E68] and [E69] prove drain-cadence loss. [E70] proves five retained entries. [E71] changes only bounded nonce endpoints and exactly predicts all 150 dynamic source sets.",
+        "Preserve this as an external law; internal circuitry remains unidentified."
+      ]
+    },
+    {
+      "source_line": 71,
+      "quoted_cells": [
+        "Q28",
+        "Selected contention tests inventory all emitted/lost/ordered outputs with independent source controls.",
+        "pair/replacement and dynamic retained order proven",
+        "[E65] proves two-result order/replacement. [E71] proves first four plus endpoint-local last for every dynamic source and repeats the 51.2-billion case exactly. [E74] separates pair-granular invalid admission from valid order.",
+        "Reopen only for another replacement/contention class."
+      ]
+    },
+    {
+      "source_line": 72,
+      "quoted_cells": [
+        "Q29",
+        "Any accessible counters have directed scope, clear/resume, event contrasts and bounded width evidence.",
+        "unknown; selected register-3, diagnostic, local API, primary-source, residual-flash, compiled transport, sensor, receive-residual and current official-family surfaces closed negative",
+        "[F09 census]/[F09 observability] identify only host accounting. [W80] physically joins 31,694 register-3 reads: only known work-ID bits and completion bit 16 vary. [W96] proves diagnostic `perf`/`hwerr` partition host-processed results. [W97] proves the selected driver has no `get_stats` or `zero_stats` callback; generic `zero` clears host/API statistics only. [W98] classifies patent per-chip counts as method inputs without an ASIC read/clear interface. [W99] finds no residual counter/clear term or executable. [W100] finds no counter route among supported compiled transport aliases. [W101] proves `0C00` remains zero across result emission and dynamic `1C00` is temperature telemetry with no clear/resume. [W104] proves malformed retained bytes contain no source-supported alternate frame or persistent field. [W105] classifies related selector 11 as ION577 initialization-data readback and finds no clear/resume counter route in the current official tree. [W108] finds no ASIC-visible value, counter read or clear/resume operation in the exact official client. [W91] confirms the BM minimum is delta-to-emission plus clear/resume; full width is not required.",
+        "Reopen only on a newly observed persistent ASIC-visible value; host counts and poll payload presence cannot measure pre-header or overwritten emissions."
+      ]
+    },
+    {
+      "source_line": 73,
+      "quoted_cells": [
+        "Q30",
+        "Directed/broadcast/no-read controls characterize read interactions with search and output.",
+        "selected register-read interaction closed negative; dequeue unknown",
+        "[POLL] finds at most one result per query. [E61] matches all 2,997 physical transfers with 4.2968 ms timing spread: all even controls return and all odd cases omit in read/no-read/read A/B/A.",
+        "Internal dequeue semantics are an identifiability limit without a new observable/control."
+      ]
+    },
+    {
+      "source_line": 74,
+      "quoted_cells": [
+        "Q31",
+        "Accessible flags have clear/reassert, output effects and trigger-discriminating observations.",
+        "selected completion/rearm flag proven; queue flag closed negative on register 3",
+        "[POLL] proves result versus unchanged-empty replies. [E76] proves bit 16 completion/rearm semantics. [W80] finds no other changing bit across 31,694 physically joined reads.",
+        "Reopen queue state only on a new observable; do not relabel completion as queue occupancy."
+      ]
+    },
+    {
+      "source_line": 75,
+      "quoted_cells": [
+        "Q32",
+        "Source/core/clock/filter changes have bounded count/timing/throughput laws with uncertainty.",
+        "broad service and endpoint retention laws proven",
+        "[E69] brackets drain service. [E70] proves five entries per completed source. [E71] proves endpoint-local last advancement across 44.8–68.719 billion offsets with a repeated boundary.",
+        "Absolute MHz, core control and per-chip power remain open."
+      ]
+    },
+    {
+      "source_line": 76,
+      "quoted_cells": [
+        "Q33",
+        "Package identity, orientation, dimensions and required pin/net mapping are measured.",
+        "unknown beyond board photographs",
+        "[COLD] hash-binds eight target photos; [PUBLIC] checks first-party certificates and service images. No ASIC top, marking, scale or complete continuity is visible.",
+        "Exact cold scaled package/cooler-stack inspection and isolated continuity."
+      ]
+    },
+    {
+      "source_line": 77,
+      "quoted_cells": [
+        "Q34",
+        "Rails, domain references, current and power-up/down sequences are measured.",
+        "unknown",
+        "[COLD] preserves both DC reports and cold-resistance limits. B1/B2/B7 are supply candidates only; whole-appliance power does not establish chip rails/current or discharge.",
+        "Cold resistance/diode matrix after local references and safe points are identified."
+      ]
+    },
+    {
+      "source_line": 78,
+      "quoted_cells": [
+        "Q35",
+        "IO levels, reference clock, reset/enable timing and signal integrity have instrumented bounds.",
+        "unknown for complete electrical bounds",
+        "[E02]/[E03] digital decode; [COLD] shows no proved clock point/reference. GPIO data are not analogue integrity or absolute clock measurement.",
+        "Identify a cold trace/test point before a differential or isolated powered measurement."
+      ]
+    },
+    {
+      "source_line": 79,
+      "quoted_cells": [
+        "Q36",
+        "Cooling, mounting and sensor accuracy have measured conditions; ratings are attributed separately.",
+        "proven for bounded board safety and automatic combined fan response; ratings unknown",
+        "[E46] TMP112/tach ownership, qualified fans and <=50.5 C board observation. [E83] either selected logical level80 write lowers both tachometers about15% and restores at100. [E89] our direct-temperature 100→80→100 policy with all stock controllers STOPPED produced stable-baseline tach fall/recovery, 121 accepted shares and park/OFF; [E90] stock fan/mining return. Junction calibration/mounting limits not established.",
+        "Stock-free boot/supply qualification, thermal/mechanical measurements and sensor calibration; preserve [E45] stop."
+      ]
+    },
+    {
+      "source_line": 80,
+      "quoted_cells": [
+        "Q37",
+        "Minimal population/chain wiring and independent bootstrap dependencies have physical proof.",
+        "unknown",
+        "Full prepared stock board works; minimum population/wiring and independent bootstrap are unqualified.",
+        "Find physical isolation/preparation dependencies before any new-board claim."
+      ]
+    },
+    {
+      "source_line": 81,
+      "quoted_cells": [
+        "Q38",
+        "A reviewed reference driver/carrier/bring-up recipe has no unknown required net or unsupported electrical assumption.",
+        "unknown for carrier readiness",
+        "Bounded stock-board research controller exists; unknown required nets/rails prevent independent carrier acceptance.",
+        "Map design requirements against Q01–Q37 and physical evidence; no fabrication-ready claim."
+      ]
+    }
+  ]
+}

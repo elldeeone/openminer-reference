@@ -1,0 +1,108 @@
+{
+  "figure_id": "F02",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "PACKETS",
+    "CODEC"
+  ],
+  "direction": "controller to hashboard",
+  "length_bytes": 70,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "Y700",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 32,
+      "name": "Pre-PoW hash",
+      "status": "known",
+      "byte_order": "reversed canonical bytes",
+      "unit": "bytes"
+    },
+    {
+      "offset": 36,
+      "width": 8,
+      "name": "Time (ms)",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "milliseconds"
+    },
+    {
+      "offset": 44,
+      "width": 8,
+      "name": "Nonce start",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 52,
+      "width": 8,
+      "name": "Filter word",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 60,
+      "width": 8,
+      "name": "Nonce end",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 68,
+      "width": 2,
+      "name": "CRC",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": {
+    "algorithm": "CRC-16 reflected 0x8408, seed zero, adjacent byte pairs reversed, no final XOR",
+    "coverage_offset": 0,
+    "coverage_width": 68,
+    "wire_offset": 68,
+    "width": 2,
+    "byte_order": "big-endian"
+  },
+  "notes": [
+    "Reverse all 32 canonical hash bytes for the wire. Timestamp and nonce fields are unsigned big-endian.",
+    "CRC covers bytes 0-67. The broadcast transfer has 672 bytes."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

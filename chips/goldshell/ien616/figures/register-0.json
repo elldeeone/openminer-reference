@@ -1,0 +1,63 @@
+{
+  "figure_id": "F20",
+  "kind": "register",
+  "claim_ids": [
+    "C09",
+    "C10"
+  ],
+  "source_ids": [
+    "R052",
+    "R059",
+    "F09-CLOCK-PATH-AUDIT"
+  ],
+  "width_bits": 32,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 4,
+      "name": "?",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 4,
+      "width": 1,
+      "name": "A",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 5,
+      "width": 11,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    },
+    {
+      "offset": 16,
+      "width": 1,
+      "name": "T",
+      "status": "tested",
+      "unit": "bit"
+    },
+    {
+      "offset": 17,
+      "width": 15,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "A: source apply sequence pulses bit 4. It is not a measured PLL lock flag.",
+    "T: bit 16 contrast 46270060 / 46260060 changed the selected completion time.",
+    "Amber shows the tested contrast. Absolute MHz and other field meanings are unknown."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

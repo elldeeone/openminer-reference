@@ -1,0 +1,530 @@
+{
+  "source_id": "LAYOUT",
+  "templates": [
+    {
+      "row": 0,
+      "va": "0x9d614",
+      "template_groups": [
+        [
+          "A53C",
+          "0800",
+          "0000",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "0800",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "Y8NN",
+          "PKTS*5",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 2
+    },
+    {
+      "row": 1,
+      "va": "0x9d668",
+      "template_groups": [
+        [
+          "A53C",
+          "08NN",
+          "0000",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "08NN",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "Y8NN",
+          "PKTS*5",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 2
+    },
+    {
+      "row": 2,
+      "va": "0x9d6bc",
+      "template_groups": [
+        [
+          "A53C",
+          "0200",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "0200",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 3,
+      "va": "0x9d710",
+      "template_groups": [
+        [
+          "A53C",
+          "01XX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "01XX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 4,
+      "va": "0x9d764",
+      "template_groups": [
+        [
+          "A53C",
+          "03XX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "03XX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 5,
+      "va": "0x9d7b8",
+      "template_groups": [
+        [
+          "A53C",
+          "0BXX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "0BXX",
+          null,
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 6,
+      "va": "0x9d80c",
+      "template_groups": [
+        [
+          "A53C",
+          "0400",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "0400",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 7,
+      "va": "0x9d860",
+      "template_groups": [
+        [
+          "A53C",
+          "04NN",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "04NN",
+          "0000",
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 8,
+      "va": "0x9d8b4",
+      "template_groups": [
+        [
+          "A53C",
+          "Y700",
+          "PKTS*32",
+          "CRC16",
+          "0000"
+        ],
+        [
+          "A53C",
+          "Y700",
+          "PKTS*32",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 9,
+      "va": "0x9d908",
+      "template_groups": [
+        [
+          "A53C",
+          "Y7NN",
+          "PKTS*32",
+          "CRC16",
+          "0000"
+        ],
+        [
+          "0000",
+          "0000",
+          "0000*32",
+          null,
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 10,
+      "va": "0x9d95c",
+      "template_groups": [
+        [
+          "A53C",
+          "0900",
+          "PKTS*3",
+          "CRC16",
+          "0000"
+        ],
+        [
+          "A53C",
+          "0900",
+          "PKTS*3",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 11,
+      "va": "0x9d9b0",
+      "template_groups": [
+        [
+          "A53C",
+          "09NN",
+          "PKTS*3",
+          "CRC16",
+          "0000"
+        ],
+        [
+          "A53C",
+          "09NN",
+          "0000*3",
+          "0000",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 12,
+      "va": "0x9da04",
+      "template_groups": [
+        [
+          "A53C",
+          "0ANN",
+          "PKTS",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "1ANN",
+          "PKTS*3",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 13,
+      "va": "0x9da58",
+      "template_groups": [
+        [
+          "A53C",
+          "0C00",
+          "PKTS*5",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "0C00",
+          "PKTS*15",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    },
+    {
+      "row": 14,
+      "va": "0x9daac",
+      "template_groups": [
+        [
+          "A53C",
+          "1C00",
+          "PKTS*5",
+          null,
+          "0000"
+        ],
+        [
+          "A53C",
+          "1C00",
+          "PKTS*15",
+          "CRC16",
+          "0000"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "flag": 1
+    }
+  ]
+}

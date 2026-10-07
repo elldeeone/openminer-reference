@@ -1,0 +1,42 @@
+{
+  "figure_id": "F24",
+  "kind": "register",
+  "claim_ids": [
+    "C09",
+    "C18"
+  ],
+  "source_ids": [
+    "REGISTER-FINDINGS",
+    "R038",
+    "R052"
+  ],
+  "width_bits": 32,
+  "offset_origin": "least significant bit",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 12,
+      "name": "Raw code",
+      "status": "known",
+      "unit": "bit"
+    },
+    {
+      "offset": 12,
+      "width": 20,
+      "name": "Unknown",
+      "status": "unknown",
+      "unit": "bit"
+    }
+  ],
+  "notes": [
+    "The matched source extracts bits 0-11. The full 32-bit readback must stay in the record.",
+    "Run 52 ends at 00142000. A zero low-12 value is not a calibrated temperature.",
+    "Blue shows source extraction. Upper-field meaning, scale and reset value are unknown."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

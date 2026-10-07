@@ -1,0 +1,1273 @@
+{
+  "format": "kabox-source-catalog-v1",
+  "research_commit": "c0bf48275d619bca1dbe4db5e8583153880b027e",
+  "reference_date": "2026-10-07",
+  "updated_date": "2026-10-08",
+  "setup": "One KA Box. BoxII_CoreBoard V2.0 and LEP02_ComputeBoard V2. Installed firmware 2.2.2. Thirty logical positions.",
+  "sources": [
+    {
+      "source_id": "CLOSURE",
+      "file": "goldshell/ka-box/05-documentation/INVESTIGATION_CLOSURE_20261007.md",
+      "sha256": "bbd6df1b2fac2e7b49bbeee5d71412122cb962eea47b462a8164556754513ef7",
+      "bytes": 2415,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "STATE",
+      "file": "goldshell/ka-box/05-documentation/CURRENT_STATE.md",
+      "sha256": "48d41461ba83b9f3ecc9a25511208d25f844366ac2bca7bafcf867b98229ad4f",
+      "bytes": 7832,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "COVERAGE",
+      "file": "goldshell/ka-box/05-documentation/RESEARCH_COVERAGE.md",
+      "sha256": "1bf5f1f201ff977ee2e8067900d8b85bdd61c0881b3863d186b13d1fe40a0fdf",
+      "bytes": 38537,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "FIRMWARE-COVERAGE",
+      "file": "goldshell/ka-box/05-documentation/FIRMWARE_COVERAGE.md",
+      "sha256": "fe8caea085d3b5dfc534b342f9589270e10f6d812cd4a776649b216d5f0b8e9c",
+      "bytes": 34298,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "COLD",
+      "file": "goldshell/ka-box/05-documentation/Q01_Q02_Q33_Q35_COLD_EVIDENCE_AUDIT.md",
+      "sha256": "cca95b4cd2cee1e971aebea7ed317575ea19eafbde5def6821838ecc0690f464",
+      "bytes": 5844,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CONTACTS",
+      "file": "goldshell/ka-box/05-documentation/Q02_CONNECTOR_CONTACT_COUNT_AUDIT.md",
+      "sha256": "fdacc2badb698938ae367c0a47688cc6b553af938023e10b1f4360607c31d4f1",
+      "bytes": 2622,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CORE-CENSUS",
+      "file": "goldshell/ka-box/05-documentation/W90_CORE_CENSUS_AUDIT.md",
+      "sha256": "291c3355294c43c98b93e8b3c5b6e871d04ca434d45ee981aa5016696709c6ee",
+      "bytes": 2742,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CORE-MAP",
+      "file": "goldshell/ka-box/05-documentation/CORE_ALLOCATION_CORPUS_AUDIT.md",
+      "sha256": "3522dc28cb8ce1cebdd881e4019eecbdad248a3bb8e2d1670997d9bb1f7445fa",
+      "bytes": 3164,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "PARITY",
+      "file": "goldshell/ka-box/05-documentation/W91_EXACT_REMAINING_PARITY_AUDIT.md",
+      "sha256": "a414dc34017554a6668a66283646aae0b1b7659e3620ffd77b2cf2608ea4ab4e",
+      "bytes": 3853,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CODEC",
+      "file": "goldshell/ka-box/03-development/kabox_protocol.py",
+      "sha256": "0d9fea4e67e47dd2bffca812cd4a00231eb5b714c03ab985664bfbf7fcd98da4",
+      "bytes": 4369,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "RAW-RETENTION",
+      "file": "goldshell/ka-box/05-documentation/RAW_RETENTION.md",
+      "sha256": "ddd3e67089c7324fde8a015050fb7104d14ab6982104f6c5495146a4ab900985",
+      "bytes": 1770,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "SSH-AUTH",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/ssh-auth-path/FINDINGS.md",
+      "sha256": "8edfba53115e938699aa7607018f455d0ab7dcaa5b7a3ac62a6c6f8170ce03b7",
+      "bytes": 1638,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "SSH-STARTUP",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/ssh-startup/FINDINGS.md",
+      "sha256": "7649bcea33eb811f57509b546c31fb6cd58364f0d572821da4af072a4e8d9458",
+      "bytes": 1220,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F01-TRANSPORT-CLOSURE-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F01_TRANSPORT_CLOSURE_AUDIT.md",
+      "sha256": "d3b692dcbeaa7ed4b8bd338fa30cc621481a54fcc453ad9feab8b87d2645a57d",
+      "bytes": 6207,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F02-COMMAND-REGISTER-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F02_COMMAND_REGISTER_AUDIT.md",
+      "sha256": "59ac61bf97f847b347778d4bac9d52741864bec7f13a362a27237579999a2c54",
+      "bytes": 7341,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F03-COLD-INITIALIZATION-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F03_COLD_INITIALIZATION_AUDIT.md",
+      "sha256": "599acbefef1f3ddb191ee98ec37366f56d1ba2f0f9fa350957c6d7b10e6435a6",
+      "bytes": 7098,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-ACCOUNTING-FAILOVER-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_ACCOUNTING_FAILOVER_AUDIT.md",
+      "sha256": "3a4df0a2948f8e606705e97936315f4b84dd1eb50608339c89854c4695fdcf49",
+      "bytes": 7272,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-HASH-EQUIVALENCE-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_HASH_EQUIVALENCE_AUDIT.md",
+      "sha256": "f34d1399cee910dcbbd9160f7287fc8560643cedb65c817a1b2201d9ddd28ab6",
+      "bytes": 7485,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-JOB-ADMISSION-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_JOB_ADMISSION_AUDIT.md",
+      "sha256": "22e0510a7b9c6edfc3cb94644d1e7fb752ce966a4ed43d9d3c335c05091e292f",
+      "bytes": 6844,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-RESULT-LIFETIME-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_RESULT_LIFETIME_AUDIT.md",
+      "sha256": "4a8ea8c5620bd3bd7b57b38b5fce350cd794be42ff32a68183c97f81b5801299",
+      "bytes": 19607,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-SESSION-PENDING-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_SESSION_PENDING_AUDIT.md",
+      "sha256": "2bcf6822d202279437c19de1b742cbd69fb8f69aecc1c613b22e774dffadbc95",
+      "bytes": 17165,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-TIMER-HTTP-OWNERSHIP-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_TIMER_HTTP_OWNERSHIP_AUDIT.md",
+      "sha256": "212ced9ed933024b1ed0e9108560a1711425b33b1af9bc0b591a755ad7f49f9d",
+      "bytes": 8451,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F04-WORK-CONSTRUCTION-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F04_WORK_CONSTRUCTION_AUDIT.md",
+      "sha256": "23918467b44b666cf17d38d64d0ec061c04769bd72b034d83799dd69bd53716f",
+      "bytes": 9159,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F05-HEALTH-CONTROL-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F05_HEALTH_CONTROL_AUDIT.md",
+      "sha256": "4d1510a3a3e25de99a24a9e29ed13a223e86b6069e5ede4d4d6c5d3a410f5786",
+      "bytes": 8082,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F06-TIMER-RUNTIME-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F06_TIMER_RUNTIME_AUDIT.md",
+      "sha256": "a2155fdc17001770370f2ec5a39df13a6428d0cb41b89d61527fa7c3947e7f9e",
+      "bytes": 4797,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F07-MANAGEMENT-CONSOLE-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F07_MANAGEMENT_CONSOLE_AUDIT.md",
+      "sha256": "41f6b008ba41bb044723ad65ed618ed192db67e136c509a096f6ada168e82d22",
+      "bytes": 5212,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F09-ACCESS-COUNTER-CENSUS",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_ACCESS_COUNTER_CENSUS.md",
+      "sha256": "73d7316e91e1501d2b5acd19a7b776c29a3269cb4a49b2c7d27655f7ccbb9235",
+      "bytes": 5620,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F09-CLOCK-PATH-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_CLOCK_PATH_AUDIT.md",
+      "sha256": "d565fb14e7c4a09c0627692793ca253fb2296fe84788ca0537cc1ed371960b74",
+      "bytes": 11197,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F09-COMPLETION-STATUS-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_COMPLETION_STATUS_AUDIT.md",
+      "sha256": "0c369875326debccf5196b548050f898102af4c91ced325d8d16e62efd20a396",
+      "bytes": 6017,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F09-OBSERVABILITY-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F09_OBSERVABILITY_AUDIT.md",
+      "sha256": "d2218232b4e1e44107ea9678af739328803fb2346d60bf0a059bb76c1791a017",
+      "bytes": 6830,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F10-CHILD-COMMAND-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_CHILD_COMMAND_AUDIT.md",
+      "sha256": "09dc5d4eae55db595858cf0d81da33a67e7683655324a9830b28672ffb517a1c",
+      "bytes": 4766,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F10-DEPENDENCY-INVENTORY",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_DEPENDENCY_INVENTORY.md",
+      "sha256": "cf0f7300516b627f2c6a4cdddcb0d1063d0fbaac44558a1030653ea8c70e06a4",
+      "bytes": 10752,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F10-MOUNTED-CONFIG-FRAGMENT-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_MOUNTED_CONFIG_FRAGMENT_AUDIT.md",
+      "sha256": "a024040c85e47d9118ab843a1083de38f1d1db00b616f6f3fdb2801e0e3cb3be",
+      "bytes": 1533,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F10-RUNTIME-EDGE-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_RUNTIME_EDGE_AUDIT.md",
+      "sha256": "5f8e840e87296c8812bac5a0e45aa91cafe4d0a884f6f731eb752627a01c7f8d",
+      "bytes": 2916,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F10-WATCHDOG-BOOT-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F10_WATCHDOG_BOOT_AUDIT.md",
+      "sha256": "a896c3ee1edceef345c6bc64d79cb6fddf9ef340db2bf5db71b7ccf70add5cce",
+      "bytes": 1553,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "F14-MAPPED-CONFIG-SURFACE-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/F14_MAPPED_CONFIG_SURFACE_AUDIT.md",
+      "sha256": "650435e052e58baa5864823da87655a0b183b97be1d1fed8502088b24fbe19f6",
+      "bytes": 2218,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "FINDINGS",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/FINDINGS.md",
+      "sha256": "8e3af58f1804a13d9fdbc305b440888b8c7629344b849bdb4fec32dab1726492",
+      "bytes": 7500,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W92",
+      "file": "goldshell/ka-box/05-documentation/W92_OFFICIAL_SOURCE_RECHECK.md",
+      "sha256": "6c508ac4e235a739dbdf09691b78fbcbd3eff4840c3c24fa6adc3b7b4218f85d",
+      "bytes": 1925,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W93",
+      "file": "goldshell/ka-box/05-documentation/W93_2026_PRIMARY_SOURCE_RECHECK.md",
+      "sha256": "8abb5fb32e4769396bdf9696538b55935ec7c759eef2c9fd123ac3b025e241b9",
+      "bytes": 2707,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W94",
+      "file": "goldshell/ka-box/05-documentation/W94_OFFICIAL_KAS_FIRMWARE_CORPUS_CLOSURE.md",
+      "sha256": "0373e003176e607cadd04dee4387d85d2333aeffb89ae1051d9d9242de9cf750",
+      "bytes": 2511,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W95",
+      "file": "goldshell/ka-box/05-documentation/W95_CMOS_OTA_SURFACE_AUDIT.md",
+      "sha256": "8dcbc1512258a599e639a7e710e26af693b0d12f55c0ac806cf9a4e58d5fe8a7",
+      "bytes": 4402,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W96",
+      "file": "goldshell/ka-box/05-documentation/W96_MINERD_DEBUG_SURFACE_AUDIT.md",
+      "sha256": "31b49c4597b9a691611bd3dc91c4ebb0e548726f8d75230969956ebd437aff28",
+      "bytes": 4480,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W97",
+      "file": "goldshell/ka-box/05-documentation/W97_KASPAMINER_API_SURFACE_AUDIT.md",
+      "sha256": "1f08459629a2f17cefff898174d332f1001f2c7495353215d95ad9cf6070e774",
+      "bytes": 5757,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W98",
+      "file": "goldshell/ka-box/05-documentation/W98_PRIMARY_SOURCE_INTERFACE_SEARCH.md",
+      "sha256": "7a21d1074acbaa8262d0ba5fefd45dae47f707bc4e31db5b48f297f2eeb6bcd7",
+      "bytes": 13861,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W99",
+      "file": "goldshell/ka-box/05-documentation/W99_FLASH_RESIDUAL_ARTIFACT_AUDIT.md",
+      "sha256": "9bc97f6073343c1e386975f6cff3b65d3e75237900b9c61859617aa1ace4d558",
+      "bytes": 5281,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W100",
+      "file": "goldshell/ka-box/05-documentation/W100_TRANSPORT_REACHABILITY_AUDIT.md",
+      "sha256": "e0e497dd9f66a77e90fa27f1d4bccf2a3a3663c62edc6bf2b996d243dbee1294",
+      "bytes": 5246,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W101",
+      "file": "goldshell/ka-box/05-documentation/W101_SENSOR_RESPONSE_AUDIT.md",
+      "sha256": "22f1df60c1e58ce3bb6caa93dd060d05218022f1bf24c8dc6581ea780cc8ab96",
+      "bytes": 4302,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W102",
+      "file": "goldshell/ka-box/05-documentation/W102_BIST_CORE_CONTROL_AUDIT.md",
+      "sha256": "c0af5f5ffc5e1afc58eca826ee338f004dbb7a48cfbd92f2302899f380bb24aa",
+      "bytes": 4572,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W103",
+      "file": "goldshell/ka-box/05-documentation/W103_RESPONSE_SURFACE_AUDIT.md",
+      "sha256": "9d5aa330e20a8263d7c32a87a9e5da612c05caf004658c6c45d177e968fc2750",
+      "bytes": 5314,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W104",
+      "file": "goldshell/ka-box/05-documentation/W104_RECEIVE_ANOMALY_CLOSURE.md",
+      "sha256": "f76c9d299cae9afdf6dfe6532b3fb050779346be26f060481a0f760d5a3e06fa",
+      "bytes": 3677,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W105",
+      "file": "goldshell/ka-box/05-documentation/W105_OFFICIAL_FIRMWARE_FAMILY_AUDIT.md",
+      "sha256": "653a1b782e4167bee84da379baa44f2d3c2ce197b069c6ce86aa34b0d0cd3570",
+      "bytes": 4712,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W106",
+      "file": "goldshell/ka-box/05-documentation/W106_OFFICIAL_FIRMWARE_HISTORY_AUDIT.md",
+      "sha256": "3e3da2e778a5a3ea3a7176d6b3e27f5ea88ac8ea7b848560e5ac5ef38046356d",
+      "bytes": 3053,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W107",
+      "file": "goldshell/ka-box/05-documentation/W107_OFFICIAL_WEB_FIRMWARE_SURFACE_AUDIT.md",
+      "sha256": "0c0c8c786e854e2ad8ef4f98023264b1fb62c5176f3cb8d67f334274ce5c6a07",
+      "bytes": 3653,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W108",
+      "file": "goldshell/ka-box/05-documentation/W108_GOLDSHELL_ZONE_APK_AUDIT.md",
+      "sha256": "8909c317699bd15c0fde6da3b5a6dc60075e1a6a36d5915cbbd2ec65d6ca2b9c",
+      "bytes": 5992,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "W109",
+      "file": "goldshell/ka-box/05-documentation/W109_GOLDSHELL_ZONE_DISTRIBUTION_AUDIT.md",
+      "sha256": "8729c663834261d3b360de1c8ca850f3c093fb7544aef085476025eb05eb7156",
+      "bytes": 3179,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "FW229",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.9/F11_FIRMWARE_VERSION_DIFFERENTIAL.md",
+      "sha256": "efd24210e4e7e6eccb4d4dc3caa90dd1613f2d239d5314e7220d0422b6d6c7f2",
+      "bytes": 5253,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "FW227",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.7/W63_FIRMWARE_227_AND_BOOT_SURFACE_AUDIT.md",
+      "sha256": "ddfa0ad788c14f39530e75da5b93ef330f67d9ab8130dd5039ea3387066f5e22",
+      "bytes": 5178,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "FW-RELATED",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-related-ien616e/W63_RELATED_IEN616E_SURFACE_AUDIT.md",
+      "sha256": "d23134207bf251a958479f07a23a6e51085b40ad0548c41cbe24dcb09d945739",
+      "bytes": 4262,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "HASH-SUMMARY",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/hash-equivalence/summary.json",
+      "sha256": "b0014dd0518f6541879d9592516bad15c6deaa9e1fb11d1e056de76e0edc15fb",
+      "bytes": 1311,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "TRANSPORT-RECEIPT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/transport-closure/receipt.json",
+      "sha256": "9bef12641204422d8320903c23abb00c89408ba8633e5648961c1910b9b0442e",
+      "bytes": 26446,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "COMMAND-RECEIPT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/command-register-closure/receipt.json",
+      "sha256": "568ab21bbb1ee537c84cb7522cc616fa6283a4ed136055b4d1de928615ee245b",
+      "bytes": 23009,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CORE-MAP-RECEIPT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/core-allocation-audit/receipt.json",
+      "sha256": "4b1d88e1863d423e276e9148a431ff914b61f1d835ce6da002510323c9b7af90",
+      "bytes": 70081,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CORE-CENSUS-RECEIPT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/core-census/receipt.json",
+      "sha256": "58c03be4b18df3986e31ae13525cece46af5c284ef152ecbb090f9fb6906a3dd",
+      "bytes": 10056,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "PRODUCT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/selected-rootfs/root/product.json",
+      "sha256": "3cc05a3111ed2b23cc1fedcd48e4557dd83c3fd7c0729111135f022623e99213",
+      "bytes": 1779,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "MINER-BINARY",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/selected-rootfs/usr/bin/kaspaminer",
+      "sha256": "c2453674c294074e56db76ad62c3ab3dc46ad9d60d3f25f31c44891fb3a9d2f1",
+      "bytes": 602128,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R002",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt02/RUN_SUMMARY.md",
+      "sha256": "80c5e9572308751260bbcfa4b753ec7b1c8edd89b5a3228919651e997af72d09",
+      "bytes": 3984,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R003",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt03/RUN_SUMMARY.md",
+      "sha256": "7719481bae6758d009310b9e610e3eb536cc58ca220f2f203fa29c00c754c2fb",
+      "bytes": 4457,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R028",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt28/RUN_SUMMARY.md",
+      "sha256": "c4c3da83b14346b73032de4729ea2d385d334f560ff7464ff7df7a8c426db9a7",
+      "bytes": 3158,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R029",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt29/RUN_SUMMARY.md",
+      "sha256": "be9801467730f89ef5e7064e6f10e7fdd34239be71561a2f4813cba70e73344c",
+      "bytes": 3420,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R030",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt30/RUN_SUMMARY.md",
+      "sha256": "b58c5110480004f7005236592e74e86be3221f9e3211a94c260a0800f44358cd",
+      "bytes": 3168,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R031",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt31/RUN_SUMMARY.md",
+      "sha256": "ad027d0627cde823c7438fccc37be6dbc7ed0317876096d77de1708da0f0ec4b",
+      "bytes": 2721,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R032",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt32/RUN_SUMMARY.md",
+      "sha256": "7003a27daed1a7a5746fcbcaa854eb437804472160651c0d0e4b8bbaea52fa19",
+      "bytes": 3138,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R037",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt37/RUN_SUMMARY.md",
+      "sha256": "22f378a814fa540aff265b01632f3e1d8d903fc4c1ac3863cdac1e39e4d1d988",
+      "bytes": 3007,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R038",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt38/RUN_SUMMARY.md",
+      "sha256": "7f5a5bead6e36bb388930420a9a06d29e6021ce800b33e9226b28f61bf8f5620",
+      "bytes": 3335,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R039",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt39/RUN_SUMMARY.md",
+      "sha256": "7ff8c73fba2bd9fb6b4772e0b5b56dbc5293fab9c556b806811a23eed6139ce6",
+      "bytes": 2467,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R040",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt40/RUN_SUMMARY.md",
+      "sha256": "fa49b7f3ebe2ceae200cb2d9452dd22a1fe61e0592eb50c3dadf7a464e315e6a",
+      "bytes": 1989,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R042",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt42/RUN_SUMMARY.md",
+      "sha256": "9cfd052a35ac36f78f60b54776938feeacece52042e26f895b8d9d3bc73a6fd7",
+      "bytes": 2057,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R043",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt43/RUN_SUMMARY.md",
+      "sha256": "c7c72bead3c94c05876291b6e765baa59e8a40324cd796691e61d2a2826cd475",
+      "bytes": 2129,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R044",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt44/RUN_SUMMARY.md",
+      "sha256": "a4c2fce1ad473697eb034aabcc91ebf10e9cc28a314cdfc0b863867edf7fc5ef",
+      "bytes": 2609,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R045",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt45/RUN_SUMMARY.md",
+      "sha256": "dae09bc56294a5d1f334d8cc70d306ab754e96f9fb5d6527e8bf3a791a77a4e5",
+      "bytes": 2100,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R046",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt46/RUN_SUMMARY.md",
+      "sha256": "0964b61dc1600e627ed2e44780ba4cd3ddeb8070675b69bb0e5a2fd854d35ca6",
+      "bytes": 3215,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R047",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt47/RUN_SUMMARY.md",
+      "sha256": "3afd6dbe53302adfe7140d00b8e5fb494e3a7600f6549e5b087cad9df9c1474f",
+      "bytes": 1888,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R048",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt48/RUN_SUMMARY.md",
+      "sha256": "a4854a01cb2e4e4547c0340e4d09fffcf4a39b097ddaaf67c06877017cf41f3b",
+      "bytes": 2085,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R049",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt49/RUN_SUMMARY.md",
+      "sha256": "af31643fa8dbbc62336ff4f175264b4753bf4a99d5ac9b2ec7bd124450bff714",
+      "bytes": 2052,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R051",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt51/RUN_SUMMARY.md",
+      "sha256": "120a1506f1b3404120c7bfc40dac54c5f8d80be1c20aa935f3d29c465e893727",
+      "bytes": 1797,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R052",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt52/RUN_SUMMARY.md",
+      "sha256": "ae1926924f8425a0c6507a160624ea7dd63766e7dc3ba473fd89bf8c0e73f5b1",
+      "bytes": 2830,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R053",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt53/RUN_SUMMARY.md",
+      "sha256": "7694c8daf276b0cc7451e1934420d5ebab988eb7f1571ba1c1b57399f4c83789",
+      "bytes": 2469,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R054",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt54/RUN_SUMMARY.md",
+      "sha256": "5ded303a12756f2420e797f4af339e772e8199551d3c836224a12ea96e1ab166",
+      "bytes": 4531,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R055",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt55/RUN_SUMMARY.md",
+      "sha256": "de80b480a61903b982a803f11a2a43cf13735f6bb0f37ef0be8d339aada6727a",
+      "bytes": 4346,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R056",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt56/RUN_SUMMARY.md",
+      "sha256": "f96beaa833623acd51ee2981998f24b4113be6e43ad4066b29ffa672fefd1cc6",
+      "bytes": 2228,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R057",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt57/RUN_SUMMARY.md",
+      "sha256": "8043d20f9df5234c26cd0a8f4f489d9a448a23044ec664609a52d1740cbaf634",
+      "bytes": 2401,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R058",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt58/RUN_SUMMARY.md",
+      "sha256": "c696ab26a75027e06cce1fecc078d5b75ad619190f8fb95dcc1d8309c9b9f0e5",
+      "bytes": 3555,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R059",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt59/RUN_SUMMARY.md",
+      "sha256": "6b8c398742063c75e1fbc8c566d06f9948202be2cf2f0d942a7fcb6f6dfc10c3",
+      "bytes": 3772,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R060",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt60/RUN_SUMMARY.md",
+      "sha256": "93dea745b1227d1230034e37748c1654d047d4ba17c7ef7f23b711a4df905498",
+      "bytes": 780,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R061",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt61/RUN_SUMMARY.md",
+      "sha256": "538b971c9473a190584c9db9e1d1480b222ecbd90692444fea4ff768adaecbc7",
+      "bytes": 3216,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R062",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt62/RUN_SUMMARY.md",
+      "sha256": "dcbdd7cc9fe6000951c8e43a1b03fc896a4a9e40e4f3cf0e48913004e35905c7",
+      "bytes": 3036,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R063",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt63/RUN_SUMMARY.md",
+      "sha256": "66221b1243d07de3dedea0c080df1632c33835ea827bd15893a4e39832d0a46f",
+      "bytes": 4577,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R064",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt64/RUN_SUMMARY.md",
+      "sha256": "6b45a5448ae10d32dc7aafa938f4b59af00a7850b485832d49048e1a8c2c9679",
+      "bytes": 3130,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R065",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt65/RUN_SUMMARY.md",
+      "sha256": "dcadfb041549b26117ef4033002743a8fb32507870063893f421e76be57ab066",
+      "bytes": 3644,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R066",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt66/RUN_SUMMARY.md",
+      "sha256": "75194c1addb87e45db7bea2472364bbdaf4571851b76b48d1c75527f63c0fa5e",
+      "bytes": 2644,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R067",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt67/RUN_SUMMARY.md",
+      "sha256": "f417c8087e6e63a214fb4a40d6bd33d581041728b47e5eb30505eecd786d8667",
+      "bytes": 2733,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R068",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt68/RUN_SUMMARY.md",
+      "sha256": "bce0c9009cb0d622c3395d5d0b7d4d4548571ed891a63ad24390bfe05d8a9fdc",
+      "bytes": 3911,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R069",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt69/RUN_SUMMARY.md",
+      "sha256": "418df7fffaf9d5e585846bdeca5465a71818545a583053f5921d84bd817269ff",
+      "bytes": 4002,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R070",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt70/RUN_SUMMARY.md",
+      "sha256": "d15e9e3dc1e2bbc557bf47a268be2079f235ec1560eb68f54d563dfada23628d",
+      "bytes": 3699,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R071",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt71/RUN_SUMMARY.md",
+      "sha256": "5d1448cfc114e5fd7f33c45362c86267c1c89450eaadc0f4a32101f649e9283b",
+      "bytes": 3550,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R072",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt72/RUN_SUMMARY.md",
+      "sha256": "cc737bae5da04eb11a53c87ca38180d5aab0da2fffe514f3316894b9ab523e5a",
+      "bytes": 3056,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R073",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt73/RUN_SUMMARY.md",
+      "sha256": "c9028f715b5ee2e392e0717e28af66c6da1c1dda1ed205983aa78455af23ea96",
+      "bytes": 2884,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R074",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt74/RUN_SUMMARY.md",
+      "sha256": "551a17c825f5bfb3088773306c282299fc672a69b16a06677df0964b0db4afaa",
+      "bytes": 2909,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R075",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt75/RUN_SUMMARY.md",
+      "sha256": "0553454042b002fb7161d9bbe4e3ea945a1f7410d6b4ef8be9143808e6c4ef29",
+      "bytes": 2505,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R076",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt76/RUN_SUMMARY.md",
+      "sha256": "d0df09ffabef19c4c0966c3d4be3d856d872c7da8bc97393d646eb3e81a76493",
+      "bytes": 2744,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R077",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt77/RUN_SUMMARY.md",
+      "sha256": "c2a3e944ebf3b946aa557d6406000ed83d44c9a843139632d52c7fd118b12fa1",
+      "bytes": 3220,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R078",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt78/RUN_SUMMARY.md",
+      "sha256": "095d68b2be23888eff4da3045f85ff8802d0300f65813eacc9eb57649bcc9737",
+      "bytes": 3169,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R079",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt79/RUN_SUMMARY.md",
+      "sha256": "1a2d3a6bd463504255b2c0c5647e25f5c2cb60e7fd24bdd27776d79f6deb4f0b",
+      "bytes": 2911,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R080",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt80/RUN_SUMMARY.md",
+      "sha256": "1348031175c5f9414796dd931b24775b1b2f67cee37f297453171abca300c4fc",
+      "bytes": 3070,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R081",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt81/RUN_SUMMARY.md",
+      "sha256": "33ab39fc8173febf9c7d697de6cd59a4bd11680f898e628b48e786e1522ea43d",
+      "bytes": 4199,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R082",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt82/RUN_SUMMARY.md",
+      "sha256": "01d0d25a6be9e606a66092a9955c7e13cd452c42ff7fe636478f2b4beffc67ea",
+      "bytes": 1399,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R083",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt83/RUN_SUMMARY.md",
+      "sha256": "3b6aed96ed908447c7929e2c78bf7c135a820d1296f536b6fee3047ff8066b40",
+      "bytes": 3780,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R084",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt84/RUN_SUMMARY.md",
+      "sha256": "f4544ecbb7291e2059584479ebc355ec5d51b9e25a021e5431eaa75ef60aacc6",
+      "bytes": 1515,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R085",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt85/RUN_SUMMARY.md",
+      "sha256": "1ef57a0246d5b362611e03886495003e9a2e37e51478d2e319d837e148601eb8",
+      "bytes": 3358,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R086",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt86/RUN_SUMMARY.md",
+      "sha256": "026e5c1759b27336ae4673eb004a00621730c3689ad7dc7de99d46ed2115b3d1",
+      "bytes": 1629,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R087",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt87/RUN_SUMMARY.md",
+      "sha256": "9de06291b9be838194412e40c680ac9cc1f54a0c3f6c06add27114bc7a5122be",
+      "bytes": 2092,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R088",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt88/RUN_SUMMARY.md",
+      "sha256": "8475f9a30d7105f0258de1271737821829e199aee3556794d0da2b1d1048c863",
+      "bytes": 1407,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/RUN_SUMMARY.md",
+      "sha256": "fe9d0298771c05adc8fc80a129289a266fd332f0ecf74986da1f3287cd35af35",
+      "bytes": 3331,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R090",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt90/RUN_SUMMARY.md",
+      "sha256": "b165641579370a3a020196f80ab8fb35f7d756a6eaf3b391a4bcc428b8f9ea8a",
+      "bytes": 1383,
+      "evidence_type": "recorded physical test",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "PACKETS",
+      "file": "goldshell/ka-box/03-development/observed-packets.json",
+      "sha256": "df82fb7612802c49dda2bae7f6ce070076a35015a4cce5890459a05404a0edd6",
+      "bytes": 3724,
+      "evidence_type": "saved decoded data",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "INIT-CAPTURE",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/captured-initialization.json",
+      "sha256": "a8c94bfe7ddfb73f06332d4ddb07dff3c56a2a81f41a7aa8bac031955541c450",
+      "bytes": 231800,
+      "evidence_type": "saved decoded data",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-POW-INPUT",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/full-control-verifier-input.tsv",
+      "sha256": "2e22135c31382f85b8a8307c060bf94bd9b40a37d26ff29201effc0a75f50764",
+      "bytes": 13625,
+      "evidence_type": "saved decoded data",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-POW-OUTPUT",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/full-control-verifier-output.tsv",
+      "sha256": "aef16a18f4c9e7e390da4232bc06385bbb7f1a422775f751dc36a3020383ebf6",
+      "bytes": 23971,
+      "evidence_type": "saved decoded data",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "LAYOUT",
+      "file": "goldshell/ka-box/02-reverse-engineering/firmware-2.2.2/protocol-analysis/stock-layout.json",
+      "sha256": "34331bba63d31e23a844a2445130ab7b74e3e2fd01dc6d15540f19b0365e51f2",
+      "bytes": 8377,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-NATIVE",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/full-control.json",
+      "sha256": "4378647d2d5ff3d5a909b00fc805a137a1472186383d9fd7bc8afc492a142761",
+      "bytes": 346379,
+      "evidence_type": "recorded physical test analysis",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-JOIN",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/full-control-physical-correlation.json",
+      "sha256": "000e12ddbce9929f05c46a57d404cc9de3458f2b1d75f3754c63562b95f4b15d",
+      "bytes": 46855,
+      "evidence_type": "physical capture and external reply analysis",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R075-ARCHIVE",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt75/logic/signal-discovery-attempt75.bin.archive.json",
+      "sha256": "0cd7c293824494a7355b96d5dc0918683e88083563552653ea5d4a4f35b84eae",
+      "bytes": 1166,
+      "evidence_type": "capture retention record",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-ARCHIVE",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/logic/signal-discovery-attempt89.bin.archive.json",
+      "sha256": "373e3a0aec0590105f4e67cd275bc9c6ee8e8c1a10b6bdbeb0caa8f9fb2d6796",
+      "bytes": 1166,
+      "evidence_type": "capture retention record",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R090-ARCHIVE",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt90/logic/signal-discovery-attempt90.bin.archive.json",
+      "sha256": "241e49341f985e376bf55dcd3dc97dccdef1d3d2768d98412ba42938b2a9efac",
+      "bytes": 1166,
+      "evidence_type": "capture retention record",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R075-JOIN",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt75/segmented-stream-physical.json",
+      "sha256": "3a7b4e89c233565eecc61889f8d023211f58d8b4fbd612963decb7255f55cc47",
+      "bytes": 364853,
+      "evidence_type": "physical capture and offline replay analysis",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "SEGMENT-VECTORS",
+      "file": "goldshell/ka-box/03-development/segmented-stream-vectors.json",
+      "sha256": "f93004857c8618aa9d8c4e518acf518c5d2919976169881cdc8370d3144ecfe5",
+      "bytes": 547969,
+      "evidence_type": "offline prediction",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CONTACT-PHOTO",
+      "file": "goldshell/ka-box/02-reverse-engineering/physical-evidence/connector-count/annotated-reverse.png",
+      "sha256": "38949853b46042659cc0c60a504336a64377beea9fd02f6c9541a3c9e3754396",
+      "bytes": 615951,
+      "evidence_type": "annotated source photograph",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "CONTACT-RECEIPT",
+      "file": "goldshell/ka-box/02-reverse-engineering/physical-evidence/connector-count/receipt.json",
+      "sha256": "f79c55a095e062ec842ea45dbf39c421217c6878c79dde48b1de962fe46a0a1c",
+      "bytes": 1536,
+      "evidence_type": "photograph inspection",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-STDOUT",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/full-control.stdout",
+      "sha256": "2037dee7ff602cc468c1ff254ee14271fab9561eb41ae1e56adbb0625d77f87b",
+      "bytes": 13428422,
+      "evidence_type": "private native transfer record",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "R089-DECODE",
+      "file": "goldshell/ka-box/01-research/live-dumps/signal-discovery-attempt89/spi-decode/bursts.jsonl",
+      "sha256": "4decf140aa271a445a48e153de3f39bf974ce5b48397575ddecb1362c98fd7aa",
+      "bytes": 27563740,
+      "evidence_type": "decoded physical capture",
+      "access": "Private research repository. The full source is not part of this reference."
+    },
+    {
+      "source_id": "POW-HELPER-SOURCE",
+      "file": "ks5/03-development/open-controller/services/openminer-runtime-rs/examples/ks5_recorded_pow.rs",
+      "sha256": "b353d98d929852c5876d56af9c702ea1ee5213335f82ac1a13af30ddcd686d46",
+      "bytes": 3267,
+      "evidence_type": "offline verifier source",
+      "access": "Private research repository. No executable is included."
+    },
+    {
+      "source_id": "POW-STAGES-SOURCE",
+      "file": "ks5/03-development/open-controller/services/openminer-runtime-rs/examples/kabox_pow_stages.rs",
+      "sha256": "888d4433e8770adede9bd2cd6c247600b1719135be0d30d9fa2d1c87d4adb31b",
+      "bytes": 4733,
+      "evidence_type": "offline verifier source",
+      "access": "Private research repository. No executable is included."
+    },
+    {
+      "source_id": "POW-SOURCE",
+      "file": "ks5/03-development/open-controller/services/openminer-runtime-rs/src/mining/pow.rs",
+      "sha256": "18083970ff489c76b76b9e7641fbc7aa41474202b954254ef80a4305156cdbb6",
+      "bytes": 19302,
+      "evidence_type": "offline verifier source",
+      "access": "Private research repository. No executable is included."
+    },
+    {
+      "source_id": "PHOTO-CONTROLLER",
+      "file": "goldshell/ka-box/01-research/photos/2026-10-03/1-Photo-1.jpg",
+      "sha256": "ca72da612f6add9044deb3f2e20b8cf8ab42c9a7b9aaf5b36c2c3e4f541e4a65",
+      "bytes": 354005,
+      "evidence_type": "source photograph",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "PHOTO-ASSEMBLY",
+      "file": "goldshell/ka-box/01-research/photos/2026-10-03/2-Photo-2.jpg",
+      "sha256": "2c40a9605265ff06351a8afe12e16bd7875c2ae815d7a7d69f85d6ff327d074c",
+      "bytes": 2238429,
+      "evidence_type": "source photograph",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "PHOTO-REVERSE",
+      "file": "goldshell/ka-box/01-research/photos/2026-10-03/7-Photo-7.jpg",
+      "sha256": "38b8faee288ff9ac4ae624719054a79e774a2b726f8422ed16b8ffd79bcf8d3b",
+      "bytes": 358628,
+      "evidence_type": "source photograph",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "PHOTO-AUDIT",
+      "file": "goldshell/ka-box/02-reverse-engineering/physical-evidence/cold-photo-audit/receipt.json",
+      "sha256": "3319d5ef07da10c6a4418cd1ac023b4aa1cd28d5145f6aaf0d68742ee195bde5",
+      "bytes": 3740,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "RECIPE-DATA",
+      "file": "goldshell/ka-box/03-development/cold-spi-recipe.json",
+      "sha256": "f3901e221df635d34be0353de9bf439611d1fad877069954b491dc78209c7998",
+      "bytes": 23773,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "STARTUP-OWNER",
+      "file": "goldshell/ka-box/06-tools/cold_spi_probe.c",
+      "sha256": "b60d325082c3a6282031c451af29ec9c087037a397667ae10abc43a457c44f7c",
+      "bytes": 6835,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "READBACK-SOURCE",
+      "file": "goldshell/ka-box/06-tools/native_readback.c",
+      "sha256": "b1dbd0f50d17ef9d59e3ac9953621611ec345a5c721b34aa81efef56eff2c154",
+      "bytes": 6225,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "REGISTER-FINDINGS",
+      "file": "goldshell/ka-box/02-reverse-engineering/register-characterization/FINDINGS.md",
+      "sha256": "3d73fca920ff1fb935beb9b6f88688ee1786537d909df777cf79a057a1deb103",
+      "bytes": 4200,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "FULL-CONTROL-OWNER",
+      "file": "goldshell/ka-box/06-tools/full_control_owner.py",
+      "sha256": "b3585012fb45d64a33df56dac6ad2f043599283a9baf2bc97fc9b60c07e0f1a0",
+      "bytes": 5983,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "POOL-TARGET-SOURCE",
+      "file": "ks5/03-development/open-controller/services/openminer-runtime-rs/src/mining/stratum.rs",
+      "sha256": "0e2cf99e54dd4e450ee8baf88cea78ddb69d5b5285ca95d45b207bd42609f859",
+      "bytes": 24001,
+      "evidence_type": "offline verifier source",
+      "access": "Private research repository. No executable is included."
+    },
+    {
+      "source_id": "HEALTH-OWNER",
+      "file": "goldshell/ka-box/06-tools/recovery_probe.c",
+      "sha256": "c9b13293aab20818cfc73af7b9258248ff68b13f3396162a3041d9c9d694cd07",
+      "bytes": 5660,
+      "evidence_type": "source inspection",
+      "access": "Private research repository. The source catalog identifies each included extract."
+    },
+    {
+      "source_id": "R001-UART",
+      "file": "goldshell/ka-box/01-research/live-dumps/controller-access-attempt01/uart-identity.txt",
+      "sha256": "abb715bb74c563a093211063ab82b247e59f84fd1df7b07367d21e31c1e3b639",
+      "bytes": 4501,
+      "evidence_type": "recorded physical console response",
+      "access": "Private research repository. Selected lines are included in evidence/j2-console.json."
+    },
+    {
+      "source_id": "R001-ACCESS",
+      "file": "goldshell/ka-box/01-research/live-dumps/controller-access-attempt01/RUN_SUMMARY.md",
+      "sha256": "b08a978032904450f6a24601781cc73ae991d0d58a7ab921c441d015b48c83dd",
+      "bytes": 4297,
+      "evidence_type": "physical test summary",
+      "access": "Private research repository. Selected lines are included in evidence/j2-console.json."
+    },
+    {
+      "source_id": "OPERATOR-J2",
+      "file": "evidence/j2-console.json",
+      "sha256": "5ce2af14ec302359b46e6b7b5c9072dc97ac4caea22f89892aeedea63c6a122d",
+      "bytes": 2566,
+      "evidence_type": "operator report, recorded in the physical_pads field",
+      "access": "Included in this reference. Received from the operator on 2026-10-08."
+    },
+    {
+      "source_id": "PHOTO-J2",
+      "file": "evidence/j2-detail.png",
+      "sha256": "9305d95512f5b3ae82c659c0605afcc780e62dfa3b4e3a2f85012283492545b4",
+      "bytes": 44436,
+      "evidence_type": "operator-supplied photograph detail",
+      "access": "Included in this reference. Received from the operator on 2026-10-08."
+    }
+  ]
+}

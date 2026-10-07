@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="985" viewBox="0 0 1000 985" role="img">
+<title>F25 · KA Box initialization sequence</title><desc>Stock preparation is necessary. Indexes are zero-based. Sequence is not to time scale.</desc>
+<defs><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#253449"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172533}</style>
+<rect width="1000" height="985" fill="white"/>
+<text x="40" y="34" font-size="22" text-anchor="start" font-weight="600">F25 · KA Box initialization sequence</text>
+<text x="40" y="64" font-size="14" text-anchor="start">Stock preparation is necessary. Indexes are zero-based. Sequence is not to time scale.</text>
+<rect x="40" y="94" width="270" height="46" fill="#e6eef9" stroke="#748398"/>
+<text x="175.0" y="123" font-size="16" text-anchor="middle" font-weight="600">Controller</text>
+<rect x="660" y="94" width="300" height="46" fill="#e6eef9" stroke="#748398"/>
+<text x="810.0" y="123" font-size="16" text-anchor="middle" font-weight="600">Stock-prepared board</text>
+<path d="M175 145 V870" stroke="#8794a5" stroke-dasharray="5 4"/>
+<path d="M810 145 V870" stroke="#8794a5" stroke-dasharray="5 4"/>
+<text x="40" y="184" font-size="14" text-anchor="start">Reset LOW 10 ms. Enable LOW 20 ms. Wait 1,000 ms.</text>
+<text x="40" y="214" font-size="14" text-anchor="start">Reset LOW 2,000 ms, then HIGH. SPI mode 1, 8-bit.</text>
+<path d="M175 278 L810 278" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="266" font-size="13" text-anchor="start">Rows 0-3: 500 kHz. Count gate: 30.</text>
+<path d="M175 374 L810 374" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="362" font-size="13" text-anchor="start">Rows 4-124: 1 MHz. Full register and clock sequence.</text>
+<path d="M175 470 L810 470" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="458" font-size="13" text-anchor="start">Row 125: preliminary read 12000000. Enable HIGH.</text>
+<path d="M175 565 L810 565" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="553" font-size="13" text-anchor="start">Rows 126-129: register 3 and controls 01, 0B, 03.</text>
+<path d="M175 660 L810 660" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="648" font-size="13" text-anchor="start">Rows 130-159: thirty register-3 admission reads.</text>
+<path d="M175 755 L810 755" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="743" font-size="13" text-anchor="start">Rows 160-161: sensor request, then control 04.</text>
+<path d="M175 850 L810 850" fill="none" stroke="#253449" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="188" y="838" font-size="13" text-anchor="start">Row 162: known work. Rows 163-212: fifty result polls.</text>
+<text x="188" y="311" font-size="13" text-anchor="start">Count reply: A53C 0200 001E.</text>
+<text x="188" y="407" font-size="13" text-anchor="start">Use each recorded delay after its transfer.</text>
+<text x="188" y="503" font-size="13" text-anchor="start">This preliminary read is not an admission reply.</text>
+<text x="188" y="598" font-size="13" text-anchor="start">Delay after control 01: 201 ms in the native recipe.</text>
+<text x="188" y="693" font-size="13" text-anchor="start">Require addresses 1-30, matching selectors and valid CRCs.</text>
+<text x="188" y="786" font-size="13" text-anchor="start">Delay after row 160: 4,003 ms.</text>
+<text x="188" y="881" font-size="13" text-anchor="start">Check PoW separately from the admission gate.</text>
+<rect x="40" y="908" width="920" height="37" fill="#fff1cf" stroke="#748398"/>
+<text x="500" y="932" font-size="14" text-anchor="middle">A failed gate stops startup. Keep direct health, cooling and the watchdog active.</text>
+<text x="40" y="973" font-size="11" text-anchor="start">Sources: RECIPE-DATA, STARTUP-OWNER, R089-NATIVE. Admission value: 12100020.</text>
+</svg>

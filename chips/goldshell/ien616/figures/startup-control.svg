@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="305" viewBox="0 0 1000 305" role="img">
+<title>F16 · IEN616 startup control</title><desc>Wire offsets are decimal. Length: 4 bytes. Transfer padding is separate.</desc>
+<defs><pattern id="unknown" width="8" height="8" patternUnits="userSpaceOnUse"><rect width="8" height="8" fill="#f3f4f6"/><path d="M0 8 L8 0" stroke="#dce0e6"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10Z" fill="#253449"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#172533}</style>
+<rect width="1000" height="305" fill="white"/>
+<text x="40" y="34" font-size="22" text-anchor="start" font-weight="600">F16 · IEN616 startup control</text>
+<text x="40" y="64" font-size="14" text-anchor="start">Wire offsets are decimal. Length: 4 bytes. Transfer padding is separate.</text>
+<text x="80.0" y="91" font-size="11" text-anchor="middle">0</text>
+<text x="136.0" y="91" font-size="11" text-anchor="middle">1</text>
+<text x="192.0" y="91" font-size="11" text-anchor="middle">2</text>
+<text x="248.0" y="91" font-size="11" text-anchor="middle">3</text>
+<rect x="52" y="101" width="56" height="50" fill="#e6eef9" stroke="#748398"/>
+<text x="80.0" y="130" font-size="12" text-anchor="middle">A5</text>
+<rect x="108" y="101" width="56" height="50" fill="#e6eef9" stroke="#748398"/>
+<text x="136.0" y="130" font-size="12" text-anchor="middle">3C</text>
+<rect x="164" y="101" width="112" height="50" fill="#e6eef9" stroke="#748398"/>
+<text x="220.0" y="130" font-size="12" text-anchor="middle">Control</text>
+<path d="M220 101 v7" stroke="#536275"/>
+<text x="40" y="200" font-size="13" text-anchor="start">01XX, 03XX and 0BXX use this four-byte body and a 606-byte broadcast transfer. No CRC.</text>
+<text x="40" y="220" font-size="13" text-anchor="start">Recorded startup uses XX=00. Full internal command effects are unknown.</text>
+<text x="40" y="248" font-size="11" text-anchor="start">Sources: LAYOUT, R089-NATIVE</text>
+</svg>

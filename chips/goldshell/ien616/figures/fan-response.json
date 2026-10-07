@@ -1,0 +1,50 @@
+{
+  "figure_id": "F27",
+  "kind": "comparison",
+  "claim_ids": [
+    "C14"
+  ],
+  "source_ids": [
+    "R089",
+    "R089-NATIVE"
+  ],
+  "unit": "RPM",
+  "stages": [
+    "baseline",
+    "reduced",
+    "restored"
+  ],
+  "median_rpm": [
+    [
+      4740,
+      4680
+    ],
+    [
+      4020,
+      3960
+    ],
+    [
+      4770,
+      4680
+    ]
+  ],
+  "logical_levels": [
+    [
+      100,
+      100
+    ],
+    [
+      80,
+      80
+    ],
+    [
+      100,
+      100
+    ]
+  ],
+  "legend": {
+    "known": "Fan 0",
+    "tested": "Fan 1"
+  },
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2"
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "goldshell.kabox.lossless_raw_archive/v1",
+  "raw_size_bytes": 1739785548,
+  "raw_sha256": "493593996a29c7b5278f103d86ca07a0ea6938608ffec25ead6ef3b9f0e99a5a",
+  "archive_size_bytes": 12552080,
+  "archive_sha256": "7e671e7e68142210741a2083e3b5c8399c465c0996e996d805b95c30c1d8e495",
+  "verified_recovered_size": 1739785548,
+  "verified_recovered_sha256": "493593996a29c7b5278f103d86ca07a0ea6938608ffec25ead6ef3b9f0e99a5a",
+  "decoder_receipt_sha256": "c02bd04f7091687d5ae86bd1067fbd84e8d825e1719c6a30ccebc0787263a9c9"
+}

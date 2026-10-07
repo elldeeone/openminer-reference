@@ -1,0 +1,92 @@
+{
+  "figure_id": "F03",
+  "kind": "packet",
+  "claim_ids": [
+    "C03",
+    "C04",
+    "C06"
+  ],
+  "source_ids": [
+    "PACKETS",
+    "CODEC"
+  ],
+  "direction": "hashboard to controller",
+  "length_bytes": 16,
+  "offset_origin": "first A5 byte",
+  "fields": [
+    {
+      "offset": 0,
+      "width": 1,
+      "name": "A5",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 1,
+      "width": 1,
+      "name": "3C",
+      "status": "known",
+      "byte_order": "literal",
+      "unit": "byte"
+    },
+    {
+      "offset": 2,
+      "width": 2,
+      "name": "Y8NN",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 4,
+      "width": 8,
+      "name": "Nonce",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    },
+    {
+      "offset": 12,
+      "width": 1,
+      "name": "Core",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "coordinate"
+    },
+    {
+      "offset": 13,
+      "width": 1,
+      "name": "?",
+      "status": "unknown",
+      "byte_order": "big-endian",
+      "unit": "unknown"
+    },
+    {
+      "offset": 14,
+      "width": 2,
+      "name": "CRC",
+      "status": "known",
+      "byte_order": "big-endian",
+      "unit": "integer"
+    }
+  ],
+  "checksum": {
+    "algorithm": "CRC-16 reflected 0x8408, seed zero, adjacent byte pairs reversed, no final XOR",
+    "coverage_offset": 0,
+    "coverage_width": 14,
+    "wire_offset": 14,
+    "width": 2,
+    "byte_order": "big-endian"
+  },
+  "notes": [
+    "Y: work slot. NN: logical address. Byte 12: recorded core coordinate 0-31.",
+    "Byte 13 is zero in the recorded results. Its nonzero meaning is unknown. CRC covers bytes 0-13."
+  ],
+  "setup": "KA Box / BoxII_CoreBoard V2.0 / LEP02_ComputeBoard V2 / firmware 2.2.2",
+  "legend": {
+    "known": "Blue: defined transport or source field.",
+    "tested": "Amber: selected physical contrast.",
+    "unknown": "Hatched: no supported internal meaning."
+  }
+}

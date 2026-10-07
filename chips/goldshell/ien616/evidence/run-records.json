@@ -1,0 +1,2176 @@
+{
+  "format": "kabox-quoted-run-records-v1",
+  "scope": "Selected source records, as recorded. Later findings can change an earlier interpretation.",
+  "records": [
+    {
+      "source_id": "R002",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Right-bank signal discovery, attempt02"
+        },
+        {
+          "line_start": 3,
+          "line_end": 8,
+          "quoted_record": "**Strongly indicated:** the accessible right-bank contacts expose the ASIC SPI\ntransport: B4 clock, B6 controller output, B5 hashboard output. Falling-edge,\nMSB-first sampling produces recurring A5 3C command and reply headers, including\nmatching address fields. Electrical direction and complete framing are inferred,\nnot separately exercised. Physical placement is operator-confirmed. B8 carries\nmuch slower activity; its role and chip select remain unknown."
+        },
+        {
+          "line_start": 10,
+          "line_end": 10,
+          "quoted_record": "Examples decoded from the first activity slice:"
+        },
+        {
+          "line_start": 12,
+          "line_end": 17,
+          "quoted_record": "| Controller candidate B6 | Hashboard candidate B5 | Interpretation |\n| --- | --- | --- |\n| A5 3C 02, followed by zeros | zeros | initialization lead |\n| A5 3C 0A 01 00 05, followed by zeros | 00 00 00 00 A5 3C 1A 01 00 05 00 00 00 01 36 DA | paired request/reply, address05 lead |\n| A5 3C 09 00 00 05 00 00 00 00 B3 1A, followed by zeros | zeros | register-write lead |\n| A5 3C 0A 01 00 06, followed by zeros | 00 00 00 00 A5 3C 1A 01 00 06 0F 00 00 0C C0 18 | paired request/reply, address06 lead |"
+        },
+        {
+          "line_start": 19,
+          "line_end": 23,
+          "quoted_record": "These are candidate wire bytes. Opcode meaning, field layout, checksum,\npadding/chain forwarding, work/result format and independent PoW are unknown.\nNo chip-select input was observed;20microsecond gaps split analysis bursts.\nDECODE_METHOD.md and spi-falling-edge-bursts.json preserve the exact method and\n38 decoded slice bursts, with independent software bit-packing cross-checks."
+        },
+        {
+          "line_start": 25,
+          "line_end": 33,
+          "quoted_record": "**Proven digital timing at this placement:** B4 has20,130,624 transitions and\nstarts at sample3,407,692,097(trace68.15384194seconds). Common running clock\nperiods47/48samples at50MHz imply approximately1.06MHz, with slower stretches\nduring initialization. B6 changes principally at rising clock edges; B5 changes\n7-9samples after rising edges in the initial slice. Falling-edge B5 headers are\nA5 3C while rising-edge headers shift to52 9E. This strongly supports clock\nidle-low / falling sampling(mode1) rather than proving the configured SPI mode.\nB5/B6/B8 total transition counts113042/70202/25636. B8's slow activity begins\nbefore ASIC traffic and is not used as chip select by this decode."
+        },
+        {
+          "line_start": 35,
+          "line_end": 38,
+          "quoted_record": "The run used committed coordinator f7a4644cb, --bank B, GND B3 and channels\nB4/B5/B6/B8. B1/B2/B7 supply candidates stayed excluded. Canonical analyser\nbinding/growth checks preceded power and continued during observation. The\nUART receiver made no transmissions; no miner command or setting was changed."
+        },
+        {
+          "line_start": 40,
+          "line_end": 48,
+          "quoted_record": "ON receipt07:47:43.199196UTC; OFF receipt07:49:13.198453UTC,89.999260seconds\napart. Exact OFF/0W/0A verified07:49:37.737205UTC after telemetry settled.\nCapture/receiver stopped afterward. Final CLI success,50MHz, six hardware\nchannels, unitsize1, threshold1.00V and raw/header/metadata agreement checked.\nRaw trace5,748,613,120samples /114.9722624seconds;5,748,613,132bytes retained\nlocally, ignored by Git; SHA-256\nf1bf689fdafa66e40fd52b67972cb4904fe05b993f26fd9f5b233203b0e5be0f.\nTwo5million-sample byte-exact slices are also retained with hashes/start offsets.\nUART retained67,941bytes; host offset/time receipts correlate startup and work."
+        },
+        {
+          "line_start": 50,
+          "line_end": 55,
+          "quoted_record": "Stock software reports normal fan rotation, temperatures near27-31C, work\nhandling, one accepted share and several bad-nonce messages. A temperature-read\nfailure was received0.339seconds before the OFF receipt; reinit0.292seconds\nafter it. Retain this distinction from attempt01. Cause and relationship to\nprobe loading/stock software/supply remain unknown; no healthy sustained mining\nor calibrated thermal claim is made. Power was cut within the existing bound."
+        },
+        {
+          "line_start": 57,
+          "line_end": 62,
+          "quoted_record": "Outcome: usable clock and paired candidate command/reply bytes are captured.\nNo more physical rewiring is needed for initial offline protocol work. Keep\npower OFF and retain this placement. Next trace the matched2.2.2 INCS driver\nagainst decoded A5 3C/opcodes/fields, verify checksum/framing and explain stock\nnonce/temperature errors before selecting further powered work. No third\npower-on or stimulus is authorized by this record."
+        }
+      ]
+    },
+    {
+      "source_id": "R003",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Controller snapshot attempt03"
+        },
+        {
+          "line_start": 3,
+          "line_end": 6,
+          "quoted_record": "**PASS** for the bounded read-only controller snapshot and paired stock capture.\nMiner verified OFF / 0 W / 0 A at 2026-10-03 09:10:18.350461 UTC;\nexclusive UART and canonical analyser closed. No physical intervention needed.\nThis does not establish healthy sustained mining or open-driver operation."
+        }
+      ]
+    },
+    {
+      "source_id": "R028",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt28: stock ownership and independent health"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "**Proven:** seven threads of hash-matched kaspaminer PID969/start5354 were\nsuspended; independent hash-matched fanctrl PID703/start623 stayed running.\nOnly stock owned the SPI descriptor. Three direct native health frames passed:\nPRE24.0625C, STOPPED24.25C, POST25.0C; fans2580/2520RPM.\nThe separate miner-local child resumed the exact owner after3.01s."
+        },
+        {
+          "line_start": 9,
+          "line_end": 14,
+          "quoted_record": "Paired full decode confirms a3.00164774s wire gap at capture81.6440986..84.64574634s,\ncorrelated with command/target uptime. Following CONT,64 results included62\nindependently valid observed-filter hashes. Actual stock mining restoration is\nproven for this bounded interval; no open-driver or accepted-pool-share claim.\nFull retained decode:2941 bursts/7,452,352 clock edges;2920 reconstructed\ntransfers;1782 CRC passes/zero failures;72 total results/70 valid."
+        },
+        {
+          "line_start": 25,
+          "line_end": 30,
+          "quoted_record": "**Failure preserved:** the overall run returned1; final RAM SSH cleanup/END\nwas not observed. Do not retroactively call the session a clean success.\nMiner-local stock CONT, positive mining and mains OFF are separately proven.\nBoth host UART/analyser owners closed. No SPI messages/setters/persistent\ntarget writes. Candidate no-restart closeout, no restart required after stock\nrestoration and verified OFF. This command is consumed and must never replay."
+        },
+        {
+          "line_start": 32,
+          "line_end": 40,
+          "quoted_record": "**Diagnosis:** the same primary-temperature warning occurs in passive attempt02.\nThe live-matched minerd disassembly identifies its primary `tstemp-0` invalid\narray, separate from `tstemp-2` fallback. This run immediately logs normal fan\ncontrol at25.75C, with no secondary warning or SMBus error. See\n[temperature diagnosis](../../../02-reverse-engineering/firmware-2.2.2/protocol-analysis/temperature-fallback/FINDINGS.md).\nThis evidence does not establish actual chip-junction temperature or the exact\norigin of every invalid primary value. A new source-bound profile must require\nfresh independent board/fan health and an explicit valid stock fallback before\nclassifying that one primary warning; all other temperature failures still stop."
+        },
+        {
+          "line_start": 42,
+          "line_end": 48,
+          "quoted_record": "Raw5398575756 bytes/107.97151488s SHA256\n`100bb56ec81c1b8265c2adaa335413dfe0e35366fb1a28a48b84963444ed7fee`.\nAll samples retained by recovery-verified lossless archival after this synthesis\nis committed. Evidence: events, ownership.stdout/json, UART, decoder receipt,\nselected-bursts/selection, transfer/CRC/PoW replay and analyser lifecycle.\nNext: implement/review bounded warm register/known-work handover with an\nindependent guard that releases the research SPI child before stock CONT."
+        }
+      ]
+    },
+    {
+      "source_id": "R029",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt29: native warm SPI transport; custom work not accepted"
+        },
+        {
+          "line_start": 3,
+          "line_end": 12,
+          "quoted_record": "**Proven:** hash-matched stock969/start5346 all seven threads stopped; fanctrl\n703/start614 stayed running. Native build10 completed55 exact SPI messages: reg30/3,\n3 drains, historical job15 and50 polls. All55 complete TX/RX pairs match the\npaired physical capture exactly (warm-wire-correlation.json): transfers712..766,\ncapture82.3183755..83.69343516s. Source commit a2ae2facc and exact plan\nwarm-handover-attempt29.json/input identities retained. No reset/PLL/voltage/GPIO\nsettings or persistent target writes. Board/fans PRE,STOPPED,POST and13 periodic\nboard frames passed. The independent guard verified research child release\nbefore automatic CONT. Target STOP73.16s, GUARD_RESUMED76.71s, RESTORED76.83s.\nAfter stock CONT,65 independently valid observed-filter hashes are captured."
+        },
+        {
+          "line_start": 14,
+          "line_end": 20,
+          "quoted_record": "**Experiment failed its work objective:** five native-returned results verify\nagainst the preceding live stock job5; none belongs to submitted historical job15.\nDo not credit residual/continued stock results to the open probe. The physical\npacket/transport match rules out a simple native TX/RX composition mismatch.\nStock captured sequences send0400/00e5 immediately before each new work; this\nfirst native sequence omitted it. Its necessary transition role is a hypothesis\nfor the revised probe, not yet proven or a fully interpreted register."
+        },
+        {
+          "line_start": 22,
+          "line_end": 31,
+          "quoted_record": "**Session stopped safely:** native command completed01:20:31.351949 UTC;\nprimary warning at01:20:37.262153 failed the strict fresh-UART fan condition.\nLatest UART RPM was01:20:26.437699,10.824454s old, although native POST had just\nread2580/2520RPM and board25.4375C. Existing classifier did not carry the native\nRPM timestamp into its shared health admission. Preserve this failure.\nOFF completed01:20:37.502874,91.306158s after ON01:19:06.196716;\nOFF/0W/0A verified01:20:57.910716. Exact physical relay timing unmeasured.\nFinal stock fallback26.13C is saved in UART raw. Final RAM SSH cleanup/END\nwas not observed; whole run exit1. Stock restored and host owners closed,\ncandidate no-restart closeout; hardware remains OFF. Command consumed."
+        },
+        {
+          "line_start": 33,
+          "line_end": 41,
+          "quoted_record": "Full decode3046 bursts/7,867,216 edges. One initial burst-based result CRC\nfails because a clock pause splits its packet (burst304); original failed\ncrc-replay is preserved. Complete transfer reconstruction plus original\nconstituent-burst lineage yields crc-transfer-replay:1820 CRC passes/zero\nfailures;87 results/83 valid/4 invalid. No complete-packet source is silently\nchanged; transfer-packet-input.jsonl retains the mapping to original bursts.\nNo chip-select, custom-work mining, actual pool acceptance or sustained thermal\nclaim follows. Actual stock pool differs from the replay's fixed4096 diagnostic\ntarget; do not treat target-test results as pool submission proof."
+        },
+        {
+          "line_start": 43,
+          "line_end": 48,
+          "quoted_record": "Raw5598597132 bytes/111.9719424s SHA256\n`8155385535fa6156ee57b680c4e3eea0419cf3f858d6ac5f236797f0cc75012a`.\nEvery sample retained using recovery-verified lossless archival after synthesis\ncommit. Evidence: native warm.stdout/json/stderr, events/UART, full decode,\ntransfer replay, original and corrected CRC views, PoW replay, warm-wire\ncorrelation and analyser lifecycle."
+        },
+        {
+          "line_start": 50,
+          "line_end": 52,
+          "quoted_record": "Next: carry qualified native RPM freshness into health admission; source-bind\nthe observed pre-work0400/00e5 transition in a fresh fixed-vector probe.\nNo consumed command replay or changed fan/board/clock/voltage limits."
+        }
+      ]
+    },
+    {
+      "source_id": "R030",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt30: verified open warm-work handover"
+        },
+        {
+          "line_start": 3,
+          "line_end": 12,
+          "quoted_record": "**Proven:** research native build11 submitted its historical job15 and returned\neight current-job nonces. All eight independently pass canonical Rust Kaspa\nPoW and transmitted nonce range. Three residual old job5 results from drains\nare explicitly excluded. Native56 TX/RX transfer pairs match physical capture\nexactly (warm-wire-correlation.json). Native sequence now includes observed\n0400/00e5 immediately before work, matching stock VA703cc..70402 and captures.\nIts practical required role for this supported handover is demonstrated;\nopaque bit semantics remain unknown. No reset/PLL/voltage/GPIO setters.\nSource commit25fd3c853; exact consumed warm-handover-attempt30.json, actual\nsource identities and fixed historical input hashes retained."
+        },
+        {
+          "line_start": 14,
+          "line_end": 20,
+          "quoted_record": "Hash-matched kaspaminer969/start5347 stopped all seven threads. Independent\nfanctrl703/start571 continued; PRE/STOPPED/POST board/fan gates and13 periodic\nboard frames passed. Separate bound child guard released research SPI before\nCONT. After resume, 116 valid results match newly submitted stock jobs\nfrom the post-handover capture, proving actual stock restoration. No native\ncustom result is credited to a pool submission; historical work is not live\npool work. Actual pool accepted strings remain separate stock observations."
+        },
+        {
+          "line_start": 22,
+          "line_end": 27,
+          "quoted_record": "**Clean session:** new primary-warning classification admitted at\n01:31:37.078501 UTC with fresh independent board/fan evidence; matching normal\nstock fallback27.75C arrived in the same fragment within1s. The measurement\nlimits and freshness windows are unchanged. This does not establish junction\ntemperature. Hash-matched minerd paused/resumed, SSH server reaped/listener\nabsent, RAMcleanup0 and END are proven; worker complete and host owners closed."
+        },
+        {
+          "line_start": 29,
+          "line_end": 34,
+          "quoted_record": "ON 2026-10-04T01:30:05.999678+00:00; OFF request completed 2026-10-04T01:31:44.211174+00:00,\n98.211497s after ON. OFF/0W/0A verified 2026-10-04T01:31:58.510834+00:00.\nExact physical relay transition timing unmeasured. Closeout proven_no_restart\nfor this supported warm handover; no cold reset/independent initialization,\nopen pool acceptance, longer operating envelope or persistent install claim.\nHardware remains OFF. This exact command is consumed and must never replay."
+        },
+        {
+          "line_start": 36,
+          "line_end": 45,
+          "quoted_record": "Full decode5605 bursts/14,388,654 edges; complete reconstructed-transfer CRC\nreplay3231 passes/zero failures;141 results/138 valid/3 invalid. Every original\nburst and constituent mapping is retained. Native PoW input/output/json and\nphysical TX/RX correlation jointly prove our eight results. No measured CS.\nRaw5648602444 bytes/112.97204864s SHA256\n`9bd4d6fe8f7e079adca6b9bf3673540e4f732804c1e4d3dbccfd3c4b95ec77a6`.\nAll samples retained through recovery-verified lossless archival after synthesis\ncommit. Evidence: events/UART/analyser, warm.stdout/json/stderr, native-pow.*,\nfull decode/selection/transfer mappings, CRC/PoW replay, proof-counts and\nwarm-wire-correlation."
+        },
+        {
+          "line_start": 47,
+          "line_end": 49,
+          "quoted_record": "Next: independently reproduce reset/enable, enumeration and safe observed init\nunder exclusive ownership; then varied current pool work, accepted replies,\nbounded sustained health and normal/fault stop. The active goal remains open."
+        }
+      ]
+    },
+    {
+      "source_id": "R031",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt31: first independent reset stops at enumeration"
+        },
+        {
+          "line_start": 3,
+          "line_end": 10,
+          "quoted_record": "**NEGATIVE initialization; safe partial stop proven.** Exact native count TX/RX\nmatches the paired physical transfer. Requested per-message500k ran at the same\n47-sample falling-edge period as stock1M (about1.064MHz), rather than stock\n500k's94 samples (about532kHz). Native returned overlapping count bytes at356,\nnot the expected30 at180. `clock-divider-proof.json` owns this conclusion.\nSource-matched stock helper VA758a0..75922 uses WR_SPEED_HZ40046b04 then\nRD_SPEED_HZ80046b04; the first runner omitted the global setter. Physical\ncount response does not yet establish independent enumeration or initialization."
+        },
+        {
+          "line_start": 21,
+          "line_end": 27,
+          "quoted_record": "ON 2026-10-04T02:04:57.911997+00:00; OFF request 2026-10-04T02:06:47.030266+00:00;\nrequest interval 109.118268s. Verified OFF/0W/0A\n2026-10-04T02:07:03.388013+00:00. Analyser/UART closed. Raw6298671756 bytes/125.97343488s,\nSHAbc0e40cf623273638a37335204978f918aaf318685e587637c023b863a5b0e05.\nFull803 bursts/1997285 falling edges retained,780 complete transfers, packet\ncounts{'2:2:unclassified': 2, '1:2:unclassified': 1, '2:a:unclassified': 393, '1:a:pass': 393, '2:9:pass': 63, '1:9:pass': 63, '2:1:unclassified': 1, '1:1:unclassified': 1, '2:b:unclassified': 1, '1:b:unclassified': 1, '2:3:unclassified': 1, '1:3:unclassified': 1, '2:c:unclassified': 1, '1:c:pass': 1, '2:4:unclassified': 5, '1:4:unclassified': 5, '2:7:pass': 5, '1:7:pass': 5, '2:8:unclassified': 308, '1:8:pass': 7, '1:8:unclassified': 301, '1:5:unclassified': 1, '1:0:unclassified': 1}. Seven earlier stock nonces independently validate;\nzero research work was sent, zero open/cold nonce or pool acceptance claims."
+        },
+        {
+          "line_start": 29,
+          "line_end": 34,
+          "quoted_record": "Evidence: accepted input/events, UART, full native stdout/stderr, SPI decode,\nselection/reconstruction, CRC/PoW, cold-wire-correlation and clock-divider-proof.\nRaw samples retained for verified lossless storage conversion; archive mapping\nowns exact recovery hashes. Next: source-matched device-speed write/readback\n500k before count,1M before remaining configuration, offline veto/actual native\nchecks and a fresh accepted attempt32. Never replay31 or bypass failed count."
+        }
+      ]
+    },
+    {
+      "source_id": "R032",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt32: independent ASIC reset, initialization and valid work"
+        },
+        {
+          "line_start": 3,
+          "line_end": 10,
+          "quoted_record": "**PASS within the stock-prepared platform:** the open native owner executes\nGPIO67 reset/66 enable, the captured162-transfer initialization recipe and\nfixed job15 work. Enumeration30 and all30 address1..30/reg3 reads12100020\nwith valid established CRC pass. Nine custom-job nonces independently pass\ncanonical Kaspa PoW/range/filter checks. All213 complete native TX/RX pairs\nmatch physical transfers539..751. Measured falling-edge periods94 samples\nfor initial500k then47 for1M confirm the new global device-speed setter.\nSource commit `51b135d65`; `cold-initialization-attempt32.json` is consumed."
+        },
+        {
+          "line_start": 12,
+          "line_end": 19,
+          "quoted_record": "Stock969/start5350, fan703/start613;\nall7 threads STOP and sole stock SPI descriptor proven before GO.\nNative24s timer retained, full initialization/mining finishes before expiration.\n445 complete streamed direct fan/TMP112 frames, stock cooling and\nunchanged supply GPIO14/45/50 retained. POST board29.1875C, fans2580/2520RPM,\nGPIO66/67=1 and mode1/eightbits/device1M. These are digital board measurements,\nnot calibrated junction temperature. Qualified primary fallback29.75C uses\nnative health5.895s old; secondary/SMBus/freshness/physical bounds unchanged."
+        },
+        {
+          "line_start": 21,
+          "line_end": 27,
+          "quoted_record": "Ready marker allows guard to release the completed native child before stock\nCONT. 104 independently valid results match new stock jobs after\nhandover. Six additional stock CRC-valid nonces fail independent hash checks\nand match six UART BAD reports, on chips11/12; native custom nine are all\nvalid. Stock can subsequently write its own operating registers; this run does\nnot prove that a fixed open recipe sustains unchanged settings indefinitely.\nSeparate source/capture state from restoration of continued stock mining."
+        },
+        {
+          "line_start": 29,
+          "line_end": 37,
+          "quoted_record": "Server reaped, listener absent, RAMcleanup0/END and analyser/UART closure\nproven. ON 2026-10-04T02:16:07.328787+00:00; OFF request 2026-10-04T02:18:10.462045+00:00;\ninterval123.133257s. Verified OFF/0W/0A 2026-10-04T02:18:24.766669+00:00.\nNo physical intervention. Full raw6898735756bytes/137.97471488s,\nSHA `18d000a73977aee5767b3d52540e2952eef4245eb2a5508f45a51ab6c346734d`; 5787 bursts/14800195 decoded\nfalling edges;5766 full transfers;3459 CRC packets pass/zero fail. Total\n127 results/121 valid/6 invalid includes9 custom and104 valid new-stock results.\nAll original samples remain in recovery-verified lossless archive; mapping\nbinds raw/archive hashes and recovery instructions."
+        }
+      ]
+    },
+    {
+      "source_id": "R037",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 37: complete directed register survey"
+        },
+        {
+          "line_start": 3,
+          "line_end": 4,
+          "quoted_record": "Executed one-use accepted package from committed 3ee7912cf. Miner restored,\nRAM SSH closed, capture closed and power verified OFF / 0 W / 0 A."
+        },
+        {
+          "line_start": 6,
+          "line_end": 12,
+          "quoted_record": "**Proven:** 600 directed reads of registers 0, 3, 5, 6 and 7, all 30 addresses,\ntwo rounds in stock state and two after independent cold initialization. The\nunchanged 213-message reset/init/work/poll sequence ran between inventories.\nAll 813 native TX/RX pairs match physical transfers 876–1688, capture seconds\n82.76308084–101.93538594. Every directed response passes address/register/CRC\nand reported-word matching. Nine native historical-work results independently\npass Kaspa PoW and the original filter. These are not current pool shares."
+        },
+        {
+          "line_start": 14,
+          "line_end": 20,
+          "quoted_record": "| Register | Stock, both rounds / all 30 | Cold plus fixed work, both rounds / all 30 |\n| --- | --- | --- |\n| 0 | 46270060 | 46270060 |\n| 3 | 12110620 | 12110f20 |\n| 5 | 00000000 | 00000000 |\n| 6 | 0f00000c | 0f00000c |\n| 7 | 00142000 | 00142000 |"
+        },
+        {
+          "line_start": 22,
+          "line_end": 28,
+          "quoted_record": "**Strongly indicated:** register 3 bits 8–11 reflect the most recently supplied\nwork ID. Across the whole paired trace, 4,708 readbacks correspond to their\nlatest preceding work ID; 30 initializer admissions and one startup word after\nreset precede the first new work and must not be compared to old work history.\nThe stock survey reflects slot 6 and the cold survey slot 15. This temporal\nassociation does not establish the complete register law, writable mask,\ncore count, internal counter or selective chip/core ownership."
+        },
+        {
+          "line_start": 30,
+          "line_end": 37,
+          "quoted_record": "**Restoration proven:** exact worker 972/start5335/seven threads and manager\n706/start603/thirteen threads resumed, independent fan703/start580 stayed\nactive. The 25-second observation collected 23 direct health frames. POST was\n35.8125 C, fans 1860/1800 RPM, GPIO66/67 high, mode1/8-bit/device1MHz.\nThere are 219 valid results bound to new restored stock work. Another ten\nrestored stock results fail latest-work PoW attribution; preserve them and do\nnot classify this as an ASIC error rate. No directed/native CRC failure.\nNative health: 1,046 frames, 25.6875–27.4375 C, fans2520–2640 RPM."
+        },
+        {
+          "line_start": 48,
+          "line_end": 52,
+          "quoted_record": "139 software checks and actual ARM15-second blocked-output alarm qualified the\nmachinery. The captured run separately proves target observations. ADC trigger\nand channel meaning, PLL law, reset-only retention, filter contrasts, causal\nchip/core attribution and sustained/fault/restart qualification remain open.\nAttempt37 is consumed and must never be replayed."
+        }
+      ]
+    },
+    {
+      "source_id": "R038",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt38: causal ADC/filter/work results; stock restoration incomplete"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executed exact29cafe021 package once. All3797 native TX/RX pairs match physical\ntransfers825–4621,85.81124094–172.625128 capture seconds. The native experiment\ncompleted, but the whole run is incomplete: resumed stock attempted restart,\nPLL readbacks/BIST failed and finalGPIO66/67were low. The parser rejected that\nstate and automaticOFF verified0W/0A. No successful stock/SSH cleanup claim."
+        },
+        {
+          "line_start": 9,
+          "line_end": 15,
+          "quoted_record": "**Proven within these states:**180 ADC A/B/A cases, two rounds/all30 addresses,\n60 exact reg6 restorations. Source-supported selectionbit8 retains0/1/0;\nstartbit4 reads0/1 within the selected schedule. ChannelA reg7 words ranged\n00143142–0014315a; repeated low12data remained stable within a conversion.\nChannelB produced00143000 with low12zero on all60 cases, and returningA\nrestored nonzero data. This is causal access/update evidence, not calibrated\ntemperature or a physical identification of channelB. No PLL/supply/fan setter."
+        },
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quoted_record": "**Proven:**360 before/after directed reg3 reads match work IDs1/2/1 and3/4/3\non every address. Values12110120/12110220/12110120 and12110320/12110420/12110320.\nRepeated reads preserve selected words; a universal read-effect law is unknown."
+        },
+        {
+          "line_start": 21,
+          "line_end": 29,
+          "quoted_record": "Six fixed work windows,300 polls20ms each, use two nonce prefixes and harder\nfilter A/B/A. Independently valid current counts62/34/62 and51/30/51. Every\nvalid identity meets the original range and actual filter. In each prefix,\nB equals exactly the predicted>=38-bit subset of A:34/34 and30/30 matching\nnonce/address/core identities. RepeatedA returns exactly62 and51 same valid\nnonce/address/core identities. Three additional current outputs failPoW,\nall address11, and remain retained; do not infer an ASIC error rate. A fourth\ninvalid identity appears in the earlier fixed initializer outside six cases.\nThese are historical-work tests, not current pool shares or full search coverage."
+        },
+        {
+          "line_start": 31,
+          "line_end": 38,
+          "quoted_record": "6369 native direct health frames stayed29.6875–42.625C, fans2520–2640RPM.\nNative source-specific input/restore/CRC/health checks and90s timer passed.\nStock worker972/start5338/7threads and manager706/13threads resumed; fan703\nremained active. The25s observation has22 samples, but finalGPIO66/67low fails\nrestoration. UART records management state0/3/MQTT loss and stock startup\nPLL/read failures; first postnative reg0reply is valid, later replies disappear.\nThis proves failed stock recovery, not an isolated cause. No native transfer\nCRC or exactword failure; independent health never exceeded unchanged bounds."
+        },
+        {
+          "line_start": 47,
+          "line_end": 51,
+          "quoted_record": "Selected revision: fresh39 adds the complete unchanged cold initializer and\n30 reg7 reads before stock handoff. Exact38 nonce/address/core sets are frozen\nbefore39 for fresh held-out prediction. This changes failed end-state cleanup,\nkeeps every health/operating limit and separates native proof from stock closure.\nAttempt38 consumed; no unchanged unsafe replay. OverallBM2382 parity remains open."
+        }
+      ]
+    },
+    {
+      "source_id": "R039",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt39: frozen predictions, final cleanup and failed stock recovery"
+        },
+        {
+          "line_start": 3,
+          "line_end": 8,
+          "quoted_record": "Executed ee844ba53 accepted72-source plan once. All4040 native TX/RX pairs\nmatch physical transfers870–4909,85.8353149–189.96578772 capture seconds.\nOriginal3797 characterization sequence completed, followed by unchanged213\ncold reset/initialization and30 directed register7 reads. All final7words\nwere00142000. This proves selected recipe/reset clears observedADC data;\nit does not isolate reset alone from recipe writes or establish calibration."
+        },
+        {
+          "line_start": 10,
+          "line_end": 16,
+          "quoted_record": "Frozen-before-ON38 predictions: harder-filter sets34/34 and30/30 match exactly.\nThe four easier cases return61/61/50/51 versus62/62/51/51. Three predicted valid\nidentities are missing; no extra valid identities. Two additional current case\noutputs failPoW at address11. Full lists and source identities are preserved\nin frozen-prediction-evidence.json. Exact full-set prediction therefore fails.\nAll305 valid native observations match frozen nonce address/core equations;\nphysical core identity/selective control/universal allocation remain unproved."
+        },
+        {
+          "line_start": 18,
+          "line_end": 23,
+          "quoted_record": "6844 independent native health frames stay27.9375–41.0C, fans2520–2640RPM.\nFinal full initializer/ADC cleanup did not repair stock handoff: guard releases\nnative descriptor and resumes bound worker/manager, but stock reset/PLL/BIST\nloops fail; finalGPIO66/67low. Strict restoration check requestsOFF, verified\n0W/0A. No complete stock/SSH/RAM cleanup claim. Normal partial/safety bounds\nremain unchanged. This rejects persistentADC context as a sufficient cause."
+        },
+        {
+          "line_start": 25,
+          "line_end": 31,
+          "quoted_record": "First stock reads return valid3/0 words, then reg0 replies disappear after two\nwrites.36 initially has the same pattern but later completes stock init;37\nresumes directly.38/39 repeatedly fail stockBIST/read3. Existing takeover at80s\noccurs during stockPLL ramp (500MHz software word versus637.5MHz target).\nA settled-stock admission is a new hypothesis; no isolated cause is claimed.\nNext passive40 power-cycle return observes stock startup withoutSPI/GPIO stimulus.\nNo unchanged failed handoff repeat. OverallBM2382 parity remains active."
+        },
+        {
+          "line_start": 33,
+          "line_end": 38,
+          "quoted_record": "Raw11,749,253,132bytes/234.9850624s SHA256\n34bdf89c5951a3ff83300b8e5acaf161ead4de7f79bb9c46bea17fb6710b2d22.\nRecovery-verified gzip64,310,450bytes SHA256\neefd4fd1981c962744fdee950757f706180ebec2af77591cb6f2118fd33fde46.\nOriginal samples retained losslessly with complete decompression size/hash proof.\nPrivate originalUART0600/ignored remains; equal-length redacted copy saved."
+        }
+      ]
+    },
+    {
+      "source_id": "R040",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt40: passive stock recovery and startup timing"
+        },
+        {
+          "line_start": 3,
+          "line_end": 8,
+          "quoted_record": "Executed fd180cba7 exact passive90s plan once, withoutUART TX/SSH/SPI/GPIO\nstimulus. Fresh stock boot after39 admits all30 reg3 addresses12100020, yields\n81 candidate results with79 independently validPoW and two invalid/attribution\nfailures. Stock logs two accepted responses; no network requestID-to-nonce\nbinding was captured, so these are not credited as open accepted shares.\nAll79 valid outputs obey candidate nonce address/core equations."
+        },
+        {
+          "line_start": 10,
+          "line_end": 17,
+          "quoted_record": "Stock initialization success is observed79.688s afterON; source-reported\n0.4/637.5/35 target update at84.440s. PhysicalPLL-related reg0 ramp reaches\n46320060/c6320070 near87.2 capture seconds. These are software/register facts,\nnot measured absolute silicon clock or supply. Existing takeover80s falls\nbetween initial500 software point and the final target update/ramp. Selected\n41 will require actual startup/target markers with20s/10s age and freshhealth,\nrelease100..102s and bounded current-pool mining before normal stock restoration.\nThis is a discriminating recovery hypothesis, not an isolated root cause."
+        },
+        {
+          "line_start": 19,
+          "line_end": 23,
+          "quoted_record": "The late ReadNonce/reinit message arrived0.290s after the scheduledOFF request.\nIt does not prove pre-cutoff stock instability. Stock chip-temperature log\n-60.926998 is not calibrated safety telemetry; board logs28.8–31.9C and tach\n1920–4800RPM. Passive profile retains stock cooling/thermal management and\nindependentHA cutoff; it does not provide an open native healthguard."
+        },
+        {
+          "line_start": 25,
+          "line_end": 30,
+          "quoted_record": "VerifiedOFF0W0A and closed physical capture. Raw5,548,591,756bytes/110.97183488s\nSHA2561f9b35b1c5866023efb0adcfe7f45cc623573b01dda9d8b2aa1e3c479df97754;\ngzip33,209,484bytes SHA256c95866dc244bc49fe038d17f47b95acdddec42ed7f4758f79f1ca4a4ee25b0a2.\nComplete decompression size/hash verified; all original samples remain. Original\nUART0600/ignored and equal-lengthredacted copy retained.40 consumed. Power-cycle\nreturn is proven; warmhandoff and sustained/fault/fresh-owner parity remain open."
+        }
+      ]
+    },
+    {
+      "source_id": "R042",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt42: settled-start mining passes; warm restoration fails"
+        },
+        {
+          "line_start": 3,
+          "line_end": 6,
+          "quoted_record": "Executed820224c30 exact42 once. Seven bounded read-only health refreshes keep\nunchanged health/warning limits. Stock startup age20.269s and targetage\n15.509s admit takeover at100.007s UARTelapsed.\nStock target0.4/637.5/35 is software evidence, not measured silicon supply/clock."
+        },
+        {
+          "line_start": 8,
+          "line_end": 13,
+          "quoted_record": "Native cold init and289 current jobs complete120.027s mining/3840polls.\nAll4631 nativeTX/RX matchphysical transfers7911–12541.\nAll38 actual acceptedresponses bindoriginalrequest/job/nonce/difficulty,\nmatchcapturedwork/result and independently pass canonicalPoW atoriginaltarget.\nNo rejectedsubmissions.8706 directhealthframes report32.4375–52.3125C,\nfan1920–1980RPM. This is120s proof, not longerqualification."
+        },
+        {
+          "line_start": 15,
+          "line_end": 20,
+          "quoted_record": "Both exactstockowners CONT afterchildrelease. The firststockrestorehealth\nreads GPIO66/67zero. Onepostnative directedR3reply remainsvalid; stockADC\nrequests thenreturnzero replies. Primaryandsecondary invalidtemperature warnings\nfollow; unchanged strict secondaryveto causesimmediateOFF, verified0W0A.\nSettled-start does not repairwarmhandoff. No automatic retry orwarningrelaxation.\nThe whole runFAILED restoration/closeout;38 acceptedshares retainindependentproof."
+        },
+        {
+          "line_start": 22,
+          "line_end": 27,
+          "quoted_record": "Every sample retained through recovery-verified gzip. Raw12799365132bytes\nSHA256e83a73cc642ae1f5f66db6f1e2abc4b81cf59c4112f4512689bf591240cb6a18; gzip92484146bytes\nSHA2563895281f206534ad508c870aa8e006c0a8bbe13aeb686b2e6bcf4ada5d3e777a. PrivateUART/pool originals0600/ignored,\nequal-length redactedUART retained. Completeoriginaltrace, frame/PoW joins and\nfailedrestore boundaries remain available. Pooltotalfixed4096 replay differs\nfromactualchangingtarget; accepted-share replay uses eachoriginalactualtarget."
+        },
+        {
+          "line_start": 29,
+          "line_end": 32,
+          "quoted_record": "Next: diagnose cache/worker/manager restoration transition offline. Coldpowercycle\nstockrecovery is independently proven40; arbitrarywarmCONT remainsunqualified.\nDo not repeat this failedhandoff. Newresearch mustuseexplicit stopped terminal\nstate and verifiedOFF until a differentrecovery transition is reviewed."
+        }
+      ]
+    },
+    {
+      "source_id": "R043",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt43: range allocation contrast and stopped terminal pass"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executedbc623745e exact43 once. All2149 nativeTX/RX matchphysical capture,\nall8 cases complete. Both stock/minerd remainSTOPPED; nativechild released,\nGPIO66/67LOW verifiedwithfreshPOSTboard/fanhealth. SSHreaped/listenerabsent,\nRAMcleanup complete andOFF/0W/0A verified. No warmCONT repeated.\n3821 directhealthframes: 36.4375–45.25C, fan1920–1980RPM."
+        },
+        {
+          "line_start": 9,
+          "line_end": 14,
+          "quoted_record": "ValidcurrentPoW counts40/40/40/35/33/37/2/0; 227total. BroadA, upperbound\nnarrowtoapparentchip1 andbroadArepeat returnexactlythe same40identities.\nNarrowcase1 has39/40 outsideoriginalrequested64-bitbounds. Shiftedstartblock15\nand29 return35/37 validresults; allbreakthe oldabsoluteaddressformula while\nmatchingrelativeoffsetaddress. Ranges6/7 lower40limits reduce outputto2/0;\nzero tiny-window output is not a proven failure/searchcompletion law."
+        },
+        {
+          "line_start": 16,
+          "line_end": 23,
+          "quoted_record": "Everyvalidcurrentoutput obeys nonce-((reportedaddress-1)<<40) withinoriginal\nrange, for the selected starts/bounds. Reportedcore=(nonce>>1)&31 stillmatches\nall227, but nonzero lower seed/core fields are untested. Startblock causally\nshifts eachchip's nonce block; end is not a universalglobalallocationlimit.\nNo selectivephysicalcore/chipdisable or universalfullsearch law claimed.\nThree currentoutputs failPoW in shifted/prefixcases; retired outputs retained.\nAll480 reg3words retained. Shortlower40cases clearbit16 on some/all positions,\na conditional status observation withinternalmeaning unknown."
+        },
+        {
+          "line_start": 25,
+          "line_end": 28,
+          "quoted_record": "Everyphysicalsample retained: raw9148975756bytes SHA256\n69c715058a4f4f843eb305ad4c33cffe12eee637db4eb62199cf4d757ee53f2f; gzip64801748bytes SHA256\n5bc55daf299ff1cf56853ebf43d4d24099c01b09ed640b6aa99d1ee478177239, recoveryverified. PrivateUART0600/ignored andequal-length\nredactedstream retained. No poolsubmissions bythisfixedhistoricalwork actor."
+        },
+        {
+          "line_start": 30,
+          "line_end": 33,
+          "quoted_record": "Next: freeze corrected relative-start hypotheses againstfreshheldoutoffsets,\nnonzero lower40/coreseed andpositive knownnonce windows. Qualify20MHz paired\ncapture whiledoingthosecontrasts before longer614s/fault/freshowner profile.\nIndependentcoldstockrecovery remainsseparate fromthisstoppedterminal proof."
+        }
+      ]
+    },
+    {
+      "source_id": "R044",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 44: held-out address/core seeds and 20 MHz capture pass"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executed 4eadb5726 exact held-out plan once. All 2,149 native TX/RX match the\nphysical 20 MHz capture: transfers 7989–10137, 105.92466445–164.98509075 s.\nBoth exact stock owners stay stopped; child released, GPIO66/67 LOW independently\nread back, fresh POST 44.1875 C and both fans 1920 RPM. RAM cleanup, SSH reaped /\nlistener absent and OFF / 0 W / 0 A complete. No warm continuation repeated."
+        },
+        {
+          "line_start": 9,
+          "line_end": 14,
+          "quoted_record": "Valid current PoW counts: 40/42/42/37/37/1/1/40, total 240. All satisfy\naddress = 1 + ((nonce - start) >> 40), the position-normalized original bounds,\nand core = ((nonce - start) >> 1) & 31. The competing absolute core-bit model\nfails all 39 nonzero-seed observations. Known even/odd nonce windows each return\nthe independently valid predicted nonce with core 0 rather than 21/7. These\npositive outputs distinguish addition from replacement of the seed bits."
+        },
+        {
+          "line_start": 16,
+          "line_end": 20,
+          "quoted_record": "The held-out block-7 repeat is the exact same 42 identities; restored broad A\nmatches all 40 original identities. Block-20 returns all 37 frozen comparisons.\nCase 4 returns 37 valid identities, including 36 of its 40 known comparisons\nand one extra valid identity. Four missing comparisons are retained; complete\nfixed-set prediction remains unqualified. No current own result failed PoW."
+        },
+        {
+          "line_start": 22,
+          "line_end": 28,
+          "quoted_record": "All 480 directed register-3 words retained. Short positive nonce windows contain\n12100520/12110520 and 12100620/12110620 across positions; bit 16 remains a\nconditional observed status with internal meaning unknown. Every positive\nresult is bound to original hash/time/work and physical transfer. Global nonce\nbounds remain independently enforced by the host; narrow high bounds do not\nselect physical chips. No physical core disable, wraparound or universal search\nlaw claimed. This fixed historical-work actor submits no pool shares."
+        },
+        {
+          "line_start": 30,
+          "line_end": 36,
+          "quoted_record": "Every physical sample retained: raw 3,739,598,860 bytes SHA256\n580c0a2d58bba41fc0b818af33d2b3470194ba07ec7bdb80ccb19d29c77bffe7;\ngzip 26,126,514 bytes SHA256\nea26157d38a6df2c9868d57911a29678c8389c1d39760609b248ab1049e0939c.\nFull recovery digest/size verified before raw storage conversion. Private UART\nretained 0600/ignored with an equal-length redacted stream. Direct native health\nis retained separately; GPIO low is not measured rail discharge."
+        },
+        {
+          "line_start": 38,
+          "line_end": 41,
+          "quoted_record": "Next: build and qualify a coherent sustained/fault/fresh-owner profile. Required\n614 s current-job mining, genuine planned pool EOF, safe low outputs, fresh\nnative/Rust owner and >=121 s mining. Same physical safety/operating limits;\nnew finite lifetimes/capture geometry need review and tests before ON."
+        }
+      ]
+    },
+    {
+      "source_id": "R045",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 45: thermal stop; sustained recovery remains incomplete"
+        },
+        {
+          "line_start": 3,
+          "line_end": 8,
+          "quoted_record": "Consumed be32b0c9a exact1040s qualification package once. The native direct TMP112\nmeasurement reaches75C and returns temperature_bound22 at10:12:09UTC. Immediate\nOFF requested10:12:10; relayOFF/0W/0A verified10:12:24.565UTC. No thermal limit\nchanged and no unsafe continuation attempted. The planned614s poolEOF gate was\nnot reached; no second native/Rust owner or normal RAM/SSH cleanup is claimed.\nPower loss closes the volatile access namespace. The thermal safety path passed."
+        },
+        {
+          "line_start": 10,
+          "line_end": 15,
+          "quoted_record": "All16114 emitted native TX/RX match physical10MHz capture transfers7950–24063,\n105.9472276–550.7991423s. Every94 actual accepted pool response matches its original\ncurrent job, exact nonce/work/result in the physical capture and independent\ncanonical PoW replay at original actual difficulty. All94 submits have accepted\nresponses.1073 work events recorded; there is no normal mining_complete receipt.\nThe fully matched emitted transcript does not prove no unlogged final stimulus."
+        },
+        {
+          "line_start": 17,
+          "line_end": 22,
+          "quoted_record": "30103 complete native health frames span32.25–74.9375C, fans1920–1980RPM.\nThe final partial frame preserves the75C veto. Both stock mining/management\nowners are stopped while fanctrl runs; fan speed stays near the stock35 setting.\nWhy its controller did not increase speed is not proven. Stock fan I/O and a\nreviewed independent cooling policy require investigation before another long\nattempt. No voltage, ASIC PLL, sensor bound or watchdog bound may be weakened."
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "Raw5660203660B SHA256feb67e437c81722b1c518fdf03f1f38fd7ea3cbe48b4292c3e7d4df028bf489b\nis retained as digest/recovery-verified losslessgzip39942151B\nSHA256607e071093cf5a77530ac0a78630b78a663dc7c6852725d9a7d0dfe130f7fa47.\nPrivate original UART/pool inputs/replies remain0600 and ignored; equal-length\nUART redaction and receipts retained. No calibrated junction or supply claim."
+        },
+        {
+          "line_start": 30,
+          "line_end": 32,
+          "quoted_record": "Next: repair cooling ownership under a new exact reviewed package, retain the\nsame75C stop and current electrical/clock recipe, then finish sustained/fault/\nfresh-owner qualification and separate cold stock return."
+        }
+      ]
+    },
+    {
+      "source_id": "R046",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt46: sustained mining, real pool EOF and fresh-owner recovery pass"
+        },
+        {
+          "line_start": 3,
+          "line_end": 9,
+          "quoted_record": "Executed exact source-bound6b8ef9cdf one-use maximum-cooling package. First\nnative window616.402s,1522current jobs/19679polls/184actual accepted shares.\nThe transparent relay half-closes the real Rust pool socket at614.0197s host\nelapsed, after DRAIN/no pendingframe/input/poolresponse and fresh directhealth.\nRust returns the actual expected pool-receive fault, not mining_complete. Native\ncomplete-input stale stop reads enable66/reset67 LOW and preserves freshhealth.\nBoth stock owners remainSTOPPED, native child released, sole-stockSPI fd checked."
+        },
+        {
+          "line_start": 11,
+          "line_end": 18,
+          "quoted_record": "Fresh native childPID/start and newRustepoch run full213-transfer init/all30\nreg3CRC-valid admissions, then121.017s/289current jobs/3869polls/15actualaccepted.\nSame bound mining/management/fan identities across phases. Recovery mining ledger\nhas742candidates,739filter-valid,16target-pass,15submitted/accepted,1stale,\n3invalid-or-retired; cause remainsunknown. No complete first-phase candidate\naccounting receipt is emitted through plannedEOF; full captured results retained.\nNormal secondpark reads66/67LOW/freshhealth. SSH reaped/listenerabsent/RAMcleanup0\nproved onUART; OFF0W0A verified10:48:14.677UTC. No warmCONT attempted."
+        },
+        {
+          "line_start": 20,
+          "line_end": 25,
+          "quoted_record": "All27596nativeTX/RX match continuous physical10MHz capture. First22936 messages\nattransfers7905–30840,105.9412274–736.5148822s. Fresh4660 messages at30841–35500,\n748.290435–883.4839884s. Every199actual accepted response separately joins exact\noriginal current job/nonce/work/result in its own capturedphase, then passes\ncanonicalPoW at its original actualdifficulty. No stock/historical share credit.\nThis is physical615s-class/fault/freshowner proof, not merely timer/software proof."
+        },
+        {
+          "line_start": 27,
+          "line_end": 35,
+          "quoted_record": "Cooling raises existing fan levels35to100 with exactreadback; two native\nwrites emitted, no redundantwrites in recovery. Stock fanctrl remainsRUNNING.\nFirst native health42852frames42.1875–50.5C/1920–4860RPM, fresh8764frames45.125–\n49.125C/4620–4800RPM. Low initialRPM is spinup; same1000RPM minimum and75C maximum\nwere retained. Native POST fanlevels100 in both phases. Sourceproduct's4500RPM\nconfiguration is not a calibrated measured maximum or manufacturer rating.\n173whole-appliance meter samples0–381W/0–1.56A include boot/stopped/meter-lag\nstates; these are not per-chip electrical limits. Independent directboardhealth\nplusstockfallback remainedfresh; no secondary/SMBus veto ignored."
+        },
+        {
+          "line_start": 37,
+          "line_end": 40,
+          "quoted_record": "Capture every9030363148B preserved losslessly, rawSHA2569df13c434d3e0552851361273fe4807befb046df40293d1bf92aa73601f6143a;\ngzip64688180B SHA256a79374b5ff0fc28cb36ffe51c23987398b9867ed18b468e3303741008efd9c57.\nFull recoveredsize/digest verified before storageconversion. Originalprivate\nUART/poolconfig/replies retained0600/ignored with hashes/redaction."
+        },
+        {
+          "line_start": 42,
+          "line_end": 46,
+          "quoted_record": "Next: accepted47 passive90s separatecoldstockreturn afterlongrun, pairedcapture/\nnewstockwork/PoW/OFF. P10 functionalproof is otherwisecomplete; no generalwarm\nrestore,unattendedoperation,installedfirmware,calibratedjunction/supply,controller\nfailurecutoff or independenthardwarefabrication claim. Continue selected\noperating-field/reset depth and frozen-narrowwork prediction before overallparity."
+        }
+      ]
+    },
+    {
+      "source_id": "R047",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 47: fresh stock return after sustained open mining"
+        },
+        {
+          "line_start": 3,
+          "line_end": 10,
+          "quoted_record": "Executed exact committed 389d12e6c one-use passive 90-second plan after run 46.\nNo UART transmit, SSH, native program, GPIO, SPI or cooling setter was applied.\nStock cold initialization admits all 30 addressed register-3 words 12100020,\nwith valid packet CRCs. Subsequent new stock jobs produce 70 results, including\n67 independently verified filter-valid PoWs and three rejected PoWs or job\nattributions. One meets the replay's fixed difficulty-4096 comparison; no\nrequest-to-nonce pool receipt was collected, so none is credited as an open\naccepted share. This proves a cold stock return after the long run."
+        },
+        {
+          "line_start": 12,
+          "line_end": 17,
+          "quoted_record": "Stock reaches its source-reported 637.5 operating point, with the expected\nregister-0 ramp. This is a software configuration, not measured silicon clock.\nA primary temperature warning occurs late in the stock window; stock reports\n35.5C fallback and retains its own cooling management. The passive route has\nno open native temperature admission. Do not claim uninterrupted stock health,\nuniversal warm handoff or an identified cause for that recurring stock warning."
+        },
+        {
+          "line_start": 19,
+          "line_end": 24,
+          "quoted_record": "Relay OFF / 0 W / 0 A verified at 11:00:23.789618 UTC. Capture closed before\nanalysis. All 5348570444 raw bytes (5348570432 samples)\nare preserved by lossless archive, raw SHA256 9e4cb71482e096bb36bbb015d07f643034db163a5934b6742c397462163ac996,\narchive SHA256 e5c7cc08ea089a402ccbf28600bdf8a448255f884572b1e2a40f165b7893e62b. Complete decompressed size and digest\nverified. Original UART is private/0600/ignored; equal-length redacted copy and\nidentity receipt retained. All full decoded/reconstructed streams retained."
+        },
+        {
+          "line_start": 26,
+          "line_end": 28,
+          "quoted_record": "P10 now has sustained mining, real EOF, safe LOW, distinct fresh owner and a\nseparate cold stock return. Register/reset depth and frozen narrow-window\ncompleteness remain selected before overall BM2382 parity can be declared."
+        }
+      ]
+    },
+    {
+      "source_id": "R048",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 48: exhaustive narrow-window prediction, six exact sets and two omissions"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executed committed6f689759d one-use fixed2149-transfer plan. New eight distinct\noriginal job identities and128-wide ranges were frozen beforeON. CanonicalPoW\nexhaustively enumerated30720 nonces across30 relative chippositions, predicting\nexactlyone resultperwindow. Original liveaccepted seeds establish valid job/PoW\ninputs; they were not substituted for future fixed-window hardware proof."
+        },
+        {
+          "line_start": 9,
+          "line_end": 16,
+          "quoted_record": "All2149 nativeTX/RX match continuous10MHz physical capture at transfers7965–10113,\n105.9601507–165.0216357s. Cases1–6 return exactlyone predicted result each, with\nmatching nonce/digest/address1/core1,1,3,16,31,0/ntime0 and no extras/duplicates.\nCases0 and7 returnno currentresult; the missing predictions have offsets1 and65,\nbothcore0/odd offset. This is a selected possible half-lane omission, not a\nproven disabledcore or universal scheduling law. The entire outputset, missing\nidentities and original physical streams remain in narrow-case-evidence.json.\nNo live pool session or accepted-share credit belongs to this historical work."
+        },
+        {
+          "line_start": 18,
+          "line_end": 23,
+          "quoted_record": "All3821 nativehealth frames complete. POST44.4375C, enable66/reset67LOW readbacks;\nstockmining/management ownersSTOPPED, fanRUNNING. Nativechild released before\npark. SSHreaped/RAMcleanup0 and verifiedOFF/0W/0A at2026-10-04T11:19:47.469187+00:00.\nFull 1829795148 rawbytes retained losslessly, rawSHA256463e58f5f37b4a4ffe0d6872bd3fc2bf78abccf19d32610d50fde88df4134dee,\narchiveSHA256268c74aa72d793400ee546ff90e7c8c248d7b6e366856309adc9e8ec60bfcc5f; complete decompressedsize/hash verified.\nPrivateUART0600/ignored and equal-lengthredacted copy retained.48consumed once."
+        },
+        {
+          "line_start": 25,
+          "line_end": 29,
+          "quoted_record": "Next second informative fresh49: two sourcejobs counterbalanced offsets0/1/2/0\nand64/65/66/64, with completefrozen predictions. Distinguish the selectedcore0\nodd-half pattern from whole-job, initialwarmup or one-off missing output.\nNo arbitraryclock/supply/cooling/control change or warmerresume will be applied.\nRegister/reset depth remains pending before overall BM2382 parity declaration."
+        }
+      ]
+    },
+    {
+      "source_id": "R049",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt49: counterbalanced core0 odd-offset omission repeats"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executed exact39a23eadc one-use secondinformative narrowsearch plan. Two job\nidentities previously omitted in48 receive frozen128-wide windows with offsets\n0/1/2/0 and64/65/66/64. Complete30x128x8 canonicalPoW enumeration predicts one\nidentitypercase beforeON. Full2149nativeTXRX match physical10MHz capture,\n105.9713651–165.0325229s, startingtransfer7841."
+        },
+        {
+          "line_start": 9,
+          "line_end": 17,
+          "quoted_record": "Both even-offsetcore0 cases produce exactlyone predicted result, and both\nneighboringcore1 controls do too. Repeated even-offsetA returns exactlythe\nsame nonce/digest/address/core/ntime. No validextras or duplicates occur.\nThe two odd-offsetcore0 cases emitno currentresult, reproducing48's offsets1/65\non the same validjobidentities. This proves the selected emission/omission\ncontrast and repeatability in these contexts. It stronglyindicates a core0\nodd-half scheduling/output boundary; physical disabledlane, a universalrule and\nfull silicon internals remainunknown. Missingsearch coverage mustnotbe credited\nas complete. None ofthis historicalfixedwork is a new poolaccepted share."
+        },
+        {
+          "line_start": 19,
+          "line_end": 26,
+          "quoted_record": "All native health frames pass; POST47.375C, enable66/reset67LOW. Stock mining/\nmanagement owners staySTOPPED, fanRUNNING; nativechild released, freshPOST,\nSSHreaped/RAMcleanup0, OFF0W0A at2026-10-04T11:32:59.420564+00:00. No warmCONT.\nAll1849797260 rawbytes preserved losslessly, rawSHAc319088bb108537697333b2e5de356869212b8960da7f3ec0b703b45fb0eef62,\narchiveSHA200288318420eb7a2254a34c140bd6b972ce3643c43d447f2d0f212820cc754b; full recovery size/hash verified. PrivateUART\n0600/ignored and equal-lengthredaction retained.49consumed; two informative\nnarrowattempts used, no thirdattempt selected for this alreadydiscriminated\ncontrast. Future generality/physical lane work would be a different hypothesis."
+        },
+        {
+          "line_start": 28,
+          "line_end": 30,
+          "quoted_record": "Next: isolated source-supported reg0 bit16 A/B/A on addresses1/20 with all29\ncontrols and exactrestoration, then separate enable-only/reset-only positive\nADC-marker contrasts with fullcold initialization recovery. No new packageyet."
+        }
+      ]
+    },
+    {
+      "source_id": "R051",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 51: admission race; no operating-state stimulus"
+        },
+        {
+          "line_start": 3,
+          "line_end": 10,
+          "quoted_record": "The exact a88006125 package started stock observation and waiting-health\nqueries. At 2026-10-04T12:13:44.112777+00:00 the stock primary temperature warning was admitted\nunder fresh independent health. Its valid 29.31 C fallback arrived\n0.046031 seconds later, within the unchanged\none-second limit. SSH admission called the strict final health gate during this\npending interval and aborted. No operating-state native command, register\ncontrast or isolated GPIO pulse ran. This is an apparatus admission failure,\nnot chip retention/control evidence. Attempt 51 is consumed."
+        },
+        {
+          "line_start": 12,
+          "line_end": 20,
+          "quoted_record": "Power OFF / 0 W / 0 A was verified at 2026-10-04T12:14:00.658331+00:00. The capture is closed and\nstable: 1,079,715,148 bytes, SHA256\nf83326b6f77cb3946c7a426bd79576656f8f0a868bca04321ff00c3969e04307.\nThe maximal complete stock prefix is decoded and independently replayed:\n86 results, 81 valid observed-filter PoWs; five invalid/attribution cases remain\nexplicit. Fixed-difficulty comparisons do not prove accepted stock shares.\nFull capture, native waiting-health replies and equal-length redacted UART are\nretained; private UART remains mode 0600 and ignored. Temporary RAM access was\nterminated by verified power removal; no graceful SSH/RAM closeout is claimed."
+        },
+        {
+          "line_start": 22,
+          "line_end": 25,
+          "quoted_record": "Repair: wait without SSH transmission while fallback is pending; preserve the\none-second fallback deadline, all health/freshness bounds, stop and worker\nlimits. Focused tests cover successful pending resolution and missing fallback.\nA new exact source-bound package and fresh ID are required; do not replay 51."
+        },
+        {
+          "line_start": 27,
+          "line_end": 29,
+          "quoted_record": "Lossless closeout: gzip archive SHA256\nfc77a062721add56ad56ad679f69e4f82129d6a4163f9c4bbdb9c760528e1a6a,\n6,518,491 bytes; full 1,079,715,148-byte recovery and original SHA256 verified."
+        }
+      ]
+    },
+    {
+      "source_id": "R052",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 52: selected operating word and isolated GPIO contrasts"
+        },
+        {
+          "line_start": 3,
+          "line_end": 6,
+          "quoted_record": "Executed exact adf41eb7d one-use package. All 2,043 native TX/RX messages match\nphysical 10 MHz capture, 106.0566279–169.7238052 s.\nThe corrected SSH pending-fallback gate retains the same one-second fallback,\ndirect health, freshness and other stop bounds. Native completion and closure pass."
+        },
+        {
+          "line_start": 8,
+          "line_end": 13,
+          "quoted_record": "Proven: two A/B/A rounds at logical addresses 1 and 20 retain register 0 bit 16\nas requested (46270060 / 46260060 / 46270060). The other 29 addresses remain\n46270060 throughout every stage. Identical bit-4 apply schedules use 300 ms,\n50 ms clear wait and 20 ms exact restore; every target restores exactly.\nLatched words c6270070/c6260070 are observed; no absolute clock law, PLL lock\nbit meaning, performance effect or rated electrical change is inferred."
+        },
+        {
+          "line_start": 15,
+          "line_end": 22,
+          "quoted_record": "Proven: separately seeded positive ADC state on every address survives enable\nLOW for 1,000 ms with reset held HIGH. Register 0/6/7 and work-ID bits retain\nexactly. Register 3 bit 16 changes on addresses 1–28; elapsed search completion\nis not separated from enable, so its cause remains unknown. After a complete\nfresh initializer and new positive ADC markers, reset LOW for 2,000 ms with\nenable held HIGH yields no qualified directed reply for registers 0/3/6/7 at\nany address (120 retained unqualified replies). These are not zero values or\nreset bit definitions. Reset destroys the usable directed context in this test."
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "The third full 213-transfer initializer recovers all 30 CRC-valid admissions.\nFinal registers 0/5/6/7 are exactly 46270060/00000000/0f00000c/00142000 at all\n30 addresses. All three initializer work phases each yield the same nine valid\ncanonical PoW nonce/address/core/digest identities, physically joined and\nindependently replayed. These historical-work results are not new pool shares."
+        },
+        {
+          "line_start": 30,
+          "line_end": 35,
+          "quoted_record": "All 2,903 native direct-health frames pass. POST is 37.5625 C; native child\nreleased, exact mining/management owners STOPPED, independent fan RUNNING,\nenable/reset LOW readback, SSH reaped/listener absent/RAM cleanup 0. OFF / 0 W /\n0 A verified at 2026-10-04T12:25:49.499991+00:00. No warm stock CONT. Complete capture and equal-length\nredacted UART retained; private UART is mode 0600/ignored. Attempt 52 consumed;\none informative operating-state test used; no retry needed for these contrasts."
+        },
+        {
+          "line_start": 37,
+          "line_end": 39,
+          "quoted_record": "P05/P06 selected practical control/context evidence is now available. Complete\nsilicon masks/clock/physical lanes/reset words remain unknown. Final static\nreference audit and BM2382 capability comparison remain before overall parity."
+        },
+        {
+          "line_start": 41,
+          "line_end": 43,
+          "quoted_record": "Lossless retention: 1879800460 raw bytes, SHA256\nca24824606a4b09bc15556e18a1783d23fca4067d745b6d6a547707d0c953907; archive 12404808 bytes, SHA256\nc6e3df4f3057821c42b774d4810e1d188a1e1fb1f219e4b26fb4a9680a00567c. Full recovered size and original hash verified."
+        }
+      ]
+    },
+    {
+      "source_id": "R053",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 53: identical nonce moves between selected logical addresses"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Executed exact fc0b7e11d one-use third/final informative narrow package. Entire\n30 x 128 x 8 canonical PoW domain is enumerated before ON. Eight windows use\nthe identical original consensus job and nonce, varying start so the predicted\nrelative address is 1/2/2/20/20/30/30/1 and delta is 0/0/1/0/1/0/1/0. Each\nfrozen complete prediction contains exactly one valid identity."
+        },
+        {
+          "line_start": 9,
+          "line_end": 15,
+          "quoted_record": "Proven: all five even-offset windows produce exactly the expected nonce,\ndigest, address, core 0 and ntime 0, with no extra/duplicate output. The nonce\nmoves to logical addresses 1, 2, 20 and 30 by the supplied start-offset change;\nthe address-1 repeat returns exactly. This qualifies selected causal work\nallocation and reported address/core attribution. Address20/30 controls also\nexercise the selected carry across the low48-bit boundary; arbitrary64-bit\nwrap and all-work allocation remain unknown."
+        },
+        {
+          "line_start": 17,
+          "line_end": 22,
+          "quoted_record": "Proven: odd delta1 windows at addresses 2, 20 and 30 emit no current result,\nreproducing the previously controlled address1 omission from48/49. The selected\npattern therefore is not confined to logical address1. A common allocation or\noutput boundary is strongly indicated; physical disabled lane and universal\nomission rule remain unknown. Missing outputs receive no completeness credit.\nAll historical fixed-work outputs are separate from new pool share acceptance."
+        },
+        {
+          "line_start": 24,
+          "line_end": 31,
+          "quoted_record": "All 2,149 native TX/RX messages match physical10MHz capture,\n106.2328772–165.2869772s. Native health and final\nPOST pass ([44.0, 44.0] C). The child releases SPI;\nexact stock mining/management owners remain STOPPED, fan RUNNING, enable/reset\nLOW readbacks pass, SSH reaped/listener absent/RAM cleanup0, OFF / 0 W / 0 A\nverified at 2026-10-04T12:46:23.230869+00:00. Complete capture and equal-length redacted UART retained;\nprivate original0600/ignored. Attempt53 consumed; all three informative narrow\nattempts used; no further same-hypothesis hardware run selected."
+        },
+        {
+          "line_start": 33,
+          "line_end": 35,
+          "quoted_record": "The practical selected allocation/control evidence is closed. Remaining work\nis final reference/coverage review and local static export; no new-board,\ninstalled-firmware, full internal-lane or universal search claim."
+        },
+        {
+          "line_start": 37,
+          "line_end": 39,
+          "quoted_record": "Lossless retention: 1869799436 raw bytes, SHA256\n3aac296434fe435c6f1ec856a5f4845564139ebd654e9eb1bf3864b62e6e9190; archive 12906132 bytes, SHA256\nb5d30c5711d57386112ae26b723875fbde71dc17b60f99865981a893a45d09e8. Full recovered size and original hash verified."
+        }
+      ]
+    },
+    {
+      "source_id": "R054",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 54: Q27 poll-cadence A/B/A"
+        },
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quoted_record": "## Observation and interpretation"
+        },
+        {
+          "line_start": 13,
+          "line_end": 20,
+          "quoted_record": "All 12 frozen windows had exactly one software-predicted valid nonce after\n46,080 canonical PoW checks. The 6 even-offset controls returned the exact\npredicted nonce `b03810000aa95cf0`, address (2 or 20), core 0, ntime 0,\noriginal-input digest and 41 leading-zero-bit score. All 6 odd-offset windows\nreturned **no candidate header**, including no bad-CRC candidate. There were\nno extra or duplicate current-work results. This repeats the pre-host omission\nat both addresses in A1, B and A2; no missing CPU-valid candidate is counted\nas a physical result."
+        },
+        {
+          "line_start": 22,
+          "line_end": 30,
+          "quoted_record": "The programmed delays were 20/10/20 ms, but [measured physical poll spacing](poll-cadence-physical.json)\nwas about 30/20/30 ms. Median poll spans per case were 5.370/7.185/5.373 s,\nnot equal 3.6 s drains. Work-to-first-poll latency was about 105 ms across\nphases. Thus B increased effective read frequency **and** lengthened the drain.\nIt did not recover either odd candidate despite both changes. The observation\nweakens this specific read/drain explanation; it does not prove a search skip,\nsilicon filter, queue rule, or a matched-wall-time causal cadence law. An\nindependent ASIC counter/status or source control remains the more useful next\ndiscriminator. A repetition of this consumed command is not justified."
+        }
+      ]
+    },
+    {
+      "source_id": "R055",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 55: Q18 matched range/status contrast"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "**Completed; selected range dependence proven, completion semantics still\nunknown.** The one-use [attempt 55 plan](../../../05-documentation/range-status-attempt55.json)\nran from committed source `a385ed84d` on 2026-10-05. The compiled ARM binary\nSHA-256 is `b4be1fc992de3af57a071103ccda074ef78c6114e6f6b0385ca9b4fbcc9bcefa`.\nAttempt 55 is consumed; no replay is selected."
+        },
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quoted_record": "## Observation and interpretation"
+        },
+        {
+          "line_start": 11,
+          "line_end": 15,
+          "quoted_record": "Five successive work sends kept the E54 case-0 pre-PoW hash, timestamp,\n37-bit filter and start nonce fixed. A1/A2/A3 used the retained 128-value end;\nB1/B2 changed only the end field to the matched stock constructor's full-tail\nendpoint. Work IDs and CRC necessarily changed. The cold idle baseline was\n`12110f20` at all 30 positions."
+        },
+        {
+          "line_start": 17,
+          "line_end": 17,
+          "quoted_record": "All 30 positions gave one stable word per case before and after result polling:"
+        },
+        {
+          "line_start": 19,
+          "line_end": 25,
+          "quoted_record": "| Case | Range | Register 3 | First address-1 read | Last pre-poll read | Results |\n| --- | --- | --- | ---: | ---: | ---: |\n| A1, ID 1 | 128 values | `12100120`, bit 16 clear | 7.4935 ms | 103.3765 ms | 1 |\n| B1, ID 2 | full 48-bit tail | `12110220`, bit 16 set | 7.4756 ms | 103.3135 ms | 18 |\n| A2, ID 3 | 128 values | `12100320`, bit 16 clear | 7.5299 ms | 103.6884 ms | 1 |\n| B2, ID 4 | full 48-bit tail | `12110420`, bit 16 set | 7.4719 ms | 103.7598 ms | 19 |\n| A3, ID 5 | 128 values | `12100520`, bit 16 clear | 7.5692 ms | 104.4710 ms | 1 |"
+        },
+        {
+          "line_start": 27,
+          "line_end": 33,
+          "quoted_record": "The same words remained after about 3.08 seconds of polling and through the\nlast all-position read at 3.205–3.208 seconds. Each short case returned the\nsame expected address-2/core-0 nonce. The long cases produced 18 and 19 unique\ncurrent-work, normalized-in-range, filter-valid results; five in each also met\nthe original difficulty-256 target. Their one-result difference means this\nrun does not establish complete long-range result drainage. No malformed\ncandidate header was present."
+        },
+        {
+          "line_start": 35,
+          "line_end": 42,
+          "quoted_record": "The A/B/A/B/A reversal rejects a fixed enable or fixed work-send latch under\nthese conditions. Work ID and range are collinear inside attempt 55, but E54\nalready has short jobs with every ID 1–12 clear, including even IDs, while E38\nhas broad jobs with IDs 1–4 set. The combined evidence therefore proves that\nthe selected short versus full-tail range affects register-3 bit 16. It does\nnot prove the vendor's scan-finished meaning, locate the internal event, or\ngive a transition time. The earliest observation only bounds the short state\nto no later than 7.47–7.57 ms; the long state remains set beyond 3.2 seconds."
+        }
+      ]
+    },
+    {
+      "source_id": "R056",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 56: transition probe stopped during RAM staging"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Status: **consumed apparatus failure; no transition work was sent.**"
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 13,
+          "quoted_record": "The accepted 320-second package started at 2026-10-05T21:57:56Z. Stock boot,\npassive capture and direct health remained within bounds. RAM staging began at\n21:58:44.854Z. Steps 0, 1 and 2 acknowledged; step 3 did not. The UART records\n`ttyAMA3: 1 input overrun(s)` inside the echoed quoted step-3 command, followed\nby the shell continuation prompt. The truncated command therefore never wrote\nits chunk or emitted a real ACK/NACK. The receiver reached its 1.5-second ACK\ndeadline, stopped the attempt and requested OFF."
+        },
+        {
+          "line_start": 15,
+          "line_end": 19,
+          "quoted_record": "This is an apparatus failure, not KA-BOX status evidence. The native transition\nactor was never staged or run. The passive decode contains zero sampled SPI\nclock edges and zero bursts, so Attempt 56 says nothing about register 3, range\ncompletion, results or transition timing. The accepted command must not be\nreplayed."
+        }
+      ]
+    },
+    {
+      "source_id": "R057",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 57: transition actor launched with the wrong mode"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Status: **consumed adapter failure; no transition work was sent.**"
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 11,
+          "quoted_record": "The repaired RAM transport physically recovered the same failure seen in\nAttempt 56: staging step 3 missed its ACK, the receiver sent its bounded\nCtrl-C/CR reset, retried once, and all 17 steps then acknowledged. SSH staging,\nstock settling and owner suspension passed. This proves the new missing-ACK\nrecovery on the target under the accepted limits."
+        },
+        {
+          "line_start": 13,
+          "line_end": 19,
+          "quoted_record": "The transition child then returned status 2 immediately after\n`KABOX_POOL_GO_READY`, before printing its 2-second timer marker or cold-init\nmarker. The cause is exact: `transition_entry` accepts mode `t`, while the live\nownership adapter launched it with the partition default mode `m`. The offline\nactor fixture had correctly used `t`, but no test checked the composed live\ncommand. The host treated the nonzero status as a native fault and requested\nOFF. The accepted command is consumed and must not be replayed."
+        },
+        {
+          "line_start": 21,
+          "line_end": 24,
+          "quoted_record": "This is an adapter failure, not ASIC status evidence. The transition actor did\nnot initialize or issue work. The passive capture contains 7,970 stock-era SPI\nbursts and no native transition transcript. Attempt 57 says nothing about\nregister-3 completion or transition timing."
+        }
+      ]
+    },
+    {
+      "source_id": "R058",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 58: repeated intermediate-range status transition"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Status: **completed and consumed.** This is selected stock-board evidence."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Result"
+        },
+        {
+          "line_start": 7,
+          "line_end": 10,
+          "quoted_record": "The unchanged S/M/M/S experiment completed all 3,355 native transfers. The\ntwo short 128-value controls had register-3 bit 16 clear at their first address-1\nreads, 7.5352 and 7.5343 ms after work. They stayed clear through the repeated,\nall-position and late checks."
+        },
+        {
+          "line_start": 12,
+          "line_end": 13,
+          "quoted_record": "Both `2^34` intermediate cases began set and changed once to clear at the same\nzero-based read index 201, the 202nd read:"
+        },
+        {
+          "line_start": 15,
+          "line_end": 18,
+          "quoted_record": "| Case | Last set after work | First clear after work | Physical bracket |\n| --- | ---: | ---: | ---: |\n| M1, work ID 2 | 536.5232 ms | 539.1741 ms | 2.6509 ms |\n| M2, work ID 3 | 536.0651 ms | 538.6927 ms | 2.6276 ms |"
+        },
+        {
+          "line_start": 20,
+          "line_end": 24,
+          "quoted_record": "Neither case reverted during the remaining 999 reads. All 30 positions were\nclear in each endpoint inventory by 3.277/3.281 seconds and remained clear in\nthe late inventory after result draining. The two first-clear times differ by\n0.4814 ms. Odd/even work ID is balanced across range class, so the repeat is a\nrange/timing effect under these fixed inputs rather than the parity alternative."
+        },
+        {
+          "line_start": 26,
+          "line_end": 30,
+          "quoted_record": "The physical result proves a repeatable selected range-dependent set-to-clear\ntransition. Together with the stock firmware branch that consumes clear as\n`Hash Scan finished`, it strongly indicates scan completion semantics. It does\nnot identify the internal transition event, prove that the last nonce was\ntested, calibrate the ASIC clock, or qualify another operating point."
+        }
+      ]
+    },
+    {
+      "source_id": "R059",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 59: operating-word completion timing"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Status: **completed and consumed.** This is selected stock-board evidence."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Result"
+        },
+        {
+          "line_start": 7,
+          "line_end": 10,
+          "quoted_record": "The five-case A/B/A/B/A experiment completed all 7,298 native transfers. A is\nregister-0 word `46270060`; B is `46260060`. Each case applied the word only at\naddress 1 with E52's exact latch/clear sequence. All 29 controls retained A and\nthe final 30-position inventory restored A."
+        },
+        {
+          "line_start": 12,
+          "line_end": 13,
+          "quoted_record": "All five identical `2^34` cases began with register-3 bit 16 set and changed\nonce to clear:"
+        },
+        {
+          "line_start": 15,
+          "line_end": 21,
+          "quoted_record": "| Case | First clear | Read | Last-set/clear bracket |\n| --- | ---: | ---: | ---: |\n| A1 | 538.4539 ms | 201 | 2.6224 ms |\n| B1 | 552.7677 ms | 206 | 2.7981 ms |\n| A2 | 538.6087 ms | 201 | 2.6834 ms |\n| B2 | 552.4282 ms | 202 | 2.5812 ms |\n| A3 | 539.2632 ms | 201 | 2.6087 ms |"
+        },
+        {
+          "line_start": 23,
+          "line_end": 26,
+          "quoted_record": "A averaged 538.7753 ms and B averaged 552.5979 ms: B was 13.8227 ms slower,\na ratio of 1.0256557. The firmware fixtures predict `500 / 487.5 = 1.0256410`.\nB1 and B2 exceeded the midpoint of their adjacent A controls by 14.2364 and\n13.4922 ms. A spread was 0.8093 ms and B spread was 0.3395 ms."
+        },
+        {
+          "line_start": 28,
+          "line_end": 34,
+          "quoted_record": "This proves a repeatable relative timing effect of the selected reversible word\ncontrast for this target, work and thermal context. The close match to the\nfirmware request ratio strongly indicates that the words control hash rate as\nthat setter intends. It does not independently calibrate either setting in MHz,\nmeasure the reference clock, establish voltage, or define a complete clock law.\nThe case IDs are odd for A and even for B; E58's matched intermediate ID 2/3\ncontrol and the earlier parity controls are required to exclude that alternative."
+        },
+        {
+          "line_start": 36,
+          "line_end": 36,
+          "quoted_record": "## Physical join and results"
+        },
+        {
+          "line_start": 38,
+          "line_end": 48,
+          "quoted_record": "- [Physical analysis](clock-transition-physical.json) joins every native TX/RX\n  byte to passive SPI, transfers 0–7,297 at bursts 7,926–15,225 and\n  105.9424020–154.8852991 seconds. Two result polls span two decoder gap bursts;\n  their concatenated bytes match exactly. No transfer is missing.\n- All positions were clear at every endpoint and late inventory. No transition\n  reverted during the remaining reads.\n- Every case returned one current-work, normalized-range, filter-valid result:\n  address 2, core 0, nonce `b03810000aa95cf0`. The original digest has 41\n  leading zero bits and passes difficulty 256. No candidate header was invalid.\n  This is not a complete-result claim for the `2^34` domains.\n- Deterministic replay before and after raw archival matched byte for byte."
+        }
+      ]
+    },
+    {
+      "source_id": "R060",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 60: local preparation failure"
+        },
+        {
+          "line_start": 3,
+          "line_end": 6,
+          "quoted_record": "**No miner power or physical I/O occurred.** The exact command from commit\n`9fa8884b3` exited during local plan validation because\n`reg3_read_effect_probe.py` could not import the development `kabox_protocol`\nmodule from a repository-root launch."
+        },
+        {
+          "line_start": 8,
+          "line_end": 11,
+          "quoted_record": "The traceback ended in `snapshot_contract` before the runner acquired the power\nlock, created the attempt output, started the analyser or constructed a Home\nAssistant client. A read-only recheck retained relay OFF / 0 W / 0 A. No SPI,\nUART, GPIO, firmware or ownership action occurred."
+        },
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quoted_record": "Attempt 60 is consumed as a preparation failure. The fix adds the same explicit\ndevelopment-module path used by the other standalone probes; the repaired and\nsource-rebound package uses fresh attempt 61."
+        }
+      ]
+    },
+    {
+      "source_id": "R061",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 61: register-3 read-effect A/B/A"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "**Completed successfully; bounded negative.** Executed the one-use\n[plan](../../../05-documentation/reg3-read-effect-attempt61.json) from commit\n`b8eeda159` on 2026-10-06. The ARM binary SHA-256 is\n`06a2077fcb3fae12717dc2d5cc497aa1ecd31584e6524b811936173fc5c24d45`.\nAttempt 61 is consumed."
+        },
+        {
+          "line_start": 9,
+          "line_end": 9,
+          "quoted_record": "## Observation and interpretation"
+        },
+        {
+          "line_start": 11,
+          "line_end": 14,
+          "quoted_record": "All six even-offset controls returned their one exact frozen result. All six\nodd-core-0 cases returned no candidate header, including the two B cases that\nomitted every pre-poll register-3 read. A1 and A2 reproduced the earlier\nread-branch omission. There were no invalid, extra, duplicate or stale headers."
+        },
+        {
+          "line_start": 16,
+          "line_end": 22,
+          "quoted_record": "The physical work-to-first-poll spread was 4.2968 ms across all 12 cases, below\nthe frozen 10 ms acceptance limit. Read cases started polling 158.4951-162.7919\nms after the work transfer began; no-read cases were 161.7195-162.4845 ms.\nThe 30th pre-read finished about 100.53-101.95 ms after work. Thus removing the\nearly register-3 inventory under matched result-drain timing did not recover an\nodd result. This weakens that read interaction as the omission cause. It does\nnot identify an internal search, filter, queue or dequeue mechanism."
+        },
+        {
+          "line_start": 24,
+          "line_end": 27,
+          "quoted_record": "The current local PoW helper has a different build hash from the frozen helper.\nBefore classifying results, the analysis re-enumerated all 46,080 candidates and\nproved the same twelve one-result sets. Every returned result then matched its\noriginal-input nonce, address, core, ntime, digest and 41-bit score."
+        }
+      ]
+    },
+    {
+      "source_id": "R062",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 62: directed clock source attribution"
+        },
+        {
+          "line_start": 3,
+          "line_end": 4,
+          "quoted_record": "Status: **completed, accepted and consumed.** This is selected prepared stock\nboard evidence for W64."
+        },
+        {
+          "line_start": 6,
+          "line_end": 6,
+          "quoted_record": "## Result"
+        },
+        {
+          "line_start": 8,
+          "line_end": 10,
+          "quoted_record": "The address 1 only `46270060` / `46260060` / `46270060` contrast changed the\naddress 1 register 3 completion transition and did not change the paired address\n2 transition:"
+        },
+        {
+          "line_start": 12,
+          "line_end": 15,
+          "quoted_record": "| Address | Fast 1 | Slow | Fast 2 | Slow minus fast midpoint | Ratio |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| 1 | 541.9255 ms | 551.8802 ms | 541.3998 ms | +10.2175 ms | 1.0188633 |\n| 2 | 539.2175 ms | 538.7600 ms | 538.6034 ms | -0.1504 ms | 0.9997208 |"
+        },
+        {
+          "line_start": 17,
+          "line_end": 20,
+          "quoted_record": "Fast repeat spreads were 0.5257 ms at address 1 and 0.6141 ms at address 2.\nThis passes the frozen `local_source_supported` prediction: address 1 changed by\nat least 8 ms with ratio 1.015 to 1.040, address 2 stayed within 6 ms and both\nfast spreads stayed within 6 ms. The chain wide prediction is rejected."
+        },
+        {
+          "line_start": 22,
+          "line_end": 26,
+          "quoted_record": "The result proves that the directed logical address 1 operating word controls a\nlocal search completion boundary under this work and thermal condition. Together\nwith attempt 52's directed readback and exact restoration, it is an independent\nlogical source control. It does not establish physical package identity, a core\nselector, absolute MHz, voltage or a complete clock law."
+        }
+      ]
+    },
+    {
+      "source_id": "R063",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 63: two-source result attribution"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Status: **completed safely; causal predictions passed, complete frozen result\nset did not.** Attempt 63 is consumed. W65 remains open for held-out validation\nof the newly observed complete sets."
+        }
+      ]
+    },
+    {
+      "source_id": "R064",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 64: held-out source-pair validation"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Status: **completed safely. Causal timing passed; projected complete result\nsets failed.** Attempt 64 is consumed. W65 closes for independent source/result\nattribution; whole-result prediction remains open for W68."
+        }
+      ]
+    },
+    {
+      "source_id": "R065",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 65: pending-result contention and duplicate replay"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Status: **completed safely; all frozen predictions passed.** Attempt 65 is\nconsumed. W66 closes for the selected duplicate, pending-result and output-order\nscope. ASIC counters and independent queue flags remain open."
+        },
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quoted_record": "## Third local source"
+        },
+        {
+          "line_start": 9,
+          "line_end": 11,
+          "quoted_record": "The filter-38 address-20 work returned exactly A\n(`b037ffff3a5437ee`, address/core `4/31`) and B\n(`b03810000aa95cf0`, address/core `20/0`) in every calibration:"
+        },
+        {
+          "line_start": 13,
+          "line_end": 16,
+          "quoted_record": "| Result | Fast 1 | Slow address 4 | Fast 2 | Slow delta | Fast spread |\n| --- | ---: | ---: | ---: | ---: | ---: |\n| A, address 4 | 425.7476 ms | 432.9749 ms | 425.6209 ms | +7.2906 ms | 0.1267 ms |\n| B, address 20 | 532.0666 ms | 532.2328 ms | 531.8989 ms | +0.2500 ms | 0.1677 ms |"
+        },
+        {
+          "line_start": 18,
+          "line_end": 19,
+          "quoted_record": "This passes the frozen local ≥5 ms, sibling ≤6 ms and repeat ≤6 ms gates and\nestablishes address 4 as a third independently directed logical result source."
+        },
+        {
+          "line_start": 21,
+          "line_end": 21,
+          "quoted_record": "## Pending replacement and order"
+        },
+        {
+          "line_start": 23,
+          "line_end": 33,
+          "quoted_record": "- After 570 ms with both results ready, consecutive polls returned exact A then\n  B, with no extra, stale or invalid output.\n- Normal `0400/00e5` plus same-slot work replacement cleared all four frozen\n  states: neither, A only, B only and both. No old result appeared in the\n  control, work or four immediate post-replacement transfers. After 570 ms the\n  restarted work returned only A then B.\n- The B-only setup first drained A exactly once at 470 ms, then replaced with B\n  pending after another 100 ms. Its later output remained the restarted A/B\n  pair, so the old B was cleared.\n- Drained replay returned A then B, repeated the identical slot and work, then\n  returned the same complete A and B frames again in the same order."
+        },
+        {
+          "line_start": 35,
+          "line_end": 39,
+          "quoted_record": "Replay therefore supplies a repeatable, source-attributed duplicate class.\nWithin the qualified IEN616 allocation, same-job source ranges are disjoint\n`2^34` spans separated by `2^40`; BM2382's selected same-nonce/two-source\nduplicate mechanism has no equivalent in this path. This is a bounded\narchitecture difference, not a universal collision rule."
+        },
+        {
+          "line_start": 41,
+          "line_end": 45,
+          "quoted_record": "The accepted analyzer initially stopped before synthesis because the W66 vector\ndid not copy the original-difficulty field used only for independent PoW replay.\nThe post-run analyzer repair binds that value from the hash-identified attempt-64\nsource vector. It changes no stimulus, native parsing, physical join or frozen\nresult prediction."
+        }
+      ]
+    },
+    {
+      "source_id": "R066",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 66: post-reset address-context discriminator"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Status: **completed safely; startup controls were insufficient and full cold\nrecovery passed.** Attempt 66 is consumed. W67 closes for the selected external\nregister/reset behavior; reset-only register values remain unidentifiable."
+        },
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quoted_record": "## Result"
+        },
+        {
+          "line_start": 9,
+          "line_end": 13,
+          "quoted_record": "The baseline returned all 150 qualified reads across registers 0/3/5/6/7 and\naddresses 1-30. With enable held HIGH, reset LOW for 2,000 ms removed every\nqualified addressed reply. Exact stock recipe transfers 127-129 (`0100`,\n`0b00`, `0300`) then restored **0 of 150** replies. All responses were preserved\nas unqualified bytes; none are interpreted as register values."
+        },
+        {
+          "line_start": 15,
+          "line_end": 20,
+          "quoted_record": "The second full 213-transfer cold initializer restored all 150 replies. Final\nregister 0/5/6/7 values at all 30 addresses were exactly\n`46270060`/`00000000`/`0f00000c`/`00142000`; all register-3 replies qualified.\nThis proves that the three startup controls alone do not reconstruct the\naddressed surface. It does not expose internal reset defaults: the ASIC supplies\nno qualified address/register reply in that state."
+        }
+      ]
+    },
+    {
+      "source_id": "R067",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 67: frozen held-out model validation"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Status: **completed safely; all 14 complete result sets matched.** Attempt 67\nis consumed. W68 closes for the frozen bounded model; BM2382-scale whole-result,\ncore-control and counter parity remain for W69."
+        },
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quoted_record": "## Result"
+        },
+        {
+          "line_start": 9,
+          "line_end": 11,
+          "quoted_record": "The predeclared 53,760 canonical checks covered 14 independent 30-position by\n128-nonce domains across ten job identities not used by earlier fixed packages.\nNo result was fitted after execution."
+        },
+        {
+          "line_start": 13,
+          "line_end": 21,
+          "quoted_record": "- Filter 37/38/37 returned exact counts `1/0/1`; both A cases returned the\n  identical nonce, logical address, core, time index, digest and score.\n- Core-0 even/core-0 odd/neighboring core-1 returned `1/0/1` exactly.\n- Eight further cases at addresses 2, 4, 8, 16, 20, 25, 30 and 1 each returned\n  their sole frozen candidate exactly.\n- There were no extra, missing, duplicate, stale or malformed candidate frames.\n  All candidates pass canonical PoW replay.\n- All 420 endpoint register-3 reads had the selected slot and clear completion\n  bit. All 30 final register-0 reads were `46270060`."
+        },
+        {
+          "line_start": 23,
+          "line_end": 27,
+          "quoted_record": "The source jobs and target candidates were retained attempt-46 physical pool\nevidence. They are held out from prior fixed packages and the attempt-67 output,\nbut they are selected around known valid results. This pass therefore validates\nthe frozen local model and unknown neighboring candidates; it is not a fresh\nunseen-job or broad-range whole-result claim."
+        }
+      ]
+    },
+    {
+      "source_id": "R068",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 68 — broad fresh-work population"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 12,
+          "quoted_record": "The frozen broad result model is rejected at filter 32. The exact nested\nfilter-33 case passes all 241 predicted physical results, while the two\nfilter-32 cases return only 365 and 363 results against 475 predictions. The\nfilter-32 loss is concentrated at logical addresses 20–30. This demonstrates a\npopulation/rate boundary but does not identify an internal queue, arbitration\nor search mechanism."
+        },
+        {
+          "line_start": 14,
+          "line_end": 18,
+          "quoted_record": "| Case | Expected | Actual | Matched | Missing | Extra | Diff-1 failures |\n| --- | ---: | ---: | ---: | ---: | ---: | ---: |\n| filter32 A | 475 | 365 | 359 | 116 | 6 | 6 |\n| filter33 B | 241 | 241 | 241 | 0 | 0 | 0 |\n| filter32 A repeat | 475 | 363 | 360 | 115 | 3 | 3 |"
+        },
+        {
+          "line_start": 20,
+          "line_end": 24,
+          "quoted_record": "There are no duplicate, stale, malformed-header or out-of-range results. All\nactual results use `ntime_index=0`. The two A result sets differ by four\nidentities, so the A/B/A repeat and nested-subset gates fail. The exact B set\nshows that the fresh work image, 30 source ranges, canonical enumeration and\nphysical matching can agree completely below the observed boundary."
+        },
+        {
+          "line_start": 26,
+          "line_end": 29,
+          "quoted_record": "The filter-32 concentration is reproducible: addresses 1–19 are almost wholly\naccounted for, while addresses 23–30 each emit only five results in both A\ncases. Filter33 remains exact at every address, including addresses with as many\nas 13 results. This rules out a simple fixed per-address five-result cap."
+        }
+      ]
+    },
+    {
+      "source_id": "R069",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 69 — result-rate and chain-order boundary"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "Fast bounded polling makes the frozen broad population substantially more\ncomplete and moves the loss downstream. This proves that host drain cadence is\ncausal. It also brackets two separate model boundaries:"
+        },
+        {
+          "line_start": 11,
+          "line_end": 13,
+          "quoted_record": "- Exact set: 280 passes; 320 adds one deterministic invalid result.\n- Predicted valid-result retention: all expected results pass through 400;\n  missing expected results begin at 440."
+        },
+        {
+          "line_start": 15,
+          "line_end": 24,
+          "quoted_record": "| Expected | Actual | Matched | Missing | Extra | Exact |\n| ---: | ---: | ---: | ---: | ---: | --- |\n| 241 | 241 | 241 | 0 | 0 | yes |\n| 280 | 280 | 280 | 0 | 0 | yes |\n| 320 | 321 | 320 | 0 | 1 | no |\n| 360 | 361 | 360 | 0 | 1 | no |\n| 400 | 402 | 400 | 0 | 2 | no |\n| 440 | 434 | 433 | 7 | 1 | no |\n| 475 | 443 | 441 | 34 | 2 | no |\n| 475 repeat | 442 | 441 | 34 | 1 | no |"
+        },
+        {
+          "line_start": 26,
+          "line_end": 30,
+          "quoted_record": "There are no duplicate, stale, malformed-header or out-of-range results. Every\nexpected physical result through population 400 is present. Extras are CRC-valid\nASIC results but fail canonical difficulty one. Several recur with identical\nnonce/address/core coordinates across thresholds and attempts, so they are a\ndeterministic silicon/model discrepancy rather than analyzer noise."
+        },
+        {
+          "line_start": 32,
+          "line_end": 37,
+          "quoted_record": "The median fast poll interval is 4.859 ms, or 205.8 polls/s, compared with about\n7.1 ms and 140 polls/s under attempt 68's health-per-poll loop. At population\n475, missing expected results fall from 116/115 to 34/34. Loss moves from\naddresses 20–30 to addresses 26–30. Addresses 28–30 each retain exactly five\nresults in both fast-475 repetitions. The repeated valid-result sets are exact;\nthe one-result total-set difference is one invalid extra."
+        },
+        {
+          "line_start": 39,
+          "line_end": 41,
+          "quoted_record": "These observations strongly indicate bounded per-source result retention plus\nchain-order service under saturation. They do not yet prove an internal FIFO,\nits depth or whether full retention rejects new results or overwrites old ones."
+        }
+      ]
+    },
+    {
+      "source_id": "R070",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 70 — delayed-drain retention law"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "With result polling withheld for 2,500 ms, every logical address returns exactly\nfive entries in both repeats. This proves a five-entry externally retained\nresult capacity per logical source after the 475-result search has completed."
+        },
+        {
+          "line_start": 11,
+          "line_end": 15,
+          "quoted_record": "The retained entries reject both frozen FIFO alternatives. None of the 60\naddress observations equals the first five or last five expected candidates.\nFifty-eight equal the first four candidates plus the latest candidate exactly.\nOf the two exceptions, each contains four valid candidates and one CRC-valid\nASIC result that fails canonical difficulty one:"
+        },
+        {
+          "line_start": 17,
+          "line_end": 19,
+          "quoted_record": "- delayed A, address 17: valid ranks 0, 1, 2, 3 plus one invalid entry;\n- delayed repeat, address 11: valid ranks 0, 1, 2, 9 (latest) plus one invalid\n  entry."
+        },
+        {
+          "line_start": 21,
+          "line_end": 25,
+          "quoted_record": "Across all 60 observations, 59 contain the first four valid candidates and 59\ncontain the latest. The evidence therefore demonstrates an external first-four\nplus latest retention law for clean sources. It does not identify the internal\nstorage circuit. Invalid ASIC outputs can occupy a retained entry and displace\none of the five valid predictions."
+        },
+        {
+          "line_start": 27,
+          "line_end": 32,
+          "quoted_record": "| Case | Results | Matched | Missing | Invalid extras |\n| --- | ---: | ---: | ---: | ---: |\n| immediate fast A | 443 | 441 | 34 | 2 |\n| delayed 2,500 ms A | 150 | 149 | 326 | 1 |\n| delayed 2,500 ms repeat | 150 | 149 | 326 | 1 |\n| immediate fast repeat | 444 | 439 | 36 | 5 |"
+        },
+        {
+          "line_start": 34,
+          "line_end": 37,
+          "quoted_record": "There are no duplicates, stale results, malformed result headers or source-range\nfailures. The immediate controls reproduce attempt 69's fast-drain boundary.\nTheir valid sets differ by two because invalid ASIC outputs consume retention\nopportunities. The two delayed valid sets also differ by two for the same reason."
+        }
+      ]
+    },
+    {
+      "source_id": "R071",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 71 — dynamic fifth-entry endpoint law"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 11,
+          "quoted_record": "All 150 source observations across the five bounded endpoint cases match the\nfrozen first-four-plus-last-before-end prediction exactly. The byte-identical\n51.2-billion endpoint repeat returns the same 150 valid identities. This proves\nthat the retained fifth entry advances with the completed nonce endpoint while\nthe first four entries remain fixed."
+        },
+        {
+          "line_start": 13,
+          "line_end": 15,
+          "quoted_record": "The full endpoint returns the same deterministic invalid address-17 result seen\nin attempt 70. It occupies the fifth entry and displaces the predicted last\nvalid candidate. Across all six cases and 180 source observations:"
+        },
+        {
+          "line_start": 17,
+          "line_end": 22,
+          "quoted_record": "- every source returns exactly five entries;\n- all 179 clean observations match the frozen five-entry set exactly;\n- all 150 dynamic observations match exactly;\n- all 180 contain their first four expected candidates;\n- 179 contain the predicted endpoint-local last candidate;\n- there are no duplicate, stale, malformed-header or source-range results."
+        },
+        {
+          "line_start": 24,
+          "line_end": 31,
+          "quoted_record": "| Endpoint offset | Expected valid population | Returned | Exact sources |\n| ---: | ---: | ---: | ---: |\n| 44,800,000,000 | 312 | 150 | 30/30 |\n| 51,200,000,000 | 360 | 150 | 30/30 |\n| 57,600,000,000 | 409 | 150 | 30/30 |\n| 64,000,000,000 | 448 | 150 | 30/30 |\n| 51,200,000,000 repeat | 360 | 150 | 30/30 |\n| 68,719,476,735 | 475 | 150 | 29/30 clean; one invalid displacement |"
+        },
+        {
+          "line_start": 33,
+          "line_end": 36,
+          "quoted_record": "This is an external retention/update law. It does not identify the internal\nstorage circuit. The full-endpoint invalid result is CRC-valid but has only two\nleading zero bits under canonical replay; it is retained by the same five-entry\nmechanism."
+        }
+      ]
+    },
+    {
+      "source_id": "R072",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 72 — invalid-result filter ladder"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "The below-target endpoint excludes the recurring address-17 invalid identity,\nconfirming its exact normalized range position. The 17-point exact-endpoint\nfilter ladder does not produce a monotonic admission transition:"
+        },
+        {
+          "line_start": 11,
+          "line_end": 11,
+          "quoted_record": "`00000000001011110`"
+        },
+        {
+          "line_start": 13,
+          "line_end": 16,
+          "quoted_record": "The identity appears at 5 of 17 thresholds. It first appears at `a9096717`,\ndisappears at `aa83bed9`, appears from `abfe169b` through `b06d1de1`, then\ndisappears at `b1e775a3`. The byte-identical upper repeat is also absent and its\nentire 148-result set exactly matches the first upper case."
+        },
+        {
+          "line_start": 18,
+          "line_end": 22,
+          "quoted_record": "This rejects a single scalar cutoff for that invalid identity. None of the\n40,320 byte orderings of the 64-bit threshold make the observed present and\nabsent sets separable by one cutoff. The evidence supports a filter-dependent\ninvalid mechanism, but does not yet establish whether each internal ladder\npoint is repeatable."
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "All 563 clean source observations exactly match the frozen valid-result\nretention prediction. Seven source observations contain an invalid result; six\nretain the first four valid entries and use the fifth capacity. Two new\naddress-11 invalid identities bring the combined attempts 68–72 inventory to\n11 identities and 34 observations. All obey the normalized-offset core rule."
+        }
+      ]
+    },
+    {
+      "source_id": "R073",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 73 — invalid-result repeatability"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 8,
+          "quoted_record": "Attempt 72's nonmonotonic address-17 pattern is not deterministic. Four repeats\nat each selected exact-endpoint threshold return the target as follows:"
+        },
+        {
+          "line_start": 10,
+          "line_end": 16,
+          "quoted_record": "| Filter | Attempt 72 | Attempt 73 |\n| --- | ---: | ---: |\n| `a78f0f55` | absent | 0/4 |\n| `a9096717` | present | 2/4 |\n| `aa83bed9` | absent | 1/4 |\n| `abfe169b` | present | 3/4 |\n| `b1e775a3` | absent | 1/4 |"
+        },
+        {
+          "line_start": 18,
+          "line_end": 22,
+          "quoted_record": "Only the lowest threshold is stable across all four repeats. The other four\nsettings vary, so a deterministic threshold predicate cannot explain emission.\nAll 621 clean source observations still exactly match the valid retention model.\nAll nine invalid-source observations retain the first four valid entries and\nfill the fifth capacity."
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "The recurring odd target nonce also appears once in the nominal range-negative\ncase whose endpoint is one nonce lower. Its core rule uses `(offset >> 1) & 31`,\nso the two adjacent offsets belong to the same core step. This selects an exact\ntarget−2 versus target−1 versus target endpoint test of two-nonce range\ngranularity; the earlier one-below case is no longer treated as a strict negative."
+        },
+        {
+          "line_start": 30,
+          "line_end": 31,
+          "quoted_record": "One new address-11 invalid identity brings the attempts 68–73 inventory to 12\nidentities and 43 observations. All match the normalized-offset core rule."
+        }
+      ]
+    },
+    {
+      "source_id": "R074",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 74 — paired nonce-range granularity"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 8,
+          "quoted_record": "At fixed filter `abfe169b`, six balanced repeats at each endpoint return the\nrecurring address-17 invalid identity as follows:"
+        },
+        {
+          "line_start": 10,
+          "line_end": 14,
+          "quoted_record": "| Endpoint | Core step | Target present |\n| --- | ---: | ---: |\n| target−2 (`64,223,017,039`) | 7 | 0/6 |\n| target−1 (`64,223,017,040`) | 8 | 4/6 |\n| target (`64,223,017,041`) | 8 | 2/6 |"
+        },
+        {
+          "line_start": 16,
+          "line_end": 20,
+          "quoted_record": "Target−2 excludes the result in every repeat. Target−1 and target both admit it\nvariably. All four nominal range overruns are exactly the odd target nonce in\nthe target−1 condition. Together with the established `(offset >> 1) & 31`\ncore map, this strongly indicates that the range endpoint admits two-nonce core\nsteps rather than individual nonces."
+        },
+        {
+          "line_start": 22,
+          "line_end": 25,
+          "quoted_record": "All 534 clean source observations match the frozen valid retention prediction.\nAll six invalid observations retain the first four valid entries and use the\nfifth capacity. Across attempts 68–74, 12 stable invalid identities account for\n49 observations and all obey the normalized-offset core rule."
+        },
+        {
+          "line_start": 27,
+          "line_end": 30,
+          "quoted_record": "W74 therefore closes with a bounded external model: valid candidates are\ndeterministic; the searched endpoint is pair-granular; CRC-valid canonical\ndifficulty failures are stable identities but variable emissions. Software must\ncanonically reject them. No deterministic internal invalid predicate is claimed."
+        }
+      ]
+    },
+    {
+      "source_id": "R075",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 75 — complete segmented broad stream"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 8,
+          "quoted_record": "The ten pair-aligned segments recover the complete independently enumerated\nfresh-work population exactly:"
+        },
+        {
+          "line_start": 10,
+          "line_end": 14,
+          "quoted_record": "- expected valid union: 475 identities;\n- observed valid union: 475 identities;\n- missing / extra / cross-segment duplicates: 0 / 0 / 0;\n- exact segment sets: 10/10;\n- exact source observations: 300/300."
+        },
+        {
+          "line_start": 16,
+          "line_end": 20,
+          "quoted_record": "Four canonical-difficulty-failing ASIC results are preserved separately. Each\naffected source still returns every expected valid result because the partition\nlimits each source to four valid entries and reserves the fifth hardware slot.\nAll results remain inside their pair-aligned source ranges, and no malformed,\nstale or duplicate result is present."
+        },
+        {
+          "line_start": 22,
+          "line_end": 25,
+          "quoted_record": "This closes the broad complete-stream gap under segmented operation. It proves\nthat the predictive valid-result model covers all 475 candidates across the full\nnormalized `2^36` range when the five-entry retention limit is respected. It\ndoes not claim that one unsegmented work item can emit more than five per source."
+        }
+      ]
+    },
+    {
+      "source_id": "R076",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 76 — event-correlated register-3 state"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 8,
+          "quoted_record": "Register-3 bit 16 is a bounded external completion/rearm state under the tested\nfixed-range conditions. It is not a pending-result flag:"
+        },
+        {
+          "line_start": 10,
+          "line_end": 15,
+          "quoted_record": "| Case | Expected / observed valid | First all-clear round | Drain state |\n| --- | ---: | ---: | --- |\n| no hit | 0 / 0 | 6 | clear before and through drain |\n| one hit | 1 / 1 | 6 | clear before and through drain |\n| four hits | 4 / 4 | 6 | clear before and through drain |\n| byte-identical four-hit repeat | 4 / 4 | 6 | rearmed, then repeated exactly |"
+        },
+        {
+          "line_start": 17,
+          "line_end": 22,
+          "quoted_record": "All four valid-result sets are exact. There are no invalid, stale, duplicate or\nmalformed results. Every case starts with bit 16 set at all 30 positions. The\nstate clears monotonically between 538.8455 and 634.9190 ms. Sequential reads\nplace addresses 15/16 on opposite sides of one round boundary; this is sampling\norder, not evidence of two completion classes. The byte-identical replacement\nreasserts the state and reproduces the four-hit transition matrix exactly."
+        },
+        {
+          "line_start": 24,
+          "line_end": 26,
+          "quoted_record": "This proves the reachable completion/rearm behavior. It does not identify the\ninternal last-nonce event, an ASIC counter, a queue flag, physical cores or\npackage ownership."
+        }
+      ]
+    },
+    {
+      "source_id": "R077",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 77 — encoded wrap and exhaustion boundary"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "IEN616 uses full 64-bit modulo arithmetic for the tested source stride and\naccepts the selected end-before-start wrapped range. All five frozen result sets\nmatch the modulo-64 model exactly:"
+        },
+        {
+          "line_start": 11,
+          "line_end": 17,
+          "quoted_record": "| Case | Observed valid | Modulo-64 | Fixed-prefix 48-bit | Reject/saturate |\n| --- | ---: | --- | --- | --- |\n| low control | 2 | exact | exact | exact |\n| `u64` edge | 1 | exact | mismatch | mismatch |\n| `u64` edge repeat | 1 | exact repeat | mismatch | mismatch |\n| explicit wrap | 1 | exact | mismatch | mismatch |\n| explicit wrap repeat | 1 | exact repeat | mismatch | mismatch |"
+        },
+        {
+          "line_start": 19,
+          "line_end": 22,
+          "quoted_record": "The edge and explicit-wrap cases both return address 6, core 14, nonce\n`000004fff9f5fcdc`. The competing fixed-prefix edge candidate at address 4 is\nabsent, and both models that reject the explicit wrapped range predict no result.\nThere are no invalid, stale, duplicate or malformed results."
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "The low and high-edge cases become all-clear by register-3 round 1. Both\nexplicit-wrap cases are already clear at their first sequential reads, 7.55 to\n101.45 ms after work transfer. Their completion rearm edge is therefore faster\nthan this observation schedule, but their post-boundary result identity and\nbyte-identical repeat prove bounded wrapped traversal."
+        },
+        {
+          "line_start": 30,
+          "line_end": 32,
+          "quoted_record": "This establishes one `2^28`-wide explicit wrapped interval and modulo-64 source\ncarry. It does not prove indefinite cycling, full-cycle recurrence, internal\ncounter width, arbitrary stock construction or physical core ownership."
+        }
+      ]
+    },
+    {
+      "source_id": "R078",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 78 — eight-byte nonce-field causality"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-06. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "Every byte of the encoded 64-bit nonce start/end range causally changes the\nIEN616 result population under the tested fixed work. Complete predicted and\nobserved valid counts match in all ten cases:"
+        },
+        {
+          "line_start": 11,
+          "line_end": 22,
+          "quoted_record": "| Case | Predicted | Observed | Result |\n| --- | ---: | ---: | --- |\n| baseline | 1 | 1 | exact |\n| byte 0 | 0 | 0 | exact contrast |\n| byte 1 | 0 | 0 | exact contrast |\n| byte 2 | 0 | 0 | exact contrast |\n| byte 3 | 0 | 0 | exact contrast |\n| byte 4 | 0 | 0 | exact contrast |\n| byte 5 | 1 | 1 | exact moved source |\n| byte 6 | 2 | 2 | exact new identities |\n| byte 7 | 0 | 0 | exact contrast |\n| baseline repeat | 1 | 1 | exact repeat |"
+        },
+        {
+          "line_start": 24,
+          "line_end": 28,
+          "quoted_record": "All packets use slot 7, the same hash, timestamp, filter and `2^28` width. Only\nthe selected byte of both range endpoints changes from baseline. Byte 5 moves\nnonce `4a701901d1a097cf` from address 26 to address 25. Byte 6 returns the two\npredicted identities at addresses 20 and 23. The baseline repeat reproduces the\naddress-26 result and complete transition matrix."
+        },
+        {
+          "line_start": 30,
+          "line_end": 34,
+          "quoted_record": "All positions clear register-3 bit 16 by round 1, stay clear through the drain\nand rearm for the byte-identical baseline repeat. There are no invalid, stale,\nduplicate or malformed results. This proves byte causality for this constructor,\nwork, width, filter and 30 logical positions. It does not identify physical\npackages, internal cores, counters or arbitrary constructors."
+        }
+      ]
+    },
+    {
+      "source_id": "R079",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 79 — result-bearing nonce-prefix ownership"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-07. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Outcome"
+        },
+        {
+          "line_start": 7,
+          "line_end": 9,
+          "quoted_record": "Both bytes of the returned 16-bit nonce prefix causally follow independently\nchanged bytes 6 and 7 of the encoded nonce range under the tested fixed work.\nComplete predicted and observed populations match in all six cases:"
+        },
+        {
+          "line_start": 11,
+          "line_end": 18,
+          "quoted_record": "| Case | Expected/observed valid | Expected/observed prefix | Result |\n| --- | ---: | --- | --- |\n| baseline | 1 | `4a70` | exact |\n| byte 6 | 2 | `4a71` | exact |\n| byte 6 repeat | 2 | `4a71` | exact repeat |\n| byte 7 | 2 | `4c70` | exact |\n| byte 7 repeat | 2 | `4c70` | exact repeat |\n| baseline repeat | 1 | `4a70` | exact repeat |"
+        },
+        {
+          "line_start": 20,
+          "line_end": 24,
+          "quoted_record": "All packets use slot 7, the same hash, timestamp, filter and `2^28` width. The\nbyte-6 and byte-7 cases each change only that byte in both range endpoints. All\nthree repeat pairs reproduce exact result identities and register-3 transition\nmatrices. Every case clears by round 1, remains clear through drain and rearms.\nThere are no invalid, stale, duplicate or malformed results."
+        },
+        {
+          "line_start": 26,
+          "line_end": 28,
+          "quoted_record": "This establishes external causal ownership for both returned prefix bytes in\nthis constructor and these bounded ranges. It does not identify internal routing,\nphysical packages, cores or arbitrary constructors."
+        }
+      ]
+    },
+    {
+      "source_id": "R080",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 80 — W111 full runtime ownership"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-07. Status: failed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 5,
+          "quoted_record": "## Observation and interpretation"
+        },
+        {
+          "line_start": 17,
+          "line_end": 25,
+          "quoted_record": "Offline diagnosis identifies a command-generator defect, not a target\ncapability limit. The shared `spi_owners` shell function used global `x` as a\ntemporary pathname. It ran after `x` was bound to the `xminerd` PID, replacing\nthat PID with a `/proc/.../fd/...` suffix. The next `xminer_identity` check\ntherefore failed before the first STOP. The EXIT trap waited for the 210-second\nbackup guard, masking the immediate identity failure until SSH timed out. The\nrepair uses a distinct SPI pathname variable and cancels the guard on an early\nfailure so the parent can cut power promptly. This causal diagnosis is from\nthe exact generated shell and output; no target STOP state was observed."
+        }
+      ]
+    },
+    {
+      "source_id": "R081",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 81 — independent mining with fixed full-speed cooling on a stock-prepared KA-BOX"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Date: 2026-10-07. Hardware outcome: bounded runtime control demonstrated.\nRunner exit: 1 because of a host UART/SSH closeout race described below.\nAttempt consumed; no powered replay is needed for this outcome."
+        },
+        {
+          "line_start": 7,
+          "line_end": 7,
+          "quoted_record": "## Mining and cooling result"
+        },
+        {
+          "line_start": 23,
+          "line_end": 29,
+          "quoted_record": "The independent [physical correlation](full-control-physical-correlation.json)\nmatches all 4,585 native TX/RX transfers byte for byte to the paired 10 MHz\ncapture, including 39 transfers joined from multiple gap-delimited bursts.\nAll 37 accepted responses join exact original current work, slot, nonce and\ncaptured result; a separate Kaspa PoW replay matches each submitted digest\nand passes each original actual pool difficulty (512, 1024 or 2048). No\nhistorical or stock share is credited to the open miner."
+        },
+        {
+          "line_start": 31,
+          "line_end": 36,
+          "quoted_record": "The 126 active cooling leases contained direct TMP112 values 48.0625–50.625 C\nand both fan tachometers at least 2,640 RPM (maximum 4,860), with fan levels\n100 and all four stock processes stopped. All 125 active identity/fan status\nqueries passed; no cooling lease failure occurred. Native POST read both GPIO\n66/67 LOW, fan levels 100, fresh tachometers and board temperature. The\nminer-local guard recorded `GUARD_PARKED` and `PARK_COMPLETE`."
+        }
+      ]
+    },
+    {
+      "source_id": "R082",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 82 — separate cold stock return after independent ownership"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-07. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 13,
+          "quoted_record": "The one-use [passive plan](../../../05-documentation/stock-return-attempt82.json)\nbooted stock firmware from mains OFF after attempt 81 parked and cut power.\nIt sent no UART command and applied no SSH, SPI, GPIO or fan stimulus. Raw\nUART shows one `fanctrl start` and 13 stock temperature reports at 33.1–36.9 C.\nThe 50 MHz passive SPI capture contains all 30 addressed register-3\n`12100020` admissions with valid packet CRCs, followed by 27 new stock work\npackets and 79 result packets. Independent PoW replay finds 78 results pass\nthe observed filter and one does not. This proves normal stock mining returned\nafter a cold power cycle; no pool receipt is credited to this passive run."
+        },
+        {
+          "line_start": 15,
+          "line_end": 21,
+          "quoted_record": "The relay verified OFF / 0 W / 0 A after the 90-second window. The capture\nhas 5,348,570,432 samples, raw SHA-256\n`ea0dc79028b988c37762a4b8f4c603b8c3a225009251f0fbc8ec3470fc3a4d63`,\nand verified lossless gzip SHA-256\n`b128bf9c3518074ba9359b983d3f5092a975d30e83ba8eebc0beb597364cb839`.\nPrivate UART remains local; its equal-length redaction SHA-256 is\n`39e0dc79e385cd4af611822b5b47c208d81dc29264784c897a40171975042414`."
+        },
+        {
+          "line_start": 23,
+          "line_end": 24,
+          "quoted_record": "This is a separate cold stock return, not a warm continuation or proof that\nthe KA-BOX can cold boot and prepare its ASIC supply without stock software."
+        }
+      ]
+    },
+    {
+      "source_id": "R083",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 83 — reversible variable fan response and independent mining"
+        },
+        {
+          "line_start": 3,
+          "line_end": 5,
+          "quoted_record": "Date: 2026-10-07. Status: powered run and physical analysis complete; separate\n[cold stock return](../signal-discovery-attempt84/RUN_SUMMARY.md) also completed.\nAttempt 83 is consumed."
+        },
+        {
+          "line_start": 7,
+          "line_end": 12,
+          "quoted_record": "The one-use [plan](../../../05-documentation/variable-fan-attempt83.json)\nbound source commit `30b1890ba` and owner-command SHA-256\n`933db013c94aff518364ad73bc4e1e605e598382c5582209485d87475b34078e`.\nThe runner exited 0. Stock prepared the board; `xminerd`, `minerd` and\n`kaspaminer` were identity-bound and STOPPED during the fan contrast, while\nstock `fanctrl` remained RUNNING for emergency protection."
+        },
+        {
+          "line_start": 14,
+          "line_end": 14,
+          "quoted_record": "## Fan contrast"
+        },
+        {
+          "line_start": 16,
+          "line_end": 18,
+          "quoted_record": "Our script used only the installed `fan0/lvl` and `fan1/lvl` interface. It\nrecorded 24 complete direct TMP112/tach/level samples. Baseline readbacks\nwere `[100,100]` and last-two-sample RPM medians were `[4710,4620]`."
+        },
+        {
+          "line_start": 20,
+          "line_end": 23,
+          "quoted_record": "| Only write | Readbacks during step | Last-two-sample RPM medians | Both-fan change from baseline | Restored readbacks |\n| --- | --- | --- | --- | --- |\n| `fan0/lvl=80` | `[80,100]` | `[3990,3930]` | `-15.29%`, `-14.94%` | `[100,100]` |\n| `fan1/lvl=80` | `[100,80]` | `[3990,3930]` | `-15.29%`, `-14.94%` | `[100,100]` |"
+        },
+        {
+          "line_start": 25,
+          "line_end": 35,
+          "quoted_record": "Both tachometers recovered after each restoration. Direct board samples\nremained 29.4375–34.875 C during the contrast; every fan was at least\n1,920 RPM, including the initial full-speed spinup. The observed combination\nwas outside the plan's two simple topology predictions: logical level\nreadbacks are separate, while physical fan speeds are coupled. The matched\nproduct file names `pwm0` for both fans, which supports a shared PWM/control\npath, but electrical wiring and the precise kernel mapping remain unmeasured.\nThis proves reversible variable *combined* fan speed on the installed board;\nit does not prove independent physical control of each fan or an automatic\nthermal policy. The analyser did not probe the PWM waveform; the physical fan\neffect is the paired tachometer response."
+        },
+        {
+          "line_start": 37,
+          "line_end": 37,
+          "quoted_record": "## Mining, physical evidence and closeout"
+        },
+        {
+          "line_start": 39,
+          "line_end": 46,
+          "quoted_record": "The fan script restored `[100,100]` before `fanctrl` STOP. The separate relay\nwatchdog acknowledged handoff, then all four stock control processes stayed\nSTOPPED. Our native/Rust owner mined current pool work for 120.022 seconds:\n293 jobs, 3,777 polls, 137 submissions and **137 pool-accepted shares**.\n[Physical correlation](full-control-physical-correlation.json) matches all\n4,576 native SPI TX/RX transfers to the paired 10 MHz capture and independently\nreplays all 137 accepted nonces against their original exact work and pool\ndifficulty. No stock or historical share is credited to the open miner."
+        },
+        {
+          "line_start": 48,
+          "line_end": 53,
+          "quoted_record": "Native POST read both fan levels 100 and GPIO 66/67 LOW with fresh direct\nhealth. Raw UART contains the actual `KABOX_SSH_REAPED_83`, listener-absent,\nRAM-cleanup-0 and final snapshot-END markers in order; an earlier occurrence\nof the END text is a shell echo, not an extra completed closeout. The relay\nwatchdog cut on the parked lease and verified OFF / 0 W / 0 A; the parent\nverified the same. No stock CONT or warm restore was attempted."
+        },
+        {
+          "line_start": 55,
+          "line_end": 61,
+          "quoted_record": "The 2,859,905,036-byte capture SHA-256 is\n`77b0e48940ddfc227ec6cee3ae064002b76b2f8ceccd20d047feb5bb077a353d`.\nIts verified lossless gzip SHA-256 is\n`86a023baa7355e6b5482292e91f29e548258d3f99e584247211da75b550287e8`.\nThe original UART and pool replies stay private; the equal-length redacted\nUART SHA-256 is\n`1ed4b7842d2bddb074b052d442fe9fecac8f26e2e4b3966dcfd574dc67218378`."
+        },
+        {
+          "line_start": 63,
+          "line_end": 66,
+          "quoted_record": "The new operational proof is reversible variable fan response coupled across\nboth fans, plus bounded independent mining after full-speed restoration. It\ndoes not establish stock-equivalent automatic cooling, stock-free boot/supply\npreparation or the two remaining BM2382 parity capabilities."
+        }
+      ]
+    },
+    {
+      "source_id": "R084",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 84 — separate passive cold stock return after W112"
+        },
+        {
+          "line_start": 3,
+          "line_end": 3,
+          "quoted_record": "Date: 2026-10-07. Status: completed safely; attempt consumed."
+        },
+        {
+          "line_start": 5,
+          "line_end": 10,
+          "quoted_record": "The one-use [accepted plan](../../../05-documentation/stock-return-attempt84.json)\nbooted the installed firmware from mains OFF after attempt 83 parked and cut\npower. It sent no UART command and applied no SSH, fan, GPIO or SPI stimulus.\nThe redacted UART contains one `fanctrl start`, board temperature reports and\nfour ordinary stock fan changes on both logical fans: 50→49→48→47→46. This\nshows the stock fan policy resumed after the cold power cycle."
+        },
+        {
+          "line_start": 12,
+          "line_end": 17,
+          "quoted_record": "The stable 50 MHz passive [decode](spi-decode/receipt.json) contains all 30\naddressed register-3 `12100020` admissions with valid CRC, at addresses 1–30.\nThe [packet summary](spi-packets/summary.json) contains 30 valid stock work\npackets and 68 valid result packets. These are fresh stock traffic, not shares\ncredited to our miner. The relay verified OFF / 0 W / 0 A at the end of the\n90-second window."
+        },
+        {
+          "line_start": 19,
+          "line_end": 24,
+          "quoted_record": "The 5,348,570,444-byte capture SHA-256 is\n`0cc040e0e13e565e2fc3aa1afa9fa1dd10df1874232edb16be87da0e33d0841f`.\nIts verified lossless gzip SHA-256 is\n`33e0a90db025f38073eb0b90feaddc0772754cd82ef14a1c24889d0f986c23b8`.\nPrivate UART stays local; its equal-length redaction SHA-256 is\n`b5a0575f352ff3e3d84b4bb9d228dbd41b3db261b2a6962f9e4444e063d30e5b`."
+        },
+        {
+          "line_start": 26,
+          "line_end": 28,
+          "quoted_record": "This closes separate cold stock return after the variable fan test. It does\nnot show that our software can perform a stock-free boot or prepare ASIC\npower without stock."
+        }
+      ]
+    },
+    {
+      "source_id": "R085",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 85 — automatic cooling during independent mining"
+        },
+        {
+          "line_start": 11,
+          "line_end": 17,
+          "quoted_record": "The runner exited 0. Stock prepared the board, then all four exact stock\ncontrollers were STOPPED. Our own producer used direct TMP112/tach frames and\n124 exact four-owner/fan status queries. It commanded both existing fan levels\nfrom 100 to 80 at 36.25 C and back to 100 at 40.0625 C. Every adaptive status\nquery and 126 short cooling leases passed; no lease fault occurred. Direct\ntemperature stayed 34.875–44.875 C; the minimum tach reading was 1,920 RPM\nduring fan spinup. The final direct readback was `[100,100]`."
+        },
+        {
+          "line_start": 19,
+          "line_end": 19,
+          "quoted_record": "## Frozen contrast ruling"
+        },
+        {
+          "line_start": 21,
+          "line_end": 32,
+          "quoted_record": "The last two *pre-downshift* full-speed lease RPM readings were `[3000,3000]`\nand `[4740,4680]`: the fans were still spinning up. Their medians were\n`[3870,3840]`. The last two low-speed readings, after more than two seconds\nat 80, were `[4020,3960]`. They do not satisfy the plan's at-least-10-percent\ndrop against the frozen pre-downshift median. The last two recovered\nfull-speed readings were `[4740,4740]` and `[4740,4680]`, medians\n`[4740,4710]`. The low-speed phase is roughly 15 percent below this later\nstable full-speed phase, consistent with W112, but that reverse comparison\ndoes not replace the predeclared baseline. W113 automatic *physical* cooling\nacceptance remains open. A new run must hold 100 until two distinct stable\nfull-speed direct readings are recorded before allowing the cool-board step;\nthe consumed attempt 85 command must not be replayed."
+        },
+        {
+          "line_start": 34,
+          "line_end": 34,
+          "quoted_record": "## Mining, physical evidence and restoration"
+        },
+        {
+          "line_start": 36,
+          "line_end": 42,
+          "quoted_record": "Our native/Rust owner mined current pool work for 120.008 seconds: 290 jobs,\n3,776 polls, 69 actual pool-accepted shares. The [physical correlation](full-control-physical-correlation.json)\nmatches all 4,569 native TX/RX transfers to the paired 10 MHz analyser and\nindependently replays every accepted nonce against its exact original work and\npool target. POST read GPIO 66/67 LOW and both fan levels 100. RAM SSH closed;\nthe independent relay watchdog cut on the parked lease and verified OFF / 0 W /\n0 A, as did the parent. No stock CONT or warm restore was attempted."
+        },
+        {
+          "line_start": 44,
+          "line_end": 50,
+          "quoted_record": "The raw 2,619,879,436-byte capture SHA-256 is\n`f9f882c8c96f76ee54b2917ebb63fcdeb6ae1615d61cd1bf2d23f5f3c0f63a74`.\nThe [verified lossless archive](logic/signal-discovery-attempt85.bin.archive.json)\nSHA-256 is `1d52f134ee738309ad7af8d710ecd348ae12515adee8aaf3b7d7a3614cbdb7a6`.\nPrivate original UART and pool replies stay ignored; the equal-length\n[redacted UART](uart-rx.redacted) SHA-256 is\n`f8fd148da90c37770679ba3611bf7cd23e637d6c4a60dfa56214744d1b930f80`."
+        },
+        {
+          "line_start": 52,
+          "line_end": 56,
+          "quoted_record": "This run proves our software can execute a bounded temperature-triggered fan\ncycle while independently mining, with exact logical readbacks and safe closeout.\nThe frozen physical tach contrast needs a stable pre-step sham. Stock-free boot,\nindependent supply preparation and the two strict BM2382 capabilities remain\nunproved."
+        }
+      ]
+    },
+    {
+      "source_id": "R086",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 86 — separate passive cold stock return after W113"
+        },
+        {
+          "line_start": 3,
+          "line_end": 7,
+          "quoted_record": "Date: 2026-10-07. Status: completed safely; attempt consumed. The one-use\n[plan](../../../05-documentation/stock-return-attempt86.json) started from\nverified OFF after attempt 85 and sent no UART command or SSH, GPIO, fan or\nSPI stimulus. The runner exited 0 and verified relay OFF / 0 W / 0 A after\nthe 90-second window."
+        },
+        {
+          "line_start": 9,
+          "line_end": 17,
+          "quoted_record": "The [redacted UART](uart-rx.redacted) records `fanctrl start` and a stock\n`Fan stay` decision with both logical fans at level 35. The stable 50 MHz\n[physical decode](spi-decode/receipt.json) contains 30 CRC-valid addressed\nregister-3 `12100020` admissions at addresses 1–30, 27 valid stock work\npackets and 93 valid result packets. The [packet scan](spi-packets/summary.json)\nalso flags one seven-byte truncated `1a01` burst as a failed packet; the\ncomplete CRC-valid `1a01` admission exists elsewhere in the same capture.\nThis fragment is not evidence of a failed ASIC CRC response. The work/results\nshow fresh stock mining traffic; they are not shares credited to our miner."
+        },
+        {
+          "line_start": 19,
+          "line_end": 24,
+          "quoted_record": "Raw capture: 5,348,570,444 bytes, SHA-256\n`54c25961035327ed2fb989172d3a21536baa6442bed055f717978a650f99d5a7`.\nThe [verified lossless archive](logic/signal-discovery-attempt86.bin.archive.json)\nSHA-256 is `a16c385c418196e4e7573dcf8c7dfb75d2020d58e11378f00ad363517fe5c446`.\nPrivate UART remains ignored; equal-length redacted SHA-256 is\n`cfd671d23dfb9715ccbbd3c5fd81dcf878066c00489d18981c2f6f9fb1df0d34`."
+        },
+        {
+          "line_start": 26,
+          "line_end": 27,
+          "quoted_record": "Stock fan and ASIC mining control returned on a separate cold boot. This does\nnot establish a stock-free start for our software or electrical rail readiness."
+        }
+      ]
+    },
+    {
+      "source_id": "R087",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 87 — fail closed before the stable fan baseline"
+        },
+        {
+          "line_start": 12,
+          "line_end": 20,
+          "quoted_record": "The lease producer marked the lease failed at 09:53:31 UTC. The independent\nrelay watchdog requested cutoff for `lease_failed` and verified OFF / 0 W /\n0 A; the parent independently verified the same. The runner exited 1 and\nthere is no completed miner or fan contrast to credit. There was no adaptive\nfan transition and no stable-baseline marker. The owner output stopped before\nany native cold-transfer stream, so no new ASIC transaction or accepted-share\nclaim is made. Final miner-local GPIO/fan restoration was not proved; mains\nOFF is proved. A separate [cold stock return](../signal-discovery-attempt88/RUN_SUMMARY.md)\nwas therefore required."
+        },
+        {
+          "line_start": 22,
+          "line_end": 28,
+          "quoted_record": "The paired 10 MHz [decode](spi-decode/receipt.json) is stable. Raw capture:\n1,259,734,348 bytes, SHA-256\n`aedc7c98a9c529433efd9340b813e14772e8913fb688320f9c4d1baa504076d7`.\nThe [verified lossless archive](logic/signal-discovery-attempt87.bin.archive.json)\nSHA-256 is `0f5f354b0d86c1c81df468d42cf5a5a77a2d710563475132578da3d69c73a972`.\nPrivate UART remains ignored; equal-length [redacted UART](uart-rx.redacted)\nSHA-256 is `9d247d2e8fe7be78e36474dc12552d92d4eaee6246974f7a81a9217bf5e868ad`."
+        },
+        {
+          "line_start": 30,
+          "line_end": 33,
+          "quoted_record": "The repair uses the existing exact four-owner/fan status command before each\nnative RPM baseline sample and does not expect a fan level in that native\nframe. Offline regression reproduces the missing field and requires the\nseparate query. The attempt 87 command is not reusable."
+        }
+      ]
+    },
+    {
+      "source_id": "R088",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 88 — passive cold stock return after lease fault"
+        },
+        {
+          "line_start": 9,
+          "line_end": 14,
+          "quoted_record": "The [redacted UART](uart-rx.redacted) records `fanctrl start` and a stock\n`Fan stay` decision at both logical level 35. The stable 50 MHz\n[physical decode](spi-decode/receipt.json) contains 30 CRC-valid addressed\nregister-3 `12100020` admissions at addresses 1–30. The [packet scan](spi-packets/summary.json)\nhas 26 valid stock work packets and 71 valid results with no classified CRC\nfailure. These are fresh stock traffic, not shares credited to our miner."
+        },
+        {
+          "line_start": 16,
+          "line_end": 21,
+          "quoted_record": "Raw capture: 5,348,570,444 bytes, SHA-256\n`c8805294f7d46a87c70ff4cf2443976229caa5eaa88e18bf5767addb8a8a7b37`.\nThe [verified lossless archive](logic/signal-discovery-attempt88.bin.archive.json)\nSHA-256 is `d8762aaf4b8c8b0c0ff81d57b494eb0c9bad710b8f964a8bb9b606bbca1a56e2`.\nPrivate UART remains ignored; equal-length redacted SHA-256 is\n`ffe30b225fdc148f3919155473065a04de914468a9aa101036f6dc4bfde09257`."
+        },
+        {
+          "line_start": 23,
+          "line_end": 24,
+          "quoted_record": "Stock fan and ASIC mining control returned on a separate cold boot. This does\nnot establish a stock-free start for our software or electrical rail readiness."
+        }
+      ]
+    },
+    {
+      "source_id": "R089",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 89 — automatic cooling during independent mining"
+        },
+        {
+          "line_start": 10,
+          "line_end": 10,
+          "quoted_record": "## Frozen fan contrast"
+        },
+        {
+          "line_start": 12,
+          "line_end": 17,
+          "quoted_record": "Before lowering speed, the producer verified level `[100,100]` and the four\nstopped owners through a separate bound query, then recorded two distinct\ndirect full-speed tach frames `[4680,4620]` and `[4800,4740]` RPM more than\n0.75 seconds apart. Each tach exceeded 4,300 RPM and changed less than 5\npercent. Their medians were `[4740,4680]` RPM. No spinup sample entered the\nbaseline."
+        },
+        {
+          "line_start": 19,
+          "line_end": 29,
+          "quoted_record": "At direct TMP112 37.25 C, our policy wrote both existing level nodes to 80\nwith exact readback. After more than two seconds at 80, the last-two-sample\ntach medians were `[4020,3960]` RPM, down **15.19% and 15.38%** from the\npre-step sham. At 40.0 C, it wrote both levels back to 100; the last-two-sample\nrecovered medians were `[4770,4680]` RPM, within 0.63% and 0% of baseline.\nBoth fan tachometers therefore met the frozen at-least-10-percent fall and\nwithin-10-percent recovery rules. There were 126 exact adaptive status queries,\n126 fresh cooling leases and no lease fault. Direct board samples stayed\n35.8125–45.0625 C; minimum tach was 1,860 RPM during initial spinup. The\nreadbacks and tachometers prove combined physical fan response. Shared PWM\nwiring and independent fan actuation remain unproved."
+        },
+        {
+          "line_start": 31,
+          "line_end": 31,
+          "quoted_record": "## Mining, physical evidence and restoration"
+        },
+        {
+          "line_start": 33,
+          "line_end": 37,
+          "quoted_record": "Our native/Rust owner mined current pool work for 120.013 seconds: 297 jobs,\n3,774 polls and **121 actual pool-accepted shares**. The [physical correlation](full-control-physical-correlation.json)\nmatches all 4,581 native SPI TX/RX transfers to the paired 10 MHz capture and\nindependently replays all 121 accepted nonces against original work and pool\ntargets. No stock or historical share is credited to our miner."
+        },
+        {
+          "line_start": 39,
+          "line_end": 43,
+          "quoted_record": "Native POST read both fan levels 100 and GPIO 66/67 LOW. A separate final\ndirect health readback again found `[100,100]`; RAM SSH closed. The independent\nrelay watchdog cut on the parked lease and verified OFF / 0 W / 0 A, as did\nthe parent. No stock CONT or warm restoration was attempted. Separate\n[cold stock return](../signal-discovery-attempt90/RUN_SUMMARY.md) succeeded."
+        },
+        {
+          "line_start": 45,
+          "line_end": 51,
+          "quoted_record": "Raw 2,649,882,636-byte capture SHA-256:\n`d2b830e06947d86c178ae8aa38629b15debebe09bfceb37e38cb3fac37279f89`.\nThe [verified lossless archive](logic/signal-discovery-attempt89.bin.archive.json)\nSHA-256 is `18efba924528a21aaf4e268ce51b6ae554fce45c98c635ca3a0e736a3e4ec11f`.\nPrivate original UART and pool replies stay ignored; the equal-length\n[redacted UART](uart-rx.redacted) SHA-256 is\n`6f5c914c0b7b25d9e62b4809a8f48abb062bfc79e8aad58952d47670031106c5`."
+        },
+        {
+          "line_start": 53,
+          "line_end": 56,
+          "quoted_record": "W113 demonstrates bounded automatic physical cooling under our independent\ncurrent-pool miner on a **stock-prepared** board. It does not prove a stock-free\nboot, independent ASIC supply preparation, an installed replacement image or\nthe two missing strict BM2382 capabilities."
+        }
+      ]
+    },
+    {
+      "source_id": "R090",
+      "excerpts": [
+        {
+          "line_start": 1,
+          "line_end": 1,
+          "quoted_record": "# Attempt 90 — passive cold stock return after W113"
+        },
+        {
+          "line_start": 8,
+          "line_end": 13,
+          "quoted_record": "The [redacted UART](uart-rx.redacted) records `fanctrl start` and a stock\n`Fan stay` decision at both logical level 35. The stable 50 MHz\n[physical decode](spi-decode/receipt.json) contains 30 CRC-valid addressed\nregister-3 `12100020` admissions at addresses 1–30. The [packet scan](spi-packets/summary.json)\ncontains 25 valid stock work packets and 79 valid results with no classified\nCRC failure. These are fresh stock traffic, not shares credited to our miner."
+        },
+        {
+          "line_start": 15,
+          "line_end": 20,
+          "quoted_record": "Raw capture: 5,248,559,756 bytes, SHA-256\n`b98fccbf5d5636c3ccf8c66f4fca6596c67144e6cca6854bcd5b8a8710caec5a`.\nThe [verified lossless archive](logic/signal-discovery-attempt90.bin.archive.json)\nSHA-256 is `f68569e6ef4d758bfc3f23640c63474fcc0acb22d9c608a1e3afb7c629a0d528`.\nPrivate UART remains ignored; equal-length redacted SHA-256 is\n`ceb1f4fb2df711cddddca8db7cedcfb12110dbca76d86a8eb67b4b30ff71a44c`."
+        },
+        {
+          "line_start": 22,
+          "line_end": 24,
+          "quoted_record": "Stock fan and ASIC mining control returned after a separate cold boot. This\ndoes not establish a stock-free start for our software or electrical rail\nreadiness."
+        }
+      ]
+    }
+  ]
+}
